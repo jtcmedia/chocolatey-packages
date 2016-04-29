@@ -12,7 +12,7 @@
     <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
     </description>
     <projectUrl>https://fs-uae.net/</projectUrl>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae</packageSourceUrl>
     <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
     <docsUrl>https://fs-uae.net/documentation</docsUrl>
     <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
