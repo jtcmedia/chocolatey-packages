@@ -16,7 +16,7 @@
     <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
     <docsUrl>https://fs-uae.net/documentation</docsUrl>
     <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
-    <tags>fs-uae amiga emulator games</tags>
+    <tags>fs-uae amiga emulator games admin</tags>
     <copyright>GPLv2</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
