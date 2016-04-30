@@ -2,7 +2,7 @@
 
 $ErrorActionPreference = 'Stop';
 
-$packageName = 'fs-uae'
+$packageName = 'fs-uae.install'
 $softwareName = 'fs-uae*'
 $installerType = 'EXE' 
 

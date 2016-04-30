@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>fs-uae</id>
+    <id>fs-uae.install</id>
     <title>fs-uae (Install)</title>
     <version>2.6.2</version>
     <authors>Frode Solheim</authors>
@@ -12,7 +12,7 @@
     <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
     </description>
     <projectUrl>https://fs-uae.net/</projectUrl>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae.install</packageSourceUrl>
     <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
     <docsUrl>https://fs-uae.net/documentation</docsUrl>
     <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
@@ -39,6 +39,6 @@ And for FS-UAE Launcher:
 	</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\**" target="tools" exclude="tools\*.md" />
   </files>
 </package>
