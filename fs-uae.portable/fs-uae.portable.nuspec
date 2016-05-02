@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>fs-uae.portable</id>
+    <title>fs-uae (Portable)</title>
+    <version>2.6.2</version>
+    <authors>Frode Solheim</authors>
+    <owners>LudicrousByte, nipsky</owners>
+    <summary>FS-UAE Amiga Emulator</summary>
+    <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
+    </description>
+    <projectUrl>https://fs-uae.net/</projectUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
+    <docsUrl>https://fs-uae.net/documentation</docsUrl>
+    <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
+    <tags>fs-uae amiga emulator games</tags>
+    <copyright>GPLv2</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://cdn.rawgit.com/https://github.com/jtcmedia/chocolatey-packages/blob/master/icons/fs-uae.png</iconUrl>
+    <releaseNotes>
+
+FS-UAE 2.6.2 is a minor bugfix release. Changes include:
+
+    Do not use built-in libmpeg2.
+    Fixed crash (abort) with A1200 Blizzard CPU board models.
+    Added more gamepad controller configurations.
+    Fixed non-blocking socket I/O support in bsdsocket_posix [Jens Maus].
+    Imported updated translations from crowdin.com.
+
+And for FS-UAE Launcher:
+
+    Fixed /hostgame netplay command (server was started on wrong port).
+    Imported updated translations from crowdin.com.
+
+	</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
