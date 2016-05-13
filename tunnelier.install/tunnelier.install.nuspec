@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>tunnelier</id>
-    <title>Bitvise Tunnelier SSH client</title>
+    <id>tunnelier.install</id>
+    <title>Bitvise Tunnelier SSH client (Install)</title>
     <version>6.47</version>
     <authors>Bitvise Limited</authors>
     <owners>LudicrousByte, Iristyle</owners>
@@ -40,8 +40,8 @@
     Fixed an issue which could cause the SSH Client to crash under rare conditions.
     Fixed a small memory leak which could become visible after long periods of use, e.g. if an SSH session remained active for several months.
 	</releaseNotes>
-	<dependencies>
-	  <dependency id="tunnelier.install" version="6.47" />
-	</dependencies>
+	<files>
+		<file src="tools\**" target="tools" exclude="tools\*.md" />
+	</files>
   </metadata>
 </package>
