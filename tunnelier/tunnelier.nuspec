@@ -29,7 +29,7 @@
     </description>
     <projectUrl>https://www.bitvise.com/ssh-client</projectUrl>
 	<packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
-    <tags>ssh sftp client admin</tags>
+    <tags>ssh sftp client vt100 admin</tags>
     <licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.bitvise.com/files/q-logo.png</iconUrl>

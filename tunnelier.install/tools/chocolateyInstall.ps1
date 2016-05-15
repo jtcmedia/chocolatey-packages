@@ -1,20 +1,38 @@
-try {
-  $package = 'Bitvise Tunnelier'
+﻿$ErrorActionPreference = 'Stop';
 
-  # new versions are always present here
-  $url = 'http://dl.bitvise.com/BvSshClient-Inst.exe'
+$packageName= 'tunnelier.install'
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://bvdl.s3-eu-west-1.amazonaws.com/BvSshClient-Inst.exe'
 
-  $installDir = ${Env:ProgramFiles(x86)}, $Env:ProgramFiles |
-    ? { Test-Path $_ } | Select -First 1
-  $installDir = Join-Path $installDir 'Bitvise SSH Client'
+$packageArgs = @{
+  packageName   = $packageName
+  unzipLocation = $toolsDir
+  fileType      = 'EXE'
+  url           = $url
 
-  # https://fogbugz.bitvise.com/default.asp?Tunnelier.2.11840.3
-  $params = '-acceptEULA', '-force', "-installDir=`"$installDir`"",
-    '-noDesktopIcon'
-  Install-ChocolateyPackage 'BvSshClient-Inst' 'exe' $params $url
+  silentArgs	= '-acceptEULA', '-force', '-noDesktopIcon'
+  validExitCodes= @(0)
 
-  Write-ChocolateySuccess $package
-} catch {
-  Write-ChocolateyFailure $package "$($_.Exception.Message)"
-  throw
+  softwareName  = 'Bitvise SSH Client*'
+  checksum      = '320420d2b9b99a1e9c472ddbb5440e44'
+  checksumType  = 'md5'
 }
+
+Install-ChocolateyPackage @packageArgs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
