@@ -29,7 +29,7 @@
     </description>
     <projectUrl>https://www.bitvise.com/ssh-client</projectUrl>
 	<packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
-    <tags>ssh sftp client admin</tags>
+    <tags>ssh sftp client vt100 admin</tags>
     <licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.bitvise.com/files/q-logo.png</iconUrl>
@@ -40,8 +40,8 @@
     Fixed an issue which could cause the SSH Client to crash under rare conditions.
     Fixed a small memory leak which could become visible after long periods of use, e.g. if an SSH session remained active for several months.
 	</releaseNotes>
-	<files>
-		<file src="tools\**" target="tools" exclude="tools\*.md" />
-	</files>
   </metadata>
+  <files>
+	<file src="tools\**" target="tools" />
+  </files>
 </package>
