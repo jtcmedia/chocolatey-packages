@@ -1,2 +1,4 @@
 *.nupkg
 /**/tools/*.md
+chocolateytemplates/
+KetarinChocolateyTemplate.xml
