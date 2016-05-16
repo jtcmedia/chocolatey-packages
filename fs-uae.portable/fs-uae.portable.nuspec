@@ -7,7 +7,7 @@
     <title>fs-uae (Portable)</title>
     <version>2.6.2</version>
     <authors>Frode Solheim</authors>
-    <owners>LudicrousByte, nipsky</owners>
+    <owners>LudicrousByte</owners>
     <summary>FS-UAE Amiga Emulator</summary>
     <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
     </description>
