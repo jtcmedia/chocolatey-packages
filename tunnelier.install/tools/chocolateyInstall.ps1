@@ -10,7 +10,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   url           = $url
 
-  silentArgs	= '-acceptEULA', '-force', '-noDesktopIcon'
+  silentArgs	= '-acceptEULA -force -noDesktopIcon'
   validExitCodes= @(0)
 
   softwareName  = 'Bitvise SSH Client*'
@@ -19,20 +19,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

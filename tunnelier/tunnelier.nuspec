@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>tunnelier</id>
     <title>Bitvise Tunnelier SSH client</title>
-    <version>6.47</version>
+    <version>6.47.0.20160625</version>
     <authors>Bitvise Limited</authors>
     <owners>LudicrousByte</owners>
     <summary>Bitvise Tunnelier - Free SSH file transfer, terminal and tunneling!</summary>
@@ -41,7 +41,7 @@
     Fixed a small memory leak which could become visible after long periods of use, e.g. if an SSH session remained active for several months.
 	</releaseNotes>
 	<dependencies>
-	  <dependency id="tunnelier.install" version="6.47" />
+	  <dependency id="tunnelier.install" version="6.47.0.20160625" />
 	</dependencies>
   </metadata>
 </package>
