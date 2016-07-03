@@ -14,6 +14,7 @@
 
 	This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
 	</description>
+	<projectUrl>https://www.bitvise.com/ssh-client</projectUrl>
 	<tags>deprecated</tags>
 	<releaseNotes>
 #### New users
@@ -26,7 +27,7 @@
 * Remove package: `choco uninstall tunnelier --all-versions --whatif`
 	</releaseNotes>
     <dependencies>
-	  <dependency id="bitvise-ssh-client" version="7.12" />
+	  <dependency id="bitvise-ssh-client" />
 	</dependencies>
   </metadata>
 </package>
