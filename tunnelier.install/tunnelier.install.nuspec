@@ -14,16 +14,16 @@
 
 	This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
     </description>
-	<tags>[deprecated](https://chocolatey.org/packages?q=tag%3Adeprecated)</tags>
+	<tags>deprecated</tags>
 	<releaseNotes>
-	#### New users
-	* Do not install tunnelier (this package). Install **bitvise-ssh-client**.
+#### New users
+* Do not install tunnelier (this package). Install **bitvise-ssh-client**.
 
-	#### Existing users
-	* Updating this package will install the most recent version of the **bitvise-ssh-client** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the new package name **bitvise-ssh-client**.
+#### Existing users
+* Updating this package will install the most recent version of the **bitvise-ssh-client** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the new package name **bitvise-ssh-client**.
 
-	#### Cleanup
-	* Remove package: `choco uninstall tunnelier.install --all-versions --whatif`
+#### Cleanup
+* Remove package: `choco uninstall tunnelier.install --all-versions --whatif`
 	</releaseNotes>
 	<dependencies>
 	  <dependency id="bitvise-ssh-client" version="7.12" />
