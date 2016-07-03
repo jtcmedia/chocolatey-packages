@@ -23,7 +23,7 @@
 	* Updating this package will install the most recent version of the **bitvise-ssh-client** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the new package name **bitvise-ssh-client**.
 
 	#### Cleanup
-	* Remove package: `choco uninstall tunnelier.install --all-versions --whatif`
+	* Remove package: `choco uninstall tunnelier --all-versions --whatif`
 	</releaseNotes>
     <dependencies>
 	  <dependency id="bitvise-ssh-client" version="7.12" />
