@@ -10,11 +10,11 @@
     <owners>LudicrousByte</owners>
     <summary>New package name: [bitvise-ssh-client](https://chocolatey.org/packages/bitvise-ssh-client)</summary>
     <description>
-	Tunnelier has been deprecated because of a software name change. In 2012, Bitvise released version 5.50 and renamed Tunnelier to "Bitvise SSH Client".
+	Tunnelier has been deprecated because of a software name change. In 2012, Bitvise released version 4.50 and renamed Tunnelier to "Bitvise SSH Client".
 
 	This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
 	</description>
-	<tags>deprecated</tags>
+	<tags>[deprecated](https://chocolatey.org/packages?q=tag%3Adeprecated)</tags>
 	<releaseNotes>
 	#### New users
 	* Do not install tunnelier (this package). Install **bitvise-ssh-client**.

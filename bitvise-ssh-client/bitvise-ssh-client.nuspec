@@ -28,74 +28,20 @@
     </description>
     <projectUrl>https://www.bitvise.com/ssh-client</projectUrl>
 	<packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+	<docsUrl>https://www.bitvise.com/ssh-client</docsUrl>
+    <bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
     <tags>ssh sftp client vt100 admin</tags>
-    <licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
+    <copyright>© 2001 Bitvise Limited</copyright>
+	<licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.bitvise.com/files/q-logo.png</iconUrl>
     <releaseNotes>
-	Changes in Bitvise SSH Client 7.12:    [ 25 June 2016 ]
-
-    Cryptography:
-        On Windows Vista, Windows Server 2008, and newer, our software now uses a new cryptographic provider, CiWinCng, which uses built-in Windows cryptography. This provider adheres to FIPS 140-2 requirements as long as FIPS mode is enabled in Windows security policy. In FIPS mode, ECDSA and ECDH are supported with curves nistp256, nistp384 and nistp521, but not with curve secp256k1 because this curve is not implemented in Windows. When FIPS mode is disabled in Windows, the curve secp256k1 remains available (implemented using Crypto++).
-        On Windows XP and Windows Server 2003, our software continues to use our previous cryptographic provider, which uses the Crypto++ 5.3.0 DLL. This DLL was FIPS-certified, but its certificate has been moved to the historical list due to changed random number generator requirements since January 1, 2016.
-        DSA keys larger than 1024 bits are no longer supported. The implementation of these keys in Bitvise software pre-dated the NIST standard for large DSA keys, and was incompatible both with the NIST standard and other implementations that might have used large DSA keys. In general, support for the DSA algorithm is being deprecated by SSH implementations. For interoperability with older SSH installations, we continue to support 1024-bit DSA keys, but we recommend migrating either to 3072-bit RSA, or ECDSA.
-        When using the new CiWinCng cryptographic provider - default on all recent Windows versions - the encryption/integrity algorithms aes256-gcm and aes128-gcm are now supported. Our implementation is interoperable with the OpenSSH implementation of these algorithms.
-        New RSA signature algorithms rsa-sha2-256 and rsa-sha2-512 are now supported for host authentication.
-        The EXT_INFO extension negotiation mechanism is now supported, allowing for the use of new RSA signature algorithms rsa-sha2-256 and rsa-sha2-512 for client authentication.
-
-    SSH:
-        When connecting to an SSH server for which some host keys are already known (as full host keys - not fingerprints), the preference list of host key algorithms will now be reordered to favor algorithms for which host keys are known. Previously, if an SSH server added a new host key using an algorithm preferred by the client over an algorithm of a previous host key already trusted by the client, the new host key would have to be manually verified for the very next connection, or else the connection would fail.
-        In previous versions, the SSH Client would trim whitespace in a user authentication banner received from the server. This would affect formatting, so the trimming is no longer performed.
-        When authenticating using a passphrase-protected keypair, entering the passphrase in the authentication dialog had no effect if the key had not yet been accepted. Fixed.
-        The Client key manager will now automatically load public keys configured for the user on the SSH Server if opened during a connected session. This feature is available if the SSH server supports the SSH Public Key Subsystem.
-        The SSH Public Key Subsystem channel will now be closed after the Client key manager window is closed. This avoids a spurious "session is still active" dialog that would previously appear if the user's public keys configured on the server were queried or set during the session.
-
-    SFTP:
-        A Create file feature can now be used to create an empty remote file, which can then be edited using the Edit feature.
-        When the server supports file hashing in SFTP version 6, files that already exist on both sides will now be transferred with greater efficiency, and ensuring greater correctness, by comparing hashes of the portion of the file that already exists on both sides, and transferring only the parts determined to be different. This transfer mode overrides the normal Overwrite and Resume modes that are otherwise available with servers that do not support file hashing.
-        The Local and Remote panes in the graphical SFTP client now support a filter to display only files with names matching a provided pattern.
-        The SSH Client now supports viewing and changing Windows attributes of remote files, if this is supported by the server.
-        It is now possible to configure custom POSIX permissions for uploaded files. This is configured in the graphical SSH Client in the main window on the SFTP tab, and supported in the sftpc command line client using the -m=mode and -dm=mode parameters to the put command.
-        Copy-and-pasting files in the same directory will now duplicate the files.
-        There is now a Move to... feature in the Remote pane menu and the right-click context menu for remote files, allowing remote files to be moved using the graphical SFTP client.
-        It is now possible to switch between SFTP tabs using Ctrl + PgUp/PgDn and Ctrl + Tab / Ctrl + Shift + Tab.
-        Key combinations Alt + Left and Alt + Right can now be used as shortcuts for Forward and Backward.
-        An error message is now displayed if upload fails after a remote file that's being edited is saved.
-        Due to an implementation mistake that OpenSSH opted to preserve, the target and link path parameters are swapped by OpenSSH and related servers in SymLink and Link SFTP requests. The SSH Client now swaps these parameters when connected to OpenSSH or ProFTPD.
-        Implemented several compatibility workarounds to improve compatibility with Wing FTP Server.
-        Addressed issue with navigating to the user's local home directory.
-
-    sftpc:
-        An attrib command is now supported to query and set Windows attributes of remote files, if supported by the SFTP server.
-        The put command now supports parameters -m=mode and -dm=mode to control the POSIX permissions of uploaded files and directories.
-        The put and get commands now support the parameter -noTime to disable synchronizing file modification times.
-        Creation of hard links is now supported when using SFTP version 6, or using the hardlink@openssh.com extension.
-        Implemented new values for the -progress=... parameter, and improved the progress type used by default when output is redirected to a file.
-        Implemented improvements for when paths and filenames contain wildcard characters (* or ?).
-        The message "Listing remote directory" will no longer be displayed by chown, chmod and del commands, or when performing put/get with wildcards.
-
-    Terminal:
-        A variety of copy and paste hotkey combinations can now be individually enabled and disabled using the Properties menu in the graphical Client's terminal window.
-        A Select All feature is now available in the graphical Client's terminal window, allowing the entire screen buffer to be selected (e.g. to copy).
-        The SSH Client's terminal windows now support alternative Shift + function key combinations. This is enabled in the graphical Client using the profile setting Alt. Shift+Fn on the Terminal tab, and in stermc using the -altShiftFunc parameter. When enabled, this will cause the xterm protocol to send Shift + function key combinations compatible with PuTTY. Note that, in this mode, the escape sequences for Shift + F1/F2 and Shift + F11/F12 are the same as for plain F11/F12.
-        In xterm, key combinations of Alt, Shift, Ctrl (in any combination) + F1-F4 are now sent using the same escape sequences as on Linux. For compatibility with older Bitvise SSH Server versions, previous sequences continue to be sent when connected to Bitvise SSH Server.
-        The default terminal window size is now 100 columns by 35 rows, with 1,000 history lines. The previous default was 80 x 25 with 300 history lines.
-        Fixed an issue which could cause the graphical Client's terminal window to crash after screen buffer resize.
-
-    Port forwarding:
-        For server-to-client port forwarding rules, the listening interface is now free-form, allowing it to be used with e.g. DNS names or Unix sockets.
-        When a server-to-client port forwarded connection is received from the server, and the reported listening interface is not recognized, the SSH Client will now attempt to match the connection based on port number only. The forwarded connection will still be refused if there are multiple possible port-based matches, and no match for the listening interface.
-        Fixed an issue which caused the SSH Client to not properly remove C2S and S2C port forwarding rules where the listening port was set to 0.
-        In the stnlc command line client, the commands "c2s list" and "s2c list" were incorrectly showing the listening port as the destination port. Fixed.
-
-    General:
-        It is now possible to create or reset a profile with a blank default state using the New profile or Reset profile button.
-        SSH Client profiles may contain sensitive information such as a password with which to authenticate to the server, or client authentication keypairs. In previous versions, such information was stored encrypted with a static key that could be decrypted on any computer. It is now possible to save SSH Client profiles in a way such that any passwords or keypairs can be decrypted only on the current computer, or only by the current user. This setting only affects sensitive fields; the rest of the profile will still load on another computer.
-        The command line clients sftpc, stermc and sexec will now tolerate a server disconnect if it occurs after the client has closed the session channel. In previous versions, a disconnect would cause an error message and a non-zero exit code even if it occurred at this late point.
-        The most useful information now appears at the beginning of window titles for terminal, SFTP, and the main SSH Client window. This makes it easier to distinguish connections to multiple servers.
-        The Client key manager can now import multiple keypairs at once in the Bitvise format.
-        Versions 6.4x targeted the SSE2 instruction set, which caused them to not run on old computers lacking support for SSE2. Versions 7.xx now target the SSE instruction set, which allows for compatibility with old CPUs, at the cost of a small performance penalty - in our measurements, between 0 and 0.5%.
+	* [Changelog](https://www.bitvise.com/ssh-client-version-history)
+	* 2012: Bitvise released version 4.50 and renamed Tunnelier to **Bitvise SSH Client**
 	</releaseNotes>
+	<dependencies>
+      <dependency id="chocolatey-uninstall.extension" />
+	</dependencies>
   </metadata>
   <files>
 	<file src="tools\**" target="tools" />
