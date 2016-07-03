@@ -1,17 +1,10 @@
-﻿
-
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'fs-uae.install'
 $softwareName = 'fs-uae*'
 $installerType = 'EXE' 
-
-$validExitCodes = @(0, 3010, 1605, 1614, 1641)
-if ($installerType -ne 'MSI') {
-  $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  $validExitCodes = @(0)
-}
-
+$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+$validExitCodes = @(0)
 $uninstalled = $false
 $local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
 $machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
@@ -24,12 +17,6 @@ $key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
 if ($key.Count -eq 1) {
   $key | % { 
     $file = "$($_.UninstallString)"
-
-    if ($installerType -eq 'MSI') {
-      $silentArgs = "$($_.PSChildName) $silentArgs"
-
-      $file = ''
-    }
 
     Uninstall-ChocolateyPackage -PackageName $packageName `
                                 -FileType $installerType `
