@@ -28,8 +28,7 @@
     </description>
     <projectUrl>https://www.bitvise.com/ssh-client</projectUrl>
 	<packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
-	<docsUrl>https://www.bitvise.com/ssh-client</docsUrl>
-    <bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
+	<bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
     <tags>ssh sftp client vt100 admin</tags>
     <copyright>© 2001 Bitvise Limited</copyright>
 	<licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
@@ -39,9 +38,6 @@
 	* [Changelog](https://www.bitvise.com/ssh-client-version-history)
 	* 2012: Bitvise released version 4.50 and renamed Tunnelier to **Bitvise SSH Client**
 	</releaseNotes>
-	<dependencies>
-      <dependency id="chocolatey-uninstall.extension" />
-	</dependencies>
   </metadata>
   <files>
 	<file src="tools\**" target="tools" />
