@@ -1,24 +1,25 @@
-﻿$packageName = 'bitvise-ssh-client'
+$ErrorActionPreference = 'Stop';
+
+$packageName = 'bitvise-ssh-client'
 $softwareName = 'Bitvise SSH Client*'
-$installerType = 'exe' 
-$silentArgs = '/S'
+$installerType = 'EXE' 
+$silentArgs = '-unat'
 $validExitCodes = @(0)
+$uninstalled = $false
+$local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
+$machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
 
-$scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$ahkFile = Join-Path $scriptPath "chocolateyuninstall.ahk"
-$ahkExe = 'AutoHotKey'
-$ahkRun = "$Env:Temp\$(Get-Random).ahk"
-Copy-Item $ahkFile "$ahkRun" -Force
-Start-Process $ahkExe $ahkRun
+$key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
+                        -ErrorAction SilentlyContinue `
+         | ? { $_.DisplayName -like "$softwareName" }
 
-[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
+$key[0] | % { 
+    $file = "$($_.UninstallString)"
 
-$file = "$($key[0].UninstallString)"
-
-Uninstall-ChocolateyPackage -PackageName "$packageName" `
-        -FileType "$installerType" `
-        -SilentArgs "$($silentArgs)" `
-		-ValidExitCodes $validExitCodes `
-        -File "$file"
-
-Remove-Item "$ahkRun" -Force
+    Uninstall-ChocolateyPackage -PackageName $packageName `
+                                -FileType $installerType `
+                                -SilentArgs "$silentArgs" `
+                                -ValidExitCodes $validExitCodes `
+                                -File "$file"
+}
