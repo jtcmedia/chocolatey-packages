@@ -14,7 +14,7 @@ $packageArgs = @{
   validExitCodes= @(0)
 
   softwareName  = 'Bitvise SSH Client*'
-  checksum      = 'c54d199f63f6b039fb7bf9b093f9ae4e'
+  checksum      = '8cd1e20bd927aa64ea883f5577df9828'
   checksumType  = 'md5'
 }
 
