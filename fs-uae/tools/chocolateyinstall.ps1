@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop';
 
 
-$packageName= 'fs-uae.install'
+$packageName= 'fs-uae'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://fs-uae.net/stable/2.8.0/fs-uae-suite_2.8.0_windows_x86.exe'
 $url64      = 'https://fs-uae.net/stable/2.8.0/fs-uae-suite_2.8.0_windows_x86-64.exe'
