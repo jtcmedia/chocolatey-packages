@@ -16,27 +16,27 @@ environment:
   au_push: true
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: jtcmedia/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: BlX06UEvY8mIugdlfSMO1micKLzEh3yD46GLv/r5nu4afIep2cUvK3CyB0d/RIh8
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: xIymlMr2HncMoUGsMN3zVg40ydOmn0ybrYF/qYT7Npg=
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: u06lR/WFO1C39W5cfPL7kw==
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 8abc37a8c3b020ffdd9704a810331790
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: C4/A+I8yif2gUHRYW908lGi1HopJsgIQlA0TDFEaCaFXqimsFbs1DOANcYSwipEu
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
