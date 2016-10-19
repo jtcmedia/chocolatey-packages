@@ -17,7 +17,7 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 
-  softwareName  = 'fs-uae*'
+  softwareName  = 'FS-UAE*'
   checksum      = 'ba2a6933b93c4e4a823c032bd39675b2'
   checksumType  = 'md5'
   checksum64    = '3ac91884c96098e728fd6c6c4b8bd09d'

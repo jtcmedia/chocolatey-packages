@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'fs-uae'
-$softwareName = 'fs-uae*'
+$softwareName = 'FS-UAE*'
 $installerType = 'EXE' 
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0)
