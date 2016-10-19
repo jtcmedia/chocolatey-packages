@@ -45,7 +45,7 @@ $Options = [ordered]@{
                 Port        = $Env:mail_port
                 EnableSsl   = $Env:enable_ssl -eq 'true'
                 Attachments = "$PSScriptRoot\update_info.xml"
-                UserMessage = ''
+                UserMessage = 'Update status: http://tiny.cc/vv94fy'
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}
