@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>torguard-client</id>
+    <version>0.3.55</version>
+    <owners>ludicrousByte</owners>
+    <title>TorGuard VPN Client (Install)</title>
+    <authors>TorGuard.net</authors>
+    <projectUrl>https://torguard.net</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/torguard-icon/icons/torguard-client.png</iconUrl>
+    <copyright>Copyright © 2016 TorGuard.net</copyright>
+	<licenseUrl>https://torguard.net/terms.php</licenseUrl>
+    <docsUrl>https://torguard.net/gettingstartedvpn.php</docsUrl>
+    <tags>torguard-client admin vpn</tags>
+    <summary>TorGuard offers easy to setup VPN software for any operating system or device! Simply install the app, select your server, and sign in to connect within seconds!</summary>
+    <description>
+### This software requires a subscription to TorGuard VPN Service in order to work
+
+Every internet connection, regardless of personal or public wifi, binds you to the “terms and conditions” of that provider. Many times, these terms of usage are vague, leaving the safety of your personal data to be determined by a policy you probably don’t have access to. One doesn't have to be doing anything illegal either – there are many documented cases in which personal freedoms have been violated by ISP’s, website owners, and search engines. At TorGuard VPN, we believe every law abiding citizen has the right to encrypt and protect their personal data online.
+Big businesses wouldn’t think of risking company secrets on an unsecured connection, so why should you?
+
+TorGuard VPN service protects your online identity by providing you an anonymous IP address to hide behind. By using an encrypted VPN tunnel, this makes it impossible for your personal IP address or internet usage to be captured. Not even an external ISP, website, or search engine will be able to determine your real IP address. TorGuard anonymous VPN provides access to 1600+ Servers in over 50+ countries with just the click of a button. Take back your online privacy today and surf the web in complete privacy. 
+	</description>
+    <releaseNotes>
+* [Changelog](https://torguard.net/forums/index.php?/forum/17-torguard-client-releases/)
+	</releaseNotes>
+	<dependencies>
+      <dependency id="autohotkey.portable" version="1.1.24"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
