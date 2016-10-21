@@ -33,7 +33,7 @@
     <copyright>© 2001 Bitvise Limited</copyright>
     <licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://tiny.cc/rhd6fy</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/bitvise-ssh-client-icon/icons/bitvise-ssh-client.png</iconUrl>
     <releaseNotes>
 * [Changelog](https://www.bitvise.com/ssh-client-version-history)
 * 2012: Bitvise released version 4.50 and renamed Tunnelier to **Bitvise SSH Client**
