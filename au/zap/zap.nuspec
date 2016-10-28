@@ -17,7 +17,7 @@
     <docsUrl>https://github.com/zaproxy/zap-core-help/wiki</docsUrl>
     <mailingListUrl>http://groups.google.com/group/zaproxy-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/zaproxy/zaproxy/issues</bugTrackerUrl>
-    <tags>zap admin owasp security proxy pentesting</tags>
+    <tags>zap admin owasp security proxy attack web pentesting</tags>
     <summary>The Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.</summary>
     <description>
 The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
