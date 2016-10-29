@@ -4,7 +4,7 @@
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>bitvise-ssh-client</id>
-    <title>Bitvise SSH client</title>
+    <title>Bitvise SSH Client (Install)</title>
     <version>7.15</version>
     <authors>Bitvise Limited</authors>
     <owners>LudicrousByte</owners>
