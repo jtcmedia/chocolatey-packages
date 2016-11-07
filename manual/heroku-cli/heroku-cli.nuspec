@@ -7,7 +7,7 @@
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/manual/heroku-cli</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
-    <authors>ludicrousByte</authors>
+    <authors>Heroku</authors>
     <projectUrl>https://www.heroku.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
     <copyright>2016 Heroku, Inc.</copyright>
