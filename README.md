@@ -4,4 +4,4 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/ludicrousByte](https://chocolatey.org/profiles/ludicrousByte)
 
-This repository contains [Chocolatey](http://chocolatey.org) packages, [automatically](https://chocolatey.org/docs/automatic-packages) maintained by [au](https://github.com/majkinetor/au).
+This repository contains [Chocolatey](http://chocolatey.org) packages, both manually maintained and [automatically](https://chocolatey.org/docs/automatic-packages) maintained by [au](https://github.com/majkinetor/au).
