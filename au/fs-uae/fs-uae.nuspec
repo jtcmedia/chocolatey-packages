@@ -19,7 +19,7 @@
     <tags>fs-uae amiga emulator games admin</tags>
     <copyright>GPLv2</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/fs-uae-icon/icons/fs-uae.png</iconUrl>
 	<releaseNotes>
 * [Changelog](https://fs-uae.net/category/stable-releases)

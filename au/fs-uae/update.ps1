@@ -20,6 +20,9 @@ function global:au_GetLatest {
 	$url = $download_page.links | ? href -match $regex | select -First 2 -expand href
 	
 	$version = $url[0] -split '_' | select -Index 1
+	# the author sometimes amends, for example, 2.8.1u3
+	# for stable releases. Change to 2.8.1.3
+	$version = $version -replace '[a-z]', '.'
 	
 	$url32 = 'https://fs-uae.net' + $url[0]
     $url64 = 'https://fs-uae.net' + $url[1]
