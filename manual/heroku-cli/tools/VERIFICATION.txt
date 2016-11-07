@@ -1,11 +1,6 @@
-﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
-VERIFICATION
+﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-<Include details of how to verify checksum contents>
+1. Download latest version from https://s3.amazonaws.com/assets.heroku.com/heroku-toolbelt/heroku-toolbelt.exe
+2. Compare downloaded exe hash with bundled hash
