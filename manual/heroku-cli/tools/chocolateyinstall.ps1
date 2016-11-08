@@ -16,7 +16,7 @@ $packageArgs = @{
   checksum      = $checksum32
   checksumType  = 'sha256'
 
-  silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /COMPONENTS="*toolbelt,!toolbelt\git"'
   validExitCodes= @(0)
 }
 

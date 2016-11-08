@@ -3,21 +3,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>3.43.12</version>
+    <version>3.43.12.20161108</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/manual/heroku-cli</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
     <authors>Heroku</authors>
     <projectUrl>https://www.heroku.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
-    <copyright>2016 Heroku, Inc.</copyright>
+    <projectSourceUrl>https://github.com/heroku/heroku</projectSourceUrl>
+	<iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
+    <copyright>© 2016 Heroku, Inc.</copyright>
     <licenseUrl>https://www.heroku.com/policy/tos</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://devcenter.heroku.com/articles/heroku-command-line</docsUrl>
+	<bugTrackerUrl>https://github.com/heroku/heroku/issues</bugTrackerUrl>
     <tags>heroku-cli heroku cli paas cloud web webapps admin</tags>
     <summary>The Heroku Command Line Interface (CLI), formerly known as the Heroku Toolbelt, is a tool for creating and managing Heroku apps from the command line / shell of various operating systems.</summary>
     <description>
-### This software requires at least a free [Heroku account](https://signup.heroku.com/signup/dc) in order to work.
+### This software requires a [Heroku account](https://signup.heroku.com/signup/dc) in order to work.
 	
 Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP.
 
@@ -30,6 +32,9 @@ The source code for your application, together with the dependency file, should 
     <releaseNotes>
 * [Changelog](https://devcenter.heroku.com/changelog)
 	</releaseNotes>
+	<dependencies>
+      <dependency id="git" version="2.8"/>
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
