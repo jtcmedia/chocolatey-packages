@@ -4,7 +4,7 @@
   <metadata>
     <id>heroku-cli</id>
     <version>3.43.12.20161108</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/manual/heroku-cli</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
     <authors>Heroku</authors>
