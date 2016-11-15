@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://devcenter.heroku.com/articles/heroku-command-line'
+$releases = 'https://cli.heroku.com'
 
 function global:au_SearchReplace {
     @{
@@ -21,6 +21,7 @@ function global:au_GetLatest {
 	$fn = [System.IO.Path]::GetTempFileName()
 	Invoke-WebRequest $url -OutFile $fn -UseBasicParsing
 	$version = ((Get-Item $fn).VersionInfo.ProductVersion).Trim()
+	Remove-Item -Force $fn
 	
     return @{ URL = $url; Version = $version }
 }
