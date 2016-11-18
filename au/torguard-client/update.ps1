@@ -12,13 +12,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    	
-	if ($download_page.Content -match 'v0\.\d\.\d{2}')
-    {
-        $version = $Matches[0].Substring(1)
-    }
-    else { throw "Can't match version 'v0\.\d\.\d{2}'" }
-
+        
+    $version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
+    
     return @{ Version = $version }
 }
 
