@@ -18,7 +18,7 @@
     <mailingListUrl>http://forum.43oh.com/forum/28-energia/</mailingListUrl>
     <bugTrackerUrl>https://github.com/energia/Energia/issues</bugTrackerUrl>
     <tags>energia admin msp430 launchpad ide electronics prototyping</tags>
-    <summary>Energia is an open-source electronics prototyping platform started by Robert Wessels in January of 2012 with the goal to bring the Wiring and Arduino framework to the Texas Instruments MSP430 based LaunchPad.</summary>
+    <summary>Energia is a modified version of the Arduino/Genuino IDE for the Texas Instruments MSP430, MSP432, Tiva C and CC3200 LaunchPad boards.</summary>
     <description>
 Energia is an open-source electronics prototyping platform started by Robert Wessels in January of 2012 with the goal to bring the Wiring and Arduino framework to the Texas Instruments MSP430 based LaunchPad. The Energia IDE is cross platform and supported on Mac OS, Windows, and Linux. Energia uses the mspgcc compiler by Peter Bigot and is based on the Wiring and Arduino framework. Energia includes an integrated development environment (IDE) that is based on Processing.  Energia is also a portable framework/abstraction layer that can be used in other popular IDEs. Utilize a web browser based environment with CCS Cloud at dev.ti.com. Community maintained Energia plug-ins and integrations are available for Xcode, Visual Studio, and Code Composer Studio.
 

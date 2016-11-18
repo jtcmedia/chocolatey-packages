@@ -14,7 +14,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
-	$url = ($download_page.InputFields | select -First 1).outerHTML -match "'.*'" | Foreach {$Matches[0]}
+	$get_url = ($download_page.InputFields | select -First 1).outerHTML -match "'.*'"
+	
+	$url = $Matches[0].Trim("'")
 		
 	$version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
     
