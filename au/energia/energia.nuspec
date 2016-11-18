@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>energia</id>
+    <version>1.6.10.18</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <owners>ludicrousByte</owners>
+    <title>Energia (Install)</title>
+    <authors>Robert Wessels</authors>
+    <projectUrl>http://energia.nu/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/energia-icon/icons/energia.png</iconUrl>
+    <copyright>©Energia</copyright>
+    <licenseUrl>https://github.com/energia/Energia/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/energia/EnergiaSoftware</projectSourceUrl>
+    <docsUrl>http://energia.nu/guide/</docsUrl>
+    <mailingListUrl>http://forum.43oh.com/forum/28-energia/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/energia/Energia/issues</bugTrackerUrl>
+    <tags>energia admin msp430 launchpad ide electronics prototyping</tags>
+    <summary>Energia is an open-source electronics prototyping platform started by Robert Wessels in January of 2012 with the goal to bring the Wiring and Arduino framework to the Texas Instruments MSP430 based LaunchPad.</summary>
+    <description>
+Energia is an open-source electronics prototyping platform started by Robert Wessels in January of 2012 with the goal to bring the Wiring and Arduino framework to the Texas Instruments MSP430 based LaunchPad. The Energia IDE is cross platform and supported on Mac OS, Windows, and Linux. Energia uses the mspgcc compiler by Peter Bigot and is based on the Wiring and Arduino framework. Energia includes an integrated development environment (IDE) that is based on Processing.  Energia is also a portable framework/abstraction layer that can be used in other popular IDEs. Utilize a web browser based environment with CCS Cloud at dev.ti.com. Community maintained Energia plug-ins and integrations are available for Xcode, Visual Studio, and Code Composer Studio.
+
+The foundation of Energia and Arduino is the Wiring framework that is developed by Hernando Barragan. The framework is thoughtfully created with designers and artists in mind to encourage a community where both beginners and experts from around the world share ideas, knowledge and their collective experience. The Energia team adopts the philosophy of learning by doing and strives to make it easy to work directly with the hardware. Professional engineers, entrepreneurs, makers, and students can all benefit from the ease of use Energia brings to the microcontroller.
+
+Energia started out to bring the Wiring and Arduino framework to the Texas Instruments MSP430 LaunchPad. Texas Instruments offers a MSP430, MSP432, TM4C, C2000, and CC3200 LaunchPad. The LaunchPad is a low-cost microcontroller board that is made by Texas Instruments. The latest release of Energia supports the majority of the LaunchPad product offerings.  Additional community kits from RedBearLab are also supported.
+
+Together with Energia, LaunchPad can be used to develop interactive objects, taking inputs from a variety of switches or sensors, and controlling a variety of lights, motors, and other physical outputs. LaunchPad projects can be stand-alone (only run on the Target Board, i.e. your LaunchPad), or they can communicate with software running on your computer (Host PC). You can also add wireless modules to enable communication over various types of RF including Wi-Fi, NFC, Bluetooth, Zigbee, cellular, and more.
+
+More information about LaunchPad can be found on the TI site: [www.ti.com/launchpad](http://www.ti.com/lsds/ti/tools-software/launchpads/overview/overview.page)
+    </description>
+    <releaseNotes>
+* [Release Notes](http://energia.nu/releasenotes/)
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
