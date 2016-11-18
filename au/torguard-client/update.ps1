@@ -12,11 +12,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-        
-    $version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
     
-    return @{ Version = $version }
+	$url = ($download_page.InputFields | select -First 1).outerHTML -match "'.*'"
+	
+	$version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
+    
+    return @{ URL32 = $url; Version = $version }
 
 }
 
-update -NoCheckUrl -ChecksumFor 32
+update -ChecksumFor 32
