@@ -1,14 +1,15 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
 
-param($Name = $null)
+param([string] $Name, [string] $ForcedPackages, [string] $Root = $PSScriptRoot)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
 $Options = [ordered]@{
-    Timeout    = 100                                        #Connection timeout in seconds
-    Threads    = 10                                         #Number of background jobs to use
-    Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
-    PluginPath = ''                                         #Path to user plugins
+    Timeout       = 100                                     #Connection timeout in seconds
+    UpdateTimeout = 1200                                    #Update timeout in seconds
+    Threads       = 10                                      #Number of background jobs to use
+    Push          = $Env:au_Push -eq 'true'                 #Push to chocolatey
+    PluginPath    = ''                                      #Path to user plugins
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
@@ -21,15 +22,15 @@ $Options = [ordered]@{
     }
 
     Gist = @{
-        Id          = $Env:gist_id                          #Your gist id or leave empty for anonymous
-        ApiKey      = $Env:github_api_key                   #Your github api key
-        Path        = "$PSScriptRoot\Update-AUPackages.md"  #List of files to add to gist
+        Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
+        ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
+        Path   = "$PSScriptRoot\Update-AUPackages.md"       #List of files to add to the gist
     }
 
-    Git = @{
-        User     = ''                                       #Git username, leave empty if github api key is used
-        Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    }
+    #Git = @{
+        #User     = ''                                       #Git username, leave empty if github api key is used
+        #Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
+    #}
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
@@ -38,21 +39,32 @@ $Options = [ordered]@{
 
     Mail = if ($Env:mail_user) {
             @{
-                To          = $Env:mail_user
-                Server      = $Env:mail_server
-                UserName    = $Env:mail_user
-                Password    = $Env:mail_pass
-                Port        = $Env:mail_port
-                EnableSsl   = $Env:enable_ssl -eq 'true'
-                Attachments = "$PSScriptRoot\update_info.xml"
-                UserMessage = 'Update status: http://tiny.cc/vv94fy'
+                To         = $Env:mail_user
+                Server     = $Env:mail_server
+                UserName   = $Env:mail_user
+                Password   = $Env:mail_pass
+                Port       = $Env:mail_port
+                EnableSsl  = $Env:mail_enablessl -eq 'true'
+                Attachment = "$PSScriptRoot\update_info.xml"
+                UserMessage = ''
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}
+
+    ForcedPackages = $ForcedPackages -split ' '
+    BeforeEach = {
+        param($PackageName, $Options )
+        $p = $Options.ForcedPackages | ? { $_ -match "^${PackageName}(?:\:(.+))*$" }
+        if (!$p) { return }
+
+        $global:au_Force   = $true
+        $global:au_Version = ($p -split ':')[1]
+    }
 }
 
-$global:au_Root = "$PSScriptRoot"                           #Path to the AU packages
-$info = updateall -Name $Name -Options $Options
+if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
+$global:au_Root = $Root                                    #Path to the AU packages
+$global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-#if ($info.error_count.total) { throw 'Errors during update' }
+#if ($global:info.error_count.total) { throw 'Errors during update' }
