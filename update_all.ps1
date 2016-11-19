@@ -27,10 +27,10 @@ $Options = [ordered]@{
         Path   = "$PSScriptRoot\Update-AUPackages.md"       #List of files to add to the gist
     }
 
-    #Git = @{
-        #User     = ''                                       #Git username, leave empty if github api key is used
-        #Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
-    #}
+    Git = @{
+        User     = ''                                       #Git username, leave empty if github api key is used
+        Password = $Env:github_api_key                      #Password if username is not empty, otherwise api key
+    }
 
     RunInfo = @{
         Exclude = 'password', 'apikey'                      #Option keys which contain those words will be removed
@@ -67,4 +67,4 @@ $global:au_Root = $Root                                    #Path to the AU packa
 $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-#if ($global:info.error_count.total) { throw 'Errors during update' }
+if ($global:info.error_count.total) { throw 'Errors during update' }
