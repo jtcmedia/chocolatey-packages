@@ -9,12 +9,8 @@ $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   url           = $url
-
-  softwareName  = 'Energia*'
-
   checksum      = $checksum32
   checksumType  = 'sha256'
-
   validExitCodes= @(0)
 }
 
