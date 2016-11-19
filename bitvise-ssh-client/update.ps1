@@ -14,10 +14,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
-	$regex = '.exe$'
-	$url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-	
-	if ($download_page.Content -match 'version\s\d\.\d{2}')
+    $regex = '.exe$'
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    
+    if ($download_page.Content -match 'version\s\d\.\d{2}')
     {
         $version = $Matches[0].Substring(8)
     }

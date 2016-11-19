@@ -12,8 +12,8 @@ $uninstalled = $false
 
   $key[0] | % { 
     $file = "$($_.UninstallString)"
-	
-	Uninstall-ChocolateyPackage -PackageName $packageName `
+    
+    Uninstall-ChocolateyPackage -PackageName $packageName `
                                 -FileType $installerType `
                                 -SilentArgs "$silentArgs" `
                                 -ValidExitCodes $validExitCodes `
