@@ -9,7 +9,7 @@
     <title>GnuPG modern (Install)</title>
     <authors>Werner Koch,The GnuPG Project</authors>
     <projectUrl>https://www.gnupg.org/</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/gnupg.png</iconUrl>-->
+    <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/gnupg-icon/icons/gnupg.png</iconUrl>
     <copyright>Copyright 1998--2015 The GnuPG Project</copyright>
     <licenseUrl>https://creativecommons.org/licenses/by-sa/3.0/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
