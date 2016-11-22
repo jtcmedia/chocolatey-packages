@@ -10,7 +10,6 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url
-  url64bit      = $url64
 
   softwareName  = 'GNU Privacy Guard*'
 
