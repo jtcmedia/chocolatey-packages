@@ -22,6 +22,6 @@ $packageArgs = @{
 
 $ahkExe = 'AutoHotKey'
 $ahkFile = Join-Path $toolsDir "chocolateyinstall.ahk"
-Start-Process $ahkExe $ahkFile
+Start-Process -FilePath "$ahkExe" -ArgumentList "$ahkFile"
 
 Install-ChocolateyPackage @packageArgs

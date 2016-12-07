@@ -19,6 +19,7 @@
     <tags>gmvault admin gmail backup restore imap encrypt</tags>
     <summary>A command line utility to backup and restore your gmail account.</summary>
     <description>
+
 * Backup all your emails on disk.
 Use the full sync mode to backup your entire gmail account in a unique directory. Your email backup repository can then be easily tarred and moved from one machine to the other.
 
@@ -54,6 +55,7 @@ No databases (SQL or NoSQL) are used to organise the emails storage. This makes 
 
 * Highly customisable.
 With Gmvault, users can choose an email search request to pick-up a restricted set of emails to backup. The search request can use the IMAP or the GMail search dialect.
+
     </description>
     <releaseNotes>
 * [Release Announcements](http://geekomotion.posthaven.com/)
