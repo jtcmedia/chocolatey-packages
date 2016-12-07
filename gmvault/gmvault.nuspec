@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gmvault</id>
+    <version>1.9.1</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <owners>ludicrousByte</owners>
+    <title>Gmvault (Install)</title>
+    <authors>Guillaume Aubert</authors>
+    <projectUrl>http://gmvault.org/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/gmvault-icon/icons/gmvault.png</iconUrl>
+    <copyright>Designed and built by Guillaume Aubert guillaume.aubert(at)gmail.com </copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/gaubert/gmvault</projectSourceUrl>
+    <docsUrl>http://gmvault.org/install.html</docsUrl>
+    <bugTrackerUrl>https://github.com/gaubert/gmvault/issues</bugTrackerUrl>
+    <tags>gmvault admin gmail backup restore imap encrypt</tags>
+    <summary>A command line utility to backup and restore your gmail account.</summary>
+    <description>
+*Backup all your emails on disk.
+Use the full sync mode to backup your entire gmail account in a unique directory. Your email backup repository can then be easily tarred and moved from one machine to the other.
+
+*Update your backup in minutes.
+Gmvault can run a quick sync mode regularly (ie. every day) to keep your backup up to date.
+
+*Restore emails in any Gmail acc.
+With the restore command Gmvault can recreate your gmail mailboxes in any Gmail account. All attributes such as Gmail labels are preserved and recreated. With restore, you will recover your Gmail account exactly as it was.
+
+*Used daily by thousands of users.
+Since its creation in 2012 Gmvault has been downloaded more than 50000 times. Users have provided lots of feedback which has been incorporated in the latest Gmvault version.
+
+*Acclaimed by many tech sites.
+Stayed number one on HackerNews for a day. Previewed and recommended in Wired, Techerator, PCWorld, FSM, Lifehacker, Addictivetips.Gmvault is now the main free open-source solution to backup your Gmail mailbox.
+
+*A living open-source project.
+Followed by more than 770 users on Github, many contributions, numerous issues reported and features required.
+
+*Handle all Gmail IMAP hiccups.
+Even being the world's best email service, Gmail and especially its IMAP service is not without bugs. Gmvault handles all these issues to provide the smoothest experience to the user. Gmvault deals with the most common issues and always leaves the user with an uncorrupted email database.
+
+*Encrypt saved emails.
+All the emails saved in your email repository can be protected with encryption. With this feature, you can put your backup emails on a cloud storage system while protecting your information.
+
+*For geek and non-geek users.
+Gmvault has been designed with users in mind and is stuffed with the most common defaults to work directly out of the box. In addition, a detailed tutorial and installation guide allow all types of users to make the most of Gmvault in seconds.
+
+*Available on many platforms.
+Gmvault is available on Linux, Mac OSX and Windows. A tailored installation has been created for Windows to allow a smooth installation for non-geek users.
+
+*Filesystem as a database.
+No databases (SQL or NoSQL) are used to organise the emails storage. This makes all emails easily accessible and moveable. In addition manually deleting emails or emails' directories does not prevent Gmvault from working.
+
+*Highly customisable.
+With Gmvault, users can choose an email search request to pick-up a restricted set of emails to backup. The search request can use the IMAP or the GMail search dialect.
+    </description>
+    <releaseNotes>
+*[Release Announcements](http://geekomotion.posthaven.com/)
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
