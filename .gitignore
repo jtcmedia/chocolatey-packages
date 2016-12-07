@@ -1,3 +1,4 @@
 *.nupkg
 /**/tools/*.md
 update_vars.ps1
+*.zip
