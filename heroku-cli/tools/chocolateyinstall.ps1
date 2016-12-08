@@ -3,7 +3,7 @@
 $packageName= 'heroku-cli'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://s3.amazonaws.com/assets.heroku.com/heroku-toolbelt/heroku-toolbelt.exe'
-$checksum32 = 'c7dfb99f12d691f510c1174253c68de50e1cc15b8baeb972485b15c458d960c2'
+$checksum32 = '6ac61b279bb569de66f94271286a0bdc6c605da725c8c9080291a3493463c754'
 
 $packageArgs = @{
   packageName   = $packageName

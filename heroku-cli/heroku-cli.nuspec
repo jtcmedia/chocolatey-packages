@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>3.43.12.20161108</version>
+    <version>3.43.15</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
@@ -33,7 +33,7 @@ The source code for your application, together with the dependency file, should 
 * [Changelog](https://devcenter.heroku.com/changelog)
     </releaseNotes>
     <dependencies>
-      <dependency id="git" version="2.8"/>
+      <dependency id="git" version="2.8" />
     </dependencies>
   </metadata>
   <files>
