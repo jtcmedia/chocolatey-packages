@@ -6,7 +6,7 @@
     <version>1.18</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>GNU Wget (Install)</title>
+    <title>GNU Wget</title>
     <authors>Giuseppe Scrivano,Hrvoje Nikšić,Jernej Simončič</authors>
     <projectUrl>https://www.gnu.org/software/wget/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/wget-icon/icons/wget.png</iconUrl>
