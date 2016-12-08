@@ -15,4 +15,4 @@ in verifying that this package's contents are trustworthy.
     - Can use powershell function 'Get-FileHash'
     - Can use Chocolatey utility 'checksum.exe'
 
-    checksum32: 2cdf90d64297e4eff8702601a26cae9859c3f4e0dcd1fdbdbf518bbce200b555
+    checksum32: a6c32dbdcedf763924bc808b8ff85a99a62c67d9bb5baac4ab6dcaa544384c47
