@@ -20,8 +20,7 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-$ahkExe = 'AutoHotKey'
 $ahkFile = Join-Path $toolsDir "chocolateyinstall.ahk"
-Start-Process -FilePath "$ahkExe" -ArgumentList "$ahkFile"
+Start-Process -FilePath "AutoHotkey.exe" -Verb runas -ArgumentList $ahkFile
 
 Install-ChocolateyPackage @packageArgs

@@ -1,6 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'torguard-client'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $softwareName = '*TorGuard*'
 $installerType = 'EXE' 
 
@@ -14,6 +15,9 @@ if ($key.Count -eq 1) {
   $key | % { 
     $file = "$($_.UninstallString)"
 
+    $ahkFile = Join-Path $toolsDir "chocolateyuninstall.ahk"
+    Start-Process -FilePath "AutoHotkey.exe" -Verb runas -ArgumentList $ahkFile
+    
     Uninstall-ChocolateyPackage -PackageName $packageName `
                                 -FileType $installerType `
                                 -SilentArgs "$silentArgs" `

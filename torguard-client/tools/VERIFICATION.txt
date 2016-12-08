@@ -3,6 +3,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-1. Download latest version from https://torguard.net/downloads.php
-2. Compare torguard-setup-latest.exe hash with bundled hash OR
-3. Compare torguard-setup-latest.exe hash with hash posted at https://updates.torguard.biz/Software/Windows/checksums.sha256
+1.  Download installer:
+
+    https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe
+    
+2.  Download checksums:
+
+    https://updates.torguard.biz/Software/Windows/checksums.sha256
+
+3.  You can use one of the following methods to obtain the checksum:
+    - Can use powershell function 'Get-FileHash'
+    - Can use Chocolatey utility 'checksum.exe'
+
+    checksum32: 2cdf90d64297e4eff8702601a26cae9859c3f4e0dcd1fdbdbf518bbce200b555
