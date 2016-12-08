@@ -1,0 +1,18 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the appropriate installer:
+
+    x32: https://nodejs.org/dist/v6.9.2/node-v6.9.2-x86.msi
+    x64: https://nodejs.org/dist/v6.9.2/node-v6.9.2-x64.msi
+
+2.  Download Checksums:
+        https://nodejs.org/dist/v6.9.2/SHASUMS256.txt.asc
+
+3.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+    checksum32: f8b911a249d45358464135c41e7b16fe4abef8d047efb6183f043bc965632aea
+    checksum64: 9b2fcdd0d81e69a9764c3ce5a33087e02e94e8e23ea2b8c9efceebe79d49936e
