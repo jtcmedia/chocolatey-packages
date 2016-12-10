@@ -4,12 +4,26 @@ $releases = 'http://gmvault.org/download.html'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+        ".\tools\VERIFICATION.txt" = @{
+            "(?i)(\s+x32:).*"           = "`${1} $($Latest.URL32)"
+            "(?i)(\s+checksum32:).*"    = "`${1} $($Latest.Checksum32)"
         }
     }
 }
+
+
+function global:au_BeforeUpdate {
+    $toolsPath = "$PSScriptRoot\tools"
+
+    rm "$toolsPath\*.exe" -force -ea stop
+    $client = New-Object System.Net.WebClient
+        $fn = $Latest.URL32 -split '/' | select -Last 1
+        Write-Host 'Downloading installer: ' $fn
+        $client.DownloadFile($Latest.URL32, "$toolsPath\$fn")
+        $Latest.Checksum32 = Get-FileHash -Algorithm SHA256 -Path "$toolsPath\$fn" | % Hash
+    $client.Dispose()
+}
+
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
@@ -23,4 +37,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none

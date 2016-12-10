@@ -1,6 +1,13 @@
 ﻿VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
- 
-1. Download latest version from http://gmvault.org/download.html
-2. Compare downloaded exe hash with bundled hash
+
+1.  Download the installer:
+
+    x32: https://bitbucket.org/gaubert/gmvault-official-download/downloads/gmvault_installer_v1.9.1.exe
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+    checksum32: 75CCA48CD34B14971FB6A51F86104A485E263B972B2F5CDB9344ED639CF889D1
