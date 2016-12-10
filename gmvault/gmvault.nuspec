@@ -20,6 +20,8 @@
     <summary>A command line utility to backup and restore your gmail account.</summary>
     <description>
 
+Backup and restore your gmail account at will.
+
 * Backup all your emails on disk.
 Use the full sync mode to backup your entire gmail account in a unique directory. Your email backup repository can then be easily tarred and moved from one machine to the other.
 
@@ -29,7 +31,7 @@ Gmvault can run a quick sync mode regularly (ie. every day) to keep your backup 
 * Restore emails in any Gmail acc.
 With the restore command Gmvault can recreate your gmail mailboxes in any Gmail account. All attributes such as Gmail labels are preserved and recreated. With restore, you will recover your Gmail account exactly as it was.
 
-*Used daily by thousands of users.
+* Used daily by thousands of users.
 Since its creation in 2012 Gmvault has been downloaded more than 50000 times. Users have provided lots of feedback which has been incorporated in the latest Gmvault version.
 
 * Acclaimed by many tech sites.
