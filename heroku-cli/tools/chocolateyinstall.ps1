@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $packageName= 'heroku-cli'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://s3.amazonaws.com/assets.heroku.com/heroku-toolbelt/heroku-toolbelt.exe'
-$checksum32 = '6ac61b279bb569de66f94271286a0bdc6c605da725c8c9080291a3493463c754'
+$checksum32 = 'f58a9473b02f843d09c651c2bcccc4bfe93f26187f7756ed422923334f8d3125'
 
 $packageArgs = @{
   packageName   = $packageName
