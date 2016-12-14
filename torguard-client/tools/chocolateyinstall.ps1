@@ -20,7 +20,6 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-Update-SessionEnvironment
 $ahkFile = Join-Path $toolsDir "chocolateyinstall.ahk"
 Start-Process -FilePath "AutoHotkey.exe" -Verb runas -ArgumentList $ahkFile
 

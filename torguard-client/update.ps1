@@ -1,15 +1,16 @@
 import-module au
 
 $releases = 'https://torguard.net/downloads.php'
+$url = 'http://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
 
 
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
         }
         ".\tools\VERIFICATION.txt" = @{
-            "(?i)(\s+checksum32:).*"    = "`${1} $($Latest.Checksum32)"
+            "(?i)(\s+checksum32:).*"    = "`${1} $($Latest.Checksum)"
         }
     }
 }
@@ -20,8 +21,8 @@ function global:au_GetLatest {
     
     $version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
     
-    return @{ Version = $version }
+    return @{ Version = $version; Checksum = Get-RemoteChecksum $url }
 
 }
 
-update -NoCheckUrl -NoCheckChocoVersion -ChecksumFor 32
+update -NoCheckUrl -NoCheckChocoVersion -ChecksumFor none

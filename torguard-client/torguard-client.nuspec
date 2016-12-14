@@ -30,7 +30,7 @@ TorGuard VPN service protects your online identity by providing you an anonymous
 * [Changelog](https://torguard.net/forums/index.php?/forum/17-torguard-client-releases/)
     </releaseNotes>
     <dependencies>
-      <dependency id="autohotkey" version="1.1.24" />
+      <dependency id="autohotkey.portable" version="1.1.24" />
     </dependencies>
   </metadata>
   <files>
