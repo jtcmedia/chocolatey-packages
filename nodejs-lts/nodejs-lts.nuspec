@@ -16,7 +16,7 @@
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
     <docsUrl>https://nodejs.org/dist/latest-v6.x/docs/api/</docsUrl>
     <bugTrackerUrl>https://github.com/nodejs/node/issues</bugTrackerUrl>
-    <tags>nodejs-lts nodejs lts admin npm javascript</tags>
+    <tags>nodejs-lts nodejs node admin npm javascript</tags>
     <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
     <description>
     
