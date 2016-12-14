@@ -41,4 +41,4 @@ function global:au_GetLatest {
 
 }
 
-update -NoCheckUrl -ChecksumFor none
+update -NoCheckUrl -NoCheckChocoVersion -ChecksumFor none
