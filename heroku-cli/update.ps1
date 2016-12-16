@@ -23,11 +23,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
-	$regex = '.exe$'
-	
-	$url = $download_page.links | ? href -match $regex | select -First 2 -expand href
-	
-   	$toolsPath = "$PSScriptRoot\tools"
+    $regex = '.exe$'
+    
+    $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
+    
+    $toolsPath = "$PSScriptRoot\tools"
 
     $client = New-Object System.Net.WebClient
         $fn = $changelog -split '/' | select -Last 1
@@ -37,7 +37,7 @@ function global:au_GetLatest {
     
     #don't need changelog file anymore
     rm "$toolsPath\$fn"
-	
+    
     return @{ URL = $url[0]; URL64 = $url[1]; Version = $version }
 }
 
