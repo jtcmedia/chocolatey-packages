@@ -2,5 +2,15 @@
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-1. Download latest version from https://s3.amazonaws.com/assets.heroku.com/heroku-toolbelt/heroku-toolbelt.exe
-2. Compare downloaded exe hash with bundled hash
+1. Download installer:
+
+    x32: https://cli-assets.heroku.com/branches/stable/heroku-windows-386.exe
+    x64: https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
+
+
+2. You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+    checksum32: 153bdd2b390e2db6f2fa0cf0df8668233dbe683abcf095bd312bc23c1a296a26
+    checksum64: aa3084796dd1e40e3a4405ae39458f683ccfffe05cf7285e594d63a0fbc74ed0
