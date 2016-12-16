@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'heroku-cli'
-$softwareName = 'Heroku Toolbelt*'
+$softwareName = 'Heroku CLI*'
 $installerType = 'EXE' 
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+$silentArgs = '/S'
 $validExitCodes = @(0)
 
 $uninstalled = $false

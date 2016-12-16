@@ -3,23 +3,24 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>3.43.16</version>
+    <version>5.6.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
     <authors>Heroku</authors>
-    <projectUrl>https://www.heroku.com/</projectUrl>
-    <projectSourceUrl>https://github.com/heroku/heroku</projectSourceUrl>
+    <projectUrl>https://cli.heroku.com/</projectUrl>
+    <projectSourceUrl>https://github.com/heroku/cli</projectSourceUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
     <copyright>© 2016 Heroku, Inc.</copyright>
-    <licenseUrl>https://www.heroku.com/policy/tos</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://devcenter.heroku.com/articles/heroku-command-line</docsUrl>
-    <bugTrackerUrl>https://github.com/heroku/heroku/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/heroku/cli/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://devcenter.heroku.com/categories/command-line</docsUrl>
+    <bugTrackerUrl>https://github.com/heroku/cli/issues</bugTrackerUrl>
     <tags>heroku-cli heroku cli paas cloud web webapps admin</tags>
     <summary>The Heroku Command Line Interface (CLI), formerly known as the Heroku Toolbelt, is a tool for creating and managing Heroku apps from the command line / shell of various operating systems.</summary>
     <description>
-### This software requires a [Heroku account](https://signup.heroku.com/signup/dc) in order to work.
+
+#### This software requires a [Heroku account](https://signup.heroku.com/signup/dc) in order to work.
     
 Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP.
 
@@ -27,10 +28,11 @@ An application is a collection of source code written in one of these languages,
 
 Dependency mechanisms vary across languages: in Ruby you use a Gemfile, in Python a requirements.txt, in Node.js a package.json, in Java a pom.xml and so on.
 
-The source code for your application, together with the dependency file, should provide enough information for the Heroku platform to build your application, to produce something that can be executed.    
+The source code for your application, together with the dependency file, should provide enough information for the Heroku platform to build your application, to produce something that can be executed.
+    
     </description>
     <releaseNotes>
-* [Changelog](https://devcenter.heroku.com/changelog)
+* [Changelog](https://github.com/heroku/cli/blob/master/CHANGELOG)
     </releaseNotes>
     <dependencies>
       <dependency id="git" version="2.8" />
