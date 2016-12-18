@@ -19,7 +19,8 @@
     <tags>gnupg modern admin pgp openpgp encrypt rfc4880 security aes rsa signature</tags>
     <summary>GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP)</summary>
     <description>
-### This is the modern version of GnuPG (2.1 branch). If you want the stable version (2.0 branch) install [Gpg4win](https://chocolatey.org/packages/Gpg4win).
+
+#### This is the modern version of GnuPG (2.1 branch). If you want the stable version (2.0 branch) install [Gpg4win](https://chocolatey.org/packages/Gpg4win).
 
 GnuPG itself is a commandline tool without any graphical stuff. It is the real crypto engine which can be used directly from a command prompt, from shell scripts or by other programs. Therefore it can be considered as a backend for other applications.
 
@@ -42,6 +43,7 @@ However, even when used on the command line it provides all functionality needed
     Integrated support for HKP keyservers (wwwkeys.pgp.net).
     Clears signed patch files which can still be processed by patch.
     and many more things….
+    
     </description>
     <releaseNotes>
 * [Release Announcements](https://www.gnupg.org/index.html)
