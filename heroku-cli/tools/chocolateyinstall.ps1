@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $packageName = 'heroku-cli'
 
 #First need to uninstall old toolbelt pkg if installed
@@ -26,8 +26,8 @@ ri $env:USERPROFILE\.config\heroku -recurse -ea 0 -force
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32      = 'https://cli-assets.heroku.com/branches/stable/heroku-windows-386.exe'
 $url64      = 'https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe'
-$checksum32 = '153bdd2b390e2db6f2fa0cf0df8668233dbe683abcf095bd312bc23c1a296a26'
-$checksum64 = 'aa3084796dd1e40e3a4405ae39458f683ccfffe05cf7285e594d63a0fbc74ed0'
+$checksum32 = 'f376344f30243dedf2101bdae556c19d465dd1ec398958ac98211db4cacc437b'
+$checksum64 = '9977289c0d4ee42f385ba5545c1536a344623ba049526af186338bf3198588a6'
 
 $packageArgs = @{
   packageName   = $packageName
