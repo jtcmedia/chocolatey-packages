@@ -24,7 +24,6 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
     $regex = '.exe$'
-    
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
     
     $toolsPath = "$PSScriptRoot\tools"
