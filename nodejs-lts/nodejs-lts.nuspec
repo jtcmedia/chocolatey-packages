@@ -20,7 +20,6 @@
     <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
     <description>
 
-###Package Specifics    
 #### This package is the LTS (Long Term Support) release of Node.js. See the [LTS schedule](https://github.com/nodejs/LTS#lts-schedule) for more information.
 
 #### If you want the Current release, install the [nodejs](https://chocolatey.org/packages/nodejs) package instead.
