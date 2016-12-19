@@ -21,7 +21,7 @@ if ($key.Count -eq 1) {
   }
 }
 # Remove heroku config file as requested https://blog.heroku.com/the-new-heroku-cli
-ri $env:USERPROFILE\.config\heroku -recurse -ea 0 -force
+Remove-Item $env:USERPROFILE\.config\heroku -Recurse -ErrorAction SilentlyContinue -Force
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32      = 'https://cli-assets.heroku.com/branches/stable/heroku-windows-386.exe'

@@ -1,6 +1,0 @@
-﻿VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
- 
-1. Download latest version from http://energia.nu/download/#latestrelease
-2. Compare downloaded exe hash with bundled hash
