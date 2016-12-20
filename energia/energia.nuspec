@@ -6,7 +6,7 @@
     <version>1.6.10.18</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>ludicrousByte</owners>
-    <title>Energia (Install)</title>
+    <title>Energia</title>
     <authors>Robert Wessels</authors>
     <projectUrl>http://energia.nu/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/energia-icon/icons/energia.png</iconUrl>
