@@ -16,7 +16,7 @@
     <docsUrl>https://www.gnupg.org/documentation/manuals/gnupg/</docsUrl>
     <mailingListUrl>https://lists.gnupg.org/pipermail/gnupg-users/</mailingListUrl>
     <bugTrackerUrl>https://bugs.gnupg.org/gnupg/index</bugTrackerUrl>
-    <tags>gnupg modern admin pgp openpgp encrypt rfc4880 security aes rsa signature</tags>
+    <tags>gnupg-modern gnupg admin pgp openpgp encrypt rfc4880 security aes rsa signature</tags>
     <summary>GnuPG is a complete and free implementation of the OpenPGP standard as defined by RFC4880 (also known as PGP)</summary>
     <description>
 
