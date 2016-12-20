@@ -1,0 +1,16 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+1. Download installer:
+
+    x32: https://cli-assets.heroku.com/branches/stable/heroku-windows-386.exe
+    x64: https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe
+
+
+2. You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+
+    checksum32: f376344f30243dedf2101bdae556c19d465dd1ec398958ac98211db4cacc437b
+    checksum64: 9977289c0d4ee42f385ba5545c1536a344623ba049526af186338bf3198588a6
