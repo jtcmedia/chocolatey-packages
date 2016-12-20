@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $packageName= 'gnupg-modern'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.1.16_20161118.exe'
-$checksum32 = '14b17454b32f93099133056833b17dafc76946560be4439fb1894d5dc52fd9dc'
+$url        = 'https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.1.17_20161220.exe'
+$checksum32 = 'f727fd5126f98dc7a0473a01e2fb404bd1870473bf4f6d15e3a29f8b5fa5ad23'
 
 $packageArgs = @{
   packageName   = $packageName
