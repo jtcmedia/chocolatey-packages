@@ -16,14 +16,14 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$files = get-childitem $toolsDir -include *.exe -recurse
+$files = Get-ChildItem $toolsDir -Include *.exe -Recurse
 
 foreach ($file in $files) {
   if (!($file.Name.Equals("energia.exe"))) {
     #generate an ignore file
-    New-Item "$file.ignore" -type file -force | Out-Null
+    New-Item "$file.ignore" -type file -Force | Out-Null
   }
   else {
-	New-Item "$file.gui" -type file -force | Out-Null
+    New-Item "$file.gui" -type file -Force | Out-Null
   }
 }
