@@ -9,9 +9,6 @@ function global:au_SearchReplace {
         ".\tools\chocolateyinstall.ps1" = @{
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-        ".\tools\VERIFICATION.txt" = @{
-            "(?i)(\s+checksum32:).*"    = "`${1} $($Latest.Checksum32)"
-        }
     }
 }
 
