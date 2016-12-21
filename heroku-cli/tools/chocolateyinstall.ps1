@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 $packageName = 'heroku-cli'
 
 #First need to uninstall old toolbelt pkg if installed
