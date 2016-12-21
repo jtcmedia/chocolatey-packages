@@ -12,5 +12,9 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-    checksum32: ff234e8d966111a65d4049ea0fd77d4b433bb568d2816b5c8d58d87fd97c83c9
-    checksum64: ac7aef7f77c947f0b75022156d7cc5bfebdec1e258ffdcf641de1dcd9c5f5224
+    checksum32: 8E533DCA6B3516626DA5147CE46CCC2F61AAC65E44C0DF6FC8251336E4F39861
+    checksum64: DC84D9D737E764748A9175745E56CEE4EE3ADA9A25E0B83D452D014F656489DB
+
+   Using AU:
+    
+    Get-RemoteChecksum https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe

@@ -24,27 +24,21 @@ if ($key.Count -eq 1) {
 Remove-Item $env:USERPROFILE\.config\heroku -Recurse -ErrorAction SilentlyContinue -Force
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://cli-assets.heroku.com/branches/stable/heroku-windows-386.exe'
-$url64      = 'https://cli-assets.heroku.com/branches/stable/heroku-windows-amd64.exe'
-$checksum32 = 'ff234e8d966111a65d4049ea0fd77d4b433bb568d2816b5c8d58d87fd97c83c9'
-$checksum64 = 'ac7aef7f77c947f0b75022156d7cc5bfebdec1e258ffdcf641de1dcd9c5f5224'
+
+$installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
+         Write-Host "Installing x64 bit version"; Get-Item "$toolsDir\*_x64.exe"
+} else { Write-Host "Installing x32 bit version"; Get-Item "$toolsDir\*_x32.exe" }
 
 $packageArgs = @{
   packageName   = $packageName
-  unzipLocation = $toolsDir
   fileType      = 'EXE'
-  url           = $url32
-  url64bit      = $url64
-
+  file          = $installerFile
   softwareName  = 'Heroku CLI*'
-
-  checksum      = $checksum32
-  checksumType  = 'sha256'
-  checksum64    = $checksum64
-  checksumType64= 'sha256'
-  
   silentArgs   = '/S'
   validExitCodes= @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+
+# Don't need installers anymore
+Remove-Item ($toolsDir + '\*.' + $packageArgs.fileType)
