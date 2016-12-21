@@ -40,5 +40,6 @@ The source code for your application, together with the dependency file, should 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
