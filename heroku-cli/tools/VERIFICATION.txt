@@ -1,4 +1,4 @@
-﻿VERIFICATION
+VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
@@ -12,5 +12,5 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-    checksum32: ff234e8d966111a65d4049ea0fd77d4b433bb568d2816b5c8d58d87fd97c83c9
-    checksum64: ac7aef7f77c947f0b75022156d7cc5bfebdec1e258ffdcf641de1dcd9c5f5224
+    checksum32: 8e533dca6b3516626da5147ce46ccc2f61aac65e44c0df6fc8251336e4f39861
+    checksum64: dc84d9d737e764748a9175745e56cee4ee3ada9a25e0b83d452d014f656489db
