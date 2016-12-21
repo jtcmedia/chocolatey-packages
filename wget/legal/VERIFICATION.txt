@@ -13,3 +13,6 @@ in verifying that this package's contents are trustworthy.
 
     checksum32: 1E958D913FC1839B7CFB753DB1D4F40C11A9B064E6ED3CA4876C0C406BCE8735
     checksum64: 1A0C1B5E4F2A62271C8881780E8949B5E5BE0E022C993E0D4E654E5FB796F150
+
+    Using AU:
+        Get-RemoteChecksum https://eternallybored.org/misc/wget/releases/wget-1.18-win64.zip

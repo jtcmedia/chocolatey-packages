@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wget</id>
-    <version>1.18.0.20161210</version>
+    <version>1.18</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>GNU Wget</title>
@@ -16,7 +16,7 @@
     <projectSourceUrl>http://ftp.gnu.org/gnu/wget/</projectSourceUrl>
     <docsUrl>https://www.gnu.org/software/wget/manual/</docsUrl>
     <bugTrackerUrl>http://lists.gnu.org/mailman/listinfo/bug-wget</bugTrackerUrl>
-    <tags>wget download http https ftp commandline</tags>
+    <tags>wget download http https ftp cli foss cross-platform</tags>
     <summary>A command-line utility for retrieving files using HTTP, HTTPS and FTP protocols.</summary>
     <description>
 
@@ -43,5 +43,6 @@ GNU Wget has many features to make retrieving large files or mirroring entire we
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
