@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>6.9.2</version>
+    <version>6.9.2.20161222</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Node.js LTS (Install)</title>
@@ -33,5 +33,6 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
    </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
