@@ -33,7 +33,7 @@ $packageArgs = @{
   packageName   = $packageName
   fileType      = 'EXE'
   file          = $installerFile
-  softwareName  = 'Heroku CLI*'
+  softwareName  = 'Heroku CLI'
   silentArgs   = '/S'
   validExitCodes= @(0)
 }
