@@ -21,7 +21,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.msi$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -Skip 1 -expand href
