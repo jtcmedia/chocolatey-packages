@@ -11,3 +11,6 @@ in verifying that this package's contents are trustworthy.
     - Use Chocolatey utility 'checksum.exe'
 
     checksum32: 75CCA48CD34B14971FB6A51F86104A485E263B972B2F5CDB9344ED639CF889D1
+    
+    Using AU:
+        Get-RemoteChecksum https://bitbucket.org/gaubert/gmvault-official-download/downloads/gmvault_installer_v1.9.1.exe
