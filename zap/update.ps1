@@ -5,7 +5,7 @@ $releases = 'https://github.com/zaproxy/zaproxy/wiki/Downloads'
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
+            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	
 	$version = $url -split '_' | select -Index 1
 	
-	return @{ URL = $url; Version = $version }
+	return @{ URL32 = $url; Version = $version }
 }
 
 update -ChecksumFor 32
