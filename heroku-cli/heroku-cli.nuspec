@@ -35,7 +35,7 @@ The source code for your application, together with the dependency file, should 
 * [Changelog](https://github.com/heroku/cli/blob/master/CHANGELOG)
     </releaseNotes>
     <dependencies>
-      <dependency id="git" version="2.8" />
+      <dependency id="git" version="2.8.1" />
     </dependencies>
   </metadata>
   <files>
