@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 
 $packageName= 'fs-uae'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://fs-uae.net/stable/2.8.2u2/fs-uae-suite_2.8.2u2_windows_x86.exe'
-$url64      = 'https://fs-uae.net/stable/2.8.2u2/fs-uae-suite_2.8.2u2_windows_x86-64.exe'
-$checksum32 = '30e48c0285f8349016c9f3315fcc56e8895a9ef8d42f2a7cd6e99eec9261a3a3'
-$checksum64 = '5725a3ccd49256f531b394f65c1327f6df64b234f2c94b9668cc68550eaab816'
+$url32      = 'https://fs-uae.net/stable/2.8.3/fs-uae-suite_2.8.3_windows_x86.exe'
+$url64      = 'https://fs-uae.net/stable/2.8.3/fs-uae-suite_2.8.3_windows_x86-64.exe'
+$checksum32 = 'ae65cbff51e31a03c5329f0aedc940378702c8f05e5df91037eef8acb51af6db'
+$checksum64 = '10265623e153c87b34a1eb50b08fa8dd61664741c0d30f57391b9953821dacec'
 
 $packageArgs = @{
   packageName   = $packageName

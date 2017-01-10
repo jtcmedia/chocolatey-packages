@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $packageName= 'torguard-client'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
-$checksum32 = '646ba131a1e66abd31e1782b3d1b166cf0d05b5d9de5e390331deaa1a040a01a'
+$checksum32 = 'f07d7dffe6e3c14ac70c9e7a1a1eb2884caea3df8225bf93236c377e25f6e8c1'
 
 $packageArgs = @{
   packageName   = $packageName
