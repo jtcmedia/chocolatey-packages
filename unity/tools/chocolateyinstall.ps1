@@ -2,15 +2,15 @@
 
 $packageName   = 'unity'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32         = 'http://netstorage.unity3d.com/unity/38b4efef76f0/Windows32EditorInstaller/UnitySetup32-5.5.0f3.exe'
-$url64         = 'http://netstorage.unity3d.com/unity/38b4efef76f0/Windows64EditorInstaller/UnitySetup64-5.5.0f3.exe'
+$url32         = 'http://download.unity3d.com/download_unity/38b4efef76f0/Windows32EditorInstaller/UnitySetup32-5.5.0f3.exe'
+$url64         = 'http://download.unity3d.com/download_unity/38b4efef76f0/Windows64EditorInstaller/UnitySetup64-5.5.0f3.exe'
 $checksum32    = '63ba231501656aa3a733a2ca2d11a1ed755e52206a3a5aeb81407f1db0a30f2a'
 $checksum64    = '34ed4e70d9f152fcc14e25aac816d237b542828490f7ad09579073734eb180e6'
-$url_sa        = 'http://netstorage.unity3d.com/unity/38b4efef76f0/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-5.5.0f3.exe'
+$url_sa        = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-5.5.0f3.exe'
 $checksum_sa   = 'c77681ae9612f956351ebd19a9cdac3990e02b0b6be566b3d8ec69c5f714fe15'
-$url_ep        = 'http://netstorage.unity3d.com/unity/38b4efef76f0/WindowsExampleProjectInstaller/UnityExampleProjectSetup-5.5.0f3.exe'
+$url_ep        = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsExampleProjectInstaller/UnityExampleProjectSetup-5.5.0f3.exe'
 $checksum_ep   = 'f6aa75ecdcf069f7ea3da5577e6709fcda4942622d9fc1e52a74bda392a3c3c7'
-$url_docs      = 'http://netstorage.unity3d.com/unity/38b4efef76f0/WindowsDocumentationInstaller/UnityDocumentationSetup-5.5.0f3.exe'
+$url_docs      = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsDocumentationInstaller/UnityDocumentationSetup-5.5.0f3.exe'
 $checksum_docs = '005995880702efa3e33c603783a64d394a4ed408a683b6eddb2ab8297453acde'
 
 $packageArgs = @{

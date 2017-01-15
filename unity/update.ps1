@@ -1,7 +1,7 @@
 import-module au
 import-module "$Env:ChocolateyInstall\extensions\chocolatey-core\*.psm1"
 
-$releases = 'https://unity3d.com/get-unity/download/archive'
+$releases = 'https://unity3d.com/get-unity/update'
 
 function global:au_SearchReplace {
     @{
@@ -24,16 +24,22 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 4 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    $exe_ver = $url[0] -split '-' | select -Last 1
+    $exe_ver = $url -split '-' | select -Last 1
     $version = $exe_ver -split 'f' | select -First 1
-    
-    $build = $url[0] -split '/' | select -Last 1 -Skip 2
+    $build = $url -split '/' | select -Last 1 -Skip 2
    
-    $url_docs = "http://netstorage.unity3d.com/unity/$build/WindowsDocumentationInstaller/UnityDocumentationSetup-$exe_ver" 
+    $base_url = "http://download.unity3d.com/download_unity/$build"
     
-    return @{ URL32 = $url[1]; URL64 = $url[0]; Version = $version; URLsa = $url[2]; URLep = $url[3]; URLDocs = $url_docs }
+    $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
+    $url64 = $url32 -replace '32','64'
+    
+    $url_sa   = "$base_url/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-$exe_ver"
+    $url_ep   = "$base_url/WindowsExampleProjectInstaller/UnityExampleProjectSetup-$exe_ver"
+    $url_docs = "$base_url/WindowsDocumentationInstaller/UnityDocumentationSetup-$exe_ver" 
+    
+    return @{ URL32 = $url32; URL64 = $url64; Version = $version; URLsa = $url_sa; URLep = $url_ep; URLDocs = $url_docs }
 }
 
 update
