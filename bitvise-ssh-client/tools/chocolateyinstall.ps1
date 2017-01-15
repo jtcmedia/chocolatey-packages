@@ -1,9 +1,9 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $packageName= 'bitvise-ssh-client'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://bvdl.s3-eu-west-1.amazonaws.com/BvSshClient-Inst.exe'
-$checksum32 = '062821e10ae14ef2046891f55dd47c96b739e44c460ac6ad5f1e1cb3b5857095'
+$checksum32 = '54023c4c065a9c5a782acd2f8d7ce05f23e6430ec1c8fb0b8de3738dda42db2f'
 
 $packageArgs = @{
   packageName   = $packageName
