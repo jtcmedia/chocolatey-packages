@@ -30,18 +30,19 @@ $packageArgs = @{
 Install-ChocolateyPackage @packageArgs
 
 $pp = Get-PackageParameters
-if ($pp.StandardAssets) { Write-Host 'Param: The Standard Assets will be installed' }
-if ($pp.ExampleProject) { Write-Host 'Param: The Example Project will be installed' }
-if ($pp.Documentation) { Write-Host 'Param: Unity Documentation will be installed' }
+if ($pp.sa) { Write-Host 'Param: The Standard Assets will be installed' }
+if ($pp.ep) { Write-Host 'Param: The Example Project will be installed' }
+if ($pp.docs) { Write-Host 'Param: Unity Documentation will be installed' }
 
-if ($pp.StandardAssets) {
+if ($pp.sa) {
     Write-Host 'Installing Standard Assets...'
     
+    $sa_exe = $url_sa -split '/' | select -Last 1
+    
     $packageArgs = @{
-        packageName   = $packageName
+        packageName   = "$packageName-standard-assets"
         fileType      = 'EXE'
         url           = $url_sa
-        softwareName  = 'Unity'
         checksum      = $checksum_sa
         checksumType  = 'sha256'
         silentArgs   = '/S'
@@ -49,16 +50,16 @@ if ($pp.StandardAssets) {
     }
     
     Install-ChocolateyPackage @packageArgs
+    
 }
 
-if ($pp.ExampleProject) {
+if ($pp.ep) {
     Write-Host 'Installing the Example Project...'
     
     $packageArgs = @{
-        packageName   = $packageName
+        packageName   = "$packageName-example-project"
         fileType      = 'EXE'
         url           = $url_ep
-        softwareName  = 'Unity'
         checksum      = $checksum_ep
         checksumType  = 'sha256'
         silentArgs   = '/S'
@@ -68,14 +69,13 @@ if ($pp.ExampleProject) {
     Install-ChocolateyPackage @packageArgs
 }
 
-if ($pp.Documentation) {
+if ($pp.docs) {
     Write-Host 'Installing Documentation...'
     
     $packageArgs = @{
-        packageName   = $packageName
+        packageName   = "$packageName-docs"
         fileType      = 'EXE'
         url           = $url_docs
-        softwareName  = 'Unity'
         checksum      = $checksum_docs
         checksumType  = 'sha256'
         silentArgs   = '/S'

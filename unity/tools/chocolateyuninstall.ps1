@@ -29,3 +29,6 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $_.DisplayName"}
 }
+
+# Remove Example Project if installed
+Remove-Item "$env:PUBLIC\Documents\Unity Projects\Standard Assets Example Project" -Recurse -ErrorAction SilentlyContinue -Force
