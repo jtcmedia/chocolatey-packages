@@ -37,8 +37,6 @@ if ($pp.docs) { Write-Host 'Param: Unity Documentation will be installed' }
 if ($pp.sa) {
     Write-Host 'Installing Standard Assets...'
     
-    $sa_exe = $url_sa -split '/' | select -Last 1
-    
     $packageArgs = @{
         packageName   = "$packageName-standard-assets"
         fileType      = 'EXE'
