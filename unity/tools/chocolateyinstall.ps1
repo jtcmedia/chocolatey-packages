@@ -2,16 +2,16 @@
 
 $packageName   = 'unity'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32         = 'http://download.unity3d.com/download_unity/38b4efef76f0/Windows32EditorInstaller/UnitySetup32-5.5.0f3.exe'
-$url64         = 'http://download.unity3d.com/download_unity/38b4efef76f0/Windows64EditorInstaller/UnitySetup64-5.5.0f3.exe'
-$checksum32    = '63ba231501656aa3a733a2ca2d11a1ed755e52206a3a5aeb81407f1db0a30f2a'
-$checksum64    = '34ed4e70d9f152fcc14e25aac816d237b542828490f7ad09579073734eb180e6'
-$url_sa        = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-5.5.0f3.exe'
-$checksum_sa   = 'c77681ae9612f956351ebd19a9cdac3990e02b0b6be566b3d8ec69c5f714fe15'
-$url_ep        = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsExampleProjectInstaller/UnityExampleProjectSetup-5.5.0f3.exe'
-$checksum_ep   = 'f6aa75ecdcf069f7ea3da5577e6709fcda4942622d9fc1e52a74bda392a3c3c7'
-$url_docs      = 'http://download.unity3d.com/download_unity/38b4efef76f0/WindowsDocumentationInstaller/UnityDocumentationSetup-5.5.0f3.exe'
-$checksum_docs = '005995880702efa3e33c603783a64d394a4ed408a683b6eddb2ab8297453acde'
+$url32         = 'http://download.unity3d.com/download_unity/88d00a7498cd/Windows32EditorInstaller/UnitySetup32-5.5.1f1.exe'
+$url64         = 'http://download.unity3d.com/download_unity/88d00a7498cd/Windows64EditorInstaller/UnitySetup64-5.5.1f1.exe'
+$checksum32    = '74dde7aaa68e072c2348e078b040db03eee5d4b9f2b18b5e9b45c22a7a2a2f50'
+$checksum64    = '345a8df2c66082f10d48ef3870b669235ef181825ec224595b0e013929d2bb1a'
+$url_sa        = 'http://download.unity3d.com/download_unity/88d00a7498cd/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-5.5.1f1.exe'
+$checksum_sa   = '4840a961dc62f8c7aced1753049a2e12e56c82f6d6e850413743710f10e66a52'
+$url_ep        = 'http://download.unity3d.com/download_unity/88d00a7498cd/WindowsExampleProjectInstaller/UnityExampleProjectSetup-5.5.1f1.exe'
+$checksum_ep   = 'c95f1767386d4b33064d496aeb917689e5cb46b6a56b09b14edba7035259303e'
+$url_docs      = 'http://download.unity3d.com/download_unity/88d00a7498cd/WindowsDocumentationInstaller/UnityDocumentationSetup-5.5.1f1.exe'
+$checksum_docs = '0a41fabe56940cacd1195ddd9d6a9d8ccac19adc37e3dd4325180be25ed23d7d'
 
 $packageArgs = @{
   packageName   = $packageName
