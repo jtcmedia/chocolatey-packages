@@ -67,7 +67,7 @@ $pp.GetEnumerator() | % {
         "webgl"     {$pname = "WebGL Target Support"}
         "sa"        {$pname = "The Standard Assets"}
         "ep"        {$pname = "The Example Project"}
-        "docs"      {$pname = "Unity Documentation Target Support"}
+        "docs"      {$pname = "Unity Documentation"}
         default     {$pname = ""; Write-Host "Couldn't find the package " + $pp.key}
     }
 
