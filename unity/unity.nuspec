@@ -93,9 +93,20 @@ The following package parameters can be set:
  * `/sa` - Install Standard Assets.
  * `/ep` - Install the Example Project.
  * `/docs` - Install the Documentation.
-
+ #### Target Support
+ * `/metro` - Install Windows Store (.NET) Target Support.
+ * `/il2cpp` - Install Windows Store (IL2CPP) Target Support.
+ * `/android` - Install Android Target Support.
+ * `/ios` - Install iOS Target Support.
+ * `/appletv` - Install Apple TV Target Support.
+ * `/linux` - Install Linux Target Support.
+ * `/mac` - Install Mac Target Support.
+ * `/samsungtv` - Install Samsung TV Target Support.
+ * `/tizen` - Install Tizen Target Support.
+ * `/webgl` - Install WebGL Target Support.
+ 
 These parameters can be passed to the installer with the use of `-params`.
-For example: `choco install unity -params '"/sa /docs"'`.
+For example: `choco install unity -params '"/sa /docs /webgl"'`.
 
     </description>
     <releaseNotes>
