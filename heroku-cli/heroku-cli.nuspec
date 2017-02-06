@@ -11,7 +11,7 @@
     <projectUrl>https://cli.heroku.com/</projectUrl>
     <projectSourceUrl>https://github.com/heroku/cli</projectSourceUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
-    <copyright>© 2016 Heroku, Inc.</copyright>
+    <copyright>© 2017 Heroku, Inc.</copyright>
     <licenseUrl>https://github.com/heroku/cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://devcenter.heroku.com/categories/command-line</docsUrl>
