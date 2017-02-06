@@ -77,7 +77,7 @@ function global:au_GetLatest {
         URLil2cpp = $url_il2cpp
         URLandroid = $url_android
         URLios = $url_ios
-        URappletv = $url_appletv
+        URLappletv = $url_appletv
         URLlinux = $url_linux
         URLmac = $url_mac
         URLsamsungtv = $url_samsungtv
