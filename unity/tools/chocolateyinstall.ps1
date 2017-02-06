@@ -57,7 +57,7 @@ $pp.GetEnumerator() | % {
     {
         "metro"     {$pname = "Windows Store (.NET) Target Support"}
         "il2cpp"    {$pname = "Windows Store (IL2CPP) Target Support"}
-        "android"   {$pname = "Android Target Support Target Support"}
+        "android"   {$pname = "Android Target Support"}
         "ios"       {$pname = "iOS Target Support"}
         "appletv"   {$pname = "Apple TV Target Support"}
         "linux"     {$pname = "Linux Target Support"}
@@ -73,7 +73,7 @@ $pp.GetEnumerator() | % {
 
     if($pname){
 
-      Write-Host "Installing $pname";
+      Write-Host "Installing $pname.";
 
       $t = $_.Key
 
