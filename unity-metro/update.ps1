@@ -8,6 +8,10 @@ function global:au_SearchReplace {
             "(^[$]url32\s*=\s*)('.*')"                = "`$1'$($Latest.URL32)'"
             "(^[$]checksum32\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
         }
+        
+        ".\unity-metro.nuspec" = @{
+            '(id="unity"[^\[]*)(\[[\d\.]*\])(.*)'     = "`$1[$($Latest.Version)]`$3"
+        }
     }
 }
 
@@ -20,7 +24,7 @@ function global:au_GetLatest {
     $exe_ver = $url -split '-' | select -Last 1
     $version = $exe_ver -split 'f' | select -First 1
     $build = $url -split '/' | select -Last 1 -Skip 2
-   
+    
     $base_url = "http://download.unity3d.com/download_unity/$build"
     
     $url32 = "$base_url/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-$exe_ver"
