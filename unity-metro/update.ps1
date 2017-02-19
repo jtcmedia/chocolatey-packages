@@ -5,12 +5,12 @@ $releases = 'https://unity3d.com/get-unity/update'
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url32\s*=\s*)('.*')"                = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
+            "(^[$]url32\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum32\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
         }
         
         ".\unity-metro.nuspec" = @{
-            '(id="unity"[^\[]*)(\[[\d\.]*\])(.*)'     = "`$1[$($Latest.Version)]`$3"
+            '(^\s*<dependency id="unity".*)(\[.*\])(.*)'        = "`$1[$($Latest.Version)]`$3"
         }
     }
 }
