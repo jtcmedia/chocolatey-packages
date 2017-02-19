@@ -1,5 +1,5 @@
 import-module au
-import-module "$Env:ChocolateyInstall\extensions\chocolatey-core\*.psm1"
+#import-module "$Env:ChocolateyInstall\extensions\chocolatey-core\*.psm1"
 
 $releases = 'https://unity3d.com/get-unity/update'
 
@@ -10,8 +10,6 @@ function global:au_SearchReplace {
             "(^[$]url64\s*=\s*)('.*')"                = "`$1'$($Latest.URL64)'"
             "(^[$]checksum32\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
             "(^[$]checksum64\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum64)'"
-            "(^[$]url_metro\s*=\s*)('.*')"            = "`$1'$($Latest.URLmetro)'"
-            "(^[$]checksum_metro\s*=\s*)('.*')"       = "`$1'$(Get-RemoteChecksum $Latest.URLmetro)'"
             "(^[$]url_il2cpp\s*=\s*)('.*')"           = "`$1'$($Latest.URLil2cpp)'"
             "(^[$]checksum_il2cpp\s*=\s*)('.*')"      = "`$1'$(Get-RemoteChecksum $Latest.URLil2cpp)'"
             "(^[$]url_android\s*=\s*)('.*')"          = "`$1'$($Latest.URLandroid)'"
@@ -55,7 +53,6 @@ function global:au_GetLatest {
     $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
     $url64 = $url32 -replace '32','64'
     
-    $url_metro     = "$base_url/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-$exe_ver"
     $url_il2cpp    = "$base_url/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-$exe_ver"
     $url_android   = "$base_url/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-$exe_ver"
     $url_ios       = "$base_url/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-$exe_ver"
@@ -73,7 +70,6 @@ function global:au_GetLatest {
         URL32 = $url32
         URL64 = $url64
         Version = $version
-        URLmetro = $url_metro
         URLil2cpp = $url_il2cpp
         URLandroid = $url_android
         URLios = $url_ios

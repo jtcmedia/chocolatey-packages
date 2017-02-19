@@ -94,7 +94,6 @@ The following package parameters can be set:
  * `/ep` - Install the Example Project.
  * `/docs` - Install the Documentation.
  #### Target Support
- * `/metro` - Install Windows Store (.NET) Target Support.
  * `/il2cpp` - Install Windows Store (IL2CPP) Target Support.
  * `/android` - Install Android Target Support.
  * `/ios` - Install iOS Target Support.
