@@ -50,7 +50,7 @@ function global:au_GetLatest {
         URLmetro = $url_metro
         ChecksumMetro = Get-RemoteChecksum $url_metro
         URLil2cpp = $url_il2cpp
-        ChecksumIl2cpp Get-RemoteChecksum $url_il2cpp
+        ChecksumIl2cpp = Get-RemoteChecksum $url_il2cpp
         URLandroid = $url_android
         ChecksumAndroid = Get-RemoteChecksum $url_android
         URLios = $url_ios
