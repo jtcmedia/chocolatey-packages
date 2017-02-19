@@ -22,7 +22,7 @@ This package adds Windows Store (.NET) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[5.5.1]" />
+      <dependency id="unity" version="5.5.1" />
     </dependencies>
   </metadata>
   <files>
