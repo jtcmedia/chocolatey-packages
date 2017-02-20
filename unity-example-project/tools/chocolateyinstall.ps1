@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName    = 'unity-sa'
+$packageName    = 'unity-example-project'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://download.unity3d.com/download_unity/88d00a7498cd/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-5.5.1f1.exe'
-$checksum       = '4840a961dc62f8c7aced1753049a2e12e56c82f6d6e850413743710f10e66a52'
+$url            = 'https://download.unity3d.com/download_unity/88d00a7498cd/WindowsExampleProjectInstaller/UnityExampleProjectSetup-5.5.1f1.exe'
+$checksum       = 'c95f1767386d4b33064d496aeb917689e5cb46b6a56b09b14edba7035259303e'
 
 $packageArgs = @{
   packageName    = $packageName

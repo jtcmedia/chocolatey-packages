@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>unity-sa</id>
+    <id>unity-example-project</id>
     <version>5.5.1</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-sa</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-example-project</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>Unity Standard Assets</title>
+    <title>Unity Example Project</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
@@ -13,10 +13,10 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin standard assets</tags>
-    <summary>This package adds the Standard Assets to Unity.</summary>
+    <tags>unity admin example project</tags>
+    <summary>This package adds the Example Project to Unity.</summary>
     <description>
-This package adds the Standard Assets to Unity.
+This package adds the Example Project to Unity.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
