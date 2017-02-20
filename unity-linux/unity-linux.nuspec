@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>unity-linux</id>
+    <version>5.5.1</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>Unity Linux Target Support</title>
+    <authors>Unity Technologies</authors>
+    <projectUrl>https://unity3d.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
+    <copyright>Copyright 2017 Unity Technologies</copyright>
+    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
+    <tags>unity admin linux windows store .net</tags>
+    <summary>This package adds Linux Target Support to Unity.</summary>
+    <description>
+This package adds Linux Target Support to Unity.
+    </description>
+    <releaseNotes>
+* [Release Notes](https://unity3d.com/unity/whats-new/)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="unity" version="5.5.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
