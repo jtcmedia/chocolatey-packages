@@ -24,7 +24,7 @@ function global:au_GetLatest {
     $version = $exe_ver -split 'f' | select -First 1
     $build = $url -split '/' | select -Last 1 -Skip 2
    
-    $base_url = "http://download.unity3d.com/download_unity/$build"
+    $base_url = "https://download.unity3d.com/download_unity/$build"
     
     $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
     $url64 = $url32 -replace '32','64'
