@@ -5,3 +5,9 @@
 [chocolatey/ludicrousByte](https://chocolatey.org/profiles/ludicrousByte)
 
 This repository contains [Chocolatey](http://chocolatey.org) packages [automatically](https://chocolatey.org/docs/automatic-packages) maintained by [au](https://github.com/majkinetor/au).
+
+## Development dependencies
+
+```shell
+choco install -y au
+```
