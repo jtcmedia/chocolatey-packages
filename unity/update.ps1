@@ -29,7 +29,6 @@ function global:au_GetLatest {
     $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
     $url64 = $url32 -replace '32','64'
     
-    $url_metro     = "$base_url/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-$exe_ver"
     $url_il2cpp    = "$base_url/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-$exe_ver"
     $url_android   = "$base_url/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-$exe_ver"
     $url_ios       = "$base_url/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-$exe_ver"
@@ -47,35 +46,19 @@ function global:au_GetLatest {
         URL32 = $url32
         URL64 = $url64
         Version = $version
-        URLmetro = $url_metro
-        ChecksumMetro = Get-RemoteChecksum $url_metro
         URLil2cpp = $url_il2cpp
-        ChecksumIl2cpp = Get-RemoteChecksum $url_il2cpp
         URLandroid = $url_android
-        ChecksumAndroid = Get-RemoteChecksum $url_android
         URLios = $url_ios
-        ChecksumIos = Get-RemoteChecksum $url_ios
         URLappletv = $url_appletv
-        ChecksumAppletv = Get-RemoteChecksum $url_appletv
         URLlinux = $url_linux
-        ChecksumLinux = Get-RemoteChecksum $url_linux
         URLmac = $url_mac
-        ChecksumMac = Get-RemoteChecksum $url_mac
         URLsamsungtv = $url_samsungtv
-        ChecksumSamsungtv = Get-RemoteChecksum $url_samsungtv
         URLtizen = $url_tizen
-        ChecksumTizen = Get-RemoteChecksum $url_tizen
         URLwebgl = $url_webgl
-        ChecksumWebgl = Get-RemoteChecksum $url_webgl
         URLsa = $url_sa
-        ChecksumSa = Get-RemoteChecksum $url_sa
         URLep = $url_ep
-        ChecksumEp = Get-RemoteChecksum $url_ep
         URLdocs = $url_docs
-        ChecksumDocs = Get-RemoteChecksum $url_docs
     }
 }
 
-if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
-    update
-}
+update
