@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>unity-il2</id>
+    <id>unity-il2cpp</id>
     <version>5.5.1</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-il2</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-il2cpp</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Windows Store (IL2CPP) Target Support</title>
     <authors>Unity Technologies</authors>
@@ -13,7 +13,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin il2 windows store .net</tags>
+    <tags>unity admin il2cpp target</tags>
     <summary>This package adds Windows Store (IL2CPP) Target Support to Unity.</summary>
     <description>
 This package adds Windows Store (IL2CPP) Target Support to Unity.
