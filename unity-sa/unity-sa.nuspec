@@ -13,10 +13,10 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin sa windows store .net</tags>
-    <summary>This package adds Standard Assets to Unity.</summary>
+    <tags>unity admin standard assets</tags>
+    <summary>This package adds the Standard Assets to Unity.</summary>
     <description>
-This package adds Standard Assets to Unity.
+This package adds the Standard Assets to Unity.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)

@@ -14,9 +14,9 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity admin docs</tags>
-    <summary>This package adds Documentation to Unity.</summary>
+    <summary>This package installs Unity's documentation locally.</summary>
     <description>
-This package adds Documentation to Unity.
+This package installs Unity's documentation locally.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)

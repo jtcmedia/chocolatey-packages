@@ -13,7 +13,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin ios windows store .net</tags>
+    <tags>unity admin ios target</tags>
     <summary>This package adds iOS Target Support to Unity.</summary>
     <description>
 This package adds iOS Target Support to Unity.

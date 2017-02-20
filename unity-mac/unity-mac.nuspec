@@ -13,7 +13,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin mac windows store .net</tags>
+    <tags>unity admin mac target</tags>
     <summary>This package adds Mac Target Support to Unity.</summary>
     <description>
 This package adds Mac Target Support to Unity.

@@ -13,10 +13,10 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin ep windows store .net</tags>
-    <summary>This package adds The Example Project to Unity.</summary>
+    <tags>unity admin example project</tags>
+    <summary>This package adds the Example Project to Unity.</summary>
     <description>
-This package adds The Example Project to Unity.
+This package adds the Example Project to Unity.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
