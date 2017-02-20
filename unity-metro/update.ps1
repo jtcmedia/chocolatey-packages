@@ -29,9 +29,9 @@ function global:au_GetLatest {
    
     $base_url = "http://download.unity3d.com/download_unity/$build"
     
-    $url_metro = "$base_url/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-$exe_ver"
+    $url = "$base_url/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-$exe_ver"
     
-    return @{ URL32 = $url_metro; Version = $version }
+    return @{ URL32 = $url; Version = $version }
 }
 
 update -ChecksumFor 32

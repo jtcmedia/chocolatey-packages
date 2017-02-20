@@ -6,8 +6,6 @@ $url32              = 'https://download.unity3d.com/download_unity/88d00a7498cd/
 $url64              = 'https://download.unity3d.com/download_unity/88d00a7498cd/Windows64EditorInstaller/UnitySetup64-5.5.1f1.exe'
 $checksum32         = '74dde7aaa68e072c2348e078b040db03eee5d4b9f2b18b5e9b45c22a7a2a2f50'
 $checksum64         = '345a8df2c66082f10d48ef3870b669235ef181825ec224595b0e013929d2bb1a'
-$url_metro          = 'https://download.unity3d.com/download_unity/88d00a7498cd/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-5.5.1f1.exe'
-$checksum_metro     = '93D34700E4CABB5EC81AEAAEBACB65AD74CE8631267FCD1CEB6774F38CC3BE8C'
 $url_il2cpp         = 'https://download.unity3d.com/download_unity/88d00a7498cd/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-5.5.1f1.exe'
 $checksum_il2cpp    = '54752213D70A447A753B5C50B5CE4ADE82B2A04B0600302010973FADEA863B9E'
 $url_android        = 'https://download.unity3d.com/download_unity/88d00a7498cd/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-5.5.1f1.exe'
@@ -55,7 +53,6 @@ $pp.GetEnumerator() | % {
 
   switch ($_.Key)
     {
-        "metro"     {$pname = "Windows Store (.NET) Target Support"}
         "il2cpp"    {$pname = "Windows Store (IL2CPP) Target Support"}
         "android"   {$pname = "Android Target Support"}
         "ios"       {$pname = "iOS Target Support"}
