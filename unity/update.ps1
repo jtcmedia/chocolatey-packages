@@ -24,40 +24,15 @@ function global:au_GetLatest {
     $version = $exe_ver -split 'f' | select -First 1
     $build = $url -split '/' | select -Last 1 -Skip 2
    
-    $base_url = "http://download.unity3d.com/download_unity/$build"
+    $base_url = "https://download.unity3d.com/download_unity/$build"
     
     $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
     $url64 = $url32 -replace '32','64'
-    
-    $url_il2cpp    = "$base_url/TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-$exe_ver"
-    $url_android   = "$base_url/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-$exe_ver"
-    $url_ios       = "$base_url/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-$exe_ver"
-    $url_appletv   = "$base_url/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-$exe_ver"
-    $url_linux     = "$base_url/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-$exe_ver"
-    $url_mac       = "$base_url/TargetSupportInstaller/UnitySetup-Mac-Support-for-Editor-$exe_ver"
-    $url_samsungtv = "$base_url/TargetSupportInstaller/UnitySetup-Samsung-TV-Support-for-Editor-$exe_ver"
-    $url_tizen     = "$base_url/TargetSupportInstaller/UnitySetup-Tizen-Support-for-Editor-$exe_ver"
-    $url_webgl     = "$base_url/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-$exe_ver"
-    $url_sa        = "$base_url/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-$exe_ver"
-    $url_ep        = "$base_url/WindowsExampleProjectInstaller/UnityExampleProjectSetup-$exe_ver"
-    $url_docs      = "$base_url/WindowsDocumentationInstaller/UnityDocumentationSetup-$exe_ver" 
     
     return @{
         URL32 = $url32
         URL64 = $url64
         Version = $version
-        URLil2cpp = $url_il2cpp
-        URLandroid = $url_android
-        URLios = $url_ios
-        URLappletv = $url_appletv
-        URLlinux = $url_linux
-        URLmac = $url_mac
-        URLsamsungtv = $url_samsungtv
-        URLtizen = $url_tizen
-        URLwebgl = $url_webgl
-        URLsa = $url_sa
-        URLep = $url_ep
-        URLdocs = $url_docs
     }
 }
 
