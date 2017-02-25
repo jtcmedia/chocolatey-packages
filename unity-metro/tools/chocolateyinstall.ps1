@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-metro'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'http://download.unity3d.com/download_unity/88d00a7498cd/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-5.5.1f1.exe'
-$checksum       = '93d34700e4cabb5ec81aeaaebacb65ad74ce8631267fcd1ceb6774f38cc3be8c'
+$url            = 'https://download.unity3d.com/download_unity/3829d7f588f3/TargetSupportInstaller/UnitySetup-Metro-Support-for-Editor-5.5.2f1.exe'
+$checksum       = '895c15e322138329eb14cc30bd002d5cbed68138c9ecb7a05a456a211088aad0'
 
 $packageArgs = @{
   packageName    = $packageName

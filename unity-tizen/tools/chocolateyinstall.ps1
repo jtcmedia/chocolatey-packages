@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-tizen'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://download.unity3d.com/download_unity/88d00a7498cd/TargetSupportInstaller/UnitySetup-Tizen-Support-for-Editor-5.5.1f1.exe'
-$checksum       = 'b3a067d99813f9f18e9d6062dd29f651c64fe8e70b04f7ea1dea5d04bc5918c7'
+$url            = 'https://download.unity3d.com/download_unity/3829d7f588f3/TargetSupportInstaller/UnitySetup-Tizen-Support-for-Editor-5.5.2f1.exe'
+$checksum       = 'a01cd5a694b04439a2345746b3a89c1f667fa075111cbe8ddc1d59102b5676aa'
 
 $packageArgs = @{
   packageName    = $packageName
