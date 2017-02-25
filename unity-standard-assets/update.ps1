@@ -10,7 +10,7 @@ function global:au_SearchReplace {
             "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
         }
         
-        ".\unity-sa.nuspec" = @{
+        ".\unity-standard-assets.nuspec" = @{
             "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"$($Latest.Version)`""
         }
     }
