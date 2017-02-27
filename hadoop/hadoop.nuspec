@@ -32,26 +32,27 @@ The project includes these modules:
 ## Notes
 The package sets the HADOOP_HOME environment variable and adds HADOOP_HOME\bin to the machine path.
 
-The package by default will install to **C:\Hadoop\**. This location can be changed, see below.
+The package by default will unzip (install) to **C:\Hadoop\**. This location can be changed, see below.
 
 ## Package Parameters
 The following package parameters can be set:
 
- * `/installPath` - Install to a different path than default.
+ * `/unzipLocation` - Unzip to a different path than default.
 
 These parameters can be passed to the installer with the use of `-params`.
-For example: `choco install hadoop -params '"/installPath:D:\Hadoop"'`.
+For example: `choco install hadoop -params '"/unzipLocation:D:\Hadoop"'`.
 
     </description>
     <releaseNotes>
 [http://hadoop.apache.org/releases.html](http://hadoop.apache.org/releases.html)
     </releaseNotes>
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
       <dependency id="jdk8" version="8.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

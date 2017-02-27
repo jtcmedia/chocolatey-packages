@@ -4,3 +4,4 @@ update_vars.ps1
 *.zip
 *.exe
 *.msi
+*.gz
