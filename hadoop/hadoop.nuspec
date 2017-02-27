@@ -9,6 +9,7 @@
     <title>Hadoop</title>
     <authors>Apache Software Foundation</authors>
     <projectUrl>http://hadoop.apache.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/hadoop-icon/icons/hadoop.png</iconUrl>
     <copyright>Copyright © 2014 The Apache Software Foundation</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
