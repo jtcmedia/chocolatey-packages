@@ -30,9 +30,9 @@ The project includes these modules:
 * Hadoop MapReduce: A YARN-based system for parallel processing of large data sets.
 
 ## Notes
-The package sets the HADOOP_HOME environment variable and adds HADOOP_HOME\bin to the machine path.
+The package sets the HADOOP\_HOME environment variable and adds HADOOP\_HOME\bin to the machine path.
 
-The package by default will unzip to **C:\Hadoop\**. This location can be changed, see below.
+The package by default will unzip to **C:\Hadoop**. This location can be changed, see below.
 
 ## Package Parameters
 The following package parameters can be set:
