@@ -9,6 +9,7 @@ $checksum32     = 'D489DF3808244B906EB38F4D081BA49E50C4603DB03EFD5E594A1E98B0925
 
 # get closest mirror
 $get_mirror_page = Invoke-WebRequest -Uri $mirrors -UseBasicParsing
+#$get_mirror_page = Get-WebContent $mirrors
 $url32 = $get_mirror_page.links | ? href -match '\.tar\.gz$' | select -First 1 -expand href
 
 
