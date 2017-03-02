@@ -11,7 +11,7 @@
     <projectUrl>https://torguard.net/downloads.php</projectUrl>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/torguard-icon/icons/torguard-client.png</iconUrl>
-    <copyright>Copyright © 2016 TorGuard.net</copyright>
+    <copyright>Copyright © 2017 TorGuard.net</copyright>
     <licenseUrl>https://torguard.net/terms.php</licenseUrl>
     <docsUrl>https://torguard.net/gettingstartedvpn.php</docsUrl>
     <tags>torguard-client admin vpn networking</tags>
