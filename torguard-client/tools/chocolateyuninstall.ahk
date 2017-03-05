@@ -6,7 +6,7 @@ DetectHiddenWindows, off
 SetTitleMatchMode, 2   ;contains
 
 winTitle = TAP-Windows ahk_class #32770
-WinWait, %winTitle%, , 30
+WinWait, %winTitle%, , 300
 ControlClick, Uninstall, %winTitle%
 Sleep, 1000
 ControlClick, Next, %winTitle%
