@@ -19,13 +19,14 @@
     <description>
 
 ## Features
-#### Multiplatform game engine
+#### Multiplatform game engine (Note: Need to install separate package for some Target Platforms)
 * Android, iOS, Windows Store, Tizen
 * PC, MacOS, Linux
 * WebGL
 * PlayStation 4, PlayStation Vita, Xbox 360, Xbox One, Wii U, Nintendo 3DS
 * Oculus Rift, Google Cardboard, PlayStation VR, Gear VR, Microsoft Hololens
 * Android TV, Samsung SMART TV, tvOS
+
 
 #### General
 * Scripting with C#, JavaScript
