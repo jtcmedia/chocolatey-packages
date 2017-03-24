@@ -25,7 +25,7 @@ TorGuard VPN service protects your online identity by providing you an anonymous
 
 ##Notes
 #### This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
-#### The maintainers of [vcredist2015](https://chocolatey.org/packages/vcredist2015), the Visual C++ 2015 Runtime, on which this package depends have changed how it works. You need to pin it to version **14.0.24215.20160928** in order for this package to work: `choco pin add -n=vcredist2015 --version 14.0.24215.20160928`
+The maintainers of [vcredist2015](https://chocolatey.org/packages/vcredist2015), the Visual C++ 2015 Runtime, on which this package depends have changed how it works. You need to pin it to version **14.0.24215.20160928** in order for this package to work: `choco pin add -n=vcredist2015 --version 14.0.24215.20160928`
  
     </description>
     <releaseNotes>
