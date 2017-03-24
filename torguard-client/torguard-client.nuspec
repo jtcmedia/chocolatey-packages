@@ -18,13 +18,14 @@
     <summary>TorGuard offers easy to setup VPN software for any operating system or device! Simply install the app, select your server, and sign in to connect within seconds!</summary>
     <description>
 
-###Software Specifics
-#### This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
-
 Every internet connection, regardless of personal or public wifi, binds you to the “terms and conditions” of that provider. Many times, these terms of usage are vague, leaving the safety of your personal data to be determined by a policy you probably don’t have access to. One doesn't have to be doing anything illegal either – there are many documented cases in which personal freedoms have been violated by ISP’s, website owners, and search engines. At TorGuard VPN, we believe every law abiding citizen has the right to encrypt and protect their personal data online.
 Big businesses wouldn’t think of risking company secrets on an unsecured connection, so why should you?
 
 TorGuard VPN service protects your online identity by providing you an anonymous IP address to hide behind. By using an encrypted VPN tunnel, this makes it impossible for your personal IP address or internet usage to be captured. Not even an external ISP, website, or search engine will be able to determine your real IP address. TorGuard anonymous VPN provides access to 1600+ Servers in over 50+ countries with just the click of a button. Take back your online privacy today and surf the web in complete privacy.
+
+##Notes
+#### This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
+#### The maintainers of [vcredist2015](https://chocolatey.org/packages/vcredist2015), the Visual C++ 2015 Runtime, on which this package depends have changed how it works. You need to pin it to version **14.0.24215.20160928** in order for this package to work: `choco pin add -n=vcredist2015 --version 14.0.24215.20160928`
  
     </description>
     <releaseNotes>
@@ -32,7 +33,7 @@ TorGuard VPN service protects your online identity by providing you an anonymous
     </releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.24" />
-      <dependency id="vcredist140" version="(,14.0.24215.1]" />
+      <dependency id="vcredist2015" version="(,14.0.24215.20160928]" />
     </dependencies>
   </metadata>
   <files>
