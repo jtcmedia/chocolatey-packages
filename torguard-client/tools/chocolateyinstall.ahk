@@ -7,6 +7,7 @@ SetTitleMatchMode, 2   ;contains
 
 winTitle = Windows Security ahk_class #32770
 winTitle2 = Microsoft Visual C++ ahk_class WixStdBA
+winTitle3 = Microsoft Visual C++ ahk_class #32770
 
 Loop
 {
@@ -17,10 +18,10 @@ Loop
     }
     IfWinExist, %winTitle2%
     {
-        WinWait, , Modify Setup
-        ControlClick, Repair, %winTitle2%
-        WinWait, , Setup Successful
-        ControlClick, Close, %winTitle2%
+        ControlClick, Close, %winTitle2% 
+        WinWait, %winTitle3%
+        WinActivate, %winTitle3%
+        ControlClick, Yes, %winTitle3%
         Break
     }
 }
