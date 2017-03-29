@@ -21,21 +21,13 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
     
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
         
-    $toolsPath = "$PSScriptRoot\tools"
-    
-    $client = New-Object System.Net.WebClient
-        $fn = $changelog -split '/' | select -Last 1
-        $client.DownloadFile($changelog, "$toolsPath\$fn")
-        $version = Get-Content "$toolsPath\$fn" | select -First 1 | % { $_ -split '\s+' | select -First 1 }
-    $client.Dispose()
-    
-    #don't need changelog file anymore
-    Remove-Item "$toolsPath\$fn"
+    $cl = Get-WebContent $changelog 
+    $version = $cl | select -First 1 | % { $_ -split '\s+' | select -First 1 }
     
     return @{ URL32 = $url[0]; URL64 = $url[1]; Version = $version }
 }
