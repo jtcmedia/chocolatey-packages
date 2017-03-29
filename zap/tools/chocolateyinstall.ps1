@@ -4,8 +4,8 @@ $packageName    = 'zap'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2_6_0_windows-x32.exe'
 $url64          = 'https://github.com/zaproxy/zaproxy/releases/download/2.6.0/ZAP_2_6_0_windows.exe'
-$checksum32     = ''
-$checksum64     = ''
+$checksum32     = '328533a23c24202c0e945e437d13dcf3cd83f5d20472d1a40e844deb32b396c0'
+$checksum64     = '8b3ce9a4b1e93994a75595f3658719459390c04ea49fd1d3434066c2b047180f'
 
 $packageArgs = @{
   packageName   = $packageName
