@@ -1,6 +1,5 @@
 import-module AU
-import-module "C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1"
-#import-module "$PSScriptRoot/../../extensions/chocolatey-core.extension/extensions/chocolatey-core.psm1"
+import-module $Env:ChocolateyInstall\extensions\chocolatey-core\*.psm1
 
 $releases  = 'https://devcenter.heroku.com/articles/heroku-cli'
 $changelog = 'https://raw.githubusercontent.com/heroku/cli/master/CHANGELOG'
