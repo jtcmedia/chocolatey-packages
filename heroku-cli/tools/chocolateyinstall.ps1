@@ -1,28 +1,5 @@
 $ErrorActionPreference = 'Stop';
 $packageName = 'heroku-cli'
-
-#First need to uninstall old toolbelt pkg if installed
-$softwareName = 'Heroku Toolbelt*'
-$installerType = 'EXE' 
-$silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-$validExitCodes = @(0)
-$uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
-
-if ($key.Count -eq 1) {
-  $key | % { 
-    $file = "$($_.UninstallString)"
-
-    Uninstall-ChocolateyPackage -PackageName $packageName `
-                                -FileType $installerType `
-                                -SilentArgs "$silentArgs" `
-                                -ValidExitCodes $validExitCodes `
-                                -File "$file"
-  }
-}
-# Remove heroku config file as requested https://blog.heroku.com/the-new-heroku-cli
-Remove-Item $env:USERPROFILE\.config\heroku -Recurse -ErrorAction SilentlyContinue -Force
-
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
@@ -40,5 +17,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
-# Don't need installers anymore
 Remove-Item ($toolsDir + '\*.' + $packageArgs.fileType)
