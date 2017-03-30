@@ -36,7 +36,6 @@ The source code for your application, together with the dependency file, should 
     </releaseNotes>
     <dependencies>
       <dependency id="git" version="2.8.1" />
-      <dependency id="chocolatey-core.extension" version="1.2.0" />
     </dependencies>
   </metadata>
   <files>
