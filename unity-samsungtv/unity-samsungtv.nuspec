@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-samsungtv</id>
-    <version>5.5.2</version>
+    <version>5.6.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-samsungtv</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Samsung TV Target Support</title>
@@ -23,7 +23,7 @@ This package adds Samsung TV Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="5.5.2" />
+      <dependency id="unity" version="5.6.0" />
     </dependencies>
   </metadata>
   <files>
