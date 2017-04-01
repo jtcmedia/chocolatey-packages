@@ -32,8 +32,10 @@ ControlClick, Next, %winTitle%
 ControlClick, %locale%, %winTitle%
 ControlClick, Install, %winTitle%
 WinWait, %winTitle%
+WinActivate, %winTitle%
 ControlClick, Next, %winTitle%
 WinWait, %winTitle%
+WinActivate, %winTitle%
 ControlClick, Close, %winTitle%
 
 ExitApp
