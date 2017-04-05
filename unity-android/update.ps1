@@ -2,6 +2,8 @@ import-module au
 
 $releases = 'https://unity3d.com/get-unity/update'
 
+$choco_unity = 'https://chocolatey.org/packages/unity/'
+
 
 function global:au_SearchReplace {
     @{
@@ -33,5 +35,7 @@ function global:au_GetLatest {
     
     return @{ URL32 = $url; Version = $version }
 }
+
+$choco_unity_page = Invoke-WebRequest -Uri $choco_unity -UseBasicParsing
 
 update -ChecksumFor 32
