@@ -1,15 +1,15 @@
-﻿VERIFICATION
+VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/dist/v6.10.1/node-v6.10.1-x86.msi
-    x64: https://nodejs.org/dist/v6.10.1/node-v6.10.1-x64.msi
+    x32: https://nodejs.org/dist/v6.10.2/node-v6.10.2-x86.msi
+    x64: https://nodejs.org/dist/v6.10.2/node-v6.10.2-x64.msi
 
 2.  Download Checksums:
     
-    SHASUMS: https://nodejs.org/dist/v6.10.1/SHASUMS256.txt.asc
+    SHASUMS: https://nodejs.org/dist/v6.10.2/SHASUMS256.txt.asc
 
     OR 
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/dist/v6.10.1/node-v6.10.1-x64.msi
+        Get-RemoteChecksum https://nodejs.org/dist/v6.10.2/node-v6.10.2-x64.msi
     
     
-    checksum32: 868A96E012222CE95C732D4E2C97D0349F8FEFBD889AF690CF6D2278D6844932
-    checksum64: E9FD4FF49700ECE923E6E0D9B9013ABC1CE65C3ED3A5810D166A0E05A911C2D4
+    checksum32: BC1FEBCFD2E8FBAF6BDCD06C1EEEE5D33AE61AE37F74E84392EA3B46DA5EA550
+    checksum64: 4D0A8B82649DC38F606B400006A2AB2D3585B65C44B4F5B71621444B3C3F7754
