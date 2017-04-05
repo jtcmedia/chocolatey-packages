@@ -10,6 +10,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url            = $url
   checksum       = $checksum
+  checksumType   = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
 }
