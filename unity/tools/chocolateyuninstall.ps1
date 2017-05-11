@@ -13,8 +13,6 @@ if ($key.Count -eq 1) {
   $key | % { 
     $file = "$($_.UninstallString)"
 
-
-
     Uninstall-ChocolateyPackage -PackageName $packageName `
                                 -FileType $installerType `
                                 -SilentArgs "$silentArgs" `
