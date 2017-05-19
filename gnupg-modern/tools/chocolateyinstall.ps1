@@ -2,8 +2,8 @@
 
 $packageName= 'gnupg-modern'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.1.20_20170403.exe'
-$checksum32 = 'e99ded9c749da2d29cb3fc531ceccb04009f61f263cc76a3bf7ab5c95d93b75f'
+$url        = 'https://www.gnupg.org/ftp/gcrypt/binary/gnupg-w32-2.1.21_20170515.exe'
+$checksum32 = 'ae4af56d069cebe82b5891e67b54cd297c4799f5d590fc1c678bbd9cd7b932b2'
 
 $packageArgs = @{
   packageName   = $packageName
