@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-samsungtv'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://download.unity3d.com/download_unity/497a0f351392/TargetSupportInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.6.0f3.exe'
-$checksum       = '96c2b0b2f1cd0bd26c8244cef291d390a8d488830f94708f869e825613e24c9c'
+$url            = 'https://download.unity3d.com/download_unity/a2913c821e27/TargetSupportInstaller/UnitySetup-Samsung-TV-Support-for-Editor-5.6.2f1.exe'
+$checksum       = 'fae0a97c3044708d2aba57bc2495b0aca863cd019a161c2f4d64a334d701969c'
 
 $packageArgs = @{
   packageName    = $packageName
