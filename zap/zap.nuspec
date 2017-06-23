@@ -4,7 +4,7 @@
   <metadata>
     <id>zap</id>
     <version>2.6.0</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>OWASP Zed Attack Proxy (ZAP) (Install)</title>
     <authors>Simon Bennetts OWASP</authors>
