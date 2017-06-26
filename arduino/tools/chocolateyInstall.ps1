@@ -13,8 +13,8 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-$ahkFile = Join-Path $toolsDir "chocolateyInstall.ahk"
-Start-Process 'AutoHotkey' $ahkFile
+$ahkFile = Join-Path $toolsDir "arduinoInstall.ahk"
+Start-Process -FilePath 'AutoHotKey' -ArgumentList $ahkFile
 
 Install-ChocolateyInstallPackage @packageArgs
 
