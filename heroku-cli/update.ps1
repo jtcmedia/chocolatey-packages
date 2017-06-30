@@ -1,7 +1,6 @@
 import-module AU
 
 $releases  = 'https://devcenter.heroku.com/articles/heroku-cli'
-$changelog = 'https://raw.githubusercontent.com/heroku/cli/master/CHANGELOG'
 
 function global:au_SearchReplace {
     @{
@@ -20,22 +19,33 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 
 function global:au_GetLatest {
+    $outFile    = "heroku-64bit-installer.exe"
     
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
+    
+    Invoke-WebRequest $url[1] -OutFile $outFile
+    
+    #$current_checksum = ((Get-Item .\legal\VERIFICATION.txt | sls '\bchecksum64\b') -split ":" | Select -Last 1).Trim()
+    #$remote_checksum = (Get-FileHash $outFile).Hash 
+    
+    #if ($current_checksum -ne $remote_checksum) {
+    #    Write-Host 'Remote Checksum different from current, force update'
+    
+        # install heroku and run version parameter to d/l updates
+        Write-Host 'Installing Heroku...it is the only way to get version number'
+        # use Out-Null so script waits for install to finish
+        .\heroku-64bit-installer.exe /S | Out-Null
+        heroku --version
         
-    $toolsPath = "$PSScriptRoot\tools"
+        # now can get version of cli
+        $full_ver = heroku --version | % { $_ -split '/' | select -First 1 -Skip 1 }
+        $version = $full_ver -split '-' | select -First 1
+    #}
     
-    $client = New-Object System.Net.WebClient
-        $fn = $changelog -split '/' | select -Last 1
-        $client.DownloadFile($changelog, "$toolsPath\$fn")
-        $version = Get-Content "$toolsPath\$fn" | select -First 1 | % { $_ -split '\s+' | select -First 1 }
-    $client.Dispose()
-    
-    #don't need changelog file anymore
-    Remove-Item "$toolsPath\$fn"
+    #don't need installer anymore
+    #Remove-Item $outFile -Force
     
     return @{ URL32 = $url[0]; URL64 = $url[1]; Version = $version }
 }
