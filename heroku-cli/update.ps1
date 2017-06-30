@@ -25,7 +25,7 @@ function global:au_GetLatest {
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
     
-    Invoke-WebRequest $url[1] -OutFile $outFile
+    Invoke-WebRequest $url[1] -OutFile $PSScriptRoot\$outFile
     
     #$current_checksum = ((Get-Item .\legal\VERIFICATION.txt | sls '\bchecksum64\b') -split ":" | Select -Last 1).Trim()
     #$remote_checksum = (Get-FileHash $outFile).Hash 
@@ -36,7 +36,7 @@ function global:au_GetLatest {
         # install heroku and run version parameter to d/l updates
         Write-Host 'Installing Heroku...it is the only way to get version number'
         # use Out-Null so script waits for install to finish
-        .\heroku-64bit-installer.exe /S | Out-Null
+        $PSScriptRoot\heroku-64bit-installer.exe /S | Out-Null
         heroku --version
         
         # now can get version of cli
