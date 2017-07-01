@@ -43,6 +43,9 @@ function global:au_GetLatest {
         # now can get version of cli
         $full_ver = heroku --version | % { $_ -split '/' | select -First 1 -Skip 1 }
         $version = $full_ver -split '-' | select -First 1
+        
+        # uninstall heroku
+        Start-Process -FilePath "C:\Program Files\Heroku\Uninstall.exe" -ArgumentList "/S" -Wait
     #}
     
     #don't need installer anymore
