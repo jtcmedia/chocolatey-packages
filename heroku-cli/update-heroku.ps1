@@ -36,6 +36,7 @@ function global:au_GetLatest {
         # install heroku and run version parameter to d/l updates
         Write-Host 'Installing Heroku...it is the only way to get version number'
         # use Out-Null so script waits for install to finish
+        # ".\$outFile /S" | Out-Null
         Start-Process -FilePath "$PSScriptRoot\$outFile" -ArgumentList "/S" -Wait
         Start-Process -FilePath "heroku.exe" -ArgumentList "--version" -Wait
         
