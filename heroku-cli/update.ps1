@@ -37,7 +37,7 @@ function global:au_GetLatest {
         Write-Host 'Installing Heroku...it is the only way to get version number'
         # use Out-Null so script waits for install to finish
         Start-Process -FilePath "$PSScriptRoot\$outFile" -ArgumentList "/S" -Wait
-        heroku --version
+        Start-Process -FilePath "heroku.exe" -ArgumentList "--version" -Wait
         
         # now can get version of cli
         $full_ver = heroku --version | % { $_ -split '/' | select -First 1 -Skip 1 }
