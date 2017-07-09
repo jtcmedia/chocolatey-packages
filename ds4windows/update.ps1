@@ -5,10 +5,9 @@ $releases = 'https://github.com/Ryochan7/DS4Windows/releases'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\VERIFICATION.txt" = @{
-            "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
-            "(?i)(\s+checksum64:).*"     = "`${1} $($Latest.Checksum64)"
-            "(?i)(Get-RemoteChecksum).*" = "`${1} $($Latest.URL64)"
+        ".\tools\chocolateyinstall.ps1" = @{
+            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -30,4 +29,4 @@ function global:au_GetLatest {
     return @{ URL64 = $url64; Version = $version }
 }
 
-update -ChecksumFor none
+update -ChecksumFor 64
