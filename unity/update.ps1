@@ -1,13 +1,12 @@
 import-module au
 
-$releases = 'https://unity3d.com/get-unity/update'
+#$releases = 'https://unity3d.com/get-unity/update'
+$releases = 'https://unity3d.com/unity/whats-new/'
 
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url32\s*=\s*)('.*')"                = "`$1'$($Latest.URL32)'"
             "(^[$]url64\s*=\s*)('.*')"                = "`$1'$($Latest.URL64)'"
-            "(^[$]checksum32\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum32)'"
             "(^[$]checksum64\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum64)'"
         }
     }
@@ -19,16 +18,9 @@ function global:au_GetLatest {
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    $exe_ver = $url -split '-' | select -Last 1
-    $version = $exe_ver -split 'f' | select -First 1
-    $build = $url -split '/' | select -Last 1 -Skip 2
-   
-    $base_url = "https://download.unity3d.com/download_unity/$build"
+    $version = $url -split '-|f' | select -Last 1 -Skip 1
     
-    $url32 = "$base_url/Windows32EditorInstaller/UnitySetup32-$exe_ver"
-    $url64 = $url32 -replace '32','64'
-    
-    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    return @{ URL64 = $url -replace 'http', 'https'; Version = $version }
 }
 
-update
+update -ChecksumFor 64

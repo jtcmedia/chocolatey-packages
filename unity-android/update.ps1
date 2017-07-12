@@ -1,15 +1,13 @@
 import-module au
 
-$releases = 'https://unity3d.com/get-unity/update'
-
-$choco_unity = 'https://chocolatey.org/packages/unity/'
-
+#$releases = 'https://unity3d.com/get-unity/update'
+$releases = 'https://unity3d.com/unity/whats-new/'
 
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
-            "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+            "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+            "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
         }
         
         ".\unity-android.nuspec" = @{
@@ -23,19 +21,11 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 3 -expand href
     
-    $exe_ver = $url -split '-' | select -Last 1
-    $version = $exe_ver -split 'f' | select -First 1
-    $build = $url -split '/' | select -Last 1 -Skip 2
-   
-    $base_url = "https://download.unity3d.com/download_unity/$build"
+    $version = $url -split '-|f' | select -Last 1 -Skip 1
     
-    $url = "$base_url/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-$exe_ver"
-    
-    return @{ URL32 = $url; Version = $version }
+    return @{ URL64 = $url -replace 'http', 'https'; Version = $version }
 }
 
-$choco_unity_page = Invoke-WebRequest -Uri $choco_unity -UseBasicParsing
-
-update -ChecksumFor 32
+update -ChecksumFor 64

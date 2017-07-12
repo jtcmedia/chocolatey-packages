@@ -2,15 +2,15 @@
 
 $packageName    = 'unity-android'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://download.unity3d.com/download_unity/a2913c821e27/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-5.6.2f1.exe'
-$checksum       = 'cfc9d0f44b21d5ec15667fba226820997b249e1be6bcf4f38d2fe211a83c398c'
+$url64          = 'https://beta.unity3d.com/download/472613c02cf7/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2017.1.0f3.exe'
+$checksum64     = 'b55997ac591ecd340bab647cefc3949e747b38853c27035742abdf66a83534d1'
 
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'EXE'
-  url            = $url
-  checksum       = $checksum
-  checksumType   = 'sha256'
+  url64bit       = $url64
+  checksum64     = $checksum64
+  checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
 }
