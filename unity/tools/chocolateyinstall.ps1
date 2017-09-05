@@ -2,9 +2,16 @@
 
 $packageName        = 'unity'
 $toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64              = 'https://beta.unity3d.com/download/472613c02cf7/Windows64EditorInstaller/UnitySetup64-2017.1.0f3.exe'
-$checksum64         = 'f5b61edb7b1f434d52726b4a0601a883a601db500aff9b5a56b28068be1f7bbc'
+$url64              = 'https://netstorage.unity3d.com/unity/5d30cf096e79/Windows64EditorInstaller/UnitySetup64-2017.1.1f1.exe'
+$checksum64         = '346eabd936a25e09e43b96f1e515de64c75198a47a32c802b5e788abb5932f85'
 
+$args = '/S'
+
+$pp = Get-PackageParameters
+if ($pp.InstallationPath) {
+    $args += " /D=$($pp.InstallationPath)"
+    Write-Host "Param: Installing to $($pp.installationPath)"
+}
 
 $packageArgs = @{
   packageName    = $packageName
@@ -13,7 +20,7 @@ $packageArgs = @{
   softwareName   = 'Unity'
   checksum64     = $checksum64
   checksumType64 = 'sha256'
-  silentArgs     = '/S'
+  silentArgs     = $args
   validExitCodes = @(0)
 }
 
