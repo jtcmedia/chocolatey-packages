@@ -10,7 +10,7 @@ $args = '/S'
 $pp = Get-PackageParameters
 if ($pp.InstallationPath) {
     $args += " /D=$($pp.InstallationPath)"
-    Write-Host "Param: Installing to $($pp.installationPath)"
+    Write-Host "Param: Installing to $($pp.InstallationPath)"
 }
 
 $packageArgs = @{

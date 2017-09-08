@@ -95,6 +95,7 @@ The following package parameters can be set:
  * `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity`"
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
     <releaseNotes>

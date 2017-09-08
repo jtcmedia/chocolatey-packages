@@ -8,9 +8,9 @@ $checksum64         = '769b19cd75ebd13df91bc8f374514097e789aa4112f411bca178d188f
 $args = '/S'
 
 $pp = Get-PackageParameters
-if ($pp.installLocation) {
-    $args += " /D='$($pp.installLocation)'"
-    Write-Host "Param: Installing to '$($pp.installLocation)'"
+if ($pp.InstallationPath) {
+    $args += " /D=$($pp.InstallationPath)"
+    Write-Host "Param: Installing to $($pp.InstallationPath)"
 }
 
 $packageArgs = @{
