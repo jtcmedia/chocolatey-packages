@@ -5,3 +5,4 @@ update_vars.ps1
 *.exe
 *.msi
 *.gz
+_unity.xml
