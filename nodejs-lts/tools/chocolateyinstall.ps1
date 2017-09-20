@@ -4,8 +4,8 @@ $packageName= 'nodejs-lts'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
-         Write-Host "Installing x64 bit version"; Get-Item "$toolsDir\*_x64.msi"
-} else { Write-Host "Installing x32 bit version"; Get-Item "$toolsDir\*_x32.msi" }
+         Write-Host "Installing 64 bit version"; Get-Item "$toolsDir\*x64.msi"
+} else { Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*x86.msi" }
 
 $packageArgs = @{
   packageName   = $packageName
