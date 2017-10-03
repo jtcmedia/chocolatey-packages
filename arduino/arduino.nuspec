@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>arduino</id>
-    <version>1.8.4</version>
+    <version>1.8.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/arduino</packageSourceUrl>
     <owners>dtgm, LudicrousByte</owners>
     <title>Arduino IDE (Install)</title>
