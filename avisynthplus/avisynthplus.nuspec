@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>avisynthplus</id>
+    <version>0.1.0.1576</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/avisynthplus</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>AviSynth+ (Install)</title>
+    <authors>Ben Rudiak-Gould, AviSynth+ Project</authors>
+    <projectUrl>http://avs-plus.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/7365b5ac/icons/avisynthplus.png</iconUrl>
+    <copyright>©2013 AviSynth+ Project</copyright>
+    <projectSourceUrl>https://github.com/AviSynth/AviSynthPlus</projectSourceUrl>
+    <docsUrl>http://avisynth.nl/index.php/Main_Page</docsUrl>
+    <mailingListUrl>http://forum.doom9.org/showthread.php?t=168856</mailingListUrl>
+    <bugTrackerUrl>https://github.com/AviSynth/AviSynthPlus/issues</bugTrackerUrl>
+    <tags>avisynthplus avisynth foss video editing frameserver admin</tags>
+    <summary>AviSynth+ is a fork of the well-known frameserver featuring new functionality and optimizations not available in mainline.</summary>
+    <description>
+
+AviSynth+ is a fork of the well-known frameserver featuring new functionality and optimizations not available in mainline. In the hope of modernizing AviSynth to meet present day needs and expectations, the project encourages everybody to help reach our goals: add long-sought features, energize the community, and improve developer and user friendliness. AviSynth+ is fully compatible with plugins and scripts written for AviSynth.
+
+    </description>
+    <releaseNotes>
+* [Release Notes](https://github.com/AviSynth/AviSynthPlus/releases)     
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
