@@ -9,7 +9,7 @@
     <owners>Justin James, ludicrousByte</owners>
     <licenseUrl>http://opensource.org/licenses/BSD-3-Clause</licenseUrl>
     <projectUrl>http://developer.android.com/sdk/installing/studio.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/digitaldrummerj/ChocolateyPackages/master/AndroidStudio/androidstudio_logo.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/digitaldrummerj/Chocolatey-AndroidStudio/7f1fc63c/androidstudio_logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
 Android Studio is the official IDE for Android development.
@@ -29,7 +29,7 @@ For example: `-params '"/PinnedToTaskbar:true /AddToDesktop:true"'`.
     <dependencies>
       <dependency id="android-sdk" />
     </dependencies>
-    <packageSourceUrl>https://github.com/digitaldrummerj/ChocolateyPackages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/digitaldrummerj/Chocolatey-AndroidStudio</packageSourceUrl>
   </metadata>
     <files>
       <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
