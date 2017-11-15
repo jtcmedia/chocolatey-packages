@@ -3,7 +3,7 @@
 $packageName= 'torguard-client'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
-$checksum32 = '8fcb52207688f3d4b99bd5109a2200b48e6f063f74cfda7e2cb9ebe1f1d60718'
+$checksum32 = 'f29eb436ad2a4d04817861b902d32feb6cb5289705b94d47a5610b35e07369ec'
 
 $packageArgs = @{
   packageName   = $packageName
