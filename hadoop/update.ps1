@@ -18,7 +18,8 @@ function global:au_GetLatest {
     
     $regex = '\.tar\.gz$'
     
-    $get_dl_url = $download_page.links | ? href -match $regex | select -First 2 -Skip 2 -expand href
+    #$get_dl_url = $download_page.links | ? href -match $regex | select -First 2 -Skip 2 -expand href
+    $get_dl_url = $download_page.links | ? href -match $regex | select -First 2 -expand href
     
     $version = $get_dl_url[0] -split '/|-' | select -Last 1 -Skip 1
     
