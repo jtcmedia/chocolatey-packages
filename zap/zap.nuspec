@@ -9,7 +9,7 @@
     <title>OWASP Zed Attack Proxy (ZAP) (Install)</title>
     <authors>Simon Bennetts OWASP</authors>
     <projectUrl>https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/zap-icon/icons/zap.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/d5eec8ac/icons/zap.png</iconUrl>
     <copyright>Copyright © 2017 Open Web Application Security Project</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
