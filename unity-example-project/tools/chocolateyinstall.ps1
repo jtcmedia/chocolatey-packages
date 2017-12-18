@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-example-project'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64            = 'https://netstorage.unity3d.com/unity/5d30cf096e79/WindowsExampleProjectInstaller/UnityExampleProjectSetup-2017.1.1f1.exe'
-$checksum64       = '503b441a5d189673b61be6fc5e0d0c9461d1d74ac8d4d4df8d42b34a1bcf2283'
+$url64            = 'https://netstorage.unity3d.com/unity/94bf3f9e6b5e/WindowsExampleProjectInstaller/UnityExampleProjectSetup-2017.2.1f1.exe'
+$checksum64       = '4ffbffdd5e9721b4df51a3ea47d17165a0377de6a03aebacbfda9955f1e0746f'
 
 $packageArgs = @{
   packageName      = $packageName
