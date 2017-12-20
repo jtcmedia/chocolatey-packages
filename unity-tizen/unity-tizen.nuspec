@@ -18,6 +18,8 @@
     <summary>This package adds Tizen Target Support to Unity.</summary>
     <description>
 This package adds Tizen Target Support to Unity.
+## Notes
+Unity has deprecated Tizen support as of version 2017.3. Therefore, this package will no longer be updated.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
