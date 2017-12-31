@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>avisynthplus</id>
-    <version>0.1.0.1576</version>
+    <version>0.1.0.2580</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/avisynthplus</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>AviSynth+ (Install)</title>
@@ -11,10 +11,10 @@
     <projectUrl>http://avs-plus.net/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/7365b5ac/icons/avisynthplus.png</iconUrl>
     <copyright>©2013 AviSynth+ Project</copyright>
-    <projectSourceUrl>https://github.com/AviSynth/AviSynthPlus</projectSourceUrl>
+    <projectSourceUrl>https://github.com/pinterf/AviSynthPlus/tree/MT</projectSourceUrl>
     <docsUrl>http://avisynth.nl/index.php/Main_Page</docsUrl>
     <mailingListUrl>http://forum.doom9.org/showthread.php?t=168856</mailingListUrl>
-    <bugTrackerUrl>https://github.com/AviSynth/AviSynthPlus/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/pinterf/AviSynthPlus/issues</bugTrackerUrl>
     <tags>avisynthplus avisynth foss video editing frameserver admin</tags>
     <summary>AviSynth+ is a fork of the well-known frameserver featuring new functionality and optimizations not available in mainline.</summary>
     <description>
@@ -23,7 +23,7 @@ AviSynth+ is a fork of the well-known frameserver featuring new functionality an
 
     </description>
     <releaseNotes>
-* [Release Notes](https://github.com/AviSynth/AviSynthPlus/releases)     
+* [Release Notes](https://github.com/pinterf/AviSynthPlus/releases)     
     </releaseNotes>
   </metadata>
   <files>
