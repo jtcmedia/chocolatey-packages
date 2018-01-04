@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/dist/v8.9.3/node-v8.9.3-x86.msi
-    x64: https://nodejs.org/dist/v8.9.3/node-v8.9.3-x64.msi
+    x32: https://nodejs.org/dist/v8.9.4/node-v8.9.4-x86.msi
+    x64: https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
 
 2.  Download Checksums:
     
-    SHASUMS: https://nodejs.org/dist/v8.9.3/SHASUMS256.txt.asc
+    SHASUMS: https://nodejs.org/dist/v8.9.4/SHASUMS256.txt.asc
 
     OR 
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/dist/v8.9.3/node-v8.9.3-x64.msi
+        Get-RemoteChecksum https://nodejs.org/dist/v8.9.4/node-v8.9.4-x64.msi
     
     
-    checksum32: 5F8E0E01879F273751DD1D0DA7DE44B4F32E65F62B5D3C373F54ABD8C6DB3F5A
-    checksum64: 68CDD5A021101A208D830DA016EEBB3A9DE5BA75E76D8D8D6E9332038F10F56A
+    checksum32: F9442188C2F66D167A0AC610DEE6D16E226BA28CA93F9569E0276268EB8F85DC
+    checksum64: 547689DA69BACADFEE619D208702B73698D14297BD5FEF5D80656897989E91B6
