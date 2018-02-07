@@ -3,8 +3,8 @@
 $packageName  = $env:ChocolateyPackageName
 $packageTitle = $env:ChocolateyPackageTitle
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64        = 'https://github.com/Ryochan7/DS4Windows/releases/download/v1.4.109/DS4Windows_1.4.109_x64.zip'
-$checksum64   = '46cf24cfcaff699bb3cb8067b1bc75ec88117b144118ad4c1b73af125d009a09'
+$url64        = 'https://github.com/Ryochan7/DS4Windows/releases/download/v1.4.110/DS4Windows_1.4.110_x64.zip'
+$checksum64   = '7b7d23196f0f73602ca416111104552e3ed8b9e47414c8ac40beef2f873db6cf'
 
 $packageArgs = @{
   packageName   = $packageName

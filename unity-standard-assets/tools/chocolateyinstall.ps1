@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-standard-assets'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/a9f86dcd79df/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-2017.3.0f3.exe'
-$checksum64     = 'b68a623f1c2982315a9c5db3382e6de5ab7ea108b94c2ab7984438688fe18fc0'
+$url64          = 'https://netstorage.unity3d.com/unity/fc1d3344e6ea/WindowsStandardAssetsInstaller/UnityStandardAssetsSetup-2017.3.1f1.exe'
+$checksum64     = '0f62f29447d09a4276967ed003f5d7728617780e3aeaf6934d42de79ab9277da'
 
 $packageArgs = @{
   packageName    = $packageName
