@@ -4,8 +4,8 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/dist/latest-v6.x/node-v6.12.3-x86.msi
-    x64: https://nodejs.org/dist/latest-v6.x/node-v6.12.3-x64.msi
+    x32: https://nodejs.org/dist/latest-v6.x/node-v6.13.0-x86.msi
+    x64: https://nodejs.org/dist/latest-v6.x/node-v6.13.0-x64.msi
 
 2.  Download Checksums:
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/dist/latest-v6.x/node-v6.12.3-x64.msi
+        Get-RemoteChecksum https://nodejs.org/dist/latest-v6.x/node-v6.13.0-x64.msi
     
     
-    checksum32: 0A34C4FC524703592CBB6C7FB88A5A199FE5D1DE5D052EB6CE32CCB020A56A63
-    checksum64: 217FB0CE8B8FAF24B06DE1CB588B2C534555174B0438ACB8B80D0D654E1F051F
+    checksum32: 9994209ED23369E99D2FA38F790F0854C9EA8EB7755C703443357B1DD68CCAF1
+    checksum64: DF43AFCF21373F766140393C9E6285ABFBE058A91A54714391B0E0B1F7E0DDA9
