@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/pinterf/AviSynthPlus/releases/download/r2580-MT/AviSynthPlus-MT-r2580.exe'
-$checksum   = '21ed251e17ca8ed109779c4c5a92b4d524454ae61d8f0ae3af2f04af0ea58bc5'
+$url        = 'https://github.com/pinterf/AviSynthPlus/releases/download/r2632-MT/AviSynthPlus-MT-r2632.exe'
+$checksum   = 'be070aff0f952d2af830764eb357e9419cd7f626ed42f6f9621b0300c2ce070c'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
