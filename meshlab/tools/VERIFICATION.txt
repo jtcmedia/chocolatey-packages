@@ -1,0 +1,18 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    x64: https://github.com/cnr-isti-vclab/meshlab/releases/download/v2016.12/MeshLab2016.12.exe
+
+2.  Calculate Checksum:
+    
+    You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/cnr-isti-vclab/meshlab/releases/download/v2016.12/MeshLab2016.12.exe
+    
+    
+    checksum64: 892C38BB024C344C99039AC71FF225243F9B79BB695EA5A795EA005ADE8FB79F

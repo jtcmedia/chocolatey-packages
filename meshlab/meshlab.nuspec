@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>meshlab</id>
+    <version>2016.12</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>MeshLab (Install)</title>
+    <authors>ISTI-CNR</authors>
+    <projectUrl>http://www.meshlab.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/a50126ba/icons/meshlab.png</iconUrl>
+    <copyright>2016 ISTI-CNR</copyright>
+    <licenseUrl>https://github.com/cnr-isti-vclab/meshlab/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/cnr-isti-vclab/meshlab</projectSourceUrl>
+    <docsUrl>http://www.meshlab.net/#support</docsUrl>
+    <bugTrackerUrl>https://github.com/cnr-isti-vclab/meshlab/issues</bugTrackerUrl>
+    <tags>meshlab admin foss 3d mesh render texturing printing</tags>
+    <summary>the open source system for processing and editing 3D triangular meshes.</summary>
+    <description>
+
+MeshLab: the open source system for processing and editing 3D triangular meshes.
+It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing.
+
+## Features
+
+### 3D Acquisition: Aligning
+
+The 3D data alignment phase (also known as registration) is a fundamental step in the pipeline for processing 3D scanned data. MeshLab provides a powerful tool for moving the different meshes into a common reference system, able to manage large set of range-maps.
+
+### 3D Acquisition: Reconstruction
+
+The process of transforming independent acquisitions, or point clouds, into a single-surface triangulated mesh can be fulfilled with different algorithmic approaches. MeshLab provides several solutions to reconstruct the shape of an object, ranging from volumetric (Marching Cube) to implicit surfaces (Screened Poisson).
+
+### 3D Acquisition: Color Mapping and Texturing
+
+MeshLab contains a pipeline for the alignment and projection of color information (from a set of uncalibrated images) onto a 3D model. Several automatic and assisted methods are provided to obtain a high quality color encoding, with both per-vertex or texture mapping.
+
+### Cleaning 3D Models
+
+MeshLab offers a series of automatic, semi-manual and interactive filters to remove those geometric element generally considered “wrong” by most software and algorithms. It is possible to removing topological errors, duplicated and unreferenced vertices, small components, degenerated or intersecting faces, and many more geometrical and topological singularities. Using different automatic and interactive selection methods, is then possible to isolate and remove unwanted areas of your meshes and point clouds.
+
+### Scaling, Positioning and Orienting
+
+MeshLab provides a variety of features to manipulate the scale, positioning and orientation of a 3D model, including basic transformation operations like translation/scaling/rotation, automatic re-centering and alignment to axis, geo-referencing with reference points, interactive manipulators for rotation/translation/scaling, and many others.
+
+### Simplification, Refinement and Remeshing
+
+MeshLab also provides different subdivision schemes, remeshing and resampling filters to increase geometric complexity of 3D models, or to optimize point distribution and triangulation quality.
+
+### Measurement, and Analysis
+
+Interactive point-to-point measurement of a 3D model is really easy in MeshLab. Moreover, automatic filters will return various geometric and topological information about your 3D model (or just of a selected area), while the Sectioning tool can export cut-through sections of a mesh as polylines.
+
+### Visualization and Presentation
+
+The visualization features of MeshLab (including Decorators and Shaders) can help in graphically present the peculiar characteristics of a 3D model.
+
+### Color Processing
+
+MeshLab can manipulate the vertex and face colors using a series of photoshop-like filters (gamma, saturation, brightness, contrast, levels, smoothing, sharpening). 
+
+### 3D Printing: Offsetting, Hollowing, Closing
+
+Beside being able to export to STL (one of the most common formats for 3D printing), MeshLab can be used to prepare 3D models for printing by creating inner shells, resampling/remeshing the 3D model to make slicing easier, closing small holes to obtain watertight meshes, and flattening the bottom area to have a better platform adherence.
+
+### Comparing Models
+
+MeshLab offers now much more advanced functionalities for comparing two meshes, that also compute signed distance and may work on point clouds.
+
+### 3D Models Conversion and Interchange
+
+MeshLab can import and export a number of different 3D data formats and to online services like SketchFab.
+
+### Raster Layers: Integration with Images
+
+MeshLab users can import in a project images and other 2D entities.
+
+    </description>
+    <releaseNotes>
+* [News](http://www.meshlab.net/#news)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="vcredist2015" version="14.0.24215" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
