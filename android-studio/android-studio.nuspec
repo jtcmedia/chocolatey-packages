@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>AndroidStudio</id>
-    <version>3.1.0.16</version>
+    <version>3.1.1.0</version>
     <title>Android Studio</title>
     <authors>Google</authors>
     <owners>Justin James, ludicrousByte</owners>
