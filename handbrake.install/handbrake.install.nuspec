@@ -51,6 +51,9 @@ Handbrake can process most common multimedia files and any DVD or BluRay sources
 * [Changelog](https://github.com/HandBrake/HandBrake/blob/master/NEWS)
 * [Roadmap](https://github.com/HandBrake/HandBrake/milestones)
     </releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
