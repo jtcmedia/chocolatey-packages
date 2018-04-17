@@ -4,8 +4,8 @@ $packageName    = 'hadoop'
 $packageVersion = $env:chocolateyPackageVersion
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $hadoop_home    = "C:\Hadoop"
-$mirrors        = 'http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.0.1/hadoop-3.0.1.tar.gz'
-$checksum32     = 'da79ba1ac659538982604c3da94da50621399f85fb74da4a9037feae1dbd920c'
+$mirrors        = 'http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.1.0/hadoop-3.1.0.tar.gz'
+$checksum32     = '670d2ced595fa42d9fa1a93c4e39b39f47002cad1553d9df163ee828ca5143e7'
 
 # d/l from closest mirror
 $get_mirror_page = Invoke-WebRequest -Uri $mirrors -UseBasicParsing
