@@ -17,7 +17,7 @@
     <docsUrl>https://handbrake.fr/docs/en/</docsUrl>
     <mailingListUrl>https://handbrake.fr/community.php</mailingListUrl>
     <bugTrackerUrl>https://github.com/HandBrake/HandBrake/issues</bugTrackerUrl>
-    <tags>video transcoder encoder conversion handbrake.install admin</tags>
+    <tags>video transcoder encoder conversion handbrake</tags>
     <summary>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</summary>
     <description>
 
