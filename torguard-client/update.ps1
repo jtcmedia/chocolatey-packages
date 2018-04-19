@@ -17,7 +17,9 @@ function global:au_GetLatest {
     
     $version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
     
-    return @{ Version = $version }
+    $url = "https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe"
+    
+    return @{ URL = $url; Version = $version }
 
 }
 
