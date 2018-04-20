@@ -88,15 +88,21 @@
 * Audio: mp3, ogg, wav, aif, mod, it, s3m, xm
 * Movie: mov, mpg, mpeg, mp4, avi, asf
 
-### Package Specific
-#### Package Parameters
+## Package Parameters
 The following package parameters can be set:
 
  * `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity`"
 
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To pass parameters, use `--params "''"` (e.g. `choco install unity [other options] --params="'/InstallationPath:D:\Unity'"`).
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Notes
+If you're a company and using Unity Personal, you must meet the following criteria:
+* Do not make more than $100k in annual gross revenues, regardless of whether Unity Personal is being used for commercial purposes, or for an internal project or prototyping.
+* Have not raised funds in excess of $100K.
+* Not currently using Unity Plus or Pro.
+
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
