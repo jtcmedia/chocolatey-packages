@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://store.unity.com/download/thank-you?thank-you=personal&os=win&nid=622'
+$releases = 'https://store.unity.com/download/thank-you?thank-you=personal&os=win&nid=730'
 
 function global:au_SearchReplace {
     @{
