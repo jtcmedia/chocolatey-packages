@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-example-project</id>
-    <version>2017.4.1</version>
+    <version>2018.1.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-example-project</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Example Project</title>
@@ -23,7 +23,7 @@ This package adds the Example Project to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2017.4.1" />
+      <dependency id="unity" version="2018.1.0" />
     </dependencies>
   </metadata>
   <files>
