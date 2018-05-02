@@ -19,7 +19,7 @@ function global:au_GetLatest {
     
     $url = "https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe"
     
-    return @{ URL = $url; Version = $version }
+    return @{ URL32 = $url; Version = $version }
 
 }
 
