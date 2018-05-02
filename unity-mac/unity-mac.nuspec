@@ -6,7 +6,7 @@
     <version>2017.4.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-mac</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>Unity Mac Target Support</title>
+    <title>Unity macOS (Mono) Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
@@ -17,7 +17,7 @@
     <tags>unity admin mac target</tags>
     <summary>This package adds Mac Target Support to Unity.</summary>
     <description>
-This package adds Mac Target Support to Unity.
+This package adds macOS (Mono) Target Support to Unity.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
