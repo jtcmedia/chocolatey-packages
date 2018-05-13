@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>slic3r-prusa</id>
+    <version>1.39.2</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/slic3r-prusa</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>Slic3r PE (Prusa Edition)</title>
+    <authors>Alessandro Ranellucci, Prusa Research</authors>
+    <projectUrl>https://www.prusa3d.com/slic3r-prusa-edition/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/dad62531/icons/slic3r-prusa.png</iconUrl>
+    <copyright>2018 © Prusa Research s.r.o.</copyright>
+    <licenseUrl>https://github.com/prusa3d/Slic3r/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/prusa3d/Slic3r</projectSourceUrl>
+    <docsUrl>https://www.prusa3d.com/3dhandbookMK3</docsUrl>
+    <mailingListUrl>https://shop.prusa3d.com/forum/english-forum-f4</mailingListUrl>
+    <bugTrackerUrl>https://github.com/prusa3d/Slic3r/issues</bugTrackerUrl>
+    <tags>slic3r-prusa slic3r prusa-edition 3dprinting prusa gcode slicer stl</tags>
+    <summary>Slic3r Prusa Edition is the default slicer shipped with our driver package. Prusa Edition is forked from original Slic3r to speed up the development and release cycle.</summary>
+    <description>
+
+**Slic3r Prusa Edition** is the default slicer shipped with our driver package. Prusa Edition is forked from original [Slic3r](http://slic3r.org/) to speed up the development and release cycle. It comes with many improvements and optimizations for MK2/MK2S/MK2.5/MK3, however it is compatible with other printers as the original Slic3r. You can read more in the release article on [PrusaPrinters.org](https://www.prusaprinters.org/).
+
+## Main improvements:
+
+* Better stability
+* Faster slicing with parallel processing
+* Better object surface with no holes
+* Faster and easier to remove supports
+* Improvements in UI
+* Smart Wipe Tower for MK2 Multi Material upgrade
+* [Smooth Variable Layer Height](https://www.prusaprinters.org/smooth-variable-layer-height-awesome-supports-slic3r-prusa-edition/)
+   
+    </description>
+    <releaseNotes>
+
+* [Summary](https://github.com/prusa3d/Slic3r/releases)
+
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
