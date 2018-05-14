@@ -22,10 +22,10 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = 'zip$'
-    $urls = $download_page.links | ? href -match $regex | select -First 2 -Skip 1 -expand href
+    $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
         
-    $version = ($urls[0] -split '-' | select -First 1 -Skip 1) -split '\.win32' | select -First 1
-    
+    $version = ($urls[0] -split '/' | select -Last 1 -Skip 1) -split 'version_' | select -Last 1
+                
     $url32 = 'https://github.com' + $urls[0]
     $url64 = 'https://github.com' + $urls[1]
     
