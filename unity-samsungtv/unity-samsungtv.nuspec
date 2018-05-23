@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-samsungtv</id>
-    <version>2017.2.1</version>
+    <version>2017.2.1.20180517</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-samsungtv</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Samsung TV Target Support</title>
@@ -25,7 +25,7 @@ Unity has deprecated Samsung TV support as of version 2017.3. Therefore, this pa
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2017.2.1" />
+      <dependency id="unity" version="[2017.2.1]" />
     </dependencies>
   </metadata>
   <files>
