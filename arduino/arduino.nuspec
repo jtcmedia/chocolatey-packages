@@ -9,8 +9,8 @@
     <title>Arduino IDE (Install)</title>
     <authors>Arduino team</authors>
     <projectUrl>http://arduino.cc/en/Main/Software/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/33917e4e28f4279109e07783e79e538e3ad7e96b/icons/arduino.png</iconUrl>
-    <copyright>©2017 Arduino</copyright>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/5f83c179/icons/arduino.png</iconUrl>
+    <copyright>©2018 Arduino</copyright>
     <licenseUrl>https://raw.githubusercontent.com/arduino/Arduino/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/arduino/Arduino</projectSourceUrl>
