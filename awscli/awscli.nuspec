@@ -6,7 +6,7 @@
     <version>1.15.31</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/awscli</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>AWS Command Line Interface ((Install)</title>
+    <title>AWS Command Line Interface (Install)</title>
     <authors>Amazon Web Services</authors>
     <projectUrl>https://aws.amazon.com/cli/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/89ccc3d6/icons/awscli.png</iconUrl>
