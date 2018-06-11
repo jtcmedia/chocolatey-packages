@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot</id>
-    <version>2.6.69</version>
+    <version>3.2.21</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/cura-lulzbot</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Cura LulzBot Edition (Install)</title>
@@ -11,9 +11,9 @@
     <projectUrl>https://www.lulzbot.com/cura</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/213a0392/icons/cura-lulzbot.png</iconUrl>
     <copyright>Copyleft 2018 Aleph Objects, Inc.</copyright>
-    <licenseUrl>https://code.alephobjects.com/source/Cura2/browse/master/LICENSE</licenseUrl>
+    <licenseUrl>https://code.alephobjects.com/source/cura-lulzbot/browse/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://code.alephobjects.com/source/Cura2/</projectSourceUrl>
+    <projectSourceUrl>https://code.alephobjects.com/source/cura-lulzbot/</projectSourceUrl>
     <docsUrl>https://www.lulzbot.com/cura-lulzbot-edition-quick-start-guide</docsUrl>
     <tags>cura-lulzbot cura lulzbot foss admin 3d printing</tags>
     <summary>Cura LE is a Free Software program for LulzBot 3D printers.</summary>
