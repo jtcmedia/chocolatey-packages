@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://developer.android.com/studio/index.html'
+$releases = 'https://developer.android.com/studio/#downloads'
 
 
 function global:au_SearchReplace {
@@ -18,7 +18,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
        
     $version = $url -split '/' | select -Last 1 -Skip 1
     $build = $url -split '-' | select -Last 1 -Skip 1
