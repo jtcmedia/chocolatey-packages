@@ -1,6 +1,9 @@
 *.nupkg
 /**/tools/*.md
 update_vars.ps1
+update_info.xml
+Update-History.md
+Update-AUPackages.md
 *.zip
 *.exe
 *.msi
