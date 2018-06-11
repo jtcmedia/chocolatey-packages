@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/cnr-isti-vclab/meshlab/releases'
+$releases = 'https://github.com/cnr-isti-vclab/meshlab/releases/latest'
 
 function global:au_SearchReplace {
     @{
