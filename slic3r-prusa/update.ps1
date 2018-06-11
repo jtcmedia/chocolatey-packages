@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/prusa3d/Slic3r/releases'
+$releases = 'https://github.com/prusa3d/Slic3r/releases/latest'
 
 function global:au_SearchReplace {
     @{
