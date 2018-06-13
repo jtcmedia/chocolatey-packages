@@ -24,3 +24,6 @@ $desktopPath = [Environment]::GetFolderPath("Desktop")
 Install-ChocolateyShortcut `
   -ShortcutFilePath "$desktopPath\Slic3r Prusa Edition.lnk" `
   -TargetPath "$env:ChocolateyInstall\bin\slic3r.exe"
+
+#Don't need installer zips anymore
+rm $toolsDir\*.zip -ea 0 -force
