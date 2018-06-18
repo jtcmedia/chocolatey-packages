@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>7.0.95.0</version>
+    <version>7.0.98.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
