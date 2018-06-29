@@ -15,7 +15,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
     
-    $version = ($download_page.ParsedHtml.getElementsByTagName("span") | ? ClassName -eq "latestver" | select -First 1).InnerText.Substring(1)
+    $regex = '^v'
+    
+    $version = ($download_page.ParsedHtml.getElementsByTagName("td") | ? InnerHTML -match $regex | select -First 1).InnerText.Substring(1)
     
     $url = "https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe"
     
