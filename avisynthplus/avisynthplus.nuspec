@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>avisynthplus</id>
-    <version>0.1.0.2664</version>
+    <version>0.1.0.2728</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/avisynthplus</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>AviSynth+ (Install)</title>
