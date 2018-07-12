@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 2 -expand href
     
     if ($url -eq $null) {
         # it's a minor release
