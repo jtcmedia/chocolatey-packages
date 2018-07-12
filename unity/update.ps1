@@ -27,7 +27,7 @@ function global:au_GetLatest {
     
     $version = $url -split '-|f' | select -Last 1 -Skip 1
     $release = $url -split 'f' | select -Last 1
-    $url_start = $url -split 'Win' | select -First 1
+    $url_start = $url -split 'TargetSupportInstaller' | select -First 1
     
     $unity_data = @{}
     $unity_data["version"] = "$($version)"
@@ -35,6 +35,8 @@ function global:au_GetLatest {
     $unity_data["release"] = "$($release)"
     
     $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
+    
+    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
     
     return @{ URL64 = $url -replace 'http:', 'https:'; Version = $version }
 }
