@@ -17,11 +17,11 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
+    $urls = $download_page.links | ? href -match $regex | select -First 3 -expand href
 	
     $version = $urls[0] -split '-' | select -Last 1 -Skip 1
 	
-    return @{ URL = $urls[1]; URL64 = $urls[0]; Version = $version }
+    return @{ URL = $urls[2]; URL64 = $urls[0]; Version = $version }
 }
 
 update

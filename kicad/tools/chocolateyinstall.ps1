@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'http://www2.futureware.at/~nickoe/kicad-downloads-mirror/windows/stable/kicad-5.0.0-x86_64.exe'
+$url32      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.0-i686.exe'
 $url64      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.0-x86_64.exe'
-$checksum32 = 'f19907130649153385b9179a6265242aded958ebb6ea0b031af1c377ad401542'
+$checksum32 = '68ef7437c74da4005a83645d3f7e13bd213607ca70af3c7737c570291d578add'
 $checksum64 = 'f19907130649153385b9179a6265242aded958ebb6ea0b031af1c377ad401542'
 
 $packageArgs = @{
