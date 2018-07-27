@@ -27,7 +27,7 @@ function global:au_GetLatest {
     
     $version = $url -split '-|f' | select -Last 1 -Skip 1
     $release = $url -split 'f' | select -Last 1
-    $url_start = $url -split 'TargetSupportInstaller' | select -First 1
+    $url_start = $url -split 'Windows64EditorInstaller' | select -First 1
     
     $unity_data = @{}
     $unity_data["version"] = "$($version)"
