@@ -36,8 +36,6 @@ function global:au_GetLatest {
     
     $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
     
-    $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
-    
     return @{ URL64 = $url -replace 'http:', 'https:'; Version = $version }
 }
 
