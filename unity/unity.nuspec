@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity</id>
-    <version>2018.2.1</version>
+    <version>2018.2.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity (Install)</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
-    <copyright>Copyright © 2017 Unity Technologies</copyright>
+    <copyright>Copyright © 2018 Unity Technologies</copyright>
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
