@@ -8,4 +8,6 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate { }
+
 update -ChecksumFor none
