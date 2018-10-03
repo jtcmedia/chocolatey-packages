@@ -2,8 +2,8 @@
 
 $packageName= 'energia'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://energia.nu/downloads/downloadv4.php?file=energia-1.6.10E18-windows.zip'
-$checksum32 = '9c5f9fc6276c6c6b639424a9753c7882844c6723c7e97c37be46fbbd891aff34'
+$url        = 'http://energia.nu/downloads/downloadv4.php?file=energia-1.8.7E20-windows.zip'
+$checksum32 = '3dd3459f4a584cc26947a6b9dd62a3d443707f708b05499a8420deecee5b57f6'
 
 $packageArgs = @{
   packageName   = $packageName
