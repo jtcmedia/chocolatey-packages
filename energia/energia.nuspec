@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/energia/Energia</projectSourceUrl>
     <docsUrl>http://energia.nu/guide/</docsUrl>
-    <mailingListUrl>http://forum.43oh.com/forum/28-energia/</mailingListUrl>
+    <mailingListUrl>https://forum.43oh.com/forum/119-energia/</mailingListUrl>
     <bugTrackerUrl>https://github.com/energia/Energia/issues</bugTrackerUrl>
     <tags>energia msp430 launchpad ide electronics prototyping</tags>
     <summary>Energia is a modified version of the Arduino/Genuino IDE for the Texas Instruments MSP430, MSP432, Tiva C and CC3200 LaunchPad boards.</summary>
@@ -31,7 +31,7 @@ Together with Energia, LaunchPad can be used to develop interactive objects, tak
 More information about LaunchPad can be found on the TI site: [www.ti.com/launchpad](http://www.ti.com/lsds/ti/tools-software/launchpads/overview/overview.page)
     </description>
     <releaseNotes>
-* [Release Notes](http://energia.nu/releasenotes/)
+* [Release Notes](https://github.com/energia/Energia/wiki/Release-Notes)
     </releaseNotes>
   </metadata>
   <files>
