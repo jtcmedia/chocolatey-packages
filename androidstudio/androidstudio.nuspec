@@ -35,8 +35,10 @@ The following package parameters can be set:
 * `/PinnedToTaskbar` - this put a shortcut on your taskbar to Android Studio.
 * `/AddToDesktop` - this puts a shortcut on your desktop to Android Studio.
  
-These parameters can be passed to the installer with the use of `-params`.
-For example: `-params '"/PinnedToTaskbar /AddToDesktop"'`.
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params '"/PinnedToTaskbar /AddToDesktop"'`.
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
     </description>
     <releaseNotes>
 * [Android Studio release notes](https://developer.android.com/studio/releases/)
