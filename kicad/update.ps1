@@ -20,6 +20,7 @@ function global:au_GetLatest {
     $urls = $download_page.links | ? href -match $regex | select -First 3 -expand href
 	
     $version = $urls[0] -split '-' | select -Last 1 -Skip 1
+    $version = $version -split '_' | select -Last 1 -Skip 1
 	
     return @{ URL = $urls[2]; URL64 = $urls[0]; Version = $version }
 }
