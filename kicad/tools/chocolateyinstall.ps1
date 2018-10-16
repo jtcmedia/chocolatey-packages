@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.0-i686.exe'
-$url64      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.0-x86_64.exe'
-$checksum32 = '68ef7437c74da4005a83645d3f7e13bd213607ca70af3c7737c570291d578add'
-$checksum64 = 'f19907130649153385b9179a6265242aded958ebb6ea0b031af1c377ad401542'
+$url32      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.1_1-i686.exe'
+$url64      = 'http://downloads.kicad-pcb.org/windows/stable/kicad-5.0.1_1-x86_64.exe'
+$checksum32 = '5ca92deff8f34d6727f3c5e625314672c644b57aebae81bef01b4e85367f9ed2'
+$checksum64 = 'be6d18a1e590f201df3079098ce99cd64146331f61b7ccfa1122f2f2763c1a4a'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
