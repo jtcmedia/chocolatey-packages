@@ -8,7 +8,7 @@ Get-ChocolateyUnzip $installerFile $toolsDir
 $files = Get-ChildItem $toolsDir -Include *.exe -Recurse
 
 foreach ($file in $files) {
-  if (!($file.Name.Equals("slic3r.exe"))) {
+  if (!($file.Name.Equals("energia.exe"))) {
     #generate an ignore file
     New-Item "$file.ignore" -type file -Force | Out-Null
   }
