@@ -14,7 +14,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin linux target</tags>
+    <tags>unity unity3d admin linux target</tags>
     <summary>This package adds Linux Target Support to Unity.</summary>
     <description>
 This package adds Linux Target Support to Unity.

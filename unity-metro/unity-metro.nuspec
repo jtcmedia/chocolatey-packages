@@ -14,7 +14,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin metro windows store .net</tags>
+    <tags>unity unity3d admin metro windows store .net</tags>
     <summary>This package adds Windows Store (.NET) Target Support to Unity.</summary>
     <description>
 This package adds Windows Store (.NET) Target Support to Unity.

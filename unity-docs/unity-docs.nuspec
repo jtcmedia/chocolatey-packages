@@ -14,7 +14,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin docs</tags>
+    <tags>unity unity3d admin docs</tags>
     <summary>This package installs Unity's documentation locally.</summary>
     <description>
 This package installs Unity's documentation locally.

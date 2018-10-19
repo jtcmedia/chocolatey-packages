@@ -14,7 +14,7 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity admin facebook target support</tags>
+    <tags>unity unity3d admin facebook target support</tags>
     <summary>This package adds Facebook Target Support to Unity.</summary>
     <description>
 This package adds Facebook Target Support to Unity.
