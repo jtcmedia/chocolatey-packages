@@ -1,6 +1,6 @@
 import-module au
 
-$unity_data = Import-CliXml $PSScriptRoot\..\unity\_unity.xml
+$unity_data = Import-CliXml $PSScriptRoot\..\_unity.xml
 
 function global:au_SearchReplace {
     @{
