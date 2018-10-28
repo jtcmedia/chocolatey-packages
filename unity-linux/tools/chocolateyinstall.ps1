@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-linux'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/38bd7dec5000/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-2018.2.11f1.exe'
-$checksum64     = '31af5576bc7f78ca62339f5b3511209aa92e52ae0e80d2ae776f13129ea6eeeb'
+$url64          = 'https://netstorage.unity3d.com/unity/3262fb3b0716/TargetSupportInstaller/UnitySetup-Linux-Support-for-Editor-2018.2.14f1.exe'
+$checksum64     = 'e92fe110153d1b05479350bafe1bef1a58445e81e0e68457e940d4b58da6b0ba'
 
 $packageArgs = @{
   packageName    = $packageName
