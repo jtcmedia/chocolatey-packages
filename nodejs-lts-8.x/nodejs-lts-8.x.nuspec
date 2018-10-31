@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>10.13.0</version>
+    <version>8.12.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Node.js LTS (Install)</title>
@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
-    <docsUrl>https://nodejs.org/dist/latest-v10.x/docs/api/</docsUrl>
+    <docsUrl>https://nodejs.org/dist/latest-v8.x/docs/api/</docsUrl>
     <bugTrackerUrl>https://github.com/nodejs/node/issues</bugTrackerUrl>
     <tags>nodejs-lts nodejs lts node.js node admin npm javascript</tags>
     <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
@@ -30,7 +30,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
     </description>
     <releaseNotes>
-* [Changelog 10.x](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V10.md)
+* [Changelog 8.x](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V8.md)
     </releaseNotes>
    </metadata>
   <files>
