@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-facebook</id>
-    <version>2018.2.15</version>
+    <version>2018.2.16</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-facebook</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Facebook Target Support</title>
@@ -23,7 +23,7 @@ This package adds Facebook Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2018.2.15" />
+      <dependency id="unity" version="2018.2.16" />
     </dependencies>
   </metadata>
   <files>
