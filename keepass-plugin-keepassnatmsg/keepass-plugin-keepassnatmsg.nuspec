@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>keepass-plugin-keepassnatmsg</id>
+    <version>2.0.3</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/keepass-plugin-keepassnatmsg</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>KeePass Plugin KeePassNatMsg</title>
+    <authors>Andy Brandt</authors>
+    <projectUrl>https://github.com/smorks/keepassnatmsg</projectUrl>
+    <copyright>2018 Andy Brandt</copyright>
+    <licenseUrl>https://github.com/smorks/keepassnatmsg/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/smorks/keepassnatmsg</projectSourceUrl>
+    <docsUrl>https://github.com/smorks/keepassnatmsg</docsUrl>
+    <bugTrackerUrl>https://github.com/smorks/keepassnatmsg/issues</bugTrackerUrl>
+    <tags>keepass-plugin-keepassnatmsg keepass native messaging credentials browser plugin keepassxc-browser keepassxc</tags>
+    <summary>KeePass plugin to expose credentials securely to a browser using Native Messaging</summary>
+    <description>
+    
+is a plugin for KeePass 2.x and provides a secure means of exposing KeePass credentials to a browser via [Native Messaging](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_messaging).
+
+It is based on [KeePassHttp](https://github.com/pfn/keepasshttp).
+
+This plugin is primarily intended for use with the [keepassxc-browser](https://github.com/keepassxreboot/keepassxc-browser) browser extension.
+    
+    </description>
+    <releaseNotes>
+
+* [Releases](https://github.com/smorks/keepassnatmsg/releases)    
+   
+    </releaseNotes>
+    <dependencies>
+      <dependency id="keepass" version="2.40" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
