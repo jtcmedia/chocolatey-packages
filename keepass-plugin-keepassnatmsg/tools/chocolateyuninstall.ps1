@@ -2,7 +2,7 @@
 
 $packageArgs = @{
     packageName = $env:ChocolateyPackageName
-    zipFileName = "KeeAgent-v$($env:ChocolateyPackageVersion)-binaries.zip"
+    zipFileName = "KeePassNatMsg-v$($env:ChocolateyPackageVersion)-binaries.zip"
 }
 
 Uninstall-ChocolateyZipPackage @packageArgs
