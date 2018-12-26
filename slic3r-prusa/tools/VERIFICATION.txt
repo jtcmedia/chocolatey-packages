@@ -5,8 +5,8 @@ mention you are the author of the software.
 
 1.  Download the zip:
 
-    x32: https://github.com/prusa3d/Slic3r/releases/download/version_1.41.2/Slic3rPE-1.41.2+win32-full-201811221508.zip
-    x64: https://github.com/prusa3d/Slic3r/releases/download/version_1.41.2/Slic3rPE-1.41.2+win64-full-201811221508.zip
+    x32: https://github.com/prusa3d/Slic3r/releases/download/version_1.42.0-alpha1/Slic3rPE-1.42.0-alpha1+win32-full-201812231738.zip
+    x64: https://github.com/prusa3d/Slic3r/releases/download/version_1.42.0-alpha1/Slic3rPE-1.42.0-alpha1+win64-full-201812231738.zip
 
 2.  Calculate Checksum:
     
@@ -14,10 +14,10 @@ mention you are the author of the software.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/prusa3d/Slic3r/releases/download/version_1.41.2/Slic3rPE-1.41.2+win64-full-201811221508.zip
+        Get-RemoteChecksum https://github.com/prusa3d/Slic3r/releases/download/version_1.42.0-alpha1/Slic3rPE-1.42.0-alpha1+win64-full-201812231738.zip
     
     
 3.  Verify against Checksum:
 
-    checksum32: 0FF2BC02A830167E88809157C994D270541B6B8F02F1DFDDA98C56AE21025236
-    checksum64: 81BFBD3CEB7FB372316387F312B753FE780B36408CFABA9367C60618E6C40F58
+    checksum32: 3A446976F7412AE3DF569FDA96AEFF21B34620E6F397420E131C848E1555A4A2
+    checksum64: 419C0E449AD04B9B87D494532F53EA489AF7FE9D7AFBB989B3B401F0B48D3F29
