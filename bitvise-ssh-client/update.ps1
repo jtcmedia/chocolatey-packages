@@ -12,16 +12,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    if ($download_page.Content -match 'version\s\d\.\d{2}')
+    if ($download_page.Content -match 'version:\s\d\.\d{2}')
     {
-        $version = $Matches[0].Substring(8)
+        $version = $Matches[0].Substring(9)
     }
-    else { throw "Can't match version 'version\s\d\.\d{2}'" }
+    else { throw "Can't match version 'version:\s\d\.\d{2}'" }
 
     return @{ URL = $url; Version = $version }
 }
