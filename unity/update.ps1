@@ -23,11 +23,16 @@ function global:au_GetLatest {
     if ($editor_url -eq $null) {
         # it's a minor release
         $download_page = Invoke-WebRequest -Uri $minor_releases -UseBasicParsing
-        $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-    } 
+        $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+
+        $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
+        $release = $editor_url -split 'f' | select -Last 1
+    } else {
+        $version = $android_url -split '-|f' | select -Last 1 -Skip 1
+        $release = $android_url -split 'f' | select -Last 1
+    }
     
-    $version = $android_url -split '-|f' | select -Last 1 -Skip 1
-    $release = $android_url -split 'f' | select -Last 1
+    
     $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
     
     $unity_data = @{}
