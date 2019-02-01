@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-mac'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/393bae82dbb8/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2018.3.3f1.exe'
-$checksum64     = '1028a59ee36dbbeb703dc7b9cce52c9a57e49d1af54a601690e932279d756857'
+$url64          = 'https://netstorage.unity3d.com/unity/1d952368ca3a/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2018.3.4f1.exe'
+$checksum64     = 'f144b15fde7175ce89e44d1f87c0662914a8e7f8f22e11e4a4509ca65e41fdd4'
 
 $packageArgs = @{
   packageName    = $packageName
