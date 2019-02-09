@@ -17,11 +17,14 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
     
     $regex = '.exe$'
-    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
-    $android_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 2 -expand href
-    
+    #$editor_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
+    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    #$android_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 2 -expand href
+    $android_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href
+
     if ($editor_url -eq $null) {
         # it's a minor release
+        Write-Host "It's a minor release..."
         $download_page = Invoke-WebRequest -Uri $minor_releases -UseBasicParsing
         $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 
