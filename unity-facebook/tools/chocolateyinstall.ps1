@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-facebook'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/1d952368ca3a/TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2018.3.4f1.exe'
-$checksum64     = 'ad649258594fc322c20df0e75ee102ddab5641fb708bf5df7051dfb9ec4f6979'
+$url64          = 'https://download.unity3d.com/download_unity/a220877bc173/TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-2018.3.6f1.exe'
+$checksum64     = '3f9d91f9197304c44bca4da84afb072ede96f2fad6d30e8ad3aff13c4ad7d346'
 
 $packageArgs = @{
   packageName    = $packageName
