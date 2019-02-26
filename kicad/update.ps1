@@ -20,7 +20,18 @@ function global:au_GetLatest {
     $urls = $download_page.links | ? href -match $regex | select -First 3 -expand href
 	
     $version = ($urls[0] -split '-' | select -Last 1 -Skip 1) -replace '_', '.'
-	
+    
+    $version_length = $version.length
+    
+    if ($version_length -eq 5) {
+      $version = $version + '.00'
+    } elseif ($version_length -eq 7) {
+      $version = $version.PadRight(8,'0')
+    } else {
+      Write-Host 'Invalid version number'
+      return
+    }
+
     return @{ URL = $urls[2]; URL64 = $urls[0]; Version = $version }
 }
 
