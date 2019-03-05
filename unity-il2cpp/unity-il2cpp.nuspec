@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-il2cpp</id>
-    <version>2018.3.6</version>
+    <version>2018.3.7</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-il2cpp</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Windows Store (IL2CPP) Target Support</title>
@@ -23,7 +23,7 @@ This package adds Windows Store (IL2CPP) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2018.3.6" />
+      <dependency id="unity" version="2018.3.7" />
     </dependencies>
   </metadata>
   <files>
