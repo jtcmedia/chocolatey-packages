@@ -20,4 +20,8 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
+if(Get-Process -Name "kicad" -ea 0) {
+  Write-Error "$packageName is running. Please close before upgrading."
+}
+
 Install-ChocolateyPackage @packageArgs
