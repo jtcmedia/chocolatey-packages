@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>unity-lumin</id>
+    <version>2018.3.12</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-lumin</packageSourceUrl>
+    <owners>LudicrousByte</owners>
+    <title>Unity Lumin Target Support</title>
+    <authors>Unity Technologies</authors>
+    <projectUrl>https://unity3d.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
+    <copyright>Copyright © 2019 Unity Technologies</copyright>
+    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
+    <tags>unity unity3d admin lumin target</tags>
+    <summary>This package adds Lumin Target Support to Unity.</summary>
+    <description>
+This package adds Lumin Target Support to Unity.
+    </description>
+    <releaseNotes>
+* [Release Notes](https://unity3d.com/unity/whats-new/)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="unity" version="2018.3.12" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
