@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   
-    $url = $unity_data["url"] + "TargetSupportInstaller/UnitySetup-UWP-IL2CPP-Support-for-Editor-" + $unity_data["version"] + "f" + $unity_data["release"]
+    $url = $unity_data["url"] + "TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-" + $unity_data["version"] + "f" + $unity_data["release"]
     
     
     return @{ URL64 = $url -replace 'http:', 'https:'; Version = $unity_data["version"] }
