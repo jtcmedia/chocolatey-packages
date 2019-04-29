@@ -10,7 +10,7 @@
     <authors>Node.js Foundation</authors>
     <projectUrl>https://nodejs.org/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/nodejs-lts-icon/icons/nodejs-lts.png</iconUrl>
-    <copyright>© 2018 Node.js Foundation</copyright>
+    <copyright>© 2019 Node.js Foundation</copyright>
     <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
