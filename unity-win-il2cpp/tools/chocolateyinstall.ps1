@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-il2cpp'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/292b93d75a2c/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2019.1.0f2.exe'
-$checksum64     = '6144b2702807a89992b486981401a016388c349cce6cf551ae4017e25b8ee0c7'
+$url64          = 'https://netstorage.unity3d.com/unity/fef62e97e63b/TargetSupportInstaller/UnitySetup-Windows-IL2CPP-Support-for-Editor-2019.1.1f1.exe'
+$checksum64     = '31c0c62e388a6239e656e885d1ac2123ba49d3db2509c721d412ccbe08212b76'
 
 $packageArgs = @{
   packageName    = $packageName
