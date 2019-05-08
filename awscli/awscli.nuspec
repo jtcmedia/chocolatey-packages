@@ -10,7 +10,7 @@
     <authors>Amazon Web Services</authors>
     <projectUrl>https://aws.amazon.com/cli/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/89ccc3d6/icons/awscli.png</iconUrl>
-    <copyright>© 2012 Amazon.com, Inc.</copyright>
+    <copyright>© 2012-2017 Amazon.com, Inc.</copyright>
     <licenseUrl>https://github.com/aws/aws-cli/blob/develop/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/aws/aws-cli</projectSourceUrl>
