@@ -37,11 +37,11 @@ else {
 }
 
 $packageArgs.unzipLocation = Join-Path -Path $installPath -ChildPath 'Plugins'
-Install-ChocolateyZipPackage @packageArgs
 
 if (Get-Process -Name 'KeePass' -ErrorAction SilentlyContinue) {
-    Write-Warning "Keepass is currently running. '$($packageArgs.packageName)' will be available at next restart."
+    Write-Error "Keepass is currently running. Please exit Keepass and try upgrading again."
 }
 else {
+    Install-ChocolateyZipPackage @packageArgs
     Write-Host "'$($packageArgs.packageName)' will be loaded the next time KeePass is started."
 }
