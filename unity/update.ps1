@@ -16,9 +16,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
     
-    $regex = '.exe$'
-    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 2 -expand href
-    $android_url = $download_page.links | ? href -match $regex | select -First 1 -Skip 3 -expand href
+    $regex = 'UnitySetup64.exe$'
+    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    
+    $regex = 'Android-Support-for-Editor'
+    $android_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 
     if ($editor_url -eq $null) {
         # it's a minor release
