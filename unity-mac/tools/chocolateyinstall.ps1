@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-mac'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/fef62e97e63b/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2019.1.1f1.exe'
-$checksum64     = '5e279203259b7297c28a6ea1533518d312feb427105ed9ce2c6df6184529fc0a'
+$url64          = 'https://download.unity3d.com/download_unity/3e18427e571f/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-2019.1.2f1.exe'
+$checksum64     = '28c416e5b5dc64bd0ad0ea828e3e0c03e71637dc98a4bec5ce17e1be39217416'
 
 $packageArgs = @{
   packageName    = $packageName
