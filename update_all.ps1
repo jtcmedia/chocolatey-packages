@@ -32,7 +32,7 @@ $Options = [ordered]@{
       'An exception occurred during a WebClient request'
       'remote session failed with an unexpected state'
     )
-    #RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
+    RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
     #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
     
     #NoCheckChocoVersion = $true                            #Turn on this switch for all packages
@@ -113,7 +113,6 @@ $Options = [ordered]@{
 
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root         = $Root          #Path to the AU packages
-$global:au_GalleryUrl   = ''             #URL to package gallery, leave empty for Chocolatey Gallery
 $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
