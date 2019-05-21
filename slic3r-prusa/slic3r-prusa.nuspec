@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>slic3r-prusa</id>
-    <version>2.0.0-rc2</version>
+    <version>1.41.2.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/slic3r-prusa</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>Slic3r PE (Prusa Edition)</title>
+    <title>[Deprecated] Slic3r PE (Prusa Edition)</title>
     <authors>Alessandro Ranellucci, Prusa Research</authors>
     <projectUrl>https://www.prusa3d.com/slic3r-prusa-edition/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/dad62531/icons/slic3r-prusa.png</iconUrl>
@@ -20,6 +20,8 @@
     <tags>slic3r-prusa slic3r prusa-edition 3dprinting prusa gcode slicer stl</tags>
     <summary>Slic3r Prusa Edition is the default slicer shipped with our driver package. Prusa Edition is forked from original Slic3r to speed up the development and release cycle.</summary>
     <description>
+
+This package is deprecated as Prusa Research has renamed their Slicer from Slic3r Prusa Edition to PrusaSlicer.
 
 **Slic3r Prusa Edition** is the default slicer shipped with our driver package. Prusa Edition is forked from original [Slic3r](http://slic3r.org/) to speed up the development and release cycle. It comes with many improvements and optimizations for MK2/MK2S/MK2.5/MK3, however it is compatible with other printers as the original Slic3r. You can read more in the release article on [PrusaPrinters.org](https://www.prusaprinters.org/).
 
@@ -39,8 +41,9 @@
 * [Summary](https://github.com/prusa3d/Slic3r/releases)
 
     </releaseNotes>
+    <dependencies>
+      <dependency id="prusaslicer" version="2.0.0" />
+    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
