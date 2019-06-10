@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	$regex = '.exe$'
 	$url = $download_page.links | ? href -match $regex | select -First 2 -expand href
 	
-	$version = $url[0] -split '/' | select -Last 1 -Skip 1
+	$version = ($url[0] -split '/' | select -Last 1 -Skip 1).Substring(1)
 	
 	return @{ URL32 = $url[1]; URL64 = $url[0]; Version = $version }
 }
