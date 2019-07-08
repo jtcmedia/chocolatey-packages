@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>faas-cli</id>
+    <version>0.8.19</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/faas-cli</packageSourceUrl>
+    <owners>Peter Keuter, LudicrousByte</owners>
+    <title>Official CLI for OpenFaaS</title>
+    <authors>Alex Ellis</authors>
+    <projectUrl>https://www.openfaas.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/004920436b0e6fc64fdc746db75aecd146dbdf6e/icons/faas-cli.png</iconUrl>
+    <copyright>Copyright (c) 2016-2017 Alex Ellis</copyright>
+    <licenseUrl>https://github.com/openfaas/faas-cli/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/openfaas/faas-cli</projectSourceUrl>
+    <docsUrl>https://github.com/openfaas/faas-cli/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/openfaas/faas-cli/issues</bugTrackerUrl>
+    <tags>faas-cli faas openfaas serverless kubernetes docker swarm functions function faas-netes</tags>
+    <summary>OpenFaaS® makes it simple to turn anything into a serverless function
+that runs on Linux or Windows through Docker Swarm or Kubernetes.</summary>
+    <description>
+
+Run functions anywhere enabling you with the same unified experience.
+
+Bring your laptop, your own on-prem hardware or create a cluster in the cloud. Pick Kubernetes or Docker to do the heavy lifting enabling you to build a scalable, fault-tolerant event-driven serverless platform for your applications.
+You can try out OpenFaaS in 60 seconds or write and deploy your first Python function in around 10-15 minutes. From there you can take the OpenFaaS workshop, a series of tried-and-tested self-paced labs which teach you everything you need to know about functions — and more.
+
+**Functions Store**
+An ecosystem for sharing, reusing and collaborating on functions
+
+
+**Templating system**
+Reduce boilerplate code, share code in the templates store
+
+
+**Functions or Microservices**
+Deploy existing microservices using Express.js, Sinatra, ASP.NET Core or simplify with functions.
+
+    </description>
+    <releaseNotes>
+* [Release Notes](https://github.com/openfaas/faas-cli/releases)
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
