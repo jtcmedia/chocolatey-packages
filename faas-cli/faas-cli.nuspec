@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>faas-cli</id>
-    <version>0.8.19</version>
+    <version>0.8.21</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/faas-cli</packageSourceUrl>
     <owners>Peter Keuter, LudicrousByte</owners>
     <title>Official CLI for OpenFaaS</title>
@@ -44,5 +44,6 @@ Deploy existing microservices using Express.js, Sinatra, ASP.NET Core or simplif
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
