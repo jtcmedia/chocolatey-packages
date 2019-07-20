@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-vuforia'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/d5f1b37da199/TargetSupportInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2019.1.9f1.exe'
-$checksum64     = '7ec81d7efaa7bb25a205683fe7b89d7b0109b385899d9d80ac31eddc9eb0436e'
+$url64          = 'https://download.unity3d.com/download_unity/9b001d489a54/TargetSupportInstaller/UnitySetup-Vuforia-AR-Support-for-Editor-2019.1.11f1.exe'
+$checksum64     = '20b564b5a7dba32a4e6dbb4db0b462aab5f3b17f28aef792fc751511bf6f068e'
 
 $packageArgs = @{
   packageName    = $packageName
