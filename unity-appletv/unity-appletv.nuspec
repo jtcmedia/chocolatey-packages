@@ -23,7 +23,7 @@ This package adds Apple TV Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.1.12" />
+      <dependency id="unity" version="2019.2.0" />
     </dependencies>
   </metadata>
   <files>
