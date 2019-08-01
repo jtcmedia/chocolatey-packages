@@ -18,6 +18,9 @@
     <summary>This package adds Vuforia AR Target Support to Unity.</summary>
     <description>
 This package adds Vuforia AR Target Support to Unity.
+
+## Package Notes
+As of Unity 2019.2, Unity has moved Vuforia support to Unity's Package Manager and is no longer releasing Vuforia as a component installer. Therefore, this package will no longer be updated.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
