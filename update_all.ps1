@@ -33,7 +33,7 @@ $Options = [ordered]@{
       'remote session failed with an unexpected state'
     )
     RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
-    #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
+    RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
     
     #NoCheckChocoVersion = $true                            #Turn on this switch for all packages
 
