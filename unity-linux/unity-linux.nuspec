@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-linux</id>
-    <version>2019.2.2</version>
+    <version>2019.2.4</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Linux Target Support</title>
@@ -23,7 +23,7 @@ This package adds Linux Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.2.2" />
+      <dependency id="unity" version="2019.2.4" />
     </dependencies>
   </metadata>
   <files>
