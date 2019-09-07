@@ -44,8 +44,16 @@ function global:au_GetLatest {
     $unity_data["release"] = "$($release)"
     
     $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
-    
-    return @{ URL64 = $editor_url -replace 'http:', 'https:'; Version = $version }
+
+    @{
+        URL64   = $editor_url -replace 'http:', 'https:'
+        Version = $version
+        URL_android = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
+        #Checksum_android = Get-RemoteChecksum -Url $URL_android
+    }
 }
 
-update -ChecksumFor 64
+if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
+  update -ChecksumFor 64
+  if ($global:au_old_force -is [bool]) { $global:au_force = $global:au_old_force }
+}
