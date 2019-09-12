@@ -50,6 +50,7 @@ function global:au_GetLatest {
         Version = $version
         URL_android = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
         #Checksum_android = Get-RemoteChecksum -Url $URL_android
+        URL_appletv = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
     }
 }
 
