@@ -2,11 +2,11 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-1.  Download the installer: https://downloads.arduino.cc/arduino-1.8.9-windows.exe
+1.  Download the installer: https://downloads.arduino.cc/arduino-1.8.10-windows.exe
 
 2.  Download Checksums:
     
-    SHA512SUMS: https://downloads.arduino.cc/arduino-1.8.9.sha512sum.txt
+    SHA512SUMS: https://downloads.arduino.cc/arduino-1.8.10.sha512sum.txt
 
     OR 
     
@@ -14,7 +14,7 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://downloads.arduino.cc/arduino-1.8.9-windows.exe
+        Get-RemoteChecksum https://downloads.arduino.cc/arduino-1.8.10-windows.exe
     
     
-    sha256checksum: 1C9BA2A49A241CC6B18F5473DEB37723055CDCE56D0E55A827219EBE97DC8667
+    sha256checksum: 0460BB9622A9C8716271EF262721F79A17471AD41C58640D62DFF43F44D929D1
