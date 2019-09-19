@@ -48,9 +48,10 @@ function global:au_GetLatest {
     @{
         URL64   = $editor_url -replace 'http:', 'https:'
         Version = $version
-        URL_android = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
-        #Checksum_android = Get-RemoteChecksum -Url $URL_android
-        URL_appletv = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
+        URL_android  = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
+        URL_appletv  = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
+        URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup-" + $version + "f" + $release
+        URL_facebook = $url_start + "TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-" + $version + "f" + $release
     }
 }
 
