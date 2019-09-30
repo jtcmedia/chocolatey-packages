@@ -1,21 +1,30 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName = 'bitvise-ssh-client'
-$softwareName = 'Bitvise SSH Client*'
-$installerType = 'EXE' 
-
-$silentArgs = '-unat'
-$validExitCodes = @(1)
+$packageArgs = @{
+  packageName   = $env:ChocolateyPackageName
+  softwareName  = "Bitvise SSH Client * (remove only)"
+  fileType      = 'EXE'
+  silentArgs = '"BvSshClient" -unat'
+  validExitCodes= @(0)
+}
 
 $uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
+[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 
-  $key[0] | % { 
-    $file = "$($_.UninstallString)"
+if ($key.Count -eq 1) {
+  $key | % { 
+    #$packageArgs['file'] = "$($_.UninstallString)"
     
-    Uninstall-ChocolateyPackage -PackageName $packageName `
-                                -FileType $installerType `
-                                -SilentArgs "$silentArgs" `
-                                -ValidExitCodes $validExitCodes `
-                                -File "$file"
+    Copy-Item -Path "C:\Program Files (x86)\Bitvise SSH Client\uninst.exe" -Destination "$($Env:Temp)\uninst.exe"
+    $packageArgs['file'] = "$($Env:Temp)\uninst.exe"
+    
+    Uninstall-ChocolateyPackage @packageArgs
   }
+} elseif ($key.Count -eq 0) {
+  Write-Warning "$packageName has already been uninstalled by other means."
+} elseif ($key.Count -gt 1) {
+  Write-Warning "$($key.Count) matches found!"
+  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
+  Write-Warning "Please alert package maintainer the following keys were matched:"
+  $key | % {Write-Warning "- $($_.DisplayName)"}
+}
