@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-android'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/fe82a0e88406/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2019.2.6f1.exe'
-$checksum64     = 'df654cf073797dc231c8bb36627525bb59fc9613b3af0fb4aa8c3f086c1587f4'
+$url64          = 'https://download.unity3d.com/download_unity/c96f78eb5904/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-2019.2.7f2.exe'
+$checksum64     = 'd49fc27596da4db771e796cdd5f755f69dc56791a1e2a6e9b6a3326d26ea0a87'
 
 $packageArgs = @{
   packageName    = $packageName
