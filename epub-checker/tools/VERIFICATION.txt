@@ -1,0 +1,17 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the zip:
+
+    x32: https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-1.9.3.zip
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-1.9.3.zip
+
+3.  Compare to Checksum:
+
+    checksum32: 57FF9F756511D5338878BE9F6D9A1874D4F758CD8A1EFA39032E05B800A3C095

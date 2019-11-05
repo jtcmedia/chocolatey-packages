@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>epub-checker</id>
+    <version>1.9.3</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/epub-checker</packageSourceUrl>
+    <owners>ludicrousByte</owners>
+    <title>pagina EPUB-checker</title>
+    <authors>pagina, Tobias Fischer</authors>
+    <projectUrl>https://www.pagina.gmbh/produkte/epub-checker/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/4f59921f4d58f9984fb71b67f9cefb5595b00255/icons/epub-checker.png</iconUrl>
+    <copyright>©2010-2019 pagina GmbH</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>epub-checker pagina epub validation validator checker epubcheck</tags>
+    <summary>With the pagina EPUB-Checker one can easily validate ebooks in the EPUB format. The test mechanisms of the EPUB-Checker are based on the official open-source EPUBCheck tools.</summary>
+    <description>
+With the pagina EPUB-Checker one can easily validate ebooks in the EPUB format. The test mechanisms of the EPUB-Checker are based on the official open-source [EPUBCheck tools](https://github.com/IDPF/epubcheck).
+
+pagina EPUB-Checker capsules these tools and offers some additional features, like:
+
+* Graphical user interface (like a "real" program)
+* Drag and drop to validate
+* Ability to validate expanded/unzipped EPUBs
+    * Expanded folders are automatically archived to an EPUB file upon validation
+    * The generated EPUB file will be saved if valid
+    </description>
+    <releaseNotes>
+* [Changelog](https://www.pagina.gmbh/produkte/epub-checker/)
+    </releaseNotes>
+    <dependencies>
+      <dependency id="jre8" version="8.0.231" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
