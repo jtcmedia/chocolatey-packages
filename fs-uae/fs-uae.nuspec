@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>fs-uae</id>
     <title>FS-UAE (Install)</title>
-    <version>3.0.0</version>
+    <version>3.0.2</version>
     <authors>Frode Solheim</authors>
     <owners>LudicrousByte</owners>
     <summary>FS-UAE Amiga Emulator</summary>
