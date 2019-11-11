@@ -45,7 +45,14 @@ Handbrake can process most common multimedia files and any DVD or BluRay sources
 * Video Filters: Deinterlacing, Decomb, Denoise, Detelecine, Deblock, Grayscale, Cropping and scaling
 * Live Static and Video Preview
 
-    </description>
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NOICON` - Remove the HandBrake desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+	</description>
     <releaseNotes>
 * [News](https://handbrake.fr/news.php)
 * [Changelog](https://github.com/HandBrake/HandBrake/blob/master/NEWS)

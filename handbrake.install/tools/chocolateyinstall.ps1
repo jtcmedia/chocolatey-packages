@@ -1,6 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Get-Item "$toolsDir\*x64.exe"
+$pp = Get-PackageParameters
+$shortcutName = 'HandBrake.lnk'
+$shortcut = Join-Path ([Environment]::GetFolderPath("CommonDesktopDirectory")) $shortcutName
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -30,3 +33,12 @@ elseif ($key.Count -gt 1) {
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item $toolsDir\*x64.exe
+
+if ($pp['noicon']) {
+	if (Test-Path $shortcut) {
+		Remove-Item $shortcut
+		Write-Host -ForegroundColor green 'Removed ' $shortcut
+	} else {
+		Write-Host -ForegroundColor yellow 'Did not find ' $shortcut
+	}
+}
