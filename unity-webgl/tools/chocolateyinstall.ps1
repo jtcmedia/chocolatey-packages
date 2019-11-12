@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-webgl'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/5f859a4cfee5/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2019.2.11f1.exe'
-$checksum64     = 'a0c0ddebcc6f17a80a399760e0d8da2d11673197a0416959704936784222c93b'
+$url64          = 'https://netstorage.unity3d.com/unity/b1a7e1fb4fa5/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-2019.2.12f1.exe'
+$checksum64     = '2220a7363a3af39bbd122455dca6a45dabc9f0d5f82d4e7399745876f2226102'
 
 $packageArgs = @{
   packageName    = $packageName
