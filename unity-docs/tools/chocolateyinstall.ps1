@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-docs'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://netstorage.unity3d.com/unity/e20f6c7e5017/WindowsDocumentationInstaller/UnityDocumentationSetup-2019.2.13f1.exe'
-$checksum64     = 'fc77cb689e44d298aa4ca0fce00f23be70f686363f6cd8b1e2cb69eebed6170c'
+$url64          = 'https://netstorage.unity3d.com/unity/49dd4e9fa428/WindowsDocumentationInstaller/UnityDocumentationSetup-2019.2.14f1.exe'
+$checksum64     = 'edd6285e037c153f446dfb37db5e4001dcda061c52fe57539316b3430307e0cb'
 
 $packageArgs = @{
   packageName    = $packageName
