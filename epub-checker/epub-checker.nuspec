@@ -13,6 +13,9 @@
     <copyright>©2010-2019 pagina GmbH</copyright>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/w3c/epubcheck</projectSourceUrl>
+    <docsUrl>https://github.com/w3c/epubcheck/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/w3c/epubcheck/issues</bugTrackerUrl>
     <tags>epub-checker pagina epub validation validator checker epubcheck</tags>
     <summary>With the pagina EPUB-Checker one can easily validate ebooks in the EPUB format. The test mechanisms of the EPUB-Checker are based on the official open-source EPUBCheck tools.</summary>
     <description>
