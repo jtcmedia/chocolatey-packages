@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balena-cli</id>
-    <version>11.18.3</version>
+    <version>11.19.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/balena-cli</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>balena CLI (Install)</title>
