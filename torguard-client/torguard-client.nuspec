@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>torguard-client</id>
-    <version>3.96.1</version>
+    <version>3.97.0</version>
     <owners>LudicrousByte</owners>
     <title>TorGuard VPN Client (Install)</title>
     <authors>TorGuard.net</authors>
@@ -22,7 +22,7 @@ Big businesses wouldn’t think of risking company secrets on an unsecured conne
 
 TorGuard VPN service protects your online identity by providing you an anonymous IP address to hide behind. By using an encrypted VPN tunnel, this makes it impossible for your personal IP address or internet usage to be captured. Not even an external ISP, website, or search engine will be able to determine your real IP address. TorGuard anonymous VPN provides access to 1600+ Servers in over 50+ countries with just the click of a button. Take back your online privacy today and surf the web in complete privacy.
 
-##Notes
+## Notes
 * This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
  
     </description>
