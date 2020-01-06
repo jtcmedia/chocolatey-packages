@@ -55,7 +55,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 	</description>
     <releaseNotes>
 * [News](https://handbrake.fr/news.php)
-* [Changelog](https://github.com/HandBrake/HandBrake/blob/master/NEWS)
+* [Changelog](https://github.com/HandBrake/HandBrake/releases)
 * [Roadmap](https://github.com/HandBrake/HandBrake/milestones)
     </releaseNotes>
     <dependencies>
