@@ -7,8 +7,11 @@
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>DS4Windows</title>
-    <authors>Ryochan7, Jays2Kings</authors>
+    <authors>Travis Nickles, Jays2Kings</authors>
     <projectUrl>https://github.com/Ryochan7/DS4Windows</projectUrl>
+    <copyright>Copyright (c) 2019 Travis Nickles</copyright>
+    <licenseUrl>https://github.com/Ryochan7/DS4Windows/blob/jay/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/ds4windows-icon/icons/ds4windows.png</iconUrl>
     <docsUrl>http://ds4windows.com/</docsUrl>
     <bugTrackerUrl>https://github.com/Ryochan7/DS4Windows/issues</bugTrackerUrl>
