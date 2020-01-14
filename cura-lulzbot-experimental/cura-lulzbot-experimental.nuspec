@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cura-lulzbot-experimental</id>
-    <version>3.6.21-experimental</version>
+    <version>3.6.21.20200114-experimental</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/cura-lulzbot</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Cura LulzBot Edition (Install)</title>
@@ -24,7 +24,7 @@ Cura LulzBot Edition is a Free Software program that both prepares your files fo
 The latest version features an updated user interface, more slicing options, an updated slicing engine, and better print quality than ever before. Keep Cura LulzBot Edition updated to have the latest pre-set Cura print profiles, developed and tested by the LulzBot team to ensure the best performance out of your LulzBot!
     </description>
     <releaseNotes>
-* [Release Notes](https://code.alephobjects.com/w/cura-lulzbot/)
+* [Releases](https://gitlab.com/lulzbot3d/cura-le/cura-lulzbot/-/releases)
     </releaseNotes>
   </metadata>
   <files>
