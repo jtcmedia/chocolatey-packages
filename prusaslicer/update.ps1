@@ -25,11 +25,18 @@ function global:au_GetLatest {
     $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
         
     $version = ($urls[0] -split '/' | select -Last 1 -Skip 1) -split 'version_' | select -Last 1
-                
-    $url32 = 'https://github.com' + $urls[0]
-    $url64 = 'https://github.com' + $urls[1]
     
-    return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    # alpha has only 64bit release
+    if ($version -notlike '*alpha*') {
+        $url32 = 'https://github.com' + $urls[0]
+        $url64 = 'https://github.com' + $urls[1]
+
+        return @{ URL32 = $url32; URL64 = $url64; Version = $version }
+    } else {
+        $url64 = 'https://github.com' + $urls[0]
+        
+        return @{ URL64 = $url64; Version = $version }
+    }
 }
 
 update -ChecksumFor none

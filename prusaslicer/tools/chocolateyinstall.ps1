@@ -3,7 +3,14 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
          Write-Host "Installing 64 bit version"; Get-Item "$toolsDir\*_x64.zip"
-} else { Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*_x32.zip" }
+} else { 
+  if ( $env:ChocolateyPackageVersion -like '*alpha*') {
+    Write-Error "PrusaSlicer doesn't release 32 bit packages for alpha versions"
+  } else {
+    Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*_x32.zip"
+  }
+}
+  
 
 Get-ChocolateyUnzip $installerFile $toolsDir
 
