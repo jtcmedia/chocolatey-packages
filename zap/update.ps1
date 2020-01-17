@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/zaproxy/zaproxy/wiki/Downloads'
+$releases = 'https://www.zaproxy.org/download/'
 
 function global:au_SearchReplace {
     @{
