@@ -19,7 +19,7 @@ function global:au_GetLatest {
 	
     $version = ($url -split '_' | select -Last 1 -Skip 1) + '-experimental'
 	
-    return @{ URL = $url; Version = $version }
+    return @{ URL = $url; Version = $version; PackageName = 'cura-lulzbot' }
 }
 
 update -ChecksumFor 32
