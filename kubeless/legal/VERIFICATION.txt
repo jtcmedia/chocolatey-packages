@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/kubeless/kubeless/releases/download/v1.0.5/kubeless_windows-amd64.zip
+    x64: https://github.com/kubeless/kubeless/releases/download/v1.0.6/kubeless_windows-amd64.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/kubeless/kubeless/releases/download/v1.0.5/kubeless_windows-amd64.zip
+        Get-RemoteChecksum https://github.com/kubeless/kubeless/releases/download/v1.0.6/kubeless_windows-amd64.zip
 
 3.  Compare to Checksum:
 
-    checksum64: C5A95B82A9930DA6D4069CC1227A0705221C35A33FA3283746199B2DF07FE5AE
+    checksum64: E3C4CC8FF57856FE03838CC4197322696883E88C6C390AECD2FA741577B4E5FF
