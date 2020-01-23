@@ -63,7 +63,7 @@ We would love to get your help, feel free to lend a hand. We are currently looki
 
 **Slack**: We're fairly active on [slack](http://slack.k8s.io) and you can find us in the #kubeless channel.
 ]]></description>
-    <releaseNotes>https://github.com/kubeless/kubeless/releases/tag/v1.0.5</releaseNotes>
+    <releaseNotes>https://github.com/kubeless/kubeless/releases/tag/v1.0.6</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
