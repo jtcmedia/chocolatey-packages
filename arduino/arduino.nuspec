@@ -10,12 +10,12 @@
     <authors>Arduino team</authors>
     <projectUrl>http://arduino.cc/en/Main/Software/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/5f83c179/icons/arduino.png</iconUrl>
-    <copyright>©2018 Arduino</copyright>
+    <copyright>©2020 Arduino</copyright>
     <licenseUrl>https://raw.githubusercontent.com/arduino/Arduino/master/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/arduino/Arduino</projectSourceUrl>
     <bugTrackerUrl>https://github.com/arduino/Arduino/issues</bugTrackerUrl>
-    <docsUrl>https://www.arduino.cc/Guide/</docsUrl>
+    <docsUrl>https://www.arduino.cc/en/Guide/HomePage</docsUrl>
     <mailingListUrl>https://groups.google.com/a/arduino.cc/forum/#!forum/developers</mailingListUrl>
     <tags>ide programming electronics microcontroller arduino admin foss cross-platform</tags>
     <summary>IDE for the Arduino prototyping platform</summary>
