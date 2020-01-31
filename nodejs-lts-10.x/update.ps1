@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://nodejs.org/dist/latest-v8.x/'
+$releases = 'https://nodejs.org/dist/latest-v10.x/'
 
 
 function global:au_SearchReplace {
@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function prepend_url([string] $url) {
-    $url = "https://nodejs.org/dist/latest-v8.x/" + $url
+    $url = "https://nodejs.org/dist/latest-v10.x/" + $url
     $url
 }
 
