@@ -10,7 +10,7 @@
     <authors>Node.js Foundation</authors>
     <projectUrl>https://nodejs.org/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/nodejs-lts-icon/icons/nodejs-lts.png</iconUrl>
-    <copyright>© 2019 Node.js Foundation</copyright>
+    <copyright>© 2020 Node.js Foundation</copyright>
     <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
@@ -30,7 +30,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 
     </description>
     <releaseNotes>
-* [Changelog 10.x](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V10.md)
+* [Changelog 12.x](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md)
     </releaseNotes>
    </metadata>
   <files>
