@@ -20,13 +20,22 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = 'exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
+
+    if ( $url -eq $null) {
+      # beta
+      $regex = 'zip$'
+      $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href | % { 'https://github.com' + $_ }
+    }
         
-    $version = ($url -split '/' | select -Last 1 -Skip 1).Substring(1)
+    if ( $url -match 'exe$') {
+      $version = ($url -split '/' | select -Last 1 -Skip 1).Substring(1)
+    } else {
+      # beta
+      $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7) + '-beta'
+    }
     
-    $url64 = 'https://github.com' + $url
-    
-    return @{ URL64 = $url64; Version = $version }
+    return @{ URL64 = $url; Version = $version }
 }
 
 update -ChecksumFor none

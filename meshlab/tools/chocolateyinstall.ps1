@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Get-Item "$toolsDir\*x64.exe"
+$fileLocation = Get-Item "$toolsDir\*x64.*"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -12,4 +12,9 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-Install-ChocolateyInstallPackage @packageArgs
+if ( $fileLocation -match 'exe$') {
+  Install-ChocolateyInstallPackage @packageArgs
+} else {
+  # beta
+  Install-ChocolateyZipPackage @packageArgs
+}
