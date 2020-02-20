@@ -29,7 +29,7 @@ function global:au_GetLatest {
     }
         
     if ( $url -match 'exe$') {
-      $version = ($url -split '/' | select -Last 1 -Skip 1).Substring(1)
+      $version = ($url -split '/' | select -Last 1 -Skip 1).Substring(7)
     } else {
       # beta
       $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7) + '-beta'
