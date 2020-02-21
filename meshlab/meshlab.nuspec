@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshlab</id>
-    <version>2016.12</version>
+    <version>2020.02</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>MeshLab (Install)</title>
