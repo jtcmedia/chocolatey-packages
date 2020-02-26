@@ -22,8 +22,12 @@ function global:au_GetLatest {
         
     $version = $zip_url -split '/|\.zip' | select -Last 1 -Skip 1
     
-    $url64 = "https://s3.amazonaws.com/aws-cli/AWSCLI64PY3-$version.msi"
-    $url32 = $url64 -replace '64P', '32P'
+    if ($version -match '^1') {
+      $url64 = "https://s3.amazonaws.com/aws-cli/AWSCLI64PY3-$version.msi"
+      $url32 = $url64 -replace '64P', '32P'
+    } else {
+      return 'ignore'
+    }
     
     return @{ URL32 = $url32; URL64 = $url64; Version = $version }
 }
