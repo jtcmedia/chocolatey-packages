@@ -1,7 +1,7 @@
 import-module au
 
 #$releases = 'https://unity3d.com/get-unity/update'
-$major_releases = 'https://unity3d.com/unity/whats-new'
+#$major_releases = 'https://unity3d.com/unity/whats-new'
 $minor_releases = 'https://unity3d.com/get-unity/download/archive'
 
 function global:au_SearchReplace {
@@ -14,13 +14,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
+    #$download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
     
-    $regex = 'UnitySetup64'
-    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    #$regex = 'UnitySetup64'
+    #$editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $editor_url = $null
     
-    $regex = 'Android-Support-for-Editor'
-    $android_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    #$regex = 'Android-Support-for-Editor'
+    #$android_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 
     if ($editor_url -eq $null) {
         # it's a minor release
