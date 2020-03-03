@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64      = 'https://awscli.amazonaws.com/AWSCLIV2.msi'
-$checksum64 = '64e056625156f024832917bc308e74a56079d47437c0ff6fb078dfc968cf384c'
+$checksum64 = '515374876e8bcde6261544b9ed547e6b7f86503d73f71a6210d1319e2d06b933'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
