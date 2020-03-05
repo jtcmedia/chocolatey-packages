@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-facebook</id>
-    <version>2019.2.19</version>
+    <version>2019.2.19.20200305</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-facebook</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Facebook Target Support</title>
@@ -18,6 +18,9 @@
     <summary>This package adds Facebook Target Support to Unity.</summary>
     <description>
 This package adds Facebook Target Support to Unity.
+
+## Package Notes
+As of Unity 2019.3, Unity is no longer releasing this component installer.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
