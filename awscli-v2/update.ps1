@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $version = $zip_url -split '/|\.zip' | select -Last 1 -Skip 1
     
     if ($version -match '^2') {
-      $url64 = "https://awscli.amazonaws.com/AWSCLIV2.msi"
+      $url64 = "https://awscli.amazonaws.com/AWSCLIV2-$version.msi"
     } else {
       return 'ignore'
     }
