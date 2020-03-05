@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-lumin</id>
-    <version>2019.3.0</version>
+    <version>2019.3.3</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-lumin</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Lumin Target Support</title>
@@ -23,7 +23,7 @@ This package adds Lumin Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.3.0" />
+      <dependency id="unity" version="2019.3.3" />
     </dependencies>
   </metadata>
   <files>
