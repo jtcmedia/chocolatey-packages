@@ -1,20 +1,30 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Get-Item "$toolsDir\*x64.*"
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  file          = $fileLocation
-  softwareName  = 'MeshLab*'
-  silentArgs    = '/S'
-  validExitCodes= @(0)
-}
+$packageName = $env:ChocolateyPackageName
+$toolsDir    = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-if ( $fileLocation -match 'exe$') {
+if (Test-Path "$toolsDir\MeshLab*_x64.exe") {
+  $packageArgs = @{
+    PackageName     = $packageName
+    FileFullPath64  = Get-Item "$toolsDir\MeshLab*_x64.exe"
+    SoftwareName    = 'MeshLab*'
+    SilentArgs      = '/S'
+    validExitCodes  = @(0)
+  }
+  
   Install-ChocolateyInstallPackage @packageArgs
+  
+  Remove-Item "$toolsDir\MeshLab*_x64.exe"
+
 } else {
   # beta
-  Install-ChocolateyZipPackage @packageArgs
+  $packageArgs = @{
+    PackageName     = $packageName
+    FileFullPath64  = Get-Item "$toolsDir\MeshLab*_x64.zip"
+    Destination     = $toolsDir
+  }
+  
+  Get-ChocolateyUnzip @packageArgs
+  
+  Remove-Item "$toolsDir\MeshLab*_x64.zip"
 }

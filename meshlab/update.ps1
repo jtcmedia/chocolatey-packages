@@ -26,13 +26,13 @@ function global:au_GetLatest {
       # beta
       $regex = 'zip$'
       $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href | % { 'https://github.com' + $_ }
+      $
     }
-        
-    if ( $url -match 'exe$') {
-      $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7)
-    } else {
-      # beta
-      $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7) + '-beta'
+    
+    $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7)
+    
+    if ( $url -match 'zip$') {
+      $version = "$version-beta"
     }
     
     return @{ URL64 = $url; Version = $version }
