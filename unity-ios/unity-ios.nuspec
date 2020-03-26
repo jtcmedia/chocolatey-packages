@@ -23,7 +23,7 @@ This package adds iOS Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.3.6" />
+      <dependency id="unity" version="2019.3.7" />
     </dependencies>
   </metadata>
   <files>
