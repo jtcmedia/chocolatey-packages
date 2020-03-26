@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-ios</id>
-    <version>2019.3.6</version>
+    <version>2019.3.7</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-ios</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity iOS Target Support</title>
