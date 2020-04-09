@@ -10,7 +10,7 @@ function global:au_SearchReplace {
         }
         
         ".\unity-il2cpp.nuspec" = @{
-            "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"$($Latest.Version)`""
+            "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"`[$($Latest.Version)`]`""
         }
     }
 }
