@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-docs</id>
-    <version>2019.3.8</version>
+    <version>2019.3.9</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-docs</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Documentation</title>
@@ -23,7 +23,7 @@ This package installs Unity's documentation locally.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.3.8" />
+      <dependency id="unity" version="2019.3.9" />
     </dependencies>
   </metadata>
   <files>
