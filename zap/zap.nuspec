@@ -8,13 +8,13 @@
     <owners>LudicrousByte</owners>
     <title>OWASP Zed Attack Proxy (ZAP) (Install)</title>
     <authors>Simon Bennetts OWASP</authors>
-    <projectUrl>https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/d5eec8ac/icons/zap.png</iconUrl>
-    <copyright>Copyright © 2017 Open Web Application Security Project</copyright>
+    <projectUrl>https://www.zaproxy.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
+    <copyright>Copyright © 2020 the Zap Dev Team</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
-    <docsUrl>https://github.com/zaproxy/zap-core-help/wiki</docsUrl>
+    <docsUrl>https://www.zaproxy.org/docs/</docsUrl>
     <mailingListUrl>http://groups.google.com/group/zaproxy-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/zaproxy/zaproxy/issues</bugTrackerUrl>
     <tags>zap admin owasp security proxy attack web pentesting</tags>
