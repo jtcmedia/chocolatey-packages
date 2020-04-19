@@ -9,7 +9,7 @@
     <title>PiBakery</title>
     <authors>David Ferguson</authors>
     <projectUrl>https://www.pibakery.org/index.html</projectUrl>
-    <iconUrl>https://www.pibakery.org/img/blocks.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/5f6554b1dbdb79e1295a0d0f981df0bf13a657d5/icons/pibakery.png</iconUrl>
     <copyright>Copyright (c) 2018 David Ferguson</copyright>
     <licenseUrl>https://github.com/davidferguson/pibakery/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
