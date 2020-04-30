@@ -3,8 +3,8 @@
 
 $packageName= 'fs-uae'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://fs-uae.net/stable/3.0.2/FS-UAE-Suite_3.0.2_Windows_x86-64.exe'
-$checksum64 = '2a25914058d54bb0fd9941a977f1d774bde947880b78ea02ede0f91a245db7d5'
+$url64      = 'https://fs-uae.net/stable/3.0.5/FS-UAE-Suite_3.0.5_Windows_x86-64.exe'
+$checksum64 = '0b08e2f594ae53fa714c570ec50d9f194438a59dbe9a658c7d62a27242926920'
 
 $packageArgs = @{
   packageName   = $packageName
