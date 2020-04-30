@@ -2,22 +2,21 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>fs-uae</id>
     <title>FS-UAE (Install)</title>
     <version>3.0.5</version>
     <authors>Frode Solheim</authors>
-    <owners>LudicrousByte</owners>
+    <owners>jtcmedia</owners>
     <summary>FS-UAE Amiga Emulator</summary>
     <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
     </description>
     <projectUrl>https://fs-uae.net/</projectUrl>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae</packageSourceUrl>
     <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
-    <docsUrl>https://fs-uae.net/documentation</docsUrl>
+    <docsUrl>https://fs-uae.net/docs</docsUrl>
     <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
-    <tags>fs-uae amiga emulator games admin</tags>
-    <copyright>GPLv2</copyright>
+    <tags>fs-uae uae amiga emulator games admin</tags>
+    <copyright>copyright © 2011-2017 Frode Solheim</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/fs-uae-icon/icons/fs-uae.png</iconUrl>
