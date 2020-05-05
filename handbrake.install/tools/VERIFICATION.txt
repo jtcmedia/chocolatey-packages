@@ -11,7 +11,7 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-    checksum64: 24F83CD4E6F921E9996599528717871AE705E758ED9A8D7DFEE4C823C18B1133
+    checksum64: 78F6727431F9065EB3DC3297FFD5CF2822D8866E51A8915A3853633BCEA32E8F
 
    Using AU:
     
