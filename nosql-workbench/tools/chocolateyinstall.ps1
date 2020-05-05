@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://nosql-workbench-for-amazon-dynamodb.s3.amazonaws.com/NoSQL+Workbench+for+Amazon+DynamoDB-win-1.0.0.exe'
-$checksum64 = 'f1b3e1c02dff24c48a7b11f4386beefd35f078d624da7e57fc2c780d58d99a9a'
+$url64      = 'https://s3.amazonaws.com/nosql-workbench-for-amazon-dynamodb/NoSQL+Workbench+for+Amazon+DynamoDB-win-1.1.0.exe'
+$checksum64 = '4d02d3151bcf5d62680a353d85aa7fdd7ff9150f1e3243070bba87680ba6abe2'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
