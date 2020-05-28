@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>staxrip</id>
+    <version>2.0.8.0</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/staxrip</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>StaxRip</title>
+    <authors>StaxRip authors</authors>
+    <projectUrl>https://github.com/staxrip/staxrip</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/4bf42d299369c40b9e7871d9e542843dd98bc56f/icons/staxrip.png</iconUrl>
+    <copyright>Copyright (C) 2002-2020 StaxRip authors</copyright>
+    <licenseUrl>https://github.com/staxrip/staxrip/blob/master/License.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/staxrip/staxrip</projectSourceUrl>
+    <docsUrl>https://staxrip.readthedocs.io/</docsUrl>
+    <bugTrackerUrl>https://github.com/staxrip/staxrip/issues</bugTrackerUrl>
+    <tags>staxrip x265 mkvmerge ffmpeg video encoder</tags>
+    <summary>Video encoding GUI for Windows.</summary>
+    <description><![CDATA[# About
+
+StaxRip is a video encoding GUI for Windows, it executes and controls console apps like x265, mkvmerge and ffmpeg and uses the scripting based frame servers AviSynth and VapourSynth for video processing.
+
+## [Documentation](https://staxrip.readthedocs.io)
+
+## [Support](https://staxrip.readthedocs.io/support.html)
+
+## [Download](https://staxrip.readthedocs.io/introduction.html#download)
+]]></description>
+    <releaseNotes>https://github.com/arduino/arduino-cli/releases/tag/2.0.8.0</releaseNotes>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.8.0.20190930" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
