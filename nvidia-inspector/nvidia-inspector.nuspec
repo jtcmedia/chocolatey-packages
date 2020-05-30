@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nvidia-inspector</id>
+    <version>2.3.0.10</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-profile-inspector</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>NVIDIA Profile Inspector</title>
+    <authors>Orbmu2k</authors>
+    <projectUrl>https://github.com/Orbmu2k/nvidiaProfileInspector</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/05a64efad75c5f289e7ebd5ff9cc9e451a23d2bc/icons/nvidia-profile-inspector.png</iconUrl>
+    <copyright>Copyright (c) 2020 Orbmu2k</copyright>
+    <licenseUrl>https://github.com/Orbmu2k/nvidiaProfileInspector/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Orbmu2k/nvidiaProfileInspector</projectSourceUrl>
+    <docsUrl>https://wiki.step-project.com/Guide:NVIDIA_Inspector</docsUrl>
+    <bugTrackerUrl>https://github.com/Orbmu2k/nvidiaProfileInspector/issues</bugTrackerUrl>
+    <tags>nvidia-profile-inspector nvidia driver gpu inspector game profile profiles graphics portable</tags>
+    <summary>This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.</summary>
+    <description><![CDATA[**NVIDIA Profile Inspector**
+
+This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.
+All game profiles are provided by the nvidia driver, but you can add your own profiles for games missing in the driver database.
+You also have access to hidden and undocumented settings, which are not provided by the drivers control panel.
+
+For more information how to use this tool, you can find some very good wikis here:
+* https://wiki.step-project.com/Guide:NVIDIA_Inspector
+* https://www.pcgamingwiki.com/wiki/Nvidia_Profile_Inspector
+
+## Package Parameters
+
+The following package parameters can be set:
+
+ * `/NoDesktopIcon` - Don't add an icon to the desktop.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `choco install nvidia-profile-inspector -params '"/NoDesktopIcon"'`.
+]]></description>
+    <releaseNotes>https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/2.3.0.10</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
