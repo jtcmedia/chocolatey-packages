@@ -4,7 +4,7 @@
   <metadata>
     <id>nvidia-inspector</id>
     <version>2.3.0.10</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-profile-inspector</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-inspector</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>NVIDIA Profile Inspector</title>
     <authors>Orbmu2k</authors>
