@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-plugin-keepassnatmsg</id>
-    <version>2.0.8</version>
+    <version>2.0.10</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/keepass-plugin-keepassnatmsg</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>KeePass Plugin KeePassNatMsg</title>
