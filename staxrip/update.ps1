@@ -26,7 +26,7 @@ function global:au_GetLatest {
     @{
         URL64 = $url
         Version = $version
-        ReleaseNotes = "https://github.com/arduino/arduino-cli/releases/tag/${version}"
+        ReleaseNotes = "https://github.com/staxrip/staxrip/releases/tag/${version}"
     }
 }
 
