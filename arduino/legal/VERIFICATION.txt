@@ -2,11 +2,11 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-1.  Download the installer: https://downloads.arduino.cc/arduino-1.8.12-windows.exe
+1.  Download the installer: https://downloads.arduino.cc/arduino-1.8.13-windows.exe
 
 2.  Download Checksums:
     
-    SHA512SUMS: https://downloads.arduino.cc/arduino-1.8.12.sha512sum.txt
+    SHA512SUMS: https://downloads.arduino.cc/arduino-1.8.13.sha512sum.txt
 
     OR 
     
@@ -14,7 +14,7 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://downloads.arduino.cc/arduino-1.8.12-windows.exe
+        Get-RemoteChecksum https://downloads.arduino.cc/arduino-1.8.13-windows.exe
     
     
-    sha256checksum: 2F885C5313DC2150CDD1B5F4E7802C7CC3F46C092BC8199612F11906B40C1CAB
+    sha256checksum: 511D9E07DFB802DE74A17E14C81F17DE7C60A29F986B4AC8A39239CBBB4A897C
