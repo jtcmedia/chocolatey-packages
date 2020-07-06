@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>nvidia-inspector</id>
+    <id>nvidia-profile-inspector</id>
     <version>2.3.0.10</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-inspector</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-profile-inspector</packageSourceUrl>
     <owners>jtcmedia</owners>
-    <title>[DEPRECATED] NVIDIA Inspector</title>
+    <title>NVIDIA Profile Inspector</title>
     <authors>Orbmu2k</authors>
     <projectUrl>https://github.com/Orbmu2k/nvidiaProfileInspector</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/05a64efad75c5f289e7ebd5ff9cc9e451a23d2bc/icons/nvidia-profile-inspector.png</iconUrl>
@@ -18,27 +18,29 @@
     <bugTrackerUrl>https://github.com/Orbmu2k/nvidiaProfileInspector/issues</bugTrackerUrl>
     <tags>nvidia-profile-inspector nvidia driver gpu inspector game profile profiles graphics portable</tags>
     <summary>This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.</summary>
-    <description>
-This package is deprecated. Use the **nvidia-profile-inspector package** instead.
+    <description><![CDATA[**NVIDIA Profile Inspector**
 
-This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
-    </description>
-    <releaseNotes>
-### New users
+This tool is used for modifying game profiles inside the internal driver database of the nvidia driver.
+All game profiles are provided by the nvidia driver, but you can add your own profiles for games missing in the driver database.
+You also have access to hidden and undocumented settings, which are not provided by the drivers control panel.
 
-* Do not install nvidia-inspector (this package). Install **nvidia-profile-inspector** instead.
+For more information how to use this tool, you can find some very good wikis here:
+* https://wiki.step-project.com/Guide:NVIDIA_Inspector
+* https://www.pcgamingwiki.com/wiki/Nvidia_Profile_Inspector
 
-### Existing users
+## Package Parameters
 
-* Updating this package will install the most recent version of the **nvidia-profile-inspector** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the package name **nvidia-profile-inspector**.
+The following package parameters can be set:
 
-### Cleanup
+ * `/NoDesktopIcon` - Don't add an icon to the desktop.
 
-* Remove package: `choco uninstall nvidia-inspector --all-versions --whatif`
-
-    </releaseNotes>
-    <dependencies>
-      <dependency id="nvidia-profile-inspector" version="2.3.0.10" />
-    </dependencies>
+These parameters can be passed to the installer with the use of `-params`.
+For example: `choco install nvidia-profile-inspector -params '"/NoDesktopIcon"'`.
+]]></description>
+    <releaseNotes>https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/2.3.0.10</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
 </package>
