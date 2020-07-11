@@ -32,7 +32,7 @@ function global:au_GetLatest {
       return
     }
 
-    return @{ URL = $urls[2]; URL64 = $urls[0]; Version = $version }
+    return @{ URL = $urls[3]; URL64 = $urls[0]; Version = $version }
 }
 
 update
