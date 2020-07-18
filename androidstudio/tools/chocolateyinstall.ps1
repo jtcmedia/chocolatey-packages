@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://redirector.gvt1.com/edgedl/android/studio/install/4.0.0.16/android-studio-ide-193.6514223-windows.exe'
-$checksum64 = 'c496a406536d17e5f8ab08b94b8fa187af12cba398ee9a92cd9ef000d356f904'
+$url64      = 'https://redirector.gvt1.com/edgedl/android/studio/install/4.0.1.0/android-studio-ide-193.6626763-windows.exe'
+$checksum64 = '7b09474defcf27e790880ea5182a8688a2ad330fa668a024d818e1c0ae0b4187'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
