@@ -1,6 +1,5 @@
-﻿$packageName = $env:ChocolateyPackageName
-$startupPath = [Environment]::GetFolderPath("Startup")
+﻿$startupPath = [Environment]::GetFolderPath("Startup")
 $startMenuPath = [Environment]::GetFolderPath("CommonPrograms")
 
-Remove-Item "$startupPath\$packageName.lnk" -ErrorAction SilentlyContinue -Force
-Remove-Item "$startMenuPath\$packageName.lnk" -ErrorAction SilentlyContinue -Force
+Remove-Item "$startupPath\$env:ChocolateyPackageName.lnk" -ErrorAction SilentlyContinue -Force
+Remove-Item "$startMenuPath\$env:ChocolateyPackageName.lnk" -ErrorAction SilentlyContinue -Force
