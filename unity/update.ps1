@@ -1,8 +1,7 @@
 import-module au
 
-#$releases = 'https://unity3d.com/get-unity/update'
-#$major_releases = 'https://unity3d.com/unity/whats-new'
-$minor_releases = 'https://unity3d.com/get-unity/download/archive'
+$releases1 = 'https://unity3d.com/unity/whats-new'
+$releases2 = 'https://unity3d.com/get-unity/download/archive'
 
 function global:au_SearchReplace {
     @{
@@ -14,30 +13,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    #$download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri $releases1 -UseBasicParsing
     
-    #$regex = 'UnitySetup64'
-    #$editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-    $editor_url = $null
+    $regex = 'UnitySetup64'
+    $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    #$regex = 'Android-Support-for-Editor'
-    #$android_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-
     if ($editor_url -eq $null) {
-        # it's a minor release
-        Write-Host "It's a minor release..."
-        $regex = 'UnitySetup64'
-        $download_page = Invoke-WebRequest -Uri $minor_releases -UseBasicParsing
+        $download_page = Invoke-WebRequest -Uri $releases2 -UseBasicParsing
         $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-
-        $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
-        $release = $editor_url -split 'f' | select -Last 1
-    } else {
-        $version = $android_url -split '-|f' | select -Last 1 -Skip 1
-        $release = $android_url -split 'f' | select -Last 1
     }
     
     
+    $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
+    $release = $editor_url -split 'f' | select -Last 1
+        
     $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
     
     $unity_data = @{}
@@ -53,8 +42,6 @@ function global:au_GetLatest {
         URL_android  = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
         URL_appletv  = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
         URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
-        #URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup-" + $version + "f" + $release
-        #URL_facebook = $url_start + "TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-" + $version + "f" + $release
     }
 }
 
