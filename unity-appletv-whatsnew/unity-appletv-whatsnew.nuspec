@@ -2,8 +2,8 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>unity-appletv</id>
-    <version>2019.4.5</version>
+    <id>unity</id>
+    <version>2020.1.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-appletv</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Apple TV Target Support</title>
@@ -23,7 +23,7 @@ This package adds Apple TV Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.4.5" />
+      <dependency id="unity" version="2020.1.0" />
     </dependencies>
   </metadata>
   <files>
