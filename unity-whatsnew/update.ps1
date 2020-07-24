@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $major_releases -UseBasicParsing
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = 'UnitySetup64'
     $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
