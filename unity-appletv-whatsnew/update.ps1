@@ -11,6 +11,7 @@ function global:au_SearchReplace {
         }
         
         ".\unity-appletv-whatsnew.nuspec" = @{
+            "(\<id\>)([^`<]+)" = "`$1$($Latest.ID_appletv)"
             "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"$($Latest.Version)`""
         }
     }
