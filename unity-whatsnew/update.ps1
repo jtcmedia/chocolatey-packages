@@ -35,12 +35,15 @@ function global:au_GetLatest {
     $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
 
     @{
-        URL64   = $editor_url
-        Version = $version
+        URL64       = $editor_url
+        Version     = $version
         PackageName = 'unity'
-        URL_android  = $android_url
-        URL_appletv  = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
-        URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        URL_android = $android_url
+        ID_android  = 'unity-android'
+        URL_appletv = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
+        ID_appletv  = 'unity-appletv'
+        URL_docs    = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        ID_docs     = 'unity-docs'
         #URL_facebook = $url_start + "TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-" + $version + "f" + $release
     }
 }
