@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/pinterf/AviSynthPlus/releases'
+$releases = 'https://github.com/avisynth/avisynthplus/releases'
 
 
 function global:au_SearchReplace {
