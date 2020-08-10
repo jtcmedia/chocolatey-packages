@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer zip:
+
+    x32: https://www.argyllcms.com/Argyll_V2.1.2_win32_exe.zip
+    x64: https://www.argyllcms.com/Argyll_V2.1.2_win64_exe.zip
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://www.argyllcms.com/Argyll_V2.1.2_win64_exe.zip
+
+3.  Compare to Checksum:
+
+    checksum32: FFFBF2764F9197397887893FB697A098D6F4676E8D707E27438B04379646BEDB
+    checksum64: 148C2739A0386725B2495A9F0AFE5EC8AD459857DF2C7C652184E5F743EA97C1
