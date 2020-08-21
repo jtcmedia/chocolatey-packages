@@ -35,7 +35,7 @@ In addition to the low level, API equivalent commands, the AWS CLI also provides
 
     </description>
     <releaseNotes>
-* [ChangeLog](https://github.com/aws/aws-cli/blob/develop/CHANGELOG.rst)
+* [ChangeLog](https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst)
     </releaseNotes>
   </metadata>
   <files>
