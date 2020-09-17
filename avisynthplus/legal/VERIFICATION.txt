@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    x32: https://github.com/AviSynth/AviSynthPlus/releases/download/v3.6.1/AviSynthPlus_3.6.1_20200619.exe
+
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/AviSynth/AviSynthPlus/releases/download/v3.6.1/AviSynthPlus_3.6.1_20200619.exe
+
+
+3.  Compare to Checksum:
+
+    checksum32: 0C890D9C2D2AF9CE509E75FF043C9FE209451349CF2573416A95591D8A1AE336
