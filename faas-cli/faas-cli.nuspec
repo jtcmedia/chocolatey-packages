@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>faas-cli</id>
-    <version>0.12.9</version>
+    <version>0.12.13</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/faas-cli</packageSourceUrl>
     <owners>Peter Keuter, LudicrousByte</owners>
     <title>Official CLI for OpenFaaS</title>
@@ -19,31 +19,58 @@
     <tags>faas-cli faas openfaas serverless kubernetes docker swarm functions function faas-netes</tags>
     <summary>OpenFaaS® makes it simple to turn anything into a serverless function
 that runs on Linux or Windows through Docker Swarm or Kubernetes.</summary>
-    <description>
+    <description><![CDATA[## faas-cli
+[![Build Status](https://travis-ci.com/openfaas/faas-cli.svg?branch=master)](https://travis-ci.com/openfaas/faas-cli)
+[![Go Report Card](https://goreportcard.com/badge/github.com/openfaas/faas-cli)](https://goreportcard.com/report/github.com/openfaas/faas-cli)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![OpenFaaS](https://img.shields.io/badge/openfaas-serverless-blue.svg)](https://www.openfaas.com)
 
-Run functions anywhere enabling you with the same unified experience.
+This is a CLI for use with [OpenFaaS](https://github.com/openfaas/faas) - a serverless functions framework for Docker & Kubernetes.
 
-Bring your laptop, your own on-prem hardware or create a cluster in the cloud. Pick Kubernetes or Docker to do the heavy lifting enabling you to build a scalable, fault-tolerant event-driven serverless platform for your applications.
-You can try out OpenFaaS in 60 seconds or write and deploy your first Python function in around 10-15 minutes. From there you can take the OpenFaaS workshop, a series of tried-and-tested self-paced labs which teach you everything you need to know about functions — and more.
+> Before using this tool please setup OpenFaaS by following instructions over on the main repo.
 
-**Functions Store**
-An ecosystem for sharing, reusing and collaborating on functions
+The CLI can be used to build and deploy functions to [OpenFaaS](https://github.com/openfaas/faas). You can build OpenFaaS functions from a set of supported language templates (such as Node.js, Python, CSharp and Ruby). That means you just write a handler file such as (handler.py/handler.js) and the CLI does the rest to create a Docker image.
 
+Demo: [ASCII cinema](https://asciinema.org/a/141284)
 
-**Templating system**
-Reduce boilerplate code, share code in the templates store
+### TL;DR - Introductory tutorial
 
+[Blog: Coffee with the FaaS-CLI](https://blog.alexellis.io/quickstart-openfaas-cli/)
 
-**Functions or Microservices**
-Deploy existing microservices using Express.js, Sinatra, ASP.NET Core or simplify with functions.
+### Run the CLI
 
-    </description>
-    <releaseNotes>
-* [Release Notes](https://github.com/openfaas/faas-cli/releases)
-    </releaseNotes>
+The main commands supported by the CLI are:
+
+* `faas-cli new` - creates a new function via a template in the current directory
+* `faas-cli login` - stores basic auth credentials for OpenFaaS gateway (supports multiple gateways)
+* `faas-cli logout` - removes basic auth credentials for a given gateway
+
+* `faas-cli up` - a combination of `build/push and deploy`
+
+* `faas-cli build` - builds Docker images from the supported language types
+* `faas-cli push` - pushes Docker images into a registry
+* `faas-cli deploy` - deploys the functions into a local or remote OpenFaaS gateway
+
+* `faas-cli remove` - removes the functions from a local or remote OpenFaaS gateway
+* `faas-cli invoke` - invokes the functions and reads from STDIN for the body of the request
+* `faas-cli store` - allows browsing and deploying OpenFaaS store functions
+
+* `faas-cli secret` - manage secrets for your functions
+
+* `faas-cli auth` - (alpha) initiates an OAuth2 authorization flow to obtain a cookie
+
+### FaaS-CLI Developers / Contributors
+
+See [contributing guide](https://github.com/openfaas/faas-cli/blob/master/CONTRIBUTING.md).
+
+### License
+
+This project is part of OpenFaaS and is licensed under the MIT License.
+]]></description>
+    <releaseNotes>https://github.com/openfaas/faas-cli/releases/tag/v0.12.13</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
