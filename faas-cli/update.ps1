@@ -1,9 +1,14 @@
 import-module au
 
-$releases = 'https://github.com/openfaas/faas-cli/releases'
+$releases = 'https://github.com/openfaas/faas-cli/releases/latest'
 
 function global:au_SearchReplace {
     @{
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
+      
+      
         ".\legal\VERIFICATION.txt" = @{
           "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
           "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
@@ -19,17 +24,19 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $regex = '.exe.sha256$'
-    $checksum_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $checksum_url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
     
     $version = $url -split '/' | select -Last 1 -Skip 1
     
-    $url32 = 'https://github.com' + $url
-    $checksum_url = 'https://github.com' + $checksum_url
-    
-    return @{ URL32 = $url32; Version = $version; ChecksumUrl = $checksum_url }
+    @{
+      URL32 = $url
+      Version = $version
+      ChecksumUrl = $checksum_url
+      ReleaseNotes = "https://github.com/openfaas/faas-cli/releases/tag/v${version}"
+    }
 }
 
 update -ChecksumFor none
