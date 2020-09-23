@@ -13,7 +13,7 @@
     <copyright>©2013 AviSynth+ Project</copyright>
     <licenseUrl>https://github.com/AviSynth/AviSynthPlus/blob/master/distrib/gpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/pinterf/AviSynthPlus/tree/MT</projectSourceUrl>
+    <projectSourceUrl>https://github.com/AviSynth/AviSynthPlus</projectSourceUrl>
     <docsUrl>http://avisynth.nl/index.php/Main_Page</docsUrl>
     <mailingListUrl>http://forum.doom9.org/showthread.php?t=168856</mailingListUrl>
     <bugTrackerUrl>https://github.com/AviSynth/AviSynthPlus/issues</bugTrackerUrl>
