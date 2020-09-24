@@ -34,9 +34,7 @@ The AWS CLI provides direct access to AWS services' public APIs. Explore a servi
 In addition to the low level, API equivalent commands, the AWS CLI also provides customizations for several services. Customizations are higher level commands that simplify using a service with a complex API. For example, the aws s3 set of commands provide a familiar syntax for managing files in Amazon S3.
 
     </description>
-    <releaseNotes>
-* [ChangeLog](https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
