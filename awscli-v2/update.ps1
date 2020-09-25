@@ -4,7 +4,7 @@ $releases = 'https://github.com/aws/aws-cli/releases'
 
 function global:au_SearchReplace {
     @{
-        "$($Latest.PackageName).nuspec" = @{
+        "$($Latest.PackageName)-v2.nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ChangeLog)`$2"
         }
         
