@@ -27,7 +27,7 @@ function global:au_GetLatest {
     $regex = '.zip$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://github.com' + $_ }
 
-    $version = $url[0] -split '_' | select -First 1 -Skip 1
+    $version = $url[0] -split '/' | select -Last 1 -Skip 1
     
     @{
         URL32 = $url[1]
