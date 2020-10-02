@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-docs</id>
-    <version>2020.1.6</version>
+    <version>2020.1.7</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-docs</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Documentation</title>
@@ -23,7 +23,7 @@ This package installs Unity's documentation locally.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2020.1.6" />
+      <dependency id="unity" version="2020.1.7" />
     </dependencies>
   </metadata>
   <files>
