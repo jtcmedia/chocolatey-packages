@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>torguard-client</id>
-    <version>4.1.2</version>
+    <version>4.1.3</version>
     <owners>LudicrousByte</owners>
     <title>TorGuard VPN Client (Install)</title>
     <authors>TorGuard.net</authors>
