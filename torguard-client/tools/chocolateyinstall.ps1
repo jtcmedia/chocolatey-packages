@@ -20,3 +20,5 @@ $ahkFile = Join-Path $toolsDir "chocolateyinstall.ahk"
 Start-Process -FilePath "AutoHotkey.exe" -Verb runas -ArgumentList $ahkFile
 
 Install-ChocolateyPackage @packageArgs
+
+Stop-Process -Name "AutoHotkey" -Force
