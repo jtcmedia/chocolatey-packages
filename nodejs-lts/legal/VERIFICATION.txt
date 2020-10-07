@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/dist/v12.18.4/node-v12.18.4-x86.msi
-    x64: https://nodejs.org/dist/v12.18.4/node-v12.18.4-x64.msi
+    x32: https://nodejs.org/dist/v12.19.0/node-v12.19.0-x86.msi
+    x64: https://nodejs.org/dist/v12.19.0/node-v12.19.0-x64.msi
 
 2.  Download Checksums:
     
-    SHASUMS: https://nodejs.org/dist/v12.18.4/SHASUMS256.txt.asc
+    SHASUMS: https://nodejs.org/dist/v12.19.0/SHASUMS256.txt.asc
 
     OR 
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/dist/v12.18.4/node-v12.18.4-x64.msi
+        Get-RemoteChecksum https://nodejs.org/dist/v12.19.0/node-v12.19.0-x64.msi
     
     
-    checksum32: 8E7E5D605704A1701FE096825792AE9E98946E5D99FC7F022AA9981DA57693C4
-    checksum64: 4BB3AEBCC2D22191C2DAAF4E419E923D891331F86A64CCA468F689E7A12A7E3C
+    checksum32: 3C1A3251EA8E9698B8563ECB90AC14FD83D5D8E5CD0E7CD2478E3670A9CF1E9C
+    checksum64: 5BD51BCC2017A1ACA716E7B07CAC5ED3E5AE0B475815F1EED084232CDF598004
