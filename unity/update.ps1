@@ -37,7 +37,7 @@ function global:au_GetLatest {
         URL_android  = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
         URL_appletv  = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
         URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
-        #URL_facebook = $url_start + "TargetSupportInstaller/UnitySetup-Facebook-Games-Support-for-Editor-" + $version + "f" + $release
+        URL_metro    = $url_start + "TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-" + $version + "f" + $release
     }
 }
 
