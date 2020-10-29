@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-lumin'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/974a9d56f159/TargetSupportInstaller/UnitySetup-Lumin-Support-for-Editor-2020.1.10f1.exe'
-$checksum64     = '713a9924a267f8829a9ace9cee8fbec385fef9d47211c03b999a1df2669da0df'
+$url64          = 'https://download.unity3d.com/download_unity/698c1113cef0/TargetSupportInstaller/UnitySetup-Lumin-Support-for-Editor-2020.1.11f1.exe'
+$checksum64     = '76c988b28716241dbdac77b6daf0639e1623173c9b72b5f8a8d376c62a5681ec'
 
 $packageArgs = @{
   packageName    = $packageName
