@@ -19,7 +19,10 @@ function global:au_GetLatest {
 	
     $version = $url -split '-|.exe' | select -Last 1 -Skip 1
 	
-    return @{ URL64 = $url; Version = $version }
+    @{
+        URL64 = $url.Replace(' ','%20')
+        Version = $version
+    }
 }
 
 update -ChecksumFor 64
