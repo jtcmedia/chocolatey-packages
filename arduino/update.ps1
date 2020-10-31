@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.arduino.cc/en/Main/Software'
+$releases = 'https://www.arduino.cc/en/software'
 
 
 function global:au_SearchReplace {
