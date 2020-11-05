@@ -4,7 +4,11 @@ $releases = 'https://github.com/prusa3d/PrusaSlicer/releases/latest'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\VERIFICATION.txt" = @{
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
+            
+        ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"           = "`${1} $($Latest.URL32)"
             "(?i)(\s+x64:).*"           = "`${1} $($Latest.URL64)"
             "(?i)(\s+checksum32:).*"    = "`${1} $($Latest.Checksum32)"
@@ -22,20 +26,15 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = 'zip$'
-    $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
+    $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://github.com' + $_ }
         
     $version = ($urls[0] -split '/' | select -Last 1 -Skip 1) -split 'version_' | select -Last 1
     
-    # alpha has only 64bit release
-    if ($version -notlike '*alpha*') {
-        $url32 = 'https://github.com' + $urls[0]
-        $url64 = 'https://github.com' + $urls[1]
-
-        return @{ URL32 = $url32; URL64 = $url64; Version = $version }
-    } else {
-        $url64 = 'https://github.com' + $urls[0]
-        
-        return @{ URL64 = $url64; Version = $version }
+    @{
+        URL32 = $urls[0]
+        URL64 = $urls[1]
+        Version = $version
+        ReleaseNotes = "https://github.com/prusa3d/PrusaSlicer/releases/tag/version_${version}"
     }
 }
 
