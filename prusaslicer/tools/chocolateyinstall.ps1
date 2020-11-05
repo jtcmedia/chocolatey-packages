@@ -1,20 +1,17 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$ErrorActionPreference = 'Stop'
 
-$installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
-         Write-Host "Installing 64 bit version"; Get-Item "$toolsDir\*_x64.zip"
-} else { 
-  if ( $env:ChocolateyPackageVersion -like '*alpha*') {
-    Write-Error "PrusaSlicer doesn't release 32 bit packages for alpha versions"
-  } else {
-    Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*_x32.zip"
-  }
+$toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
+
+$packageArgs = @{
+  PackageName     = $env:ChocolateyPackageName
+  FileFullPath    = gi $toolsPath\*_x32.zip
+  FileFullPath64  = gi $toolsPath\*_x64.zip
+  Destination     = $toolsPath
 }
-  
 
-Get-ChocolateyUnzip $installerFile $toolsDir
+Get-ChocolateyUnzip @packageArgs
 
-$files = Get-ChildItem $toolsDir -Include *.exe -Recurse
+$files = Get-ChildItem $toolsPath -Include *.exe -Recurse
 
 foreach ($file in $files) {
   if (!($file.Name.Equals("prusa-slicer.exe"))) {
@@ -33,4 +30,4 @@ Install-ChocolateyShortcut `
   -TargetPath "$env:ChocolateyInstall\bin\prusa-slicer.exe"
 
 #Don't need installer zips anymore
-rm $toolsDir\*.zip -ea 0 -force
+rm $toolsPath\*.zip -ea 0 -force
