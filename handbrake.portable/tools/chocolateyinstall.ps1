@@ -1,8 +1,13 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$zipFile = Get-Item "$toolsDir\*_64.zip"
+﻿$ErrorActionPreference = 'Stop'
+$toolsPath   = Split-Path $MyInvocation.MyCommand.Definition
 
-Get-ChocolateyUnzip $zipFile $toolsDir
+$packageArgs = @{
+  PackageName     = $env:ChocolateyPackageName
+  FileFullPath64  = gi $toolsPath\*_64-Win_GUI.zip
+  Destination     = $toolsPath
+}
+
+Get-ChocolateyUnzip @packageArgs
 
 #Don't need installer zip anymore
-rm $toolsDir\*.zip -ea 0 -force
+rm $toolsPath\*.zip -ea 0 -force

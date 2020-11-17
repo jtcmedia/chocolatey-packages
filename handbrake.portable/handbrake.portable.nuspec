@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake.portable</id>
-    <version>1.3.2.20200505</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.install</packageSourceUrl>
-    <owners>LudicrousByte</owners>
+    <version>1.3.3.20201117</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.portable</packageSourceUrl>
+    <owners>jtcmedia</owners>
     <title>HandBrake (Portable)</title>
     <authors>The HandBrake Team</authors>
     <projectUrl>http://handbrake.fr/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/dc3481ee/icons/handbrake.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/b8469596561c9940211b6cbf8e86580c8f3812d2/icons/handbrake.png</iconUrl>
     <copyright>© The HandBrake Team</copyright>
     <licenseUrl>https://github.com/HandBrake/HandBrake/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,40 +19,30 @@
     <bugTrackerUrl>https://github.com/HandBrake/HandBrake/issues</bugTrackerUrl>
     <tags>video transcoder encoder conversion cli handbrake.portable handbrake</tags>
     <summary>HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.</summary>
-    <description>
+    <description><![CDATA[## HandBrake
 
-## Features
+HandBrake is an open-source video transcoder available for Linux, Mac, and Windows, licensed under the [GNU General Public License (GPL) Version 2](LICENSE).
 
-### Built-in Device Presets
-Get started with HandBrake in seconds by choosing a profile optimised for your device, or choose a universal profile for standard or high quality conversions. Simple, easy, fast. For those that want more choice, tweak many basic and advanced options to improve your encodes.
+HandBrake takes videos you already have and makes new ones that work on your mobile phone, tablet, TV media player, game console, computer, or web browser—nearly anything that supports modern video formats.
 
-### Supported Input Sources:
-Handbrake can process most common multimedia files and any DVD or BluRay sources that do not contain any kind of copy protection.
+HandBrake works with most common video files and formats, including ones created by consumer and professional video cameras, mobile devices such as phones and tablets, game and computer screen recordings, and DVD and Blu-ray discs. HandBrake leverages tools such as FFmpeg, x264, and x265 to create new MP4 or MKV video files from these *Sources*.
 
-### Outputs:
-* File Containers: .MP4(.M4V) and .MKV
-* Video Encoders: H.265 (x265 and QuickSync), H.264(x264 and QuickSync), H.265 MPEG-4 and MPEG-2, VP8, VP9 and Theora
-* Audio Encoders: AAC / HE-AAC, MP3, Flac, AC3, or Vorbis
-* Audio Pass-thru: AC-3, E-AC3, DTS, DTS-HD, TrueHD, AAC and MP3 tracks
+For information on downloading, building/installing, and using HandBrake, see the official [HandBrake Documentation](https://handbrake.fr/docs).
 
-### Even more features:
-* Title / chapter and range selection
-* Batch Scan and Queueing of encodes
-* Chapter Markers
-* Subtitles (VobSub, Closed Captions CEA-608, SSA, SRT)
-* Constant Quality or Average Bitrate Video Encoding
-* Support for VFR and CFR
-* Video Filters: Deinterlacing, Decomb, Denoise, Detelecine, Deblock, Grayscale, Cropping and scaling
-* Live Static and Video Preview
+## Community Support
 
-    </description>
-    <releaseNotes>
-* [News](https://handbrake.fr/news.php)
-* [Changelog](https://github.com/HandBrake/HandBrake/releases)
-* [Roadmap](https://github.com/HandBrake/HandBrake/milestones)
-    </releaseNotes>
+Visit the [HandBrake Community Forums](https://forum.handbrake.fr/).
+
+Chat on [#handbrake on Freenode IRC](https://webchat.freenode.net/?channels=handbrake) (irc://irc.freenode.net/#handbrake).
+
+For information on HandBrake's community support channels, please see [Community Support](https://handbrake.fr/docs/en/latest/help/community-support.html).
+
+Our [community rules](https://forum.handbrake.fr/app.php/rules) and [code of conduct](https://github.com/HandBrake/HandBrake/blob/master/CODE_OF_CONDUCT.md) apply to both our site and GitHub.
+]]></description>
+    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.3.3</releaseNotes>
   </metadata>
   <files>
+    <file src="legal\**" target="legal" />
     <file src="tools\**" target="tools" />
   </files>
 </package>
