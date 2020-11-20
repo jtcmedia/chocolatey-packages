@@ -35,7 +35,7 @@ function global:au_GetLatest {
       URL32 = $url
       Version = $version
       ChecksumUrl = $checksum_url
-      ReleaseNotes = "https://github.com/openfaas/faas-cli/releases/tag/v${version}"
+      ReleaseNotes = "https://github.com/openfaas/faas-cli/releases/tag/${version}"
     }
 }
 
