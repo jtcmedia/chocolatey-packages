@@ -13,10 +13,6 @@ website at [ds4windows.com](http://ds4windows.com).
 
 ![DS4Windows Preview](https://raw.githubusercontent.com/Ryochan7/DS4Windows/jay/ds4winwpf_screen_20200412.png)
 
-## Downloads
-
-- **[Main builds of DS4Windows](https://github.com/Ryochan7/DS4Windows/releases)**
-
 ## Requirements
 
 - Windows 8.1 or newer
