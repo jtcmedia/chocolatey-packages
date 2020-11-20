@@ -4,11 +4,12 @@
     <id>balena-cli</id>
     <version>12.27.4</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/balena-cli</packageSourceUrl>
-    <owners>LudicrousByte</owners>
+    <owners>jtcmedia</owners>
     <title>balena CLI (Install)</title>
     <authors>Juan Cruz Viotti</authors>
     <projectUrl>https://www.balena.io/</projectUrl>
-    <copyright>Copyright 2019 Balena</copyright>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/f9f5704cf4b9f08c603cb78754f49062ca62293c/icons/balena-cli.png</iconUrl>
+    <copyright>Copyright 2020 Balena</copyright>
     <licenseUrl>https://github.com/balena-io/balena-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/balena-io/balena-cli</projectSourceUrl>
@@ -16,15 +17,11 @@
     <bugTrackerUrl>https://github.com/balena-io/balena-cli/issues</bugTrackerUrl>
     <tags>balena-cli balena balena-io balena-sound balenacloud cloud cli admin</tags>
     <summary>The balena CLI (Command-Line Interface) allows you to interact with the balenaCloud and the [balena API](https://www.balena.io/docs/reference/api/overview/) through a terminal window on Linux, macOS or Windows.</summary>
-    <description>
-The balena CLI (Command-Line Interface) allows you to interact with the balenaCloud and the [balena API](https://www.balena.io/docs/reference/api/overview/) through a terminal window on Linux, macOS or Windows. You can also write shell scripts around it, or import its Node.js modules to use it programmatically. As an [open-source project on GitHub](https://github.com/balena-io/balena-cli/), your contribution is also welcome!
-    </description>
-    <releaseNotes>
-* [Changelog](https://github.com/balena-io/balena-cli/blob/master/CHANGELOG.md)
-    </releaseNotes>
+    <description></description>
+    <releaseNotes></releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
     <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
   </files>
 </package>
