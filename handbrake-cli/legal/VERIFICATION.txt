@@ -1,0 +1,22 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+1. Download installer:
+
+    x64: https://github.com/HandBrake/HandBrake/releases/download/1.3.3/HandBrakeCLI-1.3.3-win-x86_64.zip
+
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/HandBrake/HandBrake/releases/download/1.3.3/HandBrakeCLI-1.3.3-win-x86_64.zip
+
+3. You can download the list of checksums from HandBrake:
+
+    SHASUMS: https://handbrake.fr/checksums.php
+
+    OR
+
+    checksum64: DE39031FD2FC068F1862F7F032A94F5330F1881F0A474C4CD7D4849752F93CC7
