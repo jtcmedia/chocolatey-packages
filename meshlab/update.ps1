@@ -4,7 +4,11 @@ $releases = 'https://github.com/cnr-isti-vclab/meshlab/releases/latest'
 
 function global:au_SearchReplace {
     @{
-        ".\tools\VERIFICATION.txt" = @{
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
+      
+        ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x64:).*"           = "`${1} $($Latest.URL64)"
             "(?i)(\s+checksum64:).*"    = "`${1} $($Latest.Checksum64)"
             "(?i)(Get-RemoteChecksum).*" = "`${1} $($Latest.URL64)"
@@ -22,20 +26,13 @@ function global:au_GetLatest {
     $regex = 'exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
-    if ( $url -eq $null) {
-      # beta
-      $regex = 'zip$'
-      $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 1 -expand href | % { 'https://github.com' + $_ }
-      $
+    $version = $url -split '/|-' | select -Last 1 -Skip 2
+    
+    @{
+        URL64 = $url
+        Version = $version
+        ReleaseNotes = "https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-${version}"
     }
-    
-    $version = ($url -split '/|-' | select -Last 1 -Skip 1).Substring(7)
-    
-    if ( $url -match 'zip$') {
-      $version = "$version-beta"
-    }
-    
-    return @{ URL64 = $url; Version = $version }
 }
 
 update -ChecksumFor none

@@ -1,24 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>meshlab</id>
-    <version>2020.12</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
-    <owners>LudicrousByte</owners>
-    <title>MeshLab (Install)</title>
-    <authors>Paolo Cignoni, ISTI</authors>
-    <projectUrl>http://www.meshlab.net/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/2cd7d7454f4f7ae7d740afc060ad9b059d5c8c1d/icons/meshlab.png</iconUrl>
-    <copyright>Copyright(C) 2005-2018</copyright>
-    <licenseUrl>https://github.com/cnr-isti-vclab/meshlab/blob/master/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/cnr-isti-vclab/meshlab</projectSourceUrl>
-    <docsUrl>http://www.meshlab.net/#support</docsUrl>
-    <bugTrackerUrl>https://github.com/cnr-isti-vclab/meshlab/issues</bugTrackerUrl>
-    <tags>meshlab admin foss 3d mesh render texturing printing</tags>
-    <summary>the open source system for processing and editing 3D triangular meshes.</summary>
-    <description><![CDATA[# MeshLab
+
+
+# MeshLab
 
 MeshLab is an open source, portable, and extensible system for the processing and editing of unstructured large 3D triangular meshes. It is aimed to help the processing of the typical not-so-small unstructured models arising in 3D scanning, providing a set of tools for editing, cleaning, healing, inspecting, rendering and converting this kind of meshes. These tools include MeshLab proper, a versatile program with a graphical user interface, and [meshlabserver](https://github.com/cnr-isti-vclab/meshlab/blob/master/src/meshlabserver/README.md), a program that can perform mesh processing tasks in batch mode, without a GUI.
 
@@ -78,11 +60,3 @@ DOI = {10.2312/LocalChapterEvents/ItalChap/ItalianChapConf2008/129-136}
 For documented and repeatable bugs, feature requests, etc., please use the [GitHub issues](https://github.com/cnr-isti-vclab/meshlab/issues).
 
 For general questions use [StackOverflow](http://stackoverflow.com/questions/tagged/meshlab).
-]]></description>
-    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2020.12</releaseNotes>
-  </metadata>
-  <files>
-    <file src="legal\**" target="legal" />
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
