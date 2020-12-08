@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-il2cpp</id>
-    <version>2020.1.16</version>
+    <version>2020.1.16.20201208</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-il2cpp</packageSourceUrl>
-    <owners>LudicrousByte</owners>
-    <title>Unity Windows Store (IL2CPP) Target Support</title>
+    <owners>jtcmedia</owners>
+    <title>[Deprecated] Unity Windows Store (IL2CPP) Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
@@ -17,16 +17,25 @@
     <tags>unity unity3d admin il2cpp target</tags>
     <summary>This package adds Windows Store (IL2CPP) Target Support to Unity.</summary>
     <description>
-This package adds Windows Store (IL2CPP) Target Support to Unity.
+This package is deprecated because it's a duplicate of **unity-win-il2cpp**. Use the **unity-win-il2cpp package** instead.
+
+This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
     </description>
     <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
+### New users
+
+* Do not install unity-il2cpp (this package). Install **unity-win-il2cpp** instead.
+
+### Existing users
+
+* Updating this package will install the most recent version of the **unity-win-il2cpp** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the package name **unity-win-il2cpp**.
+
+### Cleanup
+
+* Remove package: `choco uninstall unity-il2cpp --all-versions --whatif`
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2020.1.16]" />
+      <dependency id="unity-win-il2cpp" version="2020.1.16" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
