@@ -1,14 +1,8 @@
 
 
-<h2 align="center"> Waifu2x-Extension-GUI </h2>
+# Waifu2x-Extension-GUI
 
-<h3 align="center"> Photo/Video/GIF enlargement using machine learning </h3>
-
-<p align="center">
-<img src="https://img.shields.io/github/v/release/aaronfeng753/waifu2x-extension-gui?label=Latest%20stable%20release&style=flat-square&color=brightgreen">
-<img src="https://img.shields.io/badge/Support-Windows%20x64-blue?logo=Windows&style=flat-square">
-<img src="https://img.shields.io/github/license/aaronfeng753/waifu2x-extension-gui?style=flat-square&label=License">
-</p>
+### Photo/Video/GIF enlargement using machine learning
 
 # What is Waifu2x-Extension-GUI?
 
@@ -35,32 +29,20 @@ Waifu2x-caffe / Waifu2x-converter / Waifu2x-ncnn-vulkan / SRMD-ncnn-vulkan / Rea
 
 #### ✅Already been tested on the `AMD` RX 550, `NVIDIA` GeForce GTX 1070 and `Intel` UHD 620.
 
-# Samples👀
+### Samples👀
 
-### **`Image`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/image
+**`Image`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/image
 
-### **`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
+**`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
 
-### **`GIF`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/gif
+**`GIF`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/gif
 
 #### `Github doesn't support online video playback, please check link below:`
-### **`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
-
-# ❤ Donate ❤ (推荐使用 支付宝 或者 微信)
-# [PayPal](https://www.paypal.me/aaronfeng753)
-### 除了扫码捐赠现金, 您也可以每天打开支付宝首页搜“682796694”领红包并使用, 我也可以获得收入.
-![donate_new](/donate_new.jpg)
-#### 如果捐赠二维码图片无法正常加载,请[打开此链接查看](https://gitee.com/aaronfeng0711/Waifu2x-Extension-GUI/raw/master/donate_new.jpg)或者合法的连接国际网络后刷新页面, 当然您也可以[按照这个教程来尝试修复github图片加载的问题](https://github.com/AaronFeng753/Github_dns_hosts#github_dns_hosts).
-
-# [📄License](https://github.com/AaronFeng753/Waifu2x-Extension-GUI/blob/master/LICENSE)
+**`Video`** : https://github.com/AaronFeng753/Waifu2x-Extension-GUI/tree/master/Samples/video
 
 Waifu2x-Extension-GUI is licensed under the [🔗GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
-<p align="left">
-<img src="/.github/AGPLv3_Logo.png" height="120">
-</p>
-
-# Privacy policy🙈🙉🙊
+### Privacy policy🙈🙉🙊
 
 We respect your privacy, so the following is the privacy policy of this software:
 ```
