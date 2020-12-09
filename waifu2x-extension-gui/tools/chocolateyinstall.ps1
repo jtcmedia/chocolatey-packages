@@ -13,10 +13,24 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
+$files = Get-ChildItem $toolsPath -Include *.exe -Recurse
+
+foreach ($file in $files) {
+  if (!($file.Name.Equals("Waifu2x-Extension-GUI-Start.exe"))) {
+    #generate an ignore file
+    New-Item "$file.ignore" -type file -Force | Out-Null
+  }
+  else {
+    New-Item "$file.gui" -type file -Force | Out-Null
+  }
+}
+
+
 $desktopPath = [Environment]::GetFolderPath("Desktop")
 
 Install-ChocolateyShortcut `
   -ShortcutFilePath "$desktopPath\Waifu2x-Extension-GUI.lnk" `
-  -TargetPath "$env:ChocolateyInstall\bin\Waifu2x-Extension-GUI-Start.exe"
+  -TargetPath "$env:ChocolateyInstall\bin\Waifu2x-Extension-GUI-Start.exe" `
+  -WorkingDirectory "$toolsPath"
 
 rm $toolsPath\*.7z -ea 0
