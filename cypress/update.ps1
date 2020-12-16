@@ -21,12 +21,12 @@ function global:au_GetLatest {
     $regex = '.zip$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
-    $version = $url -split '/|.zip$' | select -Last 1 -Skip 1
+    $version = $url -split '/|.zip$' | select -Last 1 -Skip 1 | % { $_.Replace('v','') }
     
     @{
-        URL32 = "https://download.cypress.io/desktop"
-        Version = $version.Replace('v','')
-        ReleaseNotes = "https://github.com/cypress-io/cypress/releases/tag/${version}"
+        URL32 = "https://cdn.cypress.io/desktop/${version}/win32-x64/cypress.zip"
+        Version = $version
+        ReleaseNotes = "https://github.com/cypress-io/cypress/releases/tag/v${version}"
     }
 }
 
