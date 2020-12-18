@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://awscli.amazonaws.com/AWSCLIV2-2.1.12.msi'
-$checksum64 = '216b7a85ae31aaf742c3ec570970d5f1ef8aeae10094454f9bfc92042040a14c'
+$url64      = 'https://awscli.amazonaws.com/AWSCLIV2-2.1.13.msi'
+$checksum64 = 'af26c56af5f67ff9d0668d12f6e4271e8c9e8c251fb8d1777cab7e9b150cf035'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
