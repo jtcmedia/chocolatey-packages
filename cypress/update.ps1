@@ -11,6 +11,8 @@ function global:au_SearchReplace {
         ".\tools\chocolateyinstall.ps1" = @{
           "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
           "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+          "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+          "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -24,10 +26,11 @@ function global:au_GetLatest {
     $version = $url -split '/|.zip$' | select -Last 1 -Skip 1 | % { $_.Replace('v','') }
     
     @{
-        URL32 = "https://cdn.cypress.io/desktop/${version}/win32-x64/cypress.zip"
+        URL32 = "https://cdn.cypress.io/desktop/${version}/win32-ia32/cypress.zip"
+        URL64 = "https://cdn.cypress.io/desktop/${version}/win32-x64/cypress.zip"
         Version = $version
         ReleaseNotes = "https://github.com/cypress-io/cypress/releases/tag/v${version}"
     }
 }
 
-update -ChecksumFor 32
+update -ChecksumFor all
