@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dxwnd</id>
+    <version>2.05.60</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/dxwnd</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>DxWnd</title>
+    <authors>ghotik</authors>
+    <projectUrl>https://sourceforge.net/projects/dxwnd/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/111b2a3d4cb4c4d5542007aeb135e8890d97f99e/icons/dxwnd.png</iconUrl>
+    <copyright>ghotik</copyright>
+    <projectSourceUrl>https://sourceforge.net/p/dxwnd/code/ref/master/</projectSourceUrl>
+    <docsUrl>https://sourceforge.net/p/dxwnd/discussion/</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/dxwnd/tickets/</bugTrackerUrl>
+    <tags>dxwnd system calls windows win32 window mode compatibility legacy cd</tags>
+    <summary>Windows hooker - intercepts system calls to make win32 programs running in a window, to support a better compatibility, to enhance video modes, to stretch timing and emulate CD disk data and audio tracks. It is typically very useful to run old windows games.</summary>
+    <description><![CDATA[# DxWnd
+
+Windows hooker - intercepts system calls to make win32 programs running in a window, to support a better compatibility, to enhance video modes, to stretch timing and emulate CD disk data and audio tracks. It is typically very useful to run old windows games.
+
+## Features
+
+* Run fullscreen programs in window mode
+
+* Perform time stretching to slow down or speed up actions
+
+* Add several compatibility options to support legacy programs
+
+* Log operations, show program status and palette
+
+* Emulate CD audio tracks playing ripped audio files
+
+* Emulate CD and HD file systems
+
+* Usable through a GUI or with customized proxies
+]]></description>
+    <releaseNotes>Refer to **readme-relnotes.txt**</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
