@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>maptool</id>
+    <version>1.7.0</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/maptool</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>MapTool (Install)</title>
+    <authors>RPTools</authors>
+    <projectUrl>https://www.rptools.net/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/e981cb69fb136f3bd6e1cb1a611d8f25ec4b2dce/icons/maptool.png</iconUrl>
+    <copyright>Copyright © 2020 RPTools – All Rights Reserved</copyright>
+    <licenseUrl>https://github.com/RPTools/maptool/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/RPTools/maptool</projectSourceUrl>
+    <docsUrl>https://www.rptools.net/tutorials/</docsUrl>
+    <bugTrackerUrl>https://github.com/RPTools/maptool/issues</bugTrackerUrl>
+    <tags>maptool admin rpg mapping map chat token tracker tabletop virtual table top battlemat gurps d&amp;d</tags>
+    <summary>Virtual Tabletop for playing roleplaying games with remote players or face to face.</summary>
+    <description><![CDATA[MapTool
+=======
+
+So what is MapTool? 
+-------------------
+
+MapTool is much more than just a mapping program. Included are not only powerful tools for the creation of detailed maps, but also a chat function, detailed token management (allowing you to track properties of the units placed on the map and display health and status information), and an initiative tracker. Functions not being used can be hidden out of sight. These features enable your computer screen to function as a virtual table top, filling the role of battlemats and dry-erase markers and providing for infinitely scrollable maps and the ability to use a large-screen TV or video projector.  It is "game system agnostic", meaning that while MapTool has special support for some game systems (like hexes for GURPS or square templates for D&D 4E) there is no requirement for you to use these features.
+
+The best part is all this isn't limited to a single PC. You can utilize the integrated server function to connect to players wherever there's an Internet connection. Miss your buddy in Singapore? Not a problem. Roll up that character, and then your sleeves.
+
+And we don't stop there! Not content with just emulating the tabletop, we seek to improve upon the tabletop experience. This, truly, is where MapTool shines. A set of "topology" and vision features enable the GM to limit the view of his players, revealing the map as they explore it. Walls and other objects can prevent players from seeing what lies behind them. Darkness can be made to fall, blinding players who lack a light. Lights can be set on objects or on tokens that illuminate however much of the map you wish. If the GM wishes, s/he can limit the view of players to what their specific token sees, adding a whole new level to the experience of splitting up the party.  Woe be to the character who can't see around the corner of a wall but steps out into the view of the enemy!
+
+Resources
+---------
+
+ - **Website:** http://rptools.net/ 
+ - **Forums:**  http://forums.rptools.net 
+ - **Wiki:**    http://lmwcs.com/rptools/wiki/Main_Page 
+ - **Discord:** https://discord.gg/gevEtpC
+]]></description>
+    <releaseNotes>https://github.com/RPTools/maptool/releases/tag/1.7.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
