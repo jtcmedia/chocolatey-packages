@@ -51,7 +51,7 @@ Let the world know your project is using Cypress.io to test with this cool badge
 
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 ]]></description>
-    <releaseNotes>https://github.com/cypress-io/cypress/releases/tag/v6.1.0</releaseNotes>
+    <releaseNotes>https://github.com/cypress-io/cypress/releases/tag/v6.2.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,15 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
 $url32      = 'https://cdn.cypress.io/desktop/6.1.0/win32-ia32/cypress.zip'
-$checksum32 = 'dafa19c6cc6ed6505e1b3cef381eec3d658d6457d5c9d2b1568a8a2a9d26cef0'
+$checksum32 = 'DAFA19C6CC6ED6505E1B3CEF381EEC3D658D6457D5C9D2B1568A8A2A9D26CEF0'
 $url64      = 'https://cdn.cypress.io/desktop/6.1.0/win32-x64/cypress.zip'
-$checksum64 = 'f72cb5458531850930652b2a66a78d955ecccef9d5bd2c39de15149ae933d708'
-
-$localAppData = [Environment]::GetFolderPath("LocalApplicationData")
+$checksum64 = 'F72CB5458531850930652B2A66A78D955ECCCEF9D5BD2C39DE15149AE933D708'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
-  UnzipLocation   = $localAppData
+  UnzipLocation   = $(Get-ToolsLocation)
   Url             = $url32
   Checksum        = $checksum32
   ChecksumType    = 'sha256'
@@ -24,6 +22,6 @@ $desktopPath = [Environment]::GetFolderPath("Desktop")
 
 Install-ChocolateyShortcut `
   -ShortcutFilePath "$desktopPath\Cypress.lnk" `
-  -TargetPath "$localAppData\Cypress\Cypress.exe"
+  -TargetPath "$($packageArgs.UnzipLocation)\Cypress\Cypress.exe"
 
 rm $toolsPath\*.zip -ea 0
