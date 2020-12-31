@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>waifu2x-extension-gui</id>
-    <version>2.57.31</version>
+    <version>2.57.41</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/waifu2x-extension-gui</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Waifu2x-Extension-GUI</title>
@@ -73,7 +73,7 @@ People's Republic of China, you can disable downloading anything from Gitee by e
 In conclusion, we won't collect any data from you. If you don't trust us, you can read the source code yourself or stop using this software.
 ```
 ]]></description>
-    <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v2.57.31</releaseNotes>
+    <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v2.57.41</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
