@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>staxrip</id>
-    <version>2.1.3.0</version>
+    <version>2.1.6.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/staxrip</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>StaxRip</title>
@@ -28,7 +28,7 @@ StaxRip is a video encoding GUI for Windows, it executes and controls console ap
 
 ## [Download](https://staxrip.readthedocs.io/introduction.html#download)
 ]]></description>
-    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/2.1.3.0</releaseNotes>
+    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/2.1.6.0</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
