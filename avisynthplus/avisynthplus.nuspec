@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>avisynthplus</id>
-    <version>3.6.1</version>
+    <version>3.7.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/avisynthplus</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>AviSynth+ (Install)</title>
@@ -24,7 +24,7 @@
 AviSynth+ is a fork of the well-known frameserver featuring new functionality and optimizations not available in mainline. In the hope of modernizing AviSynth to meet present day needs and expectations, the project encourages everybody to help reach our goals: add long-sought features, energize the community, and improve developer and user friendliness. AviSynth+ is fully compatible with plugins and scripts written for AviSynth.
 
     </description>
-    <releaseNotes>https://github.com/avisynth/avisynthplus/releases/tag/v3.6.1</releaseNotes>
+    <releaseNotes>https://github.com/avisynth/avisynthplus/releases/tag/v3.7.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" version="14.26.28720.3" />
     </dependencies>
