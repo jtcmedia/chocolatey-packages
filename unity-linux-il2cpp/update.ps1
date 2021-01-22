@@ -7,7 +7,7 @@ function global:au_SearchReplace {
             "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
         }
         
-        ".\unity-linux-il2cpp.nuspec" = @{
+        "$($Latest.PackageName).nuspec" = @{
             "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"`[$($Latest.Version)`]`""
         }
     }
