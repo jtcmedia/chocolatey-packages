@@ -8,6 +8,10 @@ function global:au_SearchReplace {
             "(^[$]url64\s*=\s*)('.*')"                = "`$1'$($Latest.URL64)'"
             "(^[$]checksum64\s*=\s*)('.*')"           = "`$1'$($Latest.Checksum64)'"
         }
+
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
     }
 }
 
@@ -34,6 +38,7 @@ function global:au_GetLatest {
     @{
         URL64            = $editor_url
         Version          = $version
+        ReleaseNotes     = "https://unity3d.com/unity/whats-new/${version}"
         URL_android      = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
         URL_appletv      = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
         URL_docs         = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
