@@ -4,16 +4,16 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.3/DS4Windows_2.2.3_x86.zip
-    x64: https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.3/DS4Windows_2.2.3_x64.zip
+    x32: https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.4/DS4Windows_2.2.4_x86.zip
+    x64: https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.4/DS4Windows_2.2.4_x64.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.3/DS4Windows_2.2.3_x64.zip
+        Get-RemoteChecksum https://github.com/Ryochan7/DS4Windows/releases/download/v2.2.4/DS4Windows_2.2.4_x64.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 4890F814782C03332F383D39421D282CE483C33411C042AC06FE9440FF3424A1
-    checksum64: 9EE1C3CF465342216F3F1F586D87A005F1839FC083299E27245AE13D68B156A9
+    checksum32: DC9FA3DA30B9301AC50555FA6755EDF4F48BA8C436FC7FF173B967C6EAD39169
+    checksum64: 324F94809369393B23DD207C76901A9437B4A7EE010CA72DB19887A34C31BC0A
