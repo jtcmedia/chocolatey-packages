@@ -104,9 +104,7 @@ If you're a company and using Unity Personal, you must meet the following criter
 * Not currently using Unity Plus or Pro.
 
     </description>
-    <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
