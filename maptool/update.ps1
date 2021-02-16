@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-    $regex = '.exe$'
+    $regex = '.msi$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url -split '/' | select -Last 1 -Skip 1
