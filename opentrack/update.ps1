@@ -8,16 +8,12 @@ function global:au_SearchReplace {
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
       
-        ".\legal\VERIFICATION.txt" = @{
-          "(?i)(\s+x32:).*"                   = "`${1} $($Latest.URL32)"
-          "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL32)"
-          "(?i)(\s+checksum32:).*"            = "`${1} $($Latest.Checksum32)"
+        ".\tools\chocolateyinstall.ps1" = @{
+          "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+          "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
-
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
-
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
@@ -34,4 +30,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor none
+update -ChecksumFor 32

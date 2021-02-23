@@ -105,6 +105,5 @@ The code is held to a high-quality standard and written with utmost care; consid
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
