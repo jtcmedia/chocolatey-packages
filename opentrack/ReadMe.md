@@ -40,41 +40,6 @@ Don't be afraid to submit an **issue/feature request** if you have any problems!
 - FSUIPC for Microsoft Flight Simulator 2002/2004 (Windows)
 - SteamVR through a bridge (Windows; see <<https://github.com/r57zone/OpenVR-OpenTrack>> by @r57zone)
 
-## Credits, in chronological order
-
-- Stanisław Halik (maintainer)
-- Wim Vriend -- author of [FaceTrackNoIR](http://facetracknoir.sourceforge.net/) that served as the initial codebase for `opentrack`. While the  code was almost entirely rewritten, we still hold on to many of `FaceTrackNoIR`'s ideas.
-- Chris Thompson (aka mm0zct, Rift and Razer Hydra author and maintainer)
-- Patrick Ruoff (PT tracker author)
-- Xavier Hallade (Intel RealSense tracker author and maintainer)
-- furax49 (hatire tracker author)
-- Michael Welter (contributor)
-- Alexander Orokhovatskiy (Russian translation; profile repository maintenance; providing hardware; translating reports from the Russian community)
-- Attila Csipa (Micro:Bit author)
-- Eike "e4z9" (OSX joystick output driver)
-- Wei Shuai (Wiimote tracker)
-- Stéphane Lenclud (Kinect Face Tracker, Easy Tracker)
-
-## Thanks
-
-- uglyDwarf (high CON)
-- Andrzej Czarnowski (FreePIE tracker and
-  [Google Cardboard](https://github.com/opentrack/opentrack/wiki/VR-HMD-goggles-setup-----google-cardboard,-colorcross,-opendive)
-  assistance, testing)
-- Wim Vriend (original codebase author and maintainer)
-- Ryan Spicer (OSX tester, contributor)
-- Ries van Twisk (OSX tester, OSX Build Fixes, contributor)
-- Donovan Baarda (filtering/control theory expert)
-- Mathijs Groothuis (@MathijsG, dozens of bugs and other issues reported; NL translation)
-- The Russian community from the [IL-2 Sturmovik forums](https://forum.il2sturmovik.ru/) (reporting bugs, requesting important features)
-- OpenCV authors and maintainers <<https://github.com/opencv/opencv/>>.
-
-## Contributing
-
-Code, translations,
-
-Please see [basic rules for contributing](https://github.com/opentrack/opentrack/blob/unstable/CONTRIBUTING.md). There's also a guide for [working with core code](https://github.com/opentrack/opentrack/wiki/Hacking-opentrack). For writing input and output modules you don't need this guide except for 
-
 ## License and warranty
 
 Almost all code is licensed under the [ISC license](https://en.wikipedia.org/wiki/ISC_license). There are very few proprietary dependencies. There is no copyleft code. See individual files for licensing and authorship information.
