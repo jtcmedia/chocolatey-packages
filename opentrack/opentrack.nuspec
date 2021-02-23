@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>opentrack</id>
+    <version>2.3.12</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/opentrack</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>opentrack (Install)</title>
+    <authors>Stanisław Halik</authors>
+    <projectUrl>http://github.com/opentrack/opentrack</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/9918005aa3f8a5b6fe86a45954c06a95e0d27b72/icons/opentrack.png</iconUrl>
+    <copyright>Copyright (c) 2012-2016 Stanislaw Halik</copyright>
+    <licenseUrl>https://github.com/opentrack/opentrack/blob/master/OPENTRACK-LICENSING.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>http://github.com/opentrack/opentrack</projectSourceUrl>
+    <docsUrl>https://forum.il2sturmovik.com/topic/34403-a-complete-guide-to-set-up-head-tracking-opentrack/</docsUrl>
+    <bugTrackerUrl>https://github.com/opentrack/opentrack/issues</bugTrackerUrl>
+    <tags>opentrack admin foss headtracking freetrack trackir</tags>
+    <summary>Head tracking software for MS Windows, Linux, and Apple OSX</summary>
+    <description><![CDATA[## Usage
+
+`opentrack` is an application dedicated to tracking user's head
+movements and relaying the information to games and flight simulation
+software.
+
+`opentrack` allows for output shaping, filtering, and operating with many input and output devices and protocols; the codebase runs Microsoft Windows, Apple OSX (currently unmaintained), and GNU/Linux.
+
+Don't be afraid to submit an **issue/feature request** if you have any problems! We're a friendly bunch.
+
+## Tracking input
+
+- PointTracker by Patrick Ruoff, freetrack-like light sources
+- Oculus Rift DK1, DK2, CV, and legacy/knockoff versions (Windows only)
+- Paper [marker support](https://github.com/opentrack/opentrack/wiki/Aruco-tracker)
+  via the ArUco library <<https://github.com/opentrack/aruco>>
+- Razer Hydra
+- Relaying via UDP from a different computer
+- Relaying UDP via FreePIE-specific Android app
+- Joystick analog axes (Windows)
+- Windows Phone [tracker](https://github.com/ZanderAdam/OpenTrack.WindowsPhone/wiki) over opentrack UDP protocol
+- Arduino with custom firmware
+- Intel RealSense 3D cameras (Windows)
+- BBC micro:bit, LEGO, sensortag support via Smalltalk<sup>[(1)](https://en.wikipedia.org/wiki/Smalltalk)[(2)](https://en.wikipedia.org/wiki/Alan_Kay)</sup>
+  [S2Bot](http://www.picaxe.com/Teaching/Other-Software/Scratch-Helper-Apps/)
+- Wiimote (Windows)
+
+## Output protocols
+
+- SimConnect for newer Microsoft Flight Simulator (Windows)
+- freetrack implementation (Windows)
+- Relaying UDP to another computer
+- Virtual joystick output (Windows, Linux, OSX)
+- Wine freetrack glue protocol (Linux, OSX)
+- X-Plane plugin (Linux)
+- Tablet-like mouse output (Windows)
+- FlightGear
+- FSUIPC for Microsoft Flight Simulator 2002/2004 (Windows)
+- SteamVR through a bridge (Windows; see <<https://github.com/r57zone/OpenVR-OpenTrack>> by @r57zone)
+
+## Credits, in chronological order
+
+- Stanisław Halik (maintainer)
+- Wim Vriend -- author of [FaceTrackNoIR](http://facetracknoir.sourceforge.net/) that served as the initial codebase for `opentrack`. While the  code was almost entirely rewritten, we still hold on to many of `FaceTrackNoIR`'s ideas.
+- Chris Thompson (aka mm0zct, Rift and Razer Hydra author and maintainer)
+- Patrick Ruoff (PT tracker author)
+- Xavier Hallade (Intel RealSense tracker author and maintainer)
+- furax49 (hatire tracker author)
+- Michael Welter (contributor)
+- Alexander Orokhovatskiy (Russian translation; profile repository maintenance; providing hardware; translating reports from the Russian community)
+- Attila Csipa (Micro:Bit author)
+- Eike "e4z9" (OSX joystick output driver)
+- Wei Shuai (Wiimote tracker)
+- Stéphane Lenclud (Kinect Face Tracker, Easy Tracker)
+
+## Thanks
+
+- uglyDwarf (high CON)
+- Andrzej Czarnowski (FreePIE tracker and
+  [Google Cardboard](https://github.com/opentrack/opentrack/wiki/VR-HMD-goggles-setup-----google-cardboard,-colorcross,-opendive)
+  assistance, testing)
+- Wim Vriend (original codebase author and maintainer)
+- Ryan Spicer (OSX tester, contributor)
+- Ries van Twisk (OSX tester, OSX Build Fixes, contributor)
+- Donovan Baarda (filtering/control theory expert)
+- Mathijs Groothuis (@MathijsG, dozens of bugs and other issues reported; NL translation)
+- The Russian community from the [IL-2 Sturmovik forums](https://forum.il2sturmovik.ru/) (reporting bugs, requesting important features)
+- OpenCV authors and maintainers <<https://github.com/opencv/opencv/>>.
+
+## Contributing
+
+Code, translations,
+
+Please see [basic rules for contributing](https://github.com/opentrack/opentrack/blob/unstable/CONTRIBUTING.md). There's also a guide for [working with core code](https://github.com/opentrack/opentrack/wiki/Hacking-opentrack). For writing input and output modules you don't need this guide except for 
+
+## License and warranty
+
+Almost all code is licensed under the [ISC license](https://en.wikipedia.org/wiki/ISC_license). There are very few proprietary dependencies. There is no copyleft code. See individual files for licensing and authorship information.
+
+See [WARRANTY.txt](WARRANTY.txt) for applying warranty terms (that is, disclaiming possible pre-existing warranty) that are in force unless the software author specifies their own warranty terms. In short, we disclaim all possible warranty and aren't responsible for any possible damage or losses.
+
+The code is held to a high-quality standard and written with utmost care; consider this a promise without legal value. Despite doing the best we can not to injure users' equipment, software developers don't want to be dragged to courts for imagined or real issues. Disclaiming warranty is a standard practice in the field, even for expensive software like operating systems.
+]]></description>
+    <releaseNotes>https://github.com/opentrack/opentrack/releases/tag/opentrack-2.3.12</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
