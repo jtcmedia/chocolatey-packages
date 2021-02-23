@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>awscli</id>
-    <version>2.1.27</version>
+    <version>2.1.28</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/awscli</packageSourceUrl>
     <owners>chocolatey, LudicrousByte</owners>
     <title>AWS Command Line Interface v2 (Install)</title>
@@ -34,7 +34,7 @@ The AWS CLI provides direct access to AWS services' public APIs. Explore a servi
 In addition to the low level, API equivalent commands, the AWS CLI also provides customizations for several services. Customizations are higher level commands that simplify using a service with a complex API. For example, the aws s3 set of commands provide a familiar syntax for managing files in Amazon S3.
 
     </description>
-    <releaseNotes>https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst#2127</releaseNotes>
+    <releaseNotes>https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst#2128</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
