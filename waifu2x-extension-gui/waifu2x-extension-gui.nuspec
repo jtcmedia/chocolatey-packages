@@ -72,6 +72,15 @@ People's Republic of China, you can disable downloading anything from Gitee by e
 
 In conclusion, we won't collect any data from you. If you don't trust us, you can read the source code yourself or stop using this software.
 ```
+
+## Package Parameters
+
+The following package parameters can be set:
+
+- `/NOICON` - Do not install a Desktop Icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 ]]></description>
     <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v3.11.19</releaseNotes>
   </metadata>
