@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opentrack</id>
-    <version>2.3.12</version>
+    <version>2.3.13</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/opentrack</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>opentrack (Install)</title>
@@ -66,7 +66,7 @@ See [WARRANTY.txt](WARRANTY.txt) for applying warranty terms (that is, disclaimi
 
 The code is held to a high-quality standard and written with utmost care; consider this a promise without legal value. Despite doing the best we can not to injure users' equipment, software developers don't want to be dragged to courts for imagined or real issues. Disclaiming warranty is a standard practice in the field, even for expensive software like operating systems.
 ]]></description>
-    <releaseNotes>https://github.com/opentrack/opentrack/releases/tag/opentrack-2.3.12</releaseNotes>
+    <releaseNotes>https://github.com/opentrack/opentrack/releases/tag/opentrack-2.3.13</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
