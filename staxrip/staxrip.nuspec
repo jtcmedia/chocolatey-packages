@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>staxrip</id>
-    <version>2.1.8.0</version>
+    <version>2.1.9.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/staxrip</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>StaxRip</title>
@@ -18,17 +18,29 @@
     <bugTrackerUrl>https://github.com/staxrip/staxrip/issues</bugTrackerUrl>
     <tags>staxrip x265 mkvmerge ffmpeg video encoder</tags>
     <summary>Video encoding GUI for Windows.</summary>
-    <description><![CDATA[# About
+    <description><![CDATA[### About
 
-StaxRip is a video encoding GUI for Windows, it executes and controls console apps like x265, mkvmerge and ffmpeg and uses the scripting based frame servers AviSynth and VapourSynth for video processing.
+StaxRip is a powerful video encoding GUI for Windows.  
+It executes and controls console apps like x265, mkvmerge and ffmpeg and uses the scripting based frame servers AviSynth+ and VapourSynth for video processing.
 
-## [Documentation](https://staxrip.readthedocs.io)
+***StaxRip is no One-Click-Encoder!***  
+Due to its possibilities, StaxRip forces you to know what you want to achieve and how to set up the options.
+Especially at the beginning you have to learn the settings and maybe do some tests to learn how StaxRip works and what is possible. That being said, StaxRip also offers you an assistant that takes care of your settings and changes.
 
-## [Support](https://staxrip.readthedocs.io/support.html)
+When you struggle, there are multiple ways to get help from the community.
 
-## [Download](https://staxrip.readthedocs.io/introduction.html#download)
+### Documentation
+
+You can find various information and instructions on [Wiki](https://github.com/staxrip/staxrip/wiki) and on [ReadTheDocs](https://staxrip.readthedocs.io/index.html).
+
+#### Usage questions
+
+- Usage questions can be asked on the *StaxRip threads* on
+  - [VideoHelp](https://forum.videohelp.com/threads/369913-StaxRip-support-thread) 
+  - [Doom9](https://forum.doom9.org/showthread.php?t=172068)
+- Feel also free to join the user chat on [Discord](https://discord.gg/rRn7vGU).
 ]]></description>
-    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/2.1.8.0</releaseNotes>
+    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/2.1.9.0</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
