@@ -65,8 +65,8 @@ Gab Social: @ds4windows
 ]]></description>
     <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v2.2.14</releaseNotes>
     <dependencies>
-      <dependency id="netfx-4.6.2" version="4.6.2.20190930" />
-      <dependency id="vcredist140" version="14.26.28720.3" />
+      <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
+      <dependency id="vcredist140" version="14.28.29913" />
     </dependencies>
   </metadata>
   <files>
