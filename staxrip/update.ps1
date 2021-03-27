@@ -21,12 +21,12 @@ function global:au_GetLatest {
     $regex = '.7z$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
-    $version = $url -split '/' | select -Last 1 -Skip 1
+    $version = $url -split '/' | select -Last 1 -Skip 1 | % { $_.Replace('v','') }
     
     @{
         URL64 = $url
         Version = $version
-        ReleaseNotes = "https://github.com/staxrip/staxrip/releases/tag/${version}"
+        ReleaseNotes = "https://github.com/staxrip/staxrip/releases/tag/v${version}"
     }
 }
 
