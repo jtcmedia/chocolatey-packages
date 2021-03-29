@@ -17,8 +17,10 @@ Install-ChocolateyZipPackage @packageArgs
 
 $desktopPath = [Environment]::GetFolderPath("Desktop")
 
+$subFolder = $url64 -split '/|\.7z' | select -Last 1 -Skip 1
+
 Install-ChocolateyShortcut `
   -ShortcutFilePath "$desktopPath\StaxRip.lnk" `
-  -TargetPath "$unzipLocation\StaxRip.exe"
+  -TargetPath "$unzipLocation\$subFolder\StaxRip.exe"
 
 rm $toolsPath\*.7z -ea 0
