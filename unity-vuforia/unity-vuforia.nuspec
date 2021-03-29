@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-vuforia</id>
-    <version>2019.1.12.20190731</version>
+    <version>2019.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-vuforia</packageSourceUrl>
-    <owners>LudicrousByte</owners>
-    <title>Unity Vuforia AR Target Support</title>
+    <owners>jtcmedia</owners>
+    <title>[Deprecated] Unity Vuforia AR Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/eaabd825cb5e8638752fd1979fc88bbc14a761b8/icons/unity.png</iconUrl>
     <copyright>Copyright © 2018 Unity Technologies</copyright>
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -17,19 +17,12 @@
     <tags>unity unity3d admin vuforia augmented reality target</tags>
     <summary>This package adds Vuforia AR Target Support to Unity.</summary>
     <description>
-This package adds Vuforia AR Target Support to Unity.
-
-## Package Notes
-As of Unity 2019.2, Unity has moved Vuforia support to Unity's Package Manager and is no longer releasing Vuforia as a component installer. Therefore, this package will no longer be updated.
+This package is deprecated. As of Unity 2019.2, Unity has moved Vuforia support to Unity's Package Manager and is no longer releasing Vuforia as a component installer. Therefore, this package will no longer be updated.
     </description>
     <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2019.1.12" />
+      <dependency id="unity" version="2019.2" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
