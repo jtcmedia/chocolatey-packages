@@ -5,6 +5,10 @@ $releases = 'https://nodejs.org/en/download/'
 
 function global:au_SearchReplace {
     @{
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
+      
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
             "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
@@ -30,7 +34,13 @@ function global:au_GetLatest {
     
     $shasums = $download_page.links | ? href -match '.asc$' | select -First 1 -expand href
     
-    return @{ URL32 = $url[0]; URL64 = $url[1]; SHASUMS = $shasums; Version = $version }
+    @{
+      URL32 = $url[0]
+      URL64 = $url[1]
+      SHASUMS = $shasums
+      Version = $version
+      ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V14.md#${version}"
+    }
 }
 
 update -ChecksumFor none

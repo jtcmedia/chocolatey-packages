@@ -10,7 +10,7 @@
     <authors>Node.js Foundation</authors>
     <projectUrl>https://nodejs.org/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/nodejs-lts-icon/icons/nodejs-lts.png</iconUrl>
-    <copyright>© 2020 Node.js Foundation</copyright>
+    <copyright>© 2021 Node.js Foundation</copyright>
     <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
@@ -29,9 +29,7 @@ Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.j
 #### If you want the **Current** release, install the [nodejs](https://chocolatey.org/packages/nodejs) package instead.
 
     </description>
-    <releaseNotes>
-* [Changelog 14.x](https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V14.md)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
    </metadata>
   <files>
     <file src="tools\**" target="tools" />
