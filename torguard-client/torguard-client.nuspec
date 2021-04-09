@@ -26,9 +26,7 @@ TorGuard VPN service protects your online identity by providing you an anonymous
 * This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
  
     </description>
-    <releaseNotes>
-* [Changelog](https://torguard.net/forums/index.php?/forum/17-torguard-client-releases/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.24" />
       <dependency id="kb2999226" version="1.0.20170509" />
