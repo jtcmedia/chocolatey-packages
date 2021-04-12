@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>3.0.1</version>
+    <version>3.0.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>DS4Windows</title>
@@ -30,10 +30,6 @@ This project is a fork of the work of Jays2Kings. You can find the old project
 website at [ds4windows.com](http://ds4windows.com).
 
 ![DS4Windows Preview](https://raw.githubusercontent.com/Ryochan7/DS4Windows/jay/ds4winwpf_screen_20200412.png)
-
-## Downloads
-
-- **[Main builds of DS4Windows](https://github.com/Ryochan7/DS4Windows/releases)**
 
 ## Requirements
 
@@ -65,7 +61,7 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
 [Mastodon @ds4windows@fosstodon.org](https://fosstodon.org/@ds4windows)  
 [Minds @ds4windows](https://www.minds.com/ds4windows/)
 ]]></description>
-    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.1</releaseNotes>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.2</releaseNotes>
     <dependencies>
       <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
       <dependency id="vcredist140" version="14.28.29913" />
