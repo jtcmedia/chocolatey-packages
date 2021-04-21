@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.22.26/Waifu2x-Extension-GUI-v3.22.26-Win64.7z'
-$checksum64 = '02b352295d7fcca79b3f013fb2b297e3e82a0c536fcda9ea6a0189f1f8f801bf'
+$url64      = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.31.13/Waifu2x-Extension-GUI-v3.31.13-Win64.7z'
+$checksum64 = '7cdd554d7f0b64415161bc69e4cbd401cf8f96109098ecec93f044d0717beedb'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
