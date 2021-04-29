@@ -12,3 +12,7 @@ Currently supports emulation of the following USB Gamepads:
 
 - [Microsoft Xbox 360 Controller](https://en.wikipedia.org/wiki/Xbox_360_controller)
 - [Sony DualShock 4 Controller](https://en.wikipedia.org/wiki/DualShock#DualShock_4)
+
+## Supported Systems
+
+The driver is built for Windows 10/Server 2016/Server 2019 only (x86 and amd64).
