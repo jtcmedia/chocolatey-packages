@@ -65,7 +65,6 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
     <dependencies>
       <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
       <dependency id="vcredist140" version="14.28.29913" />
-      <dependency id="vigembus" version="1.16.116" />
     </dependencies>
   </metadata>
   <files>
