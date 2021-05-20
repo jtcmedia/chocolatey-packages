@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: jtcmedia/chocolatey-packages
   github_api_key:
-    secure: 8Sa6zqMfbS0FNLKbX8KuBpWJ48CPtxYaoeANfXrrQAb7ecgnIpZNVIsz2T7M6+lK
+    secure: YgcgqHim+Ap4Pss0WsOaz4Z37Y1T8EaQJXC88n4XMEvSJJ3t9sGd0TDqIFuOSfNN
 
 
   # Mail credentials - for error notifications
