@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshlab</id>
-    <version>2020.12</version>
+    <version>2021.05</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>MeshLab (Install)</title>
@@ -79,7 +79,7 @@ For documented and repeatable bugs, feature requests, etc., please use the [GitH
 
 For general questions use [StackOverflow](http://stackoverflow.com/questions/tagged/meshlab).
 ]]></description>
-    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2020.12</releaseNotes>
+    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2021.05</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
