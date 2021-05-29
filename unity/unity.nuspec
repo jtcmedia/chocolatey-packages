@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity</id>
-    <version>2021.1.7</version>
+    <version>2021.1.9</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity (Install)</title>
@@ -116,7 +116,7 @@ If you're a company and using Unity Personal, you must meet the following criter
 
 * Not currently using Unity Plus or Pro.
 ]]></description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2021.1.7</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2021.1.9</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
