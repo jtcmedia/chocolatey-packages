@@ -4,7 +4,7 @@
 
 ## Features
 
-### resize/move partitions
+### Resize/Move partitions
 
 Adjust partition size by sliding the partition left and right or enter the exact partition size you want.
 

@@ -4,7 +4,7 @@
   <metadata>
     <id>partition-manager</id>
     <version>17.9.1</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/paragon-partition-manager</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/partition-manager</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Paragon Partition Manager CE (Install)</title>
     <authors>Paragon Software</authors>
@@ -13,13 +13,13 @@
     <copyright>Copyright © 1994–2021 Paragon Technologie GmbH.</copyright>
     <docsUrl>https://support.paragon-software.com/</docsUrl>
     <mailingListUrl>https://support.paragon-software.com/</mailingListUrl>
-    <tags>paragon-partition-manager partition paragon resize format undelete mbr gpt ntfs ext4 fat32 hfs</tags>
+    <tags>partition-manager admin partition paragon resize format undelete mbr gpt ntfs ext4 fat32 hfs</tags>
     <summary>Organize your hard drive and gain additional space in your existing partitions</summary>
     <description><![CDATA[# Paragon Partition Manager Community Edition
 
 ## Features
 
-### resize/move partitions
+### Resize/Move partitions
 
 Adjust partition size by sliding the partition left and right or enter the exact partition size you want.
 
