@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>partition-manager</id>
+    <version>17.9.1</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/paragon-partition-manager</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>Paragon Partition Manager CE (Install)</title>
+    <authors>Paragon Software</authors>
+    <projectUrl>https://www.paragon-software.com/free/pm-express/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/f8d7feee82ec834907f832b4da7b74914e40e417/icons/partition-manager.png</iconUrl>
+    <copyright>Copyright © 1994–2021 Paragon Technologie GmbH.</copyright>
+    <docsUrl>https://support.paragon-software.com/</docsUrl>
+    <mailingListUrl>https://support.paragon-software.com/</mailingListUrl>
+    <tags>paragon-partition-manager partition paragon resize format undelete mbr gpt ntfs ext4 fat32 hfs</tags>
+    <summary>Organize your hard drive and gain additional space in your existing partitions</summary>
+    <description><![CDATA[# Paragon Partition Manager Community Edition
+
+## Features
+
+### resize/move partitions
+
+Adjust partition size by sliding the partition left and right or enter the exact partition size you want.
+
+### Undelete Partitions
+
+You can recover your volumes and the data if you delete partition accidentally
+
+### Create/Delete Partitions
+
+Format your HDD, SSD, USB, memory card, SD card or delete a partition to make it available for reuse
+
+### Expand Partitions
+
+Redistribute free space using unallocated area and open space on adjacent volumes.
+
+###  Change label
+
+Change the label of a partition or a drive letter for improved data organization
+
+### Test Surface
+
+Check for errors on selected partitions and fix it.
+
+### Disk/Partition Conversions
+
+* Convert a logical partition to primary and vice versa
+* Convert HFS volumes to NTFS without reformatting
+* Convert MBR disk to GPT and vice versa
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
