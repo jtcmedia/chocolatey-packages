@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>faas-cli</id>
-    <version>0.13.9</version>
+    <version>0.13.11</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/faas-cli</packageSourceUrl>
     <owners>Peter Keuter, LudicrousByte</owners>
     <title>Official CLI for OpenFaaS</title>
@@ -67,7 +67,7 @@ See [contributing guide](https://github.com/openfaas/faas-cli/blob/master/CONTRI
 
 This project is part of OpenFaaS and is licensed under the MIT License.
 ]]></description>
-    <releaseNotes>https://github.com/openfaas/faas-cli/releases/tag/0.13.9</releaseNotes>
+    <releaseNotes>https://github.com/openfaas/faas-cli/releases/tag/0.13.11</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
