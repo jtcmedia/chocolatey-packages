@@ -12,7 +12,7 @@
     <copyright>Copyright (c) 2019 Travis Nickles</copyright>
     <licenseUrl>https://github.com/Ryochan7/DS4Windows/blob/jay/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/ds4windows-icon/icons/ds4windows.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/master/icons/ds4windows.png</iconUrl>
     <docsUrl>http://ds4windows.com/</docsUrl>
     <bugTrackerUrl>https://github.com/Ryochan7/DS4Windows/issues</bugTrackerUrl>
     <tags>ds4windows ps4 dualshock controller emulator foss</tags>
