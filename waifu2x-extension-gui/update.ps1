@@ -9,7 +9,7 @@ function global:au_SearchReplace {
         }
       
         ".\tools\chocolateyinstall.ps1" = @{
-          "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+          "(^[$]megaURL\s*=\s*)('.*')"      = "`$1'$($Latest.MegaURL)'"
           "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
@@ -18,16 +18,22 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-    $regex = '.7z$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
+    $regex = '^https://mega.nz'
+    $mega_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 
-    $version = $url -split '-' | select -Last 1 -Skip 1
-    
+    $fileName = ($download_page.Content -split "`n" | sls -Pattern 'data-snippet-clipboard-copy-content="' | select -First 1) -split '"' | select -Last 1
+
+    $version = $fileName -split '-' | select -Last 1 -Skip 1
+
+    $checksum = ($download_page.Content -split "`n" | sls -Pattern '^SHA256: ' | select -First 1) -split ' ' | select -Last 1
+
+        
     @{
-        URL64 = $url
+        MegaURL = $mega_url
+        Checksum64 = $checksum
         Version = $version.Replace('v','')
         ReleaseNotes = "https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/${version}"
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none

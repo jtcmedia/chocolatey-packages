@@ -1,17 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.52.01/Waifu2x-Extension-GUI-v3.52.01-Win64.7z'
-$checksum64 = '03bc785a92556d533f6fe016ea224d2165413ee1b13adf3e2ec868e16993d89b'
+$megaURL    = 'https://mega.nz/file/vOp2GZ4S#SSjbxOxmpxhj-fIdEQ87E4tjzFXFCMcWV4PC-DnPQBQ'
+$checksum64 = '64edb74ffd75bc0a369619cb6dc70c23e543736d01adcd44fabe02aa6d100ba0'
+
+megatools.exe dl --path $toolsPath $megaURL
+
+$fileFullPath = gi $toolsPath\*.7z
+
+Get-ChecksumValid -File $fileFullPath -Checksum $checksum64 -ChecksumType 'sha256'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
-  UnzipLocation   = $toolsPath
-  Url64bit        = $url64
-  Checksum64      = $checksum64
-  ChecksumType64  = 'sha256'
+  FileFullPath64  = $fileFullPath
+  Destination     = $toolsPath
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 $files = Get-ChildItem $toolsPath -Include *.exe -Recurse
 
