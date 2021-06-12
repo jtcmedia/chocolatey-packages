@@ -43,3 +43,7 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
 [BitTube.tv](https://bittube.tv/profile/ds4windows)  
 [Mastodon @ds4windows@fosstodon.org](https://fosstodon.org/@ds4windows)  
 [Minds @ds4windows](https://www.minds.com/ds4windows/)
+
+## Package Notes
+
+You may get a virus warning when installing this package. It's most likely a false positive. See [https://github.com/Ryochan7/DS4Windows/issues?q=virus](https://github.com/Ryochan7/DS4Windows/issues?q=virus) and decide for yourself if you wish to install this package.
