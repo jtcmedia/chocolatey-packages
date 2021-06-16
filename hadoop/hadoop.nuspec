@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hadoop</id>
-    <version>3.3.0</version>
+    <version>3.3.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/hadoop</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Hadoop</title>
