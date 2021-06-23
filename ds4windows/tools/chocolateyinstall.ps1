@@ -5,7 +5,6 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName
-  FileFullPath   = gi $toolsPath\*_x86.zip
   FileFullPath64 = gi $toolsPath\*_x64.zip
   Destination    = $toolsPath
 }
