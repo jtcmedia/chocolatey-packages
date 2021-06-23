@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>3.0.9</version>
+    <version>3.0.10</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>DS4Windows</title>
@@ -65,7 +65,7 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
 
 You may get a virus warning when installing this package. It's most likely a false positive. See [https://github.com/Ryochan7/DS4Windows/issues?q=virus](https://github.com/Ryochan7/DS4Windows/issues?q=virus) and decide for yourself if you wish to install this package.
 ]]></description>
-    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.9</releaseNotes>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.10</releaseNotes>
     <dependencies>
       <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
       <dependency id="vcredist140" version="14.28.29913" />
