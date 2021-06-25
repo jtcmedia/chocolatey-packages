@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balena-cli</id>
-    <version>12.44.21</version>
+    <version>12.44.22</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/balena-cli</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>balena CLI (Install)</title>
@@ -31,7 +31,7 @@ and the [balena SDK](https://www.balena.io/docs/reference/sdk/node-sdk/), and ca
 imported in Node.js applications. The balena CLI is an [open-source project on
 GitHub](https://github.com/balena-io/balena-cli/), and your contribution is also welcome!
 ]]></description>
-    <releaseNotes>https://github.com/balena-io/balena-cli/releases/tag/v12.44.21</releaseNotes>
+    <releaseNotes>https://github.com/balena-io/balena-cli/releases/tag/v12.44.22</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
