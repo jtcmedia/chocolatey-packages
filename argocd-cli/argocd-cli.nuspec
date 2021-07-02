@@ -47,7 +47,7 @@ Check live demo at https://cd.apps.argoproj.io/.
 * Contributors Office Hours: [Every Thursday](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com) | [Agenda](https://docs.google.com/document/d/1ttgw98MO45Dq7ZUHpIiOIEfbyeitKHNfMjbY5dLLMKQ)
 * User Community meeting: [Every other Wednesday](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com) | [Agenda](https://docs.google.com/document/d/1xkoFkVviB70YBzSEa4bDnu-rUZ1sIFtwKKG1Uw8XsY8)
 ]]></description>
-    <releaseNotes>https://github.com/argoproj/argocd-cli/releases/tag/v2.0.4</releaseNotes>
+    <releaseNotes>https://github.com/argoproj/argo-cd/releases/tag/v2.0.4</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

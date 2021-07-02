@@ -30,7 +30,7 @@ function global:au_GetLatest {
     @{
         URL64 = $url
         Version = $version.Replace('v','')
-        ReleaseNotes = "https://github.com/argoproj/argocd-cli/releases/tag/${version}"
+        ReleaseNotes = "https://github.com/argoproj/argo-cd/releases/tag/${version}"
     }
 }
 
