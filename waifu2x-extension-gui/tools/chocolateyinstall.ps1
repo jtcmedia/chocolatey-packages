@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$megaURL    = 'https://mega.nz/file/vOp2GZ4S#SSjbxOxmpxhj-fIdEQ87E4tjzFXFCMcWV4PC-DnPQBQ'
-$checksum64 = '64edb74ffd75bc0a369619cb6dc70c23e543736d01adcd44fabe02aa6d100ba0'
+$megaURL    = ''
+$checksum64 = 'afea19768d3f74f8ec049bb3ce26108be3a49e6f167caf1383b6f14e4e04d8a3'
 
 megatools.exe dl --path $toolsPath $megaURL
 
