@@ -84,7 +84,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 ]]></description>
     <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v3.70.02</releaseNotes>
     <dependencies>
-      <dependency id="megatools" version="1.11.0" />
+      <!--<dependency id="megatools" version="1.11.0" />-->
     </dependencies>
   </metadata>
   <files>
