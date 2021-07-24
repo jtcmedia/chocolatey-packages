@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://gitlab.com/lulzbot3d/cura-le/release/-/raw/master/cura-lulzbot-3.6.25-win32.exe'
-$checksum32 = 'ab0c3b4e9f534e04dfb477eb92ff4a74223b1374bcd73fd2c846d8148df42dae'
+$url32      = 'https://gitlab.com/lulzbot3d/cura-le/release/-/raw/master/cura-lulzbot-3.6.25-10-win32.exe'
+$checksum32 = '2d7c6dda8c4eba1bbb12a63c2c9256451de7b21f4056b820f38afc0b6c8e86fd'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
