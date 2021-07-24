@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>unity-hub</id>
-    <version>2.4.4</version>
+    <version>2.4.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-hub</packageSourceUrl>
     <owners>JipSterk, jtcmedia</owners>
     <title>Unity Hub (install)</title>
