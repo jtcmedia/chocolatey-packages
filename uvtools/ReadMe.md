@@ -23,4 +23,3 @@ This simple tool can give you insight of supports and find some failures. Did yo
 - Export file to a folder
 - Convert format to another format
 - Calibration tests
-- Portable (No installation needed)
