@@ -9,7 +9,7 @@
     <title>PrusaSlicer</title>
     <authors>Alessandro Ranellucci, Prusa Research</authors>
     <projectUrl>https://www.prusa3d.com/slic3r-prusa-edition/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/dad62531/icons/slic3r-prusa.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/8d6e20653450232eebcd4ff7cdcc4a855fc33367/icons/prusaslicer.png</iconUrl>
     <copyright>2020 © Prusa Research s.r.o.</copyright>
     <licenseUrl>https://github.com/prusa3d/PrusaSlicer/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
