@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ds4windows</id>
-    <version>3.0.16</version>
+    <version>3.0.17</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ds4windows</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>DS4Windows</title>
@@ -61,7 +61,7 @@ using Microsoft BT stack. Toshiba's adapters currently do not work.
 [Mastodon @ds4windows@fosstodon.org](https://fosstodon.org/@ds4windows)  
 [Minds @ds4windows](https://www.minds.com/ds4windows/)
 ]]></description>
-    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.16</releaseNotes>
+    <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.0.17</releaseNotes>
     <dependencies>
       <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
       <dependency id="vcredist140" version="14.28.29913" />
