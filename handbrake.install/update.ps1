@@ -21,7 +21,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-    $regex = 'Win_GUI.exe$'
+    $regex = 'x86_64-Win_GUI.exe$'
     $url64 = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 	
     $version = $url64 -split '-' | select -First 1 -Skip 1
