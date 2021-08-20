@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uvtools</id>
-    <version>2.19.0</version>
+    <version>2.19.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/uvtools</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>UVtools (Install)</title>
@@ -42,7 +42,7 @@ This simple tool can give you insight of supports and find some failures. Did yo
 - Convert format to another format
 - Calibration tests
 ]]></description>
-    <releaseNotes>https://github.com/sn4k3/UVtools/releases/tag/v2.19.0</releaseNotes>
+    <releaseNotes>https://github.com/sn4k3/UVtools/releases/tag/v2.19.1</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
