@@ -23,7 +23,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 2 -Skip 1 -expand href | % { 'https://github.com' + $_ }
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url -split '/' | select -Last 1 -Skip 1
     
