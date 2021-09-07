@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>torguard-client</id>
-    <version>4.7.3</version>
+    <version>4.7.4</version>
     <owners>LudicrousByte</owners>
     <title>TorGuard VPN Client (Install)</title>
     <authors>TorGuard.net</authors>
@@ -26,7 +26,7 @@ TorGuard VPN service protects your online identity by providing you an anonymous
 * This software requires a subscription to the [TorGuard VPN Service](https://torguard.net) in order to work.
  
     </description>
-    <releaseNotes>https://forums.torguard.net/index.php?/topic/2437-torguard-client-v473/</releaseNotes>
+    <releaseNotes>https://forums.torguard.net/index.php?/topic/2467-torguard-client-v474/</releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.24" />
       <dependency id="kb2999226" version="1.0.20170509" />
