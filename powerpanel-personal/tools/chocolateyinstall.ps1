@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32 = 'https://dl4jz3rbrsfum.cloudfront.net/software/ppp_windows_2_2_2.exe'
-$checksum32 = 'e0fe308c2caacfb08012cac11decd20a5e22aab6e506aa85ef04849e24c22bda'
+$url32 = 'https://dl4jz3rbrsfum.cloudfront.net/software/ppp_windows_2_3_0.exe'
+$checksum32 = 'c5a699673964f1a241af2a5225a7cc06fcfbf845dd616af75840fa410782ab48'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

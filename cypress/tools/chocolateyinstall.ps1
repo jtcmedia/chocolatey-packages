@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url32      = 'https://cdn.cypress.io/desktop/8.4.0/win32-ia32/cypress.zip'
-$checksum32 = 'b675c5016ddae51d43f3a24ab9b89b21b23e827286d7f408c913ed5079aaa08b'
-$url64      = 'https://cdn.cypress.io/desktop/8.4.0/win32-x64/cypress.zip'
-$checksum64 = '22b797cdef7d955f4f17b1c34e0a367145c055ad785fc5c979785a9e55721883'
+$url32      = 'https://cdn.cypress.io/desktop/8.4.1/win32-ia32/cypress.zip'
+$checksum32 = 'e1c38efbfa200c43eca62cbedf9e4eb9df1377b09a7a0c804edf024912c74b5d'
+$url64      = 'https://cdn.cypress.io/desktop/8.4.1/win32-x64/cypress.zip'
+$checksum64 = 'df34c28e12ff5496c44f2e3dcff9cb7c7cef86efded278fd681efcf44180d8c1'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
