@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake.install</id>
-    <version>1.4.1.20210817</version>
+    <version>1.4.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.install</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake (Install)</title>
@@ -48,7 +48,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 ]]></description>
-    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.4.1</releaseNotes>
+    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.4.2</releaseNotes>
     <dependencies>
       <dependency id="dotnet-5.0-desktopruntime" version="5.0.8" />
     </dependencies>

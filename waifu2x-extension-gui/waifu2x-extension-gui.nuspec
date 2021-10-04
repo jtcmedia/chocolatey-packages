@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>waifu2x-extension-gui</id>
-    <version>3.81.01</version>
+    <version>3.83.01</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/waifu2x-extension-gui</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Waifu2x-Extension-GUI</title>
@@ -82,7 +82,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 ]]></description>
-    <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v3.81.01</releaseNotes>
+    <releaseNotes>https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/tag/v3.83.01</releaseNotes>
     <dependencies>
       <!--<dependency id="megatools" version="1.11.0" />-->
     </dependencies>

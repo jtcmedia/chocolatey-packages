@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake-cli</id>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake-cli</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake CLI Only Version</title>
@@ -39,7 +39,7 @@ For information on HandBrake's community support channels, please see [Community
 
 Our [community rules](https://forum.handbrake.fr/app.php/rules) and [code of conduct](https://github.com/HandBrake/HandBrake/blob/master/CODE_OF_CONDUCT.md) apply to both our site and GitHub.
 ]]></description>
-    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.4.1</releaseNotes>
+    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.4.2</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
