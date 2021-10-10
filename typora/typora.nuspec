@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>typora</id>
+    <version>0.11.8</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/typora</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>Typora (Install)</title>
+    <authors>Abner Lee</authors>
+    <projectUrl>https://typora.io/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/7a37d1a4ee28f0b8015b94d4b1af3f646735999b/icons/typora.png</iconUrl>
+    <copyright>2021 Abner Lee</copyright>
+    <licenseUrl>https://support.typora.io/License-Agreement/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://typora.io/windows/dev_release.html</projectSourceUrl>
+    <docsUrl>https://support.typora.io/</docsUrl>
+    <bugTrackerUrl>https://github.com/typora/typora-issues</bugTrackerUrl>
+    <tags>typora admin editor text markdown</tags>
+    <summary>Typora is a minimal markdown editor, providing new ways for reading and writing markdown.</summary>
+    <description><![CDATA[## Typora
+
+Typora gives you a seamless experience as both a reader and a writer. It removes the preview window, mode switcher, syntax symbols of markdown source code, and all other unnecessary distractions. Instead, it provides a real live preview feature to help you concentrate on the content itself.
+
+- Distractions Free
+- Seamless Live Preview
+- What You See Is What You Mean
+]]></description>
+    <releaseNotes>https://typora.io/windows/dev_release.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
