@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-plugin-keepassnatmsg</id>
-    <version>2.0.13</version>
+    <version>2.0.14</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/keepass-plugin-keepassnatmsg</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>KeePass Plugin KeePassNatMsg</title>
@@ -26,7 +26,7 @@ It is based on [KeePassHttp](https://github.com/pfn/keepasshttp).
 This plugin is primarily intended for use with the [keepassxc-browser](https://github.com/keepassxreboot/keepassxc-browser) browser extension.
     
     </description>
-    <releaseNotes>https://github.com/smorks/keepassnatmsg/releases/tag/v2.0.13</releaseNotes>
+    <releaseNotes>https://github.com/smorks/keepassnatmsg/releases/tag/v2.0.14</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.40" />
     </dependencies>
