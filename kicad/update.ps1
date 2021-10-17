@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://kicad-pcb.org/download/windows/'
+$releases = 'https://www.kicad.org/download/windows/'
 
 function global:au_SearchReplace {
     @{

@@ -8,31 +8,20 @@
     <owners>LudicrousByte</owners>
     <title>KiCad (Install)</title>
     <authors>KiCad Developers Team, Jean-Pierre Charras, Dick Hollenbeck, Wayne Stambaugh</authors>
-    <projectUrl>http://kicad-pcb.org/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/e0a7e60b/icons/kicad.png</iconUrl>
-    <copyright>© 1992-2018 KiCad Developers Team</copyright>
-    <licenseUrl>http://kicad-pcb.org/about/licenses/</licenseUrl>
+    <projectUrl>https://www.kicad.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/281e56814d5aff43ec8f1194dd913042adad3de8/icons/kicad.png</iconUrl>
+    <copyright>© 2021 KiCad Developers</copyright>
+    <licenseUrl>https://www.kicad.org/about/licenses/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://code.launchpad.net/kicad</projectSourceUrl>
-    <docsUrl>http://kicad-pcb.org/help/documentation/</docsUrl>
-    <mailingListUrl>https://groups.yahoo.com/neo/groups/kicad-users/info</mailingListUrl>
-    <bugTrackerUrl>https://bugs.launchpad.net/kicad/</bugTrackerUrl>
+    <projectSourceUrl>https://gitlab.com/kicad/code/kicad</projectSourceUrl>
+    <docsUrl>https://docs.kicad.org/</docsUrl>
+    <mailingListUrl>https://groups.io/g/kicad-users</mailingListUrl>
+    <bugTrackerUrl>https://gitlab.com/groups/kicad/code/-/issues</bugTrackerUrl>
     <tags>kicad cad schematic pcb electronics foss admin</tags>
     <summary>A Cross Platform and Open Source Electronics Design Automation Suite</summary>
-    <description>
-
-#### Schematic Capture
-With the schematic editor you can create your design without limit; there are no paywalls to unlock features. An official library for schematic symbols and a built-in schematic symbol editor help you get started quickly with your designs.
-
-#### PCB Layout
-Make professional PCB layouts with up to 32 copper layers. KiCad now has a push and shove router which is capable of routing differential pairs and interactively tuning trace lengths.
-
-#### 3D Viewer
-KiCad includes a 3D viewer which you can use to inspect your design in an interactive canvas. You can rotate and pan around to inspect details that are difficult to inspect on a 2D view. Multiple rendering options allow you to modify the aesthetic appearance of the board or to hide and show features for easier inspection.
-
-    </description>
+    <description></description>
   <releaseNotes>
-[https://kicad-pcb.org/blog/categories/Release-Notes/](https://kicad-pcb.org/blog/categories/Release-Notes/)
+[https://www.kicad.org/blog/categories/Release-Notes/](https://www.kicad.org/blog/categories/Release-Notes/)
   </releaseNotes>
   </metadata>
   <files>
