@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-metro'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/6667702a1e7c/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-2021.1.24f1.exe'
-$checksum64     = 'aa141f3f8dd6ccaf25afc2cb9b1914f17345462d31ca74b14d675f86af8941fe'
+$url64          = 'https://download.unity3d.com/download_unity/b6f2b893ea32/TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-2021.1.25f1.exe'
+$checksum64     = '2785bf10e18a48c14fe3d981de4458e31b0ecec74e12df8bf8fbd3a8d40b9b08'
 
 $packageArgs = @{
   packageName    = $packageName
