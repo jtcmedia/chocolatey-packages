@@ -47,3 +47,9 @@ We would love to get your help, feel free to lend a hand. We are currently looki
 **Issues**: If you find any issues, please [file it](https://github.com/kubeless/kubeless/issues).
 
 **Slack**: We're fairly active on [slack](http://slack.k8s.io) and you can find us in the #kubeless channel.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider making a small donation. Thank-you!
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jtcmedia" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
