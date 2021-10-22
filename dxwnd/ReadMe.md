@@ -19,3 +19,7 @@ Windows hooker - intercepts system calls to make win32 programs running in a win
 * Emulate CD and HD file systems
 
 * Usable through a GUI or with customized proxies
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
