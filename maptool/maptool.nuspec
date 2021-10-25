@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>maptool</id>
-    <version>1.10.3</version>
+    <version>1.10.4</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/maptool</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>MapTool (Install)</title>
@@ -44,7 +44,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
 
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jtcmedia" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 ]]></description>
-    <releaseNotes>https://github.com/RPTools/maptool/releases/tag/1.10.3</releaseNotes>
+    <releaseNotes>https://github.com/RPTools/maptool/releases/tag/1.10.4</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
