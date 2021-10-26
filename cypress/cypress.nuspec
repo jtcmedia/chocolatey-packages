@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cypress</id>
-    <version>8.6.0</version>
+    <version>8.7.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/cypress</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Cypress</title>
@@ -50,8 +50,12 @@ This project is licensed under the terms of the [MIT license](https://opensource
 Let the world know your project is using Cypress.io to test with this cool badge
 
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/cypress-io/cypress/releases/tag/v8.6.0</releaseNotes>
+    <releaseNotes>https://github.com/cypress-io/cypress/releases/tag/v8.7.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
