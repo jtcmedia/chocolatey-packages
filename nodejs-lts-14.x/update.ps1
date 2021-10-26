@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://nodejs.org/en/download/'
+$releases = 'https://nodejs.org/dist/latest-v14.x/'
 
 
 function global:au_SearchReplace {
@@ -8,7 +8,7 @@ function global:au_SearchReplace {
         "$($Latest.PackageName).nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
-      
+
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
             "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
@@ -23,23 +23,28 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
+function prepend_url([string] $url) {
+    $url = "https://nodejs.org/dist/latest-v14.x/" + $url
+    $url
+}
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.msi$'
-    $url = $download_page.links | ? href -match $regex | select -First 2 -Skip 1 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
     
     $version = ($url[0] -split '-' | select -Last 1 -Skip 1).Substring(1)
     
-    $shasums = $download_page.links | ? href -match '.asc$' | select -First 1 -expand href
+    $shasums = $download_page.links | ? href -match '.txt$' | select -First 1 -expand href
     
     @{
-      URL32 = $url[0]
-      URL64 = $url[1]
-      SHASUMS = $shasums
+      URL32 = prepend_url $url[1]
+      URL64 = prepend_url $url[0]
+      SHASUMS = prepend_url $shasums
       Version = $version
-      ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#${version}"
+      PackageName = 'nodejs-lts'
+      ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V14.md#${version}"
     }
 }
 
