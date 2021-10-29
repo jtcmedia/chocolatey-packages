@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshlab</id>
-    <version>2021.07</version>
+    <version>2021.10</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>MeshLab (Install)</title>
@@ -78,8 +78,12 @@ DOI = {10.2312/LocalChapterEvents/ItalChap/ItalianChapConf2008/129-136}
 For documented and repeatable bugs, feature requests, etc., please use the [GitHub issues](https://github.com/cnr-isti-vclab/meshlab/issues).
 
 For general questions use [StackOverflow](http://stackoverflow.com/questions/tagged/meshlab).
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2021.07</releaseNotes>
+    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2021.10</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
