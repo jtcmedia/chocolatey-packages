@@ -4,16 +4,16 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0-alpha.20210811.exe
-    x64: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20210811.exe
+    x32: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0-rc1.20211030.exe
+    x64: https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-rc1.20211030.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20210811.exe
+        Get-RemoteChecksum https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-rc1.20211030.exe
 
 3.  Compare to Checksum:
 
-    checksum32: 1A688F41BFC24FB156EE11974175107ABD0D40E60D77A76724319C748C4FAD24
-    checksum64: B96AA3DE245569B569ABF511AA76D4C472D029BF2453C1ECCA497A57A40B2BEB
+    checksum32: 8F83C5C55FEBC9B0EA840BB9408254A69504742A724FD86C752179353FD1FEE4
+    checksum64: 8177499DB5AEDC350C0E94D8B1071373AAA04FB4ECEF64C5D9C9AD8168769075
