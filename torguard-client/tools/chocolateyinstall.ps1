@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
+$url64      = 'https://torguard.net/downloads/new/torguard-setup-latest.exe'
 $checksum64 = '7cf14e32ee32f93296fc0526c30055e5975a95fb9c99553334553b6ab23278d7'
 
 $packageArgs = @{
