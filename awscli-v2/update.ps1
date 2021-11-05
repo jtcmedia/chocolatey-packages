@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://github.com/aws/aws-cli/releases'
+$releases = 'https://github.com/aws/aws-cli/tags'
 
 function global:au_SearchReplace {
     @{
