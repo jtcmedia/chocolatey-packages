@@ -3,9 +3,9 @@ $ErrorActionPreference = 'Stop';
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'Tesseract-OCR*'
-  fileType      = 'MSI'
-  silentArgs    = "/qn /norestart"
-  validExitCodes= @(0, 3010, 1605, 1614, 1641)
+  fileType      = 'EXE'
+  silentArgs    = "/S"
+  validExitCodes= @(0)
 }
 
 $uninstalled = $false
@@ -14,14 +14,6 @@ $uninstalled = $false
 if ($key.Count -eq 1) {
   $key | % { 
     $packageArgs['file'] = "$($_.UninstallString)"
-    
-    if ($packageArgs['fileType'] -eq 'MSI') {
-      $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
-      
-      $packageArgs['file'] = ''
-    } else {
-    }
-
     Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {
