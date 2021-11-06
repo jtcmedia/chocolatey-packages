@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>typora</id>
-    <version>0.11.13</version>
+    <version>0.11.15</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/typora</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Typora (Install)</title>
@@ -25,6 +25,10 @@ Typora gives you a seamless experience as both a reader and a writer. It removes
 - Distractions Free
 - Seamless Live Preview
 - What You See Is What You Mean
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
     <releaseNotes>https://typora.io/windows/dev_release.html</releaseNotes>
   </metadata>
