@@ -37,6 +37,10 @@ You can easily integrate T-Rex into your programs or web services. All communica
 
 We don't stop working on the miner even during holidays. We want you to get the best experience with T-Rex. Your best ideas will be implemented shortly. Feel free to contact us for help and suggestions.
 
+## Antivirus Alerts and Cryptocurrency Mining Warning
+
+In order to protect the miner from reverse engineering attacks, the binaries in this miner are obfuscated like how real viruses are. Therefore, it may trigger an antivirus alert. See [here](https://github.com/trexminer/T-Rex#antivirus-alerts). **Do not mine on a computer where you store your sensitive data.**
+
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
