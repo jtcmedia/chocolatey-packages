@@ -3,20 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>typora</id>
-    <version>0.11.18.20211125</version>
+    <version>1.0.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/typora</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Typora (Install)</title>
-    <authors>Abner Lee</authors>
+    <authors>appmakes.io</authors>
     <projectUrl>https://typora.io/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/7a37d1a4ee28f0b8015b94d4b1af3f646735999b/icons/typora.png</iconUrl>
-    <copyright>2021 Abner Lee</copyright>
+    <copyright>appmakes.io</copyright>
     <licenseUrl>https://support.typora.io/License-Agreement/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://typora.io/windows/dev_release.html</projectSourceUrl>
     <docsUrl>https://support.typora.io/</docsUrl>
     <bugTrackerUrl>https://github.com/typora/typora-issues</bugTrackerUrl>
-    <tags>typora admin editor text markdown</tags>
+    <tags>typora admin editor text markdown trial</tags>
     <summary>Typora is a minimal markdown editor, providing new ways for reading and writing markdown.</summary>
     <description><![CDATA[## Typora
 
@@ -25,6 +25,10 @@ Typora gives you a seamless experience as both a reader and a writer. It removes
 - Distractions Free
 - Seamless Live Preview
 - What You See Is What You Mean
+
+## Note
+
+Typora is **now payware**. It has a 15 day free trial period after which you must [purchase](https://store.typora.io/) it.
 
 ## Maintainer's Note
 
