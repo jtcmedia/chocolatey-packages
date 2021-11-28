@@ -8,6 +8,10 @@ Typora gives you a seamless experience as both a reader and a writer. It removes
 - Seamless Live Preview
 - What You See Is What You Mean
 
+## Note
+
+Typora is **now payware**. It has a 15 day free trial period after which you must [purchase](https://store.typora.io/) it.
+
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!

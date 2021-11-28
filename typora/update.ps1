@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://typora.io/windows/dev_release.html'
+$releases = 'https://typora.io/releases/stable'
 
 function global:au_SearchReplace {
     @{
@@ -17,10 +17,9 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $regex = '.exe$'
-    
     $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
         
-    $version = $download_page.Content -split "<h4>|</h4>" | select -First 1 -Skip 1
+    $version = $urls[0] -split '/|-' | select -Last 1 | % { $_.Replace('.exe','') }
 	
     @{
         URL = $urls[1]
