@@ -5,7 +5,7 @@ $releases = 'https://nodejs.org/dist/latest-v14.x/'
 
 function global:au_SearchReplace {
     @{
-        "$($Latest.PackageName).nuspec" = @{
+        "$($Latest.PackageName)-14.x.nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
 
