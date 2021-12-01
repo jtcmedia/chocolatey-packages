@@ -23,13 +23,14 @@ function global:au_GetLatest {
     $regex = '.exe$'
     $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href
 
-    $version = $urls[1] -split '-' | select -Last 1 -Skip 1
-    $alpha = $urls[1] -split '-|.exe' | select -Last 1 -Skip 1
+    $version = $urls[1] -split '-|.exe' | select -Last 1 -Skip 1 | % { $_.Replace('v','') }
+    #$alpha = $urls[1] -split '-|.exe' | select -Last 1 -Skip 1
     
     @{
         URL32 = $urls[0]
         URL64 = $urls[1]
-        Version = "$($version.Replace('v',''))-$($alpha.Replace('.',''))"
+        #Version = "$($version.Replace('v',''))-$($alpha.Replace('.',''))"
+        Version = $version
     }
 }
 
