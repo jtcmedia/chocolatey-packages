@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>powerpanel-personal</id>
-    <version>2.3.0</version>
+    <version>2.3.4</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/powerpanel-personal</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>PowerPanel Personal (Install)</title>
@@ -11,7 +11,7 @@
     <projectUrl>https://www.cyberpowersystems.com/products/software/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/a5290d93e9d76835da6a79d23e5f4c6c0b973f25/icons/powerpanel-personal.png</iconUrl>
     <copyright>© 2021 Cyber Power Systems (USA)</copyright>
-    <docsUrl>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_UM_PPP-Windows-v2.2.0.pdf</docsUrl>
+    <docsUrl>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_UM_PPP-Windows-v2.3.4.pdf</docsUrl>
     <tags>cyberpower powerpanel powerpanel-personal ups admin</tags>
     <summary>An interface to control and monitor a UPS system through a USB or serial cable with the host computer.</summary>
     <description><![CDATA[# PowerPanel® Personal
@@ -40,7 +40,7 @@ PowerPanel® Personal allows users to setup email notifications to receive real-
 
 In the event of a power outage, the user can configure the software to keep the computer running until the battery power runs low, or to shut down the computer immediately after a power outage to preserve the battery.
 ]]></description>
-    <releaseNotes>https://dl4jz3rbrsfum.cloudfront.net/documents/PowerPanel%20Personal%20Windows%20-%20RN%20-%202.3.0.pdf</releaseNotes>
+    <releaseNotes>https://dl4jz3rbrsfum.cloudfront.net/documents/CyberPower_RN_PPP-Windows-v2.3.4.pdf</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
