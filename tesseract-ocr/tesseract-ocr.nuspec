@@ -4,7 +4,7 @@
   <metadata>
     <id>tesseract-ocr</id>
     <version>5.0.0.20211201</version>
-    <packageSourceUrl>https://github.com/UB-Mannheim/tesseract/wiki</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/tesseract-ocr</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Tesseract OCR (Install)</title>
     <authors>Ray Smith, Zdenko Podobny</authors>
@@ -12,7 +12,7 @@
     <copyright>2021 UB-Mannheim</copyright>
     <licenseUrl>https://github.com/UB-Mannheim/tesseract/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/UB-Mannheim/tesseract</projectSourceUrl>
+    <projectSourceUrl>https://github.com/UB-Mannheim/tesseract/wiki</projectSourceUrl>
     <docsUrl>https://tesseract-ocr.github.io/tessdoc/</docsUrl>
     <mailingListUrl>https://groups.google.com/d/forum/tesseract-ocr</mailingListUrl>
     <bugTrackerUrl>https://github.com/UB-Mannheim/tesseract/issues</bugTrackerUrl>
