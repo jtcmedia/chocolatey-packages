@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://osdn.net/frs/redir.php?m=bfsu&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-5.1.10_1-i686.exe'
-$url64      = 'https://osdn.net/frs/redir.php?m=xtom_hk&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-5.1.10_1-x86_64.exe'
-$checksum32 = '705c4b72898a979209dc63ee6c469f45abef44ca813c0beccd86a75d47ef5183'
-$checksum64 = 'ca734c9df2ac9711d85d841debc4e284eb1b529de5b2217096cfd0a10d8843c0'
+$url32      = 'https://osdn.net/frs/redir.php?m=gigenet&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-6.0.0-i686.exe'
+$url64      = 'https://osdn.net/frs/redir.php?m=gigenet&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-6.0.0-x86_64.exe'
+$checksum32 = '11dcaacf49ae968d15f604c28bae8a194b3b719779f6d3815b0c4eb5c7b89032'
+$checksum64 = 'b0c51346a324db51dcbb10961c44908d3f40492e04c361db98242525c81131c3'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
