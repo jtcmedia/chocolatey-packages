@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>argyll</id>
-    <version>2.2.1</version>
+    <version>2.3.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/argyll</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Argyll CMS</title>
@@ -48,6 +48,10 @@ Contact me in regards to Argyll, icclib or cgatslib at:
 	Graeme at argyllcms dot com
 
 Enjoy!
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
     <releaseNotes>
 * [Changelog](http://argyllcms.com/doc/ChangesSummary.html)    
