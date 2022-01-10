@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake.portable</id>
-    <version>1.5.0</version>
+    <version>1.5.0.20220110</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.portable</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake (Portable)</title>
