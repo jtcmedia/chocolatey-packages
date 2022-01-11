@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>12.22.7</version>
+    <version>14.18.3</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Node.js LTS (Install)</title>
@@ -18,8 +18,17 @@
     <bugTrackerUrl>https://github.com/nodejs/node/issues</bugTrackerUrl>
     <tags>nodejs-lts nodejs lts node.js node admin npm javascript</tags>
     <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
-    <description></description>
-    <releaseNotes></releaseNotes>
+    <description><![CDATA[Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+
+#### This package is the **LTS** (Long Term Support) release of Node.js. See the [LTS schedule](https://github.com/nodejs/LTS#lts-schedule) for more information.
+
+#### If you want the **Current** release, install the [nodejs](https://chocolatey.org/packages/nodejs) package instead.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V14.md#14.18.3</releaseNotes>
    </metadata>
   <files>
     <file src="tools\**" target="tools" />

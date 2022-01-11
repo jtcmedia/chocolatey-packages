@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/balena-io/balena-cli/releases/download/v13.1.7/balena-cli-v13.1.7-windows-x64-installer.exe
+    x64: https://github.com/balena-io/balena-cli/releases/download/v13.1.8/balena-cli-v13.1.8-windows-x64-installer.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/balena-io/balena-cli/releases/download/v13.1.7/balena-cli-v13.1.7-windows-x64-installer.exe
+        Get-RemoteChecksum https://github.com/balena-io/balena-cli/releases/download/v13.1.8/balena-cli-v13.1.8-windows-x64-installer.exe
 
 3.  Compare to Checksum:
 
-    checksum64: D2B46575605B6B21AE6EC23BE2640B0DDFE06F8C93C470F00E3F00BCFB274D6D
+    checksum64: E33DBF5C4CF9B0D272010D33671438F06B109EDCC77F142D242EE63A0C60F304
