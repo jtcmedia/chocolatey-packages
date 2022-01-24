@@ -15,17 +15,8 @@
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity admin games cross-platform unity3d multiplatform</tags>
     <summary>Unity Hub is a cross-platform management tool developed by Unity Technologies and used to to manage multiple installations of the Unity Editor along with their associated components</summary>
-    <description>
-## Features
-- Manage your Unity account and Editor licenses.
-- Create your Project, associate a default version of the Unity Editor with the Project, and manage the installation of multiple versions of the Editor.
-- Set your preferred version of Unity, but also easily launch other versions from your Project view.
-- Manage and select Project build targets without launching the Editor.
-- Run two versions of Unity at the same time. Note that to prevent local conflicts and other odd scenarios, you should only open a Project in one Editor instance at a time.
-- Add components to existing installations of the Editor. When you download a version of the Editor through Unity Hub, you can find and add additional components (such as specific platform support, Visual Studio, offline docs and Standard Assets) either during initial install or at a later date.
-- Use Project Templates to jump-start the creation process for common Project types. Unity’s Project Templates provide default values for common settings when you create a new Project. Project Templates preset batches of settings for a target game type or level of visual fidelity. For more information, see Project Templates.
-    </description>
-    <releaseNotes>- [Release Notes](https://unity3d.com/hub/whats-new/)</releaseNotes>
+    <description></description>
+    <releaseNotes>https://unity3d.com/hub/whats-new/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
