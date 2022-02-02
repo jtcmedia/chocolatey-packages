@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>12.22.9</version>
+    <version>12.22.10</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Node.js LTS (Install)</title>
