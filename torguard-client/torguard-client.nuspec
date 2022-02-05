@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>torguard-client</id>
-    <version>4.8.6</version>
+    <version>4.8.8</version>
     <owners>LudicrousByte</owners>
     <title>TorGuard VPN Client (Install)</title>
     <authors>TorGuard.net</authors>
@@ -30,7 +30,7 @@ This software requires a subscription to the [TorGuard VPN Service](https://torg
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://forums.torguard.net/index.php?/topic/2601-torguard-client-v486/</releaseNotes>
+    <releaseNotes>https://forums.torguard.net/index.php?/topic/2614-torguard-client-v488/</releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.24" />
       <dependency id="kb2999226" version="1.0.20170509" />
