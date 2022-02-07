@@ -3,7 +3,7 @@
 $packageName= 'bitvise-ssh-client'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://dl.bitvise.com/BvSshClient-Inst.exe'
-$checksum32 = 'b6de8dea699779bece5396e1a75a1daa041c5b3a1beb9ce619c4c285a40b6146'
+$checksum32 = '18d632b8e19ff36031ab0912ae6013c6a235591982d4b914d582fdefbbea09e1'
 
 $packageArgs = @{
   packageName   = $packageName
