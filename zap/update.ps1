@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.zaproxy.org/download/'
+$releases = 'https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions.xml'
 
 function global:au_SearchReplace {
     @{
@@ -14,14 +14,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_xml = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-	$regex = '.exe$'
-	$url = $download_page.links | ? href -match $regex | select -First 2 -expand href
+	$xml = [xml] ($download_xml)
+  
 	
-	$version = ($url[0] -split '/' | select -Last 1 -Skip 1).Substring(1)
-	
-	return @{ URL32 = $url[1]; URL64 = $url[0]; Version = $version }
+	@{
+      URL32 = $xml.ZAP.core.windows32.url
+      URL64 = $xml.ZAP.core.windows.url
+      Version = $xml.ZAP.core.version
+  }
+
 }
 
 update
