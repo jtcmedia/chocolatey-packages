@@ -19,20 +19,24 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 
 function global:au_GetLatest {
-    $outFile    = "heroku-64bit-installer.exe"
+    $outFile = "heroku-64bit-installer.exe"
     
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
     
-    Invoke-WebRequest $url[1] -OutFile "$PSScriptRoot\$outFile"
+    Invoke-WebRequest $url[0] -OutFile "$PSScriptRoot\$outFile"
     
     $version = (Get-Item $outFile).VersionInfo.ProductVersion
     
     #don't need installer anymore
     Remove-Item $outFile -Force
     
-    return @{ URL32 = $url[0]; URL64 = $url[1]; Version = $version }
+    @{
+      URL32 = $url[1]
+      URL64 = $url[0]
+      Version = $version
+    }
 }
 
 update -ChecksumFor none
