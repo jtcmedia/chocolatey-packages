@@ -14,7 +14,7 @@
 
 ## Package Notes
 
-Unity does not maintain releases of older versions of Unity Hub and I do not have re-distribution rights. Thus, this package is only useful for keeping Unity Hub updated to the latest release version. **Using chocolatey to install older versions of Unity Hub will not work.**
+Unity does not maintain releases of older versions of Unity Hub and have refused to allow me to re-distribute the installer. Thus, **this package is only useful for keeping Unity Hub updated to the latest release version**. If you wish to install an earlier version, you have two options: purchase a Chocolatey Pro license which has a download CDN cache or you can start [internalizing the package](https://docs.chocolatey.org/en-us/guides/create/recompile-packages) to preserve older versions.
 
 ## Maintainer's Note
 
