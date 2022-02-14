@@ -13,5 +13,25 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_GetLatest {
+    $regex = 'UnitySetup64'
+    
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    
+    $editor_urls = $download_page.links | ? href -match $regex
+
+    $streams = GetStreams $editor_urls
+
+    $filteredStreams = [ordered]@{}
+
+    $streams.Keys | ForEach-Object {
+        if ($streams.$_.URL_ios) {
+            $filteredStreams[$_] = $streams.$_
+        }
+    }
+
+    @{ Streams = $filteredStreams }
+}
+
 
 update -ChecksumFor 64

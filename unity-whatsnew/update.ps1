@@ -32,7 +32,7 @@ function global:au_GetLatest {
     $unity_data["url"] = "$($url_start)"
     $unity_data["release"] = "$($release)"
     
-    $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
+    #$unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
 
     @{
         URL64       = $editor_url

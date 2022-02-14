@@ -1,6 +1,10 @@
 import-module au
 
-$unity_data = Import-CliXml $PSScriptRoot\..\_unity.xml
+$unity_data_unsorted = Import-CliXml $PSScriptRoot\..\_unity.xml
+$unity_data = [ordered]@{}
+$unity_data_unsorted.Keys | ForEach-Object { [System.Version]$_ } | Sort-Object -Descending | ForEach-Object {
+    $unity_data[$_] = $unity_data_unsorted[$_.ToString()]
+}
 
 function global:au_SearchReplace {
     @{
@@ -17,11 +21,17 @@ function global:au_SearchReplace {
 
 
 function global:au_GetLatest {
-  
-    $url = $unity_data["url"] + "TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-" + $unity_data["version"] + "f" + $unity_data["release"]
-    
-    
-    return @{ URL64 = $url -replace 'http:', 'https:'; Version = $unity_data["version"] }
+    $streams = [ordered]@{}
+    $unity_data.Keys | ForEach-Object {
+        $url = $unity_data.$_["url"] + "TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-" + $unity_data.$_["version"] + "f" + $unity_data.$_["release"]
+        
+        try {
+            Invoke-WebRequest -Uri $url -UseBasicParsing -DisableKeepAlive -Method Head -OutFile $null
+            $streams[$_] = @{ URL64 = $url -replace 'http:', 'https:'; Version = $unity_data.$_["version"] }
+        } catch {
+        }
+    }
+    @{ Streams = $streams }
 }
 
 update -ChecksumFor 64
