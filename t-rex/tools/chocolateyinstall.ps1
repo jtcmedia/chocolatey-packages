@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url32      = 'https://github.com/trexminer/T-Rex/releases/download/0.25.6/t-rex-0.25.6-win.zip'
-$checksum32 = 'e07a73bd7436db34bad405bf0017eec45e3f8697c8d99425cb1151cfc313c2fc'
+$url32      = 'https://github.com/trexminer/T-Rex/releases/download/0.25.8/t-rex-0.25.8-win.zip'
+$checksum32 = '0f39ff9498eb7b1164ab727e03dbe955d32b2751eda6ae469af3e27c274b02f8'
 
 $unzipLocation = New-Item -Path $(Get-ToolsLocation) -Name "T-Rex" -ItemType "directory" -ErrorAction SilentlyContinue -Force
 
