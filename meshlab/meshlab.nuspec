@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>meshlab</id>
-    <version>2021.10</version>
+    <version>2022.02</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/meshlab</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>MeshLab (Install)</title>
@@ -83,7 +83,7 @@ For general questions use [StackOverflow](http://stackoverflow.com/questions/tag
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2021.10</releaseNotes>
+    <releaseNotes>https://github.com/cnr-isti-vclab/meshlab/releases/tag/Meshlab-2022.02</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
