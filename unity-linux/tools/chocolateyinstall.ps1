@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-linux'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/90b6766da538/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2021.2.13f1.exe'
-$checksum64     = '7491ea48fbcabcb968907d12a10ea9addb68fda4f94e6557087deab4899b53d0'
+$url64          = 'https://download.unity3d.com/download_unity/bcb93e5482d2/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2021.2.14f1.exe'
+$checksum64     = '0ca67c736bee6f2441363e069c2636718e867c969c05b818c0eb5ebb0a1a6577'
 
 $packageArgs = @{
   packageName    = $packageName
