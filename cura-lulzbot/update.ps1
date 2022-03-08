@@ -21,6 +21,8 @@ function global:au_GetLatest {
 	
     if($version[0] -match '^lulzbot$') {
       $version = $version[1]
+    } elseif ($version[1] -match '^win10$') {
+        $version = $version[0]
     } else {
       $version = $version[0] + '.' + $version[1]
     }
