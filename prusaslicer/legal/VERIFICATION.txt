@@ -5,8 +5,8 @@ mention you are the author of the software.
 
 1.  Download the zip:
 
-    x32: https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1-rc1/PrusaSlicer-2.4.1-rc1+win32-202203031418.zip
-    x64: https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1-rc1/PrusaSlicer-2.4.1-rc1+win64-202203031432.zip
+    x32: https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1/PrusaSlicer-2.4.1+win32-202203101039.zip
+    x64: https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1/PrusaSlicer-2.4.1+win64-202203101054.zip
 
 2.  Calculate Checksum:
     
@@ -14,10 +14,10 @@ mention you are the author of the software.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1-rc1/PrusaSlicer-2.4.1-rc1+win64-202203031432.zip
+        Get-RemoteChecksum https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.1/PrusaSlicer-2.4.1+win64-202203101054.zip
     
     
 3.  Verify against Checksum:
 
-    checksum32: 94B7D7A22F60FF5D21025ACD227D0CC5C0ADB0F2B3E7CF1E9DB0D1CDB2915F0D
-    checksum64: 3113E45B5276F5042BE7E5E67C8232C63BF393977EE875B7A97C3A31263AA7A1
+    checksum32: D8B1CE48D5247ECEDB5010115CB979A85807195DE93FB36EE53A35D4DC624F81
+    checksum64: 41F04E2F0D2C89A652BA4A19BFD3A32E736D61B9EBA18402DDEAB09C89CC424F
