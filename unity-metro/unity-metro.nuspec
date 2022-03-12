@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-metro</id>
-    <version>2021.2.14</version>
+    <version>2021.2.15</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-metro</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Windows Store (.NET) Target Support</title>
@@ -23,7 +23,7 @@ This package adds Windows Store (.NET) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2021.2.14" />
+      <dependency id="unity" version="2021.2.15" />
     </dependencies>
   </metadata>
   <files>
