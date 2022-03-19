@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>unity-linux</id>
-    <version>2021.2.16.1</version>
+    <id>unity-linux-mono</id>
+    <version>2021.2.16</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux</packageSourceUrl>
-    <owners>jtcmedia</owners>
-    <title>[Deprecated] Unity Linux Mono Target Support</title>
+    <owners>LudicrousByte</owners>
+    <title>Unity Linux Mono Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
@@ -14,29 +14,19 @@
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity unity3d admin linux target</tags>
+    <tags>unity unity3d admin linux mono target</tags>
     <summary>This package adds Linux Target Support to Unity.</summary>
     <description>
-This package is deprecated. Use the **unity-linux-mono** package instead.
-
-This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
+This package adds Linux Mono Target Support to Unity.
     </description>
     <releaseNotes>
-### New users
-
-* Do not install unity-linux (this package). Install **unity-linux-mono** instead.
-
-### Existing users
-
-* Updating this package will install the most recent version of the **unity-linux-mono** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the package name **unity-linux-mono**.
-
-### Cleanup
-
-* Remove package: `choco uninstall slic3r-prusa --all-versions --whatif`
+* [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity-linux-mono" version="2021.2.16" />
+      <dependency id="unity" version="2021.2.16" />
     </dependencies>
   </metadata>
-  <files />
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
