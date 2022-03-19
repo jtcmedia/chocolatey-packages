@@ -28,24 +28,20 @@ function global:au_GetLatest {
 
     $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
     
-    $unity_data = @{}
-    $unity_data["version"] = "$($version)"
-    $unity_data["url"] = "$($url_start)"
-    $unity_data["release"] = "$($release)"
-    
-    $unity_data | Export-CliXml $PSScriptRoot\..\_unity.xml
+    $installers = "Android", "AppleTV", "iOS", "Linux-IL2CPP", "Linux-Mono", "Linux-Server",
+      "Mac-Mono", "Mac-Server", "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP", "Windows-Server"
 
-    @{
-        URL64            = $editor_url
-        Version          = $version
-        ReleaseNotes     = "https://unity3d.com/unity/whats-new/${version}"
-        URL_android      = $url_start + "TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-" + $version + "f" + $release
-        URL_appletv      = $url_start + "TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-" + $version + "f" + $release
-        URL_docs         = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
-        URL_ios          = $url_start + "TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-" + $version + "f" + $release
-        URL_metro        = $url_start + "TargetSupportInstaller/UnitySetup-Universal-Windows-Platform-Support-for-Editor-" + $version + "f" + $release
-        URL_linux_il2cpp = $url_start + "TargetSupportInstaller/UnitySetup-Linux-IL2CPP-Support-for-Editor-" + $version + "f" + $release
+    $hash = @{}
+
+    $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + "f" + $release) }
+
+    $hash + @{
+      URL64        = $editor_url
+      Version      = $version
+      ReleaseNotes = "https://unity3d.com/unity/whats-new/${version}"
+      URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
     }
+
 }
 
 if ($MyInvocation.InvocationName -ne '.') { # run the update only if script is not sourced
