@@ -3,30 +3,40 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-metro</id>
-    <version>2021.2.16</version>
+    <version>2021.2.16.20220319</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-metro</packageSourceUrl>
-    <owners>LudicrousByte</owners>
-    <title>Unity Windows Store (.NET) Target Support</title>
+    <owners>jtcmedia</owners>
+    <title>[Deprecated] Unity Windows Store (.NET) Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
-    <copyright>Copyright © 2017 Unity Technologies</copyright>
+    <copyright>Unity Technologies</copyright>
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
-    <tags>unity unity3d admin metro windows store .net</tags>
+    <tags>unity unity3d admin windows metro store .net</tags>
     <summary>This package adds Windows Store (.NET) Target Support to Unity.</summary>
     <description>
-This package adds Windows Store (.NET) Target Support to Unity.
+This package is deprecated. Use the **unity-windows-store** package instead.
+
+This package exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
     </description>
     <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
+### New users
+
+* Do not install unity-metro (this package). Install **unity-windows-store** instead.
+
+### Existing users
+
+* Updating this package will install the most recent version of the **unity-windows-store** chocolatey package. Please update any links, dependencies, or scripts that reference this package to the package name **unity-windows-store**.
+
+### Cleanup
+
+* Remove package: `choco uninstall unity-metro --all-versions --whatif`
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2021.2.16" />
+      <dependency id="unity-windows-store" version="2021.2.16" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
