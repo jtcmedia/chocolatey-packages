@@ -4,16 +4,16 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.1/AviSynthPlus_3.7.1_20211231.exe
+    x32: https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.2/AviSynthPlus_3.7.2_20220317.exe
 
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.1/AviSynthPlus_3.7.1_20211231.exe
+        Get-RemoteChecksum https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.2/AviSynthPlus_3.7.2_20220317.exe
 
 
 3.  Compare to Checksum:
 
-    checksum32: 2BB5E10488A0A492B0E37A2EE512BDD10BB3C4AAAB2E66D0F4BAF1985FD018A1
+    checksum32: 78452D8B4E955817ACF99AE89B9002AE76D5222C16DAB817A7C7CD1F8DF43666
