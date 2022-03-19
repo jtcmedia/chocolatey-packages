@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-lumin</id>
-    <version>2021.2.10</version>
+    <version>2021.2.10.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-lumin</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Lumin Target Support</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/unity-icon/icons/unity.png</iconUrl>
-    <copyright>Copyright © 2019 Unity Technologies</copyright>
+    <copyright>Copyright © 2022 Unity Technologies</copyright>
     <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
@@ -18,6 +18,8 @@
     <summary>This package adds Lumin Target Support to Unity.</summary>
     <description>
 This package adds Lumin Target Support to Unity.
+
+Unity is no longer updating this Component Installer for the 2021.X releases.
     </description>
     <releaseNotes>
 * [Release Notes](https://unity3d.com/unity/whats-new/)
