@@ -22,7 +22,7 @@ function global:au_GetLatest {
 
     $regex = 'UnitySetup64'
 
-    $streams = @{}
+    $streams = [ordered] @{}
     
     $releases | % {
       $download_page = Invoke-WebRequest -Uri $_ -UseBasicParsing
@@ -37,8 +37,10 @@ function global:au_GetLatest {
       
       if ( $streamName -eq "2021" ) {
         $installers = $installers + "Linux-Server", "Mac-Server", "Windows-Server"
+        if ($Latest.PackageName -eq "unity-lumin") { return }
       } else {
         $installers = $installers + "Lumin"
+        if ($Latest.PackageName -like "*server*") { return }
       }
 
       $hash = @{}
@@ -51,6 +53,8 @@ function global:au_GetLatest {
         URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
       }
     }
+
+    Write-Host $streams.Count 'streams collected'
 
     @{
         Streams = $streams
