@@ -29,6 +29,9 @@ function global:au_GetLatest {
       $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
       $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
       $streamName = $version -split '\.' | select -First 1
+      
+      if ($streams.$streamName) { return }
+      
       $release = $editor_url -split 'f' | select -Last 1
       $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
 
@@ -46,7 +49,7 @@ function global:au_GetLatest {
       $hash = @{}
       $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + "f" + $release) }
 
-      $streams["$streamName"] = $hash + @{
+      $streams.$streamName = $hash + @{
         URL64        = $editor_url
         Version      = $version
         ReleaseNotes = "https://unity3d.com/unity/whats-new/${version}"
