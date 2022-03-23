@@ -19,9 +19,7 @@
     <description>
 This package adds Android Target Support to Unity.
     </description>
-    <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="unity" version="2021.2.16" />
     </dependencies>
