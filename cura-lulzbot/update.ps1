@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.lulzbot.com/learn/tutorials/cura-lulzbot-edition-installation-windows'
+$releases = 'https://learn.lulzbot.com/learn/cura-lulzbot-edition-installation-windows'
 
 function global:au_SearchReplace {
     @{
