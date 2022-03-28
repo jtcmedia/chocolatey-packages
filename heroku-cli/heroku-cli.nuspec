@@ -3,15 +3,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>7.53.0.0</version>
+    <version>7.53.0.20220328</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
-    <owners>ludicrousByte</owners>
+    <owners>jtcmedia</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
     <authors>Heroku</authors>
     <projectUrl>https://cli.heroku.com/</projectUrl>
     <projectSourceUrl>https://github.com/heroku/cli</projectSourceUrl>
     <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/heroku-icon/icons/heroku-cli.png</iconUrl>
-    <copyright>© 2017 Heroku, Inc.</copyright>
+    <copyright>© 2022 Heroku, Inc.</copyright>
     <licenseUrl>https://github.com/heroku/cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://devcenter.heroku.com/categories/command-line</docsUrl>
@@ -30,10 +30,12 @@ Dependency mechanisms vary across languages: in Ruby you use a Gemfile, in Pytho
 
 The source code for your application, together with the dependency file, should provide enough information for the Heroku platform to build your application, to produce something that can be executed.
 
+## Package Notes
+
+Heroku has stopped updating the executable installer since April 2021 (see issue [here](https://github.com/heroku/cli/issues/1962)). Therefore, there will be no new releases of this package unless that changes. Heroku's cli [auto-updates](https://devcenter.heroku.com/articles/heroku-cli#staying-up-to-date) so you can install the last version of this package and the cli will get upgraded. 
+
     </description>
-    <releaseNotes>
-* [Changelog](https://devcenter.heroku.com/changelog)
-    </releaseNotes>
+    <releaseNotes>https://github.com/heroku/cli/releases/tag/v7.53.0</releaseNotes>
     <dependencies>
       <dependency id="git" version="2.8.1" />
     </dependencies>
