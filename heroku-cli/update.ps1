@@ -11,6 +11,10 @@ function global:au_SearchReplace {
             "(?i)(\s+checksum64:).*"     = "`${1} $($Latest.Checksum64)"
             "(?i)(Get-RemoteChecksum).*" = "`${1} $($Latest.URL64)"
         }
+
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
     }
 }
 
@@ -27,7 +31,7 @@ function global:au_GetLatest {
     
     Invoke-WebRequest $url[0] -OutFile "$PSScriptRoot\$outFile"
     
-    $version = (Get-Item $outFile).VersionInfo.ProductVersion
+    $version = ((Get-Item $outFile).VersionInfo.ProductVersion).Substring(0, 6)
     
     #don't need installer anymore
     Remove-Item $outFile -Force
@@ -36,6 +40,7 @@ function global:au_GetLatest {
       URL32 = $url[1]
       URL64 = $url[0]
       Version = $version
+      ReleaseNotes = "https://github.com/heroku/cli/releases/tag/v${version}"
     }
 }
 
