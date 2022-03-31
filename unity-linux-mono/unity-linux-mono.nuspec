@@ -4,7 +4,7 @@
   <metadata>
     <id>unity-linux-mono</id>
     <version>2021.2.16</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux-mono</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Linux Mono Target Support</title>
     <authors>Unity Technologies</authors>
@@ -19,11 +19,9 @@
     <description>
 This package adds Linux Mono Target Support to Unity.
     </description>
-    <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
-      <dependency id="unity" version="2021.2.16" />
+      <dependency id="unity" version="[2021.2.16]" />
     </dependencies>
   </metadata>
   <files>
