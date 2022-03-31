@@ -1,7 +1,5 @@
 import-module au
 
-#$unity_data = Import-CliXml $PSScriptRoot\..\_unity.xml
-
 . $PSScriptRoot\..\unity\update.ps1
 function global:au_SearchReplace {
     @{
@@ -10,19 +8,11 @@ function global:au_SearchReplace {
             "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
         }
         
-        ".\unity-docs.nuspec" = @{
-            "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"$($Latest.Version)`""
+        "$($Latest.PackageName).nuspec" = @{
+          "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"`[$($Latest.Version)`]`""
+          "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
     }
 }
-
-
-# function global:au_GetLatest {
-  
-#     $url = $unity_data["url"] + "WindowsDocumentationInstaller/UnityDocumentationSetup-" + $unity_data["version"] + "f" + $unity_data["release"]
-    
-    
-#     return @{ URL64 = $url -replace 'http:', 'https:'; Version = $unity_data["version"] }
-# }
 
 update -ChecksumFor 64
