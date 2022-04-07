@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-linux-il2cpp</id>
-    <version>2021.2.18</version>
+    <version>2021.2.19</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux-il2cpp</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Linux (IL2CPP) Target Support</title>
@@ -23,7 +23,7 @@ This package adds Linux (IL2CPP) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2021.2.18]" />
+      <dependency id="unity" version="[2021.2.19]" />
     </dependencies>
   </metadata>
   <files>
