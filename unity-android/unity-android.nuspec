@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-android</id>
-    <version>2020.3.33</version>
+    <version>2021.3.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-android</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Android Target Support</title>
@@ -19,9 +19,9 @@
     <description>
 This package adds Android Target Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2020.3.33</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2021.3.0</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2020.3.33]" />
+      <dependency id="unity" version="[2021.3.0]" />
     </dependencies>
   </metadata>
   <files>
