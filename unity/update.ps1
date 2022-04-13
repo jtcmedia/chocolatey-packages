@@ -1,8 +1,8 @@
 import-module au
 
 $releases = 'https://unity3d.com/get-unity/download/archive',
-  'https://unity3d.com/unity/qa/lts-releases?version=2020.3',
-  'https://unity3d.com/unity/qa/lts-releases?version=2019.4'
+  'https://unity3d.com/unity/qa/lts-releases?version=2021.3',
+  'https://unity3d.com/unity/qa/lts-releases?version=2020.3'
 
 
 function global:au_SearchReplace {
@@ -38,12 +38,12 @@ function global:au_GetLatest {
       $installers = "Android", "AppleTV", "iOS", "Linux-IL2CPP", "Linux-Mono", "Mac-Mono",
         "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP"
       
-      if ( $streamName -eq "2021" ) {
-        $installers = $installers + "Linux-Server", "Mac-Server", "Windows-Server"
-        if ($Latest.PackageName -eq "unity-lumin") { return }
-      } else {
+      if ( $streamName -eq "2020" ) {
         $installers = $installers + "Lumin"
         if ($Latest.PackageName -like "*server*") { return }
+      } else {
+        $installers = $installers + "Linux-Server", "Mac-Server", "Windows-Server"
+        if ($Latest.PackageName -eq "unity-lumin") { return }
       }
 
       $hash = @{}
