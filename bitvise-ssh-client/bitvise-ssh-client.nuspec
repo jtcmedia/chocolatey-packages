@@ -29,14 +29,11 @@
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/bitvise-ssh-client</packageSourceUrl>
     <bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
     <tags>ssh sftp client vt100 admin</tags>
-    <copyright>Copyright (C) 2001-2020 by Bitvise Limited. All rights reserved.</copyright>
+    <copyright>Bitvise Limited</copyright>
     <licenseUrl>https://www.bitvise.com/ssh-client-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/1e87afdbb4face407d506d33453cbe11c70e5af2/icons/bitvise-ssh-client.png</iconUrl>
-    <releaseNotes>
-* [Changelog](https://www.bitvise.com/ssh-client-version-history)
-* 2012: Bitvise released version 4.50 and renamed Tunnelier to **Bitvise SSH Client**
-    </releaseNotes>
+    <releaseNotes>https://www.bitvise.com/ssh-client-version-history</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
