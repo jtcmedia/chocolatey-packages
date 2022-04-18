@@ -17,7 +17,8 @@ function global:au_GetLatest {
     $regex = '_build.rar/download'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 
-    $version = $url -split '/' | select -Last 1 -Skip 1 | % { $_.TrimEnd('_build.rar') } | % { $_.Replace('v','') } | % { $_.Replace('_','.') }
+    $version = $url -split '/' | select -Last 1 -Skip 1 | % { $_.TrimEnd('_build.rar') } | % { $_.Replace('v','') } | `
+      % { $_.Replace('_','.') } | % { $_.Replace('fx', '') }
 
     
     @{
