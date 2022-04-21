@@ -15,7 +15,7 @@ Currently supports emulation of the following USB Gamepads:
 
 ## Supported Systems
 
-The driver is built for Windows 10/Server 2016/Server 2019 only (x86 and amd64).
+The driver is built for Windows 10/11, Server 2016, and Server 2019 only (x86 and amd64).
 
 ## Maintainer's Note
 
