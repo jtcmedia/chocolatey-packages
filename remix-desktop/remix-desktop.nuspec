@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>remix-desktop</id>
+    <version>1.3.3</version>
+    <packageSourceUrl>https://github.com/ethereum/remix-desktop</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>Remix IDE Desktop (Install)</title>
+    <authors>ethereum</authors>
+    <projectUrl>https://remix.ethereum.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/68273d54a9681cebcbf0846a2ef87923021e7519/icons/remix-desktop.png</iconUrl>
+    <copyright>Copyright (c) 2016-2018 Contributors</copyright>
+    <projectSourceUrl>https://github.com/ethereum/remix-desktop</projectSourceUrl>
+    <docsUrl>https://remix-ide.readthedocs.io/en/latest/</docsUrl>
+    <mailingListUrl>https://gitter.im/ethereum/remix</mailingListUrl>
+    <bugTrackerUrl>https://github.com/ethereum/remix-desktop/issues</bugTrackerUrl>
+    <tags>remix-desktop remix ide ethereum solidity remixd web3 blockchain</tags>
+    <summary>Remix Desktop is an Electron version of Remix IDE. It works on Linux, Windows, and Macs.</summary>
+    <description><![CDATA[# Remix Desktop
+
+**Remix Desktop** is an Electron version of Remix IDE.  It works on Linux, Windows, & Macs.
+
+Like the name says, it is a desktop app - so it you can seamlessly access files on your computer's filesystem.  
+
+To find out more about Remix IDE - please go to [ethereum/remix-project](https://github.com/ethereum/remix-project) - or to see it in action, go to [remix.ethereum.org](https://remix.ethereum.org).
+
+## Differences between Remix Desktop & Remix IDE - the web app
+
+### Accessing your hard drive
+
+**Remix IDE - the web app** works in a browser and without using [remixd](https://remix-ide.readthedocs.io/en/latest/remixd.html), it cannot access your computer's file system. Whereas with **Remix Desktop** accessing your filesystem is easy.
+
+Saving and accessing files saved on your computer is the big advantage of Remix Desktop.
+
+In Remix Desktop, you select a folder from the File menu (File -> Open Folder) to make it the active folder in the **File Explorers'** workspace.  Go to File -> Open Folder to select.
+
+![](https://rawcdn.githack.com/ethereum/remix-desktop/ba6df21ce11db3a2a74ef853f04bfe61d8773699/remix-desktop-open.png)
+
+### Version control& folder capacity
+
+With Remix Desktop, version control is just like it would be with any other desktop IDE. Similarly the size of a workspace folder is limited by your computer's hard drive.  In Remix IDE - the web app, the size of a workspace folder is limited by the size of the browser's local storage. There are techniques for putting version control in the browser (like using remixd or the DGIT plugin), but these are work-arounds to inherent limitations of a browser.
+
+### Deploying to a public testnet with Injected Web3 & Metamask
+
+**Remix Desktop** does not have access to the Metamask - the browser plugin - so deploying to a public chain currently involves using the Wallet Connect plugin.  In contrast, **Remix IDE - the web app** has easy access to the Metamask browser plugin.
+
+## Where to go to for help
+
+Please post your questions to: https://gitter.im/ethereum/remix
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/ethereum/remix-desktop/releases/tag/v1.3.3</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
