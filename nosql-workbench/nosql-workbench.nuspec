@@ -10,9 +10,9 @@
     <authors>Amazon Web Services</authors>
     <projectUrl>https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/37ab882f78f6dca37aabe5d688948b8721682039/icons/nosql-workbench.png</iconUrl>
-    <copyright>© 2020, Amazon Web Services, Inc. or its affiliates. All rights reserved.</copyright>
+    <copyright>© 2022, Amazon Web Services, Inc. or its affiliates. All rights reserved.</copyright>
     <docsUrl>https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html</docsUrl>
-    <mailingListUrl>https://forums.aws.amazon.com/forum.jspa?forumID=131</mailingListUrl>
+    <mailingListUrl>https://repost.aws/tags/TAljkKQ0MDQJCjDdxSeDQBJw/amazon-dynamo-db</mailingListUrl>
     <tags>nosql-workbench nosql workbench amazon aws dynamodb database dynamo admin</tags>
     <summary>NoSQL Workbench for Amazon DynamoDB is a cross-platform client-side application for modern database development and operations and is available for Windows and macOS.</summary>
     <description><![CDATA[# NoSQL Workbench for Amazon DynamoDB
