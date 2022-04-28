@@ -15,7 +15,7 @@
     <docsUrl>https://remix-ide.readthedocs.io/en/latest/</docsUrl>
     <mailingListUrl>https://gitter.im/ethereum/remix</mailingListUrl>
     <bugTrackerUrl>https://github.com/ethereum/remix-desktop/issues</bugTrackerUrl>
-    <tags>remix-desktop remix ide ethereum solidity remixd web3 blockchain</tags>
+    <tags>remix-desktop remix ide ethereum solidity remixd web3 blockchain smart contracts</tags>
     <summary>Remix Desktop is an Electron version of Remix IDE. It works on Linux, Windows, and Macs.</summary>
     <description><![CDATA[# Remix Desktop
 
