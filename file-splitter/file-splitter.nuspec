@@ -4,7 +4,7 @@
   <metadata>
     <id>file-splitter</id>
     <version>5.0.1189</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/main/file-splitter</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/file-splitter</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>File Splitter</title>
     <authors>Filesplitter.org</authors>

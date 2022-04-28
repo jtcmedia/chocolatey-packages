@@ -4,7 +4,7 @@
   <metadata>
     <id>remix-desktop</id>
     <version>1.3.3</version>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/main/remix-desktop</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/remix-desktop</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Remix IDE Desktop (Install)</title>
     <authors>ethereum</authors>
