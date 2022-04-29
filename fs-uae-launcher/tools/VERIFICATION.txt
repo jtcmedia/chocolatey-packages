@@ -1,0 +1,17 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the zip:
+
+    x64: https://fs-uae.net/files/FS-UAE-Launcher/Stable/3.1.68/FS-UAE-Launcher_3.1.68_Windows_x86-64.zip
+    
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://fs-uae.net/files/FS-UAE-Launcher/Stable/3.1.68/FS-UAE-Launcher_3.1.68_Windows_x86-64.zip
+
+3.  Compare to Checksum:
+
+    checksum64: 3C9FB33D7FCF4799B0D73833C12E92F3B4435C9101B8B55973F2B25FFBB537D9

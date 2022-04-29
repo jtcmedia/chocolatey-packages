@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fs-uae-launcher</id>
+    <title>FS-UAE Launcher</title>
+    <version>3.1.68</version>
+    <authors>Frode Solheim</authors>
+    <owners>jtcmedia</owners>
+    <projectUrl>https://fs-uae.net/</projectUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae-launcher</packageSourceUrl>
+    <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae-launcher</projectSourceUrl>
+    <docsUrl>https://fs-uae.net/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae-launcher/issues</bugTrackerUrl>
+    <tags>fs-uae uae winuae amiga emulator games launcher front-end</tags>
+    <copyright>Copyright (C) 2012-2021 Frode Solheim</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/9b8f332f42a1f09d2d37e67e4766dbf92d114908/icons/fs-uae.png</iconUrl>
+    <summary>A frontend for the FS-UAE Amiga emulator with support for the OpenRetro online game database.</summary>
+    <description><![CDATA[# FS-UAE Launcher
+
+This is a configuration program for FS-UAE.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="fs-uae" version="3.1.66" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
