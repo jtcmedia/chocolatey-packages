@@ -3,26 +3,56 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fs-uae</id>
-    <title>FS-UAE (Install)</title>
-    <version>3.0.5</version>
+    <title>FS-UAE</title>
+    <version>3.1.66</version>
     <authors>Frode Solheim</authors>
     <owners>jtcmedia</owners>
-    <summary>FS-UAE Amiga Emulator</summary>
-    <description>FS-UAE is an Amiga emulator based on the excellent emulation code from WinUAE currently developed and maintained by Toni Wilen, which again builds on the work by the earlier authors of the original UAE and WinUAE.
-    </description>
     <projectUrl>https://fs-uae.net/</projectUrl>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/fs-uae</packageSourceUrl>
     <projectSourceUrl>https://github.com/FrodeSolheim/fs-uae</projectSourceUrl>
     <docsUrl>https://fs-uae.net/docs</docsUrl>
     <bugTrackerUrl>https://github.com/FrodeSolheim/fs-uae/issues</bugTrackerUrl>
-    <tags>fs-uae uae amiga emulator games admin</tags>
-    <copyright>copyright © 2011-2017 Frode Solheim</copyright>
+    <tags>fs-uae uae winuae amiga emulator games</tags>
+    <copyright>copyright © 2011-2022 Frode Solheim</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/jtcmedia/chocolatey-packages/fs-uae-icon/icons/fs-uae.png</iconUrl>
-	<releaseNotes>
-* [Changelog](https://fs-uae.net/category/stable-releases)
-	</releaseNotes>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/9b8f332f42a1f09d2d37e67e4766dbf92d114908/icons/fs-uae.png</iconUrl>
+    <summary>FS-UAE is an Amiga emulator for Windows, Linux and Mac OS X based on
+UAE/WinUAE, with a focus on emulating games.</summary>
+    <description><![CDATA[# FS-UAE
+
+FS-UAE is an Amiga emulator for Windows, Linux and Mac OS X based on
+UAE/WinUAE, with a focus on emulating games.
+
+Features include emulation of Amiga 500, 1200, 4000, CD32 and CDTV,
+perfectly smooth scrolling on 50Hz displays, support for floppy images in
+ADF and IPF formats, CD-ROM images in ISO or BIN/CUE format, mounting folders
+on your computer as Amiga hard drives, support for Picasso 96 drivers for
+high-color and high-resolution Workbench displays, and more...
+
+A unique feature is support for cross-platform online play. You can now play
+Amiga games against (or with) friends over the Internet.
+
+The emulator uses the latest Amiga emulation code from the WinUAE project
+and requires a moderately fast computer with accelerated graphics (OpenGL)
+to work. A game pad or joystick is recommended, but not required (FS-UAE
+can emulate a joystick using the cursor keys and right ctrl/alt keys).
+
+The official home page of FS-UAE is https://fs-uae.net/
+
+## Important Information
+
+FS-UAE itself does not include a configuration UI, so you must either:
+
+- Run FS-UAE via the configuration program [FS-UAE Launcher](https://community.chocolatey.org/packages/fs-uae-launcher/).
+- Create a configuration file before the emulator will be usable.
+- Run FS-UAE from a third-party configuration interface / frontend.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/FrodeSolheim/fs-uae/releases/tag/v3.1.66</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
