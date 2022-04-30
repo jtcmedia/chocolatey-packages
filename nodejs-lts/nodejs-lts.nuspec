@@ -3,18 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>16.14.2</version>
+    <version>16.15.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
-    <owners>LudicrousByte</owners>
+    <owners>jtcmedia</owners>
     <title>Node.js LTS (Install)</title>
-    <authors>Node.js Foundation</authors>
+    <authors>OpenJS Foundation</authors>
     <projectUrl>https://nodejs.org/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/jtcmedia/chocolatey-packages/nodejs-lts-icon/icons/nodejs-lts.png</iconUrl>
-    <copyright>© 2021 Node.js Foundation</copyright>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/76f0c59ddbe130f082a19bd6908398e5dc22ba83/icons/nodejs-lts.png</iconUrl>
+    <copyright>© OpenJS Foundation</copyright>
     <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
-    <docsUrl>https://nodejs.org/dist/latest-v14.x/docs/api/</docsUrl>
+    <docsUrl>https://nodejs.org/dist/latest-v16.x/docs/api/</docsUrl>
     <bugTrackerUrl>https://github.com/nodejs/node/issues</bugTrackerUrl>
     <tags>nodejs-lts nodejs lts node.js node admin npm javascript</tags>
     <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
@@ -28,7 +28,7 @@
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.14.2</releaseNotes>
+    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#16.15.0</releaseNotes>
    </metadata>
   <files>
     <file src="tools\**" target="tools" />
