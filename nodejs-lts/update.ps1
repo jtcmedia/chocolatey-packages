@@ -1,12 +1,12 @@
 import-module au
 
-$releases = 'https://nodejs.org/en/download/'
-
+$lts_versions = '16','14'
 
 function global:au_SearchReplace {
     @{
         "$($Latest.PackageName).nuspec" = @{
           "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+          "(\<docsUrl\>).*?(\</docsUrl\>)" = "`${1}$($Latest.DocsUrl)`$2"
         }
       
         ".\legal\VERIFICATION.txt" = @{
@@ -25,22 +25,37 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-    $regex = '.msi$'
-    $url = $download_page.links | ? href -match $regex | select -First 2 -Skip 1 -expand href
-    
-    $version = ($url[0] -split '-' | select -Last 1 -Skip 1).Substring(1)
-    
-    $shasums = $download_page.links | ? href -match '.asc$' | select -First 1 -expand href
-    
-    @{
-      URL32 = $url[0]
-      URL64 = $url[1]
-      SHASUMS = $shasums
-      Version = $version
-      ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V16.md#${version}"
+    $streams = [ordered] @{}
+  
+    $lts_versions | % {
+
+        $lts_release =  "https://nodejs.org/dist/latest-v$_.x/"
+        $download_page = Invoke-WebRequest -Uri $lts_release -UseBasicParsing
+      
+        $regex = '.msi$'
+        $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { $lts_release + $_ }
+        
+        $version = $urls[0] -split '-' | select -Last 1 -Skip 1
+        
+        $shasums = $download_page.links | ? href -match '.txt$' | select -First 1 -expand href | % { $lts_release + $_ }
+
+        $streams.$_ = @{
+          URL32 = $urls[1]
+          URL64 = $urls[0]
+          SHASUMS = $shasums
+          Version = $version.Replace('v','')
+          ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v','')
+          DocsUrl = "https://nodejs.org/dist/latest-v$_.x/docs/api/"
+        }
     }
+
+    Write-Host $streams.Count 'streams collected'
+
+    @{
+        Streams = $streams
+    }
+    
 }
 
 update -ChecksumFor none
