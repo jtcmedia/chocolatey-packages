@@ -10,10 +10,14 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-$desktopPath = [Environment]::GetFolderPath("Desktop")
+$pp = Get-PackageParameters
 
-Install-ChocolateyShortcut `
-  -ShortcutFilePath "$desktopPath\FS-UAE Launcher.lnk" `
-  -TargetPath "$($packageArgs.Destination)\FS-UAE-Launcher\Windows\x86-64\fs-uae-launcher.exe"
+if (!($pp.NOICON)) {
+  $desktopPath = [Environment]::GetFolderPath("Desktop")
+
+  Install-ChocolateyShortcut `
+    -ShortcutFilePath "$desktopPath\FS-UAE Launcher.lnk" `
+    -TargetPath "$($packageArgs.Destination)\FS-UAE-Launcher\Windows\x86-64\fs-uae-launcher.exe"
+}
 
 rm $toolsPath\*.zip -ea 0
