@@ -20,12 +20,14 @@ function global:au_GetLatest {
     $regex = 'windows.zip$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    $versionE = $url -split '-' | select -Index 1
-    $folder  = 'energia-' + $versionE
-    $version = $versionE -replace 'E', '.'
-    $version = $version + '00'
+    $version = $url -split '-' | select -Last 1 -Skip 1
+
     
-    return @{ URL = $url; Version = $version; Folder = $folder }
+    @{
+      URL = $url
+      Version = $version.Replace('E','')
+      Folder = "energia-${version}"
+    }
 }
 
 update -ChecksumFor 32
