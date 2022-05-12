@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url32      = 'https://github.com/opentrack/opentrack/releases/download/opentrack-2022.1.1/opentrack-2022.1.1-win32-setup.exe'
-$checksum32 = '49e3b914ebaa73c9d9c16887782a6770b12ead084e938b53996b310833c61e3f'
+$url32      = 'https://github.com/opentrack/opentrack/releases/download/opentrack-2022.2.0/opentrack-2022.2.0-win32-setup.exe'
+$checksum32 = 'fd08d60c4f3109c205a415cb9bda00cb782dbee0460a1083da7f8674a10b9efe'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
