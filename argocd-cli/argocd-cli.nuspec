@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>argocd-cli</id>
-    <version>2.3.3</version>
+    <version>2.3.4</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/argocd-cli</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Argo CD CLI</title>
@@ -51,7 +51,7 @@ Check live demo at https://cd.apps.argoproj.io/.
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/argoproj/argo-cd/releases/tag/v2.3.3</releaseNotes>
+    <releaseNotes>https://github.com/argoproj/argo-cd/releases/tag/v2.3.4</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
