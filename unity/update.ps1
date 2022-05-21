@@ -21,19 +21,25 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $regex = 'UnitySetup64'
+    $regex = 'UnitySetup64'; $regex2 = 'UnitySetup-Android'
 
     $streams = [ordered] @{}
     
     $releases | % {
       $download_page = Invoke-WebRequest -Uri $_ -UseBasicParsing
       $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-      $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
-      $streamName = $version -split '\.' | select -First 1
+      if ( $_ -match '2021') {
+        $android_url = $download_page.links | ? href -match $regex2 | select -First 1 -expand href
+        $version = $android_url -split '-|f' | select -Last 1 -Skip 1
+        $release = $android_url -split 'f' | select -Last 1
+      } else {
+        $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
+        $release = $editor_url -split 'f' | select -Last 1
+      }
+      $streamName = $version -split '.' | select -First 1
       
       if ($streams.$streamName) { return }
       
-      $release = $editor_url -split 'f' | select -Last 1
       $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
 
       $installers = "Android", "AppleTV", "iOS", "Linux-IL2CPP", "Linux-Mono", "Mac-Mono",
