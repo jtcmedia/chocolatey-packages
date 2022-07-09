@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-webgl</id>
-    <version>2022.1.8</version>
+    <version>2021.3.6</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-webgl</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity WebGL Target Support</title>
@@ -23,7 +23,7 @@ This package adds WebGL Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2022.1.8]" />
+      <dependency id="unity" version="[2021.3.6]" />
     </dependencies>
   </metadata>
   <files>
