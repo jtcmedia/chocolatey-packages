@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tesseract-ocr</id>
-    <version>5.1.0.20220510</version>
+    <version>5.2.0.20220708</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/tesseract-ocr</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Tesseract OCR (Install)</title>
