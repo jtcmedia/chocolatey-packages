@@ -67,7 +67,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
 ]]></description>
     <releaseNotes>https://github.com/Ryochan7/DS4Windows/releases/tag/v3.1.1</releaseNotes>
     <dependencies>
-      <dependency id="dotnet-5.0-desktopruntime" version="5.0.4" />
+      <dependency id="dotnet-6.0-desktopruntime" version="6.0.7" />
       <dependency id="vcredist140" version="14.28.29913" />
     </dependencies>
   </metadata>
