@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64          = 'https://download.unity3d.com/download_unity/71f96b79b9f0/TargetSupportInstaller/UnitySetup-Lumin-Support-for-Editor-2020.3.36f1.exe'
-$checksum64     = '7b3271e3f100ff0eee60414a76fb610f23b0dc8fcdc5b974d4be3f725aded6c9'
+$url64          = 'https://download.unity3d.com/download_unity/8c66806a0c04/TargetSupportInstaller/UnitySetup-Lumin-Support-for-Editor-2020.3.37f1.exe'
+$checksum64     = 'd8f35f7f0a9f29b947fa8d3995795acedef38d4a2e81ceacb40322c14ce8e58f'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
