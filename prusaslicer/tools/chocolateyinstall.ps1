@@ -13,7 +13,7 @@ Get-ChocolateyUnzip @packageArgs
 $files = Get-ChildItem $toolsPath -Include *.exe -Recurse
 
 foreach ($file in $files) {
-  if (!($file.Name.Equals("prusa-slicer.exe"))) {
+  if (!($file.Name.Equals("prusa-slicer.exe") -or $file.Name.Equals("prusa-gcodeviewer.exe"))) {
     #generate an ignore file
     New-Item "$file.ignore" -type file -Force | Out-Null
   }
