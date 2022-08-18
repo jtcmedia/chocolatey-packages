@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-win-il2cpp</id>
-    <version>2022.1.13</version>
+    <version>2020.3.38</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-win-il2cpp</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Windows (IL2CPP) Target Support</title>
@@ -23,7 +23,7 @@ This package adds Windows (IL2CPP) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2022.1.13]" />
+      <dependency id="unity" version="[2020.3.38]" />
     </dependencies>
   </metadata>
   <files>
