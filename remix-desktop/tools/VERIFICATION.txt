@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/ethereum/remix-desktop/releases/download/v1.3.4/Remix-IDE-Setup-1.3.4.exe
+    x64: https://github.com/ethereum/remix-desktop/releases/download/v1.3.5/Remix-IDE-Setup-1.3.5.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/ethereum/remix-desktop/releases/download/v1.3.4/Remix-IDE-Setup-1.3.4.exe
+        Get-RemoteChecksum https://github.com/ethereum/remix-desktop/releases/download/v1.3.5/Remix-IDE-Setup-1.3.5.exe
 
 3.  Compare to Checksum:
 
-    checksum64: 2DE17DB8A3C0D0712093E74EA320ABCE3B80C93050FF023EA550FB5D0CA309AA
+    checksum64: 0050FE463DFA2D4D386366DD075BA5474975D10C85604FFA75A35E658371B429
