@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.typora.io/windows/typora-setup-ia32-1.4.3.exe'
-$checksum   = 'dbf899e5bbd7279305921a536019ae50393350d8819fe10017606c161f626f6c'
-$url64      = 'https://download.typora.io/windows/typora-setup-x64-1.4.3.exe'
-$checksum64 = 'c88c4b3182b57d52f8c32c933c8246670f3a273417a63b62e10b1d329bdd3e38'
+$url        = 'https://download.typora.io/windows/typora-setup-ia32-1.4.4.exe'
+$checksum   = 'c1300ac9705fae71d09805c26509f85057118b31b5dce255ddcd7ba31a96f70e'
+$url64      = 'https://download.typora.io/windows/typora-setup-x64-1.4.4.exe'
+$checksum64 = '9d015818bf789306511ca7091e18afb5105accce2b3f4090b455345a60094c3a'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
