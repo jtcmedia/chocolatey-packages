@@ -16,16 +16,11 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix -FileNameBase 'argocd'}
-
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix -FileNameBase 'argocd' }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    
-    $regex = '.exe$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
-
-    $version = $url -split '/' | select -Last 1 -Skip 1
+    $version = "v2.4.15"
+    $url = "https://github.com/argoproj/argo-cd/releases/download/${version}/argocd-windows-amd64.exe"
     
     @{
         URL64 = $url
@@ -34,4 +29,4 @@ function global:au_GetLatest {
     }
 }
 
-update -ChecksumFor none
+Update-Package -ChecksumFor none
