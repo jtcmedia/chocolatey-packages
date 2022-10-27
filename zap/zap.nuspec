@@ -43,6 +43,10 @@ Some of ZAP's functionality:
 * Automatic updating option
 * Integrated and growing marketplace of add-ons
 
+## Package Note
+
+Zap 12 requires Java 11 or higher. There's no Chocolatey JRE package for Java 11 due to licensing issues. Ensure you have Java 11 or higher installed on your system.
+
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
@@ -50,9 +54,6 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
     <releaseNotes>
 * [Changelog](https://github.com/zaproxy/zaproxy/commits/master)
     </releaseNotes>
-    <dependencies>
-      <dependency id="javaruntime" version="8.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
