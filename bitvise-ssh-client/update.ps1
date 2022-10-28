@@ -20,22 +20,15 @@ function global:au_GetLatest {
     
 
     $regex = '.exe$'
-    $urls = $download_page.links | ? href -match $regex | select -First 3 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
     
-    if ($download_page.Content -match 'version:\s8\.\d{2}') {
-      $version8 = $Matches[0].Substring(9)
-      $releaseNotes8 = 'https://www.bitvise.com/ssh-client-version-history-8'
+    if ($download_page.Content -match 'version:\s9\.\d{2}') {
+      $version = $Matches[0].Substring(9)
+      $releaseNotes = 'https://www.bitvise.com/ssh-client-version-history'
     } else { return }
 
-    $version9 = $urls[2] -split '-|\.exe' | select -Last 1 -Skip 1
-    $releaseNotes9 = 'https://www.bitvise.com/ssh-client-version-history'
+    @{ Version = $version; URL32 = $url; ReleaseNotes = $releaseNotes }
 
-    @{
-        Streams = [ordered] @{
-          '8' = @{ Version = $version8; URL32 = $urls[0]; ReleaseNotes = $releaseNotes8 }
-          '9' = @{ Version = $version9.Insert(1, '.'); URL32 = $urls[2]; ReleaseNotes = $releaseNotes9 }
-        }
-    }
 }
 
 update -ChecksumFor 32
