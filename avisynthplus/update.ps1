@@ -1,6 +1,5 @@
 import-module au
-
-$releases = 'https://github.com/avisynth/avisynthplus/releases/latest'
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 
 function global:au_SearchReplace {
@@ -20,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "avisynth" -Repository "avisynthplus"
     
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | Select-Object -First 1 -expand href | % { 'https://github.com' + $_ }
