@@ -1,4 +1,5 @@
 import-module au
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases = 'https://github.com/HandBrake/HandBrake/releases/latest'
 
@@ -19,7 +20,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "HandBrake" -Repository "HandBrake"
     
     $regex = 'x86_64-Win_GUI.exe$'
     $url64 = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }

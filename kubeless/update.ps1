@@ -1,4 +1,5 @@
 import-module au
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
 $releases = 'https://github.com/kubeless/kubeless/releases/latest'
 
@@ -23,7 +24,7 @@ function global:au_AfterUpdate ($Package)  {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "kubeless" -Repository "kubeless"
     
     $regex = '\.zip$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -Skip 2 -expand href | % { 'https://github.com' + $_ }

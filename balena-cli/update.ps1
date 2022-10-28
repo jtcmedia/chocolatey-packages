@@ -1,6 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
-$releases = 'https://github.com/balena-io/balena-cli/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "balena-io" -Repository "balena-cli"
     
     $regex = '.exe$'
     $url64 = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href | ForEach-Object { 'https://github.com' + $_ }

@@ -1,6 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
 
-$releases = 'https://github.com/openfaas/faas-cli/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -21,7 +21,7 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "openfaas" -Repository "faas-cli"
     
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
