@@ -1,5 +1,5 @@
 import-module au
-. (Join-Path '..' 'helper-scripts' 'Get-GitHubLatestReleaseLinks.ps1')
+. (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'Get-GitHubLatestReleaseLinks.ps1')
 
 $releases = 'https://github.com/HandBrake/HandBrake/releases/latest'
 
