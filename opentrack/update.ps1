@@ -1,5 +1,6 @@
 import-module au
-. (Join-Path '..' 'helper-scripts' 'Get-GitHubLatestReleaseLinks.ps1')
+. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
