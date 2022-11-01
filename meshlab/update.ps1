@@ -1,6 +1,5 @@
 import-module au
-. $([System.IO.Path]::Combine("..", 'helper-scripts', 'Get-GitHubLatestReleaseLinks.ps1'))
-
+. (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'Get-GitHubLatestReleaseLinks.ps1')
 
 function global:au_SearchReplace {
     @{
@@ -16,9 +15,7 @@ function global:au_SearchReplace {
     }
 }
 
-
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
-
 
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "cnr-isti-vclab" -Repository "meshlab"
