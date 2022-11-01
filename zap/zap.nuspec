@@ -10,7 +10,7 @@
     <authors>Simon Bennetts OWASP</authors>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
-    <copyright>Copyright © 2020 the Zap Dev Team</copyright>
+    <copyright>Copyright © 2022 the ZAP Dev Team</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
@@ -45,7 +45,7 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-Zap 12 requires Java 11 or higher. There's no Chocolatey JRE package for Java 11 due to licensing issues. Ensure you have Java 11 or higher installed on your system.
+ZAP 2.12 requires Java 11 or higher. There's no Chocolatey JRE package for Java 11 due to licensing issues. Ensure you have Java 11 or higher installed on your system.
 
 ## Maintainer's Note
 
