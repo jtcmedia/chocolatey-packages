@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>epub-checker</id>
-    <version>2.0.6.20220511</version>
+    <version>2.0.6.20221101</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/epub-checker</packageSourceUrl>
     <owners>ludicrousByte</owners>
     <title>pagina EPUB-checker</title>
@@ -19,15 +19,9 @@
     <tags>epub-checker pagina epub validation validator checker epubcheck</tags>
     <summary>With the pagina EPUB-Checker one can easily validate ebooks in the EPUB format. The test mechanisms of the EPUB-Checker are based on the official open-source EPUBCheck tools.</summary>
     <description>
-With the pagina EPUB-Checker one can easily validate ebooks in the EPUB format. The test mechanisms of the EPUB-Checker are based on the official open-source [EPUBCheck tools](https://github.com/IDPF/epubcheck).
+## Package Notes
 
-pagina EPUB-Checker capsules these tools and offers some additional features, like:
-
-* Graphical user interface (like a "real" program)
-* Drag and drop to validate
-* Ability to validate expanded/unzipped EPUBs
-    * Expanded folders are automatically archived to an EPUB file upon validation
-    * The generated EPUB file will be saved if valid
+It appears Pagina is no longer publishing this software as it has been removed from their website. Thus, no new releases of this package will be made. For a non-GUI CLI version, install [epubcheck](https://community.chocolatey.org/packages/epubcheck).
     </description>
     <releaseNotes>
 * [Changelog](https://www.pagina.gmbh/produkte/epub-checker/)
