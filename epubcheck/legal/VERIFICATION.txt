@@ -1,0 +1,17 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    x32: https://github.com/w3c/epubcheck/releases/download/v4.2.6/epubcheck-4.2.6.zip
+
+2.  You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/w3c/epubcheck/releases/download/v4.2.6/epubcheck-4.2.6.zip
+
+3.  Compare to Checksum:
+
+    checksum32: 3F73C1265CC92E3B53FFDA6CD5BBEB58505B2B0C43411C26E74D8DF1B193B2C0
