@@ -8,7 +8,7 @@
     <owners>ludicrousByte</owners>
     <title>pagina EPUB-checker</title>
     <authors>pagina, Tobias Fischer</authors>
-    <projectUrl>https://www.pagina.gmbh/produkte/epub-checker/</projectUrl>
+    <projectUrl>https://www.pagina.gmbh/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/4f59921f4d58f9984fb71b67f9cefb5595b00255/icons/epub-checker.png</iconUrl>
     <copyright>©2010-2019 pagina GmbH</copyright>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
@@ -24,7 +24,6 @@
 It appears Pagina is no longer publishing this software as it has been removed from their website. Thus, no new releases of this package will be made. For a non-GUI CLI version, install [epubcheck](https://community.chocolatey.org/packages/epubcheck).
     </description>
     <releaseNotes>
-* [Changelog](https://www.pagina.gmbh/produkte/epub-checker/)
     </releaseNotes>
     <dependencies>
       <dependency id="jre8" version="8.0.231" />
