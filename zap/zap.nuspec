@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zap</id>
-    <version>2.12.0</version>
+    <version>2.12.0.20221122</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>OWASP Zed Attack Proxy (ZAP) (Install)</title>
@@ -45,7 +45,7 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-ZAP 2.12 requires Java 11 or higher. There's no Chocolatey JRE package for Java 11 due to licensing issues. Ensure you have Java 11 or higher installed on your system.
+**ZAP 2.12 requires Java 11 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin11jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
 
 ## Maintainer's Note
 
