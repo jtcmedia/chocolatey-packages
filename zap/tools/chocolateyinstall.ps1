@@ -22,4 +22,27 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+
+if (Test-Path 'env:JAVA_HOME') {
+  Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'..."
+  $java_major_version = (Get-Command java | Select-Object -ExpandProperty Version).Major
+  Write-Host "Java major version is: $java_major_version..."
+  if ( $java_major_version -ge 11 ) {
+    Install-ChocolateyPackage @packageArgs
+    if ( Get-OSArchitectureWidth 32 ) {
+      Install-ChocolateyShortcut `
+        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $env:ChocolateyPackageVersion.lnk" `
+        -TargetPath "C:\Program Files (x86)\OWASP\Zed Attack Proxy\ZAP.bat" `
+        -WorkingDirectory "C:\Program Files (x86)\OWASP\Zed Attack Proxy"
+    } else {
+      Install-ChocolateyShortcut `
+        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $env:ChocolateyPackageVersion.lnk" `
+        -TargetPath "C:\Program Files\OWASP\Zed Attack Proxy\ZAP.bat" `
+        -WorkingDirectory "C:\Program Files\OWASP\Zed Attack Proxy"
+    }
+  } else {
+    Write-Error "Java version is less than 11. ZAP 2.12 or greater requires Java 11."
+  }
+} else {
+  Write-Error "JAVA_HOME isn't set. Ensure you set this environment variable to a Java 11+ installation."
+}
