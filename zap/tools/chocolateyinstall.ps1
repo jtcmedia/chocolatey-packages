@@ -24,9 +24,9 @@ $packageArgs = @{
 
 
 if (Test-Path 'env:JAVA_HOME') {
-  Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'..."
+  Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'"
   $java_major_version = (Get-Command java | Select-Object -ExpandProperty Version).Major
-  Write-Host "Java major version is: $java_major_version..."
+  Write-Host "Java major version is: $java_major_version"
   if ( $java_major_version -ge 11 ) {
     Install-ChocolateyPackage @packageArgs
     if ( Get-OSArchitectureWidth 32 ) {

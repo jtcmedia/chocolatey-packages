@@ -1,6 +1,7 @@
 import-module au
 
 $releases = 'https://torguard.net/downloads.php'
+$checksums = 'https://updates.torguard.biz/Software/Windows/checksums.sha256'
 
 
 function global:au_SearchReplace {
@@ -18,6 +19,7 @@ function global:au_SearchReplace {
 
 
 function global:au_GetLatest {
+ 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     #$regex = '^v'

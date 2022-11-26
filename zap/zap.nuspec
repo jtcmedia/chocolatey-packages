@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
     <docsUrl>https://www.zaproxy.org/docs/</docsUrl>
-    <mailingListUrl>http://groups.google.com/group/zaproxy-users</mailingListUrl>
+    <mailingListUrl>https://groups.google.com/g/zaproxy-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/zaproxy/zaproxy/issues</bugTrackerUrl>
     <tags>zap admin owasp security proxy attack web pentesting</tags>
     <summary>The Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.</summary>
@@ -51,9 +51,7 @@ Some of ZAP's functionality:
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>
-* [Changelog](https://github.com/zaproxy/zaproxy/commits/master)
-    </releaseNotes>
+    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.12.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
