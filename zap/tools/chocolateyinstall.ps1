@@ -31,12 +31,12 @@ if (Test-Path 'env:JAVA_HOME') {
     Install-ChocolateyPackage @packageArgs
     if ( Get-OSArchitectureWidth 32 ) {
       Install-ChocolateyShortcut `
-        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $env:ChocolateyPackageVersion.lnk" `
+        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
         -TargetPath "C:\Program Files (x86)\OWASP\Zed Attack Proxy\ZAP.bat" `
         -WorkingDirectory "C:\Program Files (x86)\OWASP\Zed Attack Proxy"
     } else {
       Install-ChocolateyShortcut `
-        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $env:ChocolateyPackageVersion.lnk" `
+        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
         -TargetPath "C:\Program Files\OWASP\Zed Attack Proxy\ZAP.bat" `
         -WorkingDirectory "C:\Program Files\OWASP\Zed Attack Proxy"
     }
