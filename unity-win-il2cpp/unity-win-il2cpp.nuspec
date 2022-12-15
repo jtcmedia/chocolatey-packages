@@ -11,7 +11,7 @@
     <projectUrl>https://unity.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
     <copyright>Unity Technologies</copyright>
-    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <licenseUrl>https://unity.com/legal</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity unity3d admin windows il2cpp target</tags>
