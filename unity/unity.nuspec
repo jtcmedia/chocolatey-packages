@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity</id>
-    <version>2022.2.0</version>
+    <version>2022.2.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity (Install)</title>
@@ -11,7 +11,7 @@
     <projectUrl>https://unity.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
     <copyright>Unity Technologies</copyright>
-    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <licenseUrl>https://unity.com/legal</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity admin games cross-platform unity3d ide editor 3d vr multiplatform</tags>
@@ -120,7 +120,7 @@ If you're a company and using Unity Personal, you must meet the following criter
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.0</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.1</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
