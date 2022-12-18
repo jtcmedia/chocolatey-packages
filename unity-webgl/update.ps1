@@ -9,6 +9,7 @@ function global:au_SearchReplace {
         
         "$($Latest.PackageName).nuspec" = @{
             "(\<dependency id=`"unity`" version=)`"([^`"]+)`"" = "`$1`"`[$($Latest.Version)`]`""
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
     }
 }
