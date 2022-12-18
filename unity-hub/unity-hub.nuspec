@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>unity-hub</id>
-    <version>3.3.0</version>
+    <version>3.4.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-hub</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Hub (install)</title>
@@ -10,7 +10,7 @@
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
     <copyright>Copyright © 2022 Unity Technologies</copyright>
-    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <licenseUrl>https://unity.com/legal</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity admin games cross-platform unity3d multiplatform</tags>

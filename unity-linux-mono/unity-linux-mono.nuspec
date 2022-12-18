@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-linux-mono</id>
-    <version>2021.3.14</version>
+    <version>2020.3.43</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux-mono</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Linux Mono Target Support</title>
@@ -11,7 +11,7 @@
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
     <copyright>Unity Technologies</copyright>
-    <licenseUrl>https://unity3d.com/legal/terms-of-service/software</licenseUrl>
+    <licenseUrl>https://unity.com/legal</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
     <tags>unity unity3d admin linux mono target</tags>
@@ -19,9 +19,9 @@
     <description>
 This package adds Linux Mono Target Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2021.3.14</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2020.3.43</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2021.3.14]" />
+      <dependency id="unity" version="[2020.3.43]" />
     </dependencies>
   </metadata>
   <files>
