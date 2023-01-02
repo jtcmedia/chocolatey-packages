@@ -6,6 +6,7 @@ $url32          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/
 $url64          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_windows.exe'
 $checksum32     = 'fa741469190fd7d29ed870682a614535082a0c403450707c1359e79fe0cd0813'
 $checksum64     = '2dc7236c076dff9d35782fb85dbcfea1c57a63eca26ded15807ef2f62a0dcfd5'
+$pf             = ''
 
 $packageArgs = @{
   packageName    = $packageName
@@ -29,17 +30,11 @@ if (Test-Path 'env:JAVA_HOME') {
   Write-Host "Java major version is: $java_major_version"
   if ( $java_major_version -ge 11 ) {
     Install-ChocolateyPackage @packageArgs
-    if ( Get-OSArchitectureWidth 32 ) {
-      Install-ChocolateyShortcut `
-        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
-        -TargetPath "C:\Program Files (x86)\OWASP\Zed Attack Proxy\ZAP.bat" `
-        -WorkingDirectory "C:\Program Files (x86)\OWASP\Zed Attack Proxy"
-    } else {
-      Install-ChocolateyShortcut `
-        -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
-        -TargetPath "C:\Program Files\OWASP\Zed Attack Proxy\ZAP.bat" `
-        -WorkingDirectory "C:\Program Files\OWASP\Zed Attack Proxy"
-    }
+    if ( Get-OSArchitectureWidth 32 ) { $pf = ' (x86)' }
+    Install-ChocolateyShortcut `
+      -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
+      -TargetPath "C:\Program Files$pf\OWASP\Zed Attack Proxy\ZAP.bat" `
+      -WorkingDirectory "C:\Program Files$pf\OWASP\Zed Attack Proxy"
   } else {
     Write-Error "Java version is less than 11. ZAP 2.12 or greater requires Java 11."
   }
