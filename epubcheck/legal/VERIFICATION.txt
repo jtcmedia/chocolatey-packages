@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/w3c/epubcheck/releases/download/v4.2.6/epubcheck-4.2.6.zip
+    x32: https://github.com/w3c/epubcheck/releases/download/v5.0.0/epubcheck-5.0.0.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/w3c/epubcheck/releases/download/v4.2.6/epubcheck-4.2.6.zip
+        Get-RemoteChecksum https://github.com/w3c/epubcheck/releases/download/v5.0.0/epubcheck-5.0.0.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 3F73C1265CC92E3B53FFDA6CD5BBEB58505B2B0C43411C26E74D8DF1B193B2C0
+    checksum32: 98C5ECCE0A6A6BF37034F73465613C4088916B3EF3489F50A7F6897A37A9725A
