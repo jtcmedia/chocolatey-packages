@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-docs</id>
-    <version>2020.3.44</version>
+    <version>2022.2.3</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-docs</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Documentation</title>
@@ -19,9 +19,9 @@
     <description>
 This package installs Unity's documentation locally.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2020.3.44</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.3</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2020.3.44]" />
+      <dependency id="unity" version="[2022.2.3]" />
     </dependencies>
   </metadata>
   <files>
