@@ -4,8 +4,8 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/dist/latest-v18.x/node-v18.14.1-x86.msi
-    x64: https://nodejs.org/dist/latest-v18.x/node-v18.14.1-x64.msi
+    x32: https://nodejs.org/dist/latest-v18.x/node-v18.14.2-x86.msi
+    x64: https://nodejs.org/dist/latest-v18.x/node-v18.14.2-x64.msi
 
 2.  Download Checksums:
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/dist/latest-v18.x/node-v18.14.1-x64.msi
+        Get-RemoteChecksum https://nodejs.org/dist/latest-v18.x/node-v18.14.2-x64.msi
     
     
-    checksum32: 7A3FDDE01F758FC4D6CB9F491DB9AC30C39F20C19A27982898A9E0B4E61317D2
-    checksum64: 4A42E49E5C6E2340BE14B5E3D72D9A75ABF8FC8894D816D46321C28EA0ED4BAA
+    checksum32: 352ECD456852F870C0C1C63221C810B19993F83F5F0651125F1CEE386EECCA97
+    checksum64: 1152F8163882FAF8C6C33DCAAEEBB3A03468BDCBE4E33D722D063C1DA8F1FC57
