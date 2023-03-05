@@ -1,19 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://osdn.net/frs/redir.php?m=nchc&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-6.0.11-i686.exe'
-$url64      = 'https://osdn.net/frs/redir.php?m=nchc&f=%2Fstorage%2Fg%2Fk%2Fki%2Fkicad%2Fkicad-6.0.11-x86_64.exe'
-$checksum32 = '9d128e9c09783b2c97142d6cba15cc5866a8f6ff3680b13f9578bed7dc4fbeb1'
-$checksum64 = '41d89f8bd141be2efce68f667f6cbf030191198fa517fd189f4ba6dc129e4ac7'
+$url64      = 'https://github.com/KiCad/kicad-source-mirror/releases/download/7.0.0/kicad-7.0.0-x86_64.exe'
+$checksum64 = '6b32bfce38bb03852cd25fe9c2174bf80091cb130d3721475fd14b2f0bfc8f8f'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'EXE'
-  url           = $url32
   url64bit      = $url64     
   softwareName  = 'KiCad*'
-  checksum      = $checksum32
-  checksumType  = 'sha256'
   checksum64    = $checksum64
   checksumType64= 'sha256'
   silentArgs   = '/S'
