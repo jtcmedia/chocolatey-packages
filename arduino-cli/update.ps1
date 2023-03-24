@@ -23,7 +23,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "arduino" -Repository "arduino-cli"
     
-    $regex = '.(txt|zip)$'
+    $regex = '.(txt|bit\.zip)$'
     $url = $download_page.links | ? href -match $regex | select -First 3 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url[2] -split '_' | select -First 1 -Skip 1
