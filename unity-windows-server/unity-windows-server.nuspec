@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-windows-server</id>
-    <version>2022.2.12</version>
+    <version>2021.3.22</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-windows-server</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Windows Server Support</title>
@@ -19,9 +19,9 @@
     <description>
 This package adds Windows Server Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.12</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2021.3.22</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2022.2.12]" />
+      <dependency id="unity" version="[2021.3.22]" />
     </dependencies>
   </metadata>
   <files>
