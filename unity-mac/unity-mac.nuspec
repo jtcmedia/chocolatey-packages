@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-mac</id>
-    <version>2020.3.47</version>
+    <version>2022.2.14</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-mac</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity macOS (Mono) Target Support</title>
@@ -23,7 +23,7 @@ This package adds macOS (Mono) Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2020.3.47]" />
+      <dependency id="unity" version="[2022.2.14]" />
     </dependencies>
   </metadata>
   <files>
