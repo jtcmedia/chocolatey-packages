@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity</id>
-    <version>2022.2.14</version>
+    <version>2022.2.15</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity (Install)</title>
@@ -120,7 +120,7 @@ If you're a company and using Unity Personal, you must meet the following criter
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.14</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2022.2.15</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
