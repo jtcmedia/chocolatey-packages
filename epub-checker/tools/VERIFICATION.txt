@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the zip:
 
-    x32: https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-2.0.8.zip
+    x32: https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-2.0.9.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-2.0.8.zip
+        Get-RemoteChecksum https://download.pagina.gmbh/epubchecker/files/pagina-EPUB-Checker_Win-2.0.9.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 946EFD56506CB4A65A8A456EECCD0532F25B0E3380515565FD916F915E968F7A
+    checksum32: 3B851164143D353888A8E301A56C2A303EB2C43B9E8395A519DD58CA6355EB58
