@@ -11,7 +11,7 @@
     <projectUrl>https://www.pagina.gmbh/produkte/epub-checker/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/4f59921f4d58f9984fb71b67f9cefb5595b00255/icons/epub-checker.png</iconUrl>
     <copyright>©2010-2023 pagina GmbH</copyright>
-    <licenseUrl>https://github.com/paginagmbh/EPUB-Checker/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/paginagmbh/EPUB-Checker/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/paginagmbh/EPUB-Checker</projectSourceUrl>
     <docsUrl>https://github.com/w3c/epubcheck/wiki</docsUrl>
