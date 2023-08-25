@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opentrack</id>
-    <version>2023.1.0</version>
+    <version>2023.2.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/opentrack</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>opentrack (Install)</title>
@@ -62,7 +62,7 @@ Don't be afraid to submit an **issue/feature request** if you have any problems!
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/opentrack/opentrack/releases/tag/opentrack-2023.1.0</releaseNotes>
+    <releaseNotes>https://github.com/opentrack/opentrack/releases/tag/opentrack-2023.2.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
