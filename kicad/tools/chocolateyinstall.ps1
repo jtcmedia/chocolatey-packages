@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://github.com/KiCad/kicad-source-mirror/releases/download/7.0.7/kicad-7.0.7-x86_64.exe'
-$checksum64 = 'dfa88f9f53021c9ec466625b6f6e8de3a7bb71cbbf848b862b2bc7677b660e5a'
+$url64      = 'https://github.com/KiCad/kicad-source-mirror/releases/download/7.0.8/kicad-7.0.8-x86_64.exe'
+$checksum64 = '2581aa83761d2bc4b97a224673ea2238f8c1b32cfcd0c3d12e6745f65f1e9e57'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

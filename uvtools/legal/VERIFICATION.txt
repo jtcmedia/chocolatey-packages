@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/sn4k3/UVtools/releases/download/v4.0.1/UVtools_win-x64_v4.0.1.msi
+    x64: https://github.com/sn4k3/UVtools/releases/download/v4.0.2/UVtools_win-x64_v4.0.2.msi
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/sn4k3/UVtools/releases/download/v4.0.1/UVtools_win-x64_v4.0.1.msi
+        Get-RemoteChecksum https://github.com/sn4k3/UVtools/releases/download/v4.0.2/UVtools_win-x64_v4.0.2.msi
 
 3.  Compare to Checksum:
 
-    checksum64: C9D825D979A16982A19C3BDE5004FA2D9E06F1DB77588224CACD649E1ECA839B
+    checksum64: 2ED59019190EACD98111FB4523F014A592D941F81B92287E0DE30F009253F6DF
