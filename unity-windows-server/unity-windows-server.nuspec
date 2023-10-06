@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-windows-server</id>
-    <version>2023.1.15</version>
+    <version>2023.1.16</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-windows-server</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Windows Server Support</title>
@@ -19,9 +19,9 @@
     <description>
 This package adds Windows Server Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2023.1.15</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/2023.1.16</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2023.1.15]" />
+      <dependency id="unity" version="[2023.1.16]" />
     </dependencies>
   </metadata>
   <files>
