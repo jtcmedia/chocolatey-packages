@@ -3,25 +3,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zap</id>
-    <version>2.12.0.20221127</version>
+    <version>2.14.0.20231012</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>LudicrousByte</owners>
-    <title>OWASP Zed Attack Proxy (ZAP) (Install)</title>
-    <authors>Simon Bennetts OWASP</authors>
+    <title>Zed Attack Proxy (ZAP) (Install)</title>
+    <authors>Simon Bennetts</authors>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
-    <copyright>Copyright © 2022 the ZAP Dev Team</copyright>
+    <copyright>Copyright © 2024 the ZAP Dev Team</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
     <docsUrl>https://www.zaproxy.org/docs/</docsUrl>
     <mailingListUrl>https://groups.google.com/g/zaproxy-users</mailingListUrl>
     <bugTrackerUrl>https://github.com/zaproxy/zaproxy/issues</bugTrackerUrl>
-    <tags>zap admin owasp security proxy attack web pentesting</tags>
+    <tags>zap admin dast security proxy attack web pentesting</tags>
     <summary>The Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.</summary>
-    <description><![CDATA[# OWASP Zed Attack Proxy (ZAP)
+    <description><![CDATA[# Zed Attack Proxy (ZAP)
 
-The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
+The Zed Attack Proxy (ZAP) is one of the world’s most popular free security tools and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing.
 
 ## Features
 
@@ -45,13 +45,13 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-**ZAP 2.12 requires Java 11 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin11jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
+**ZAP 2.14 requires Java 11 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin11jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
 
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.12.0</releaseNotes>
+    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.14.0/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

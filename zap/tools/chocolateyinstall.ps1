@@ -2,10 +2,10 @@
 
 $packageName    = 'zap'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_windows-x32.exe'
-$url64          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_windows.exe'
-$checksum32     = 'fa741469190fd7d29ed870682a614535082a0c403450707c1359e79fe0cd0813'
-$checksum64     = '2dc7236c076dff9d35782fb85dbcfea1c57a63eca26ded15807ef2f62a0dcfd5'
+$url32          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.14.0/ZAP_2_14_0_windows-x32.exe'
+$url64          = 'https://github.com/zaproxy/zaproxy/releases/download/v2.14.0/ZAP_2_14_0_windows.exe'
+$checksum32     = '5dae52e27da12fba5115e40ebc0cd2da24f6d9ba91608a7b0b7b254984a0b798'
+$checksum64     = 'df49ffbd14cf82cde5ac06902615e40cbfce1576f866436366708c0845eb9ec6'
 $pf             = ''
 
 $packageArgs = @{
@@ -14,7 +14,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url            = $url32
   url64bit       = $url64
-  softwareName   = 'OWASP Zed Attack Proxy*'
+  softwareName   = 'Zed Attack Proxy*'
   checksum       = $checksum32
   checksumType   = 'sha256'
   checksum64     = $checksum64
@@ -32,11 +32,11 @@ if (Test-Path 'env:JAVA_HOME') {
     Install-ChocolateyPackage @packageArgs
     if ( Get-OSArchitectureWidth 32 ) { $pf = ' (x86)' }
     Install-ChocolateyShortcut `
-      -ShortcutFilePath "C:\Users\Public\Desktop\OWASP ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
-      -TargetPath "C:\Program Files$pf\OWASP\Zed Attack Proxy\ZAP.bat" `
-      -WorkingDirectory "C:\Program Files$pf\OWASP\Zed Attack Proxy"
+      -ShortcutFilePath "C:\Users\Public\Desktop\ZAP $($env:ChocolateyPackageVersion.SubString(0,6)).lnk" `
+      -TargetPath "C:\Program Files$pf\ZAP\Zed Attack Proxy\ZAP.bat" `
+      -WorkingDirectory "C:\Program Files$pf\ZAP\Zed Attack Proxy"
   } else {
-    Write-Error "Java version is less than 11. ZAP 2.12 or greater requires Java 11."
+    Write-Error "Java version is less than 11. ZAP 2.14 or greater requires Java 11."
   }
 } else {
   Write-Error "JAVA_HOME isn't set. Ensure you set this environment variable to a Java 11+ installation."

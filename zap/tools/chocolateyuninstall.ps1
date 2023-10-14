@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'zap'
-$softwareName = 'OWASP Zed Attack Proxy*'
+$softwareName = 'Zed Attack Proxy*'
 $installerType = 'EXE' 
 $silentArgs = '-q'
 $validExitCodes = @(0)
