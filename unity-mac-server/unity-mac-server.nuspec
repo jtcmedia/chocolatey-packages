@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-mac-server</id>
-    <version>2022.3.11</version>
+    <version>2023.1.17</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-mac-server</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity macOS Server Support</title>
@@ -23,7 +23,7 @@ This package adds macOS Server Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2022.3.11]" />
+      <dependency id="unity" version="[2023.1.17]" />
     </dependencies>
   </metadata>
   <files>
