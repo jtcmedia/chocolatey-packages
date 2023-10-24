@@ -1,6 +1,6 @@
 import-module au
 
-$lts_versions = '18', '16','14'
+$lts_versions = '20', '18'
 
 function global:au_SearchReplace {
     @{
