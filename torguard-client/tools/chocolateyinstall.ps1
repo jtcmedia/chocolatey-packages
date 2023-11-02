@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://torguard.net/downloads/new/torguard-setup-latest.exe'
-$checksum64 = '87e644263565b166234dcdaf1180c189babc4a260d0824dfbc63092b4df780df'
+$url64      = 'https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
+$checksum64 = 'de60084ef0cf1626d9661b2a7e8585acca9e05d6cdf1a2a657dcd2f8e8a958f3'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
