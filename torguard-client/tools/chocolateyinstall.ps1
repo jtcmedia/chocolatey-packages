@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64      = 'https://updates.torguard.biz/Software/Windows/torguard-setup-latest.exe'
-$checksum64 = 'de60084ef0cf1626d9661b2a7e8585acca9e05d6cdf1a2a657dcd2f8e8a958f3'
+$checksum64 = 'a740fc56abaef345986667af60470161b2030af85ae22a5515c92643a3ca62a2'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
