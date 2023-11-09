@@ -10,7 +10,7 @@
     <authors>KiCad Developers Team, Jean-Pierre Charras, Dick Hollenbeck, Wayne Stambaugh</authors>
     <projectUrl>https://www.kicad.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/281e56814d5aff43ec8f1194dd913042adad3de8/icons/kicad.png</iconUrl>
-    <copyright>© 2021 KiCad Developers</copyright>
+    <copyright>© 2023 KiCad Developers</copyright>
     <licenseUrl>https://www.kicad.org/about/licenses/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.com/kicad/code/kicad</projectSourceUrl>
