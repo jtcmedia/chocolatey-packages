@@ -11,7 +11,7 @@ $packageArgs = @{
   softwareName  = 'KiCad*'
   checksum64    = $checksum64
   checksumType64= 'sha256'
-  silentArgs   = '/S'
+  silentArgs   = '/S /allusers'
   validExitCodes= @(0)
 }
 
