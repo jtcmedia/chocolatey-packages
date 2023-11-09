@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'KiCad*'
   fileType      = 'EXE'
-  silentArgs   = '/S'
+  silentArgs   = '/S /allusers'
   validExitCodes= @(0)
 }
 
