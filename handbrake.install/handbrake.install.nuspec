@@ -54,7 +54,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
 ]]></description>
     <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.7.0</releaseNotes>
     <dependencies>
-      <dependency id="dotnet-6.0-desktopruntime" version="6.0.4" />
+      <dependency id="dotnet-6.0-desktopruntime" version="6.0.25" />
     </dependencies>
   </metadata>
   <files>
