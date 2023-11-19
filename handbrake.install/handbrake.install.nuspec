@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake.install</id>
-    <version>1.7.0</version>
+    <version>1.7.0.20231118</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.install</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake (Install)</title>
