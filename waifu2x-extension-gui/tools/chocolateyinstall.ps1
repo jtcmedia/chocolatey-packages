@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
 #$megaURL    = ''
-$url64 = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.107.01/Waifu2x-Extension-GUI-v3.107.01-Win64.7z'
-$checksum64 = '476555c307ad40894f53c688b7283e6194a5fda864cb9e97c90c8417cf1d7ead'
+$url64 = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.108.01/Waifu2x-Extension-GUI-v3.108.01-Win64.7z'
+$checksum64 = '3fa97bcc98d0d6cc05febe77a9302c1b15c27be82ec5ae5ee7630c50a38da487'
 
 # megatools.exe dl --path $toolsPath $megaURL
 

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>argyll</id>
-    <version>3.0.2</version>
+    <version>3.1.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/argyll</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Argyll CMS</title>
