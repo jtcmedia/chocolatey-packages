@@ -2,7 +2,7 @@
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe"
-$checksum64 = "e48c9beee5bb0ad7faaf78c1f08c6dfa30bbcd40373cb107304c3df80e8baa5e"
+$checksum64 = "eaa18f6690ced8d1fa4a2f29aad979e3cf2a471ac91d244949e7a2f7b3178b17"
 
 $args = "/S"
 
