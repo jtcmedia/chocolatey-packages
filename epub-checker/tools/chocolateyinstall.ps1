@@ -1,14 +1,13 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = Get-Item "$toolsDir\*.zip"
+﻿$ErrorActionPreference = 'Stop'
+$toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
 
-Get-ChocolateyUnzip -FileFullPath $fileLocation -Destination $toolsDir -PackageName $env:ChocolateyPackageName
+$pp = Get-PackageParameters
 
-$desktopPath = [Environment]::GetFolderPath("Desktop")
+if (!($pp.NOICON)) {
+  $desktopPath = [Environment]::GetFolderPath("Desktop")
 
-Install-ChocolateyShortcut `
-  -ShortcutFilePath "$desktopPath\pagina EPUB-Checker.lnk" `
-  -TargetPath "$env:ChocolateyInstall\bin\EPUB-Checker.exe"
-
-#Don't need installer zips anymore
-rm $toolsDir\*.zip -ea 0 -force
+  Install-ChocolateyShortcut `
+    -ShortcutFilePath "$desktopPath\EPUB-Checker.lnk" `
+    -TargetPath "$env:ChocolateyInstall\bin\EPUB-Checker.exe" `
+    -WorkingDirectory "$toolsPath"
+}

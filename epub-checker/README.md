@@ -15,6 +15,15 @@ The test mechanisms of the EPUB Checker are based on the official open source E
     Validation of unzipped EPUB files
     These are automatically converted into an EPUB before validation and if they are valid they are also saved as an EPUB file
     Multilingualism (see table)
+    
+## Package Parameters
+
+The following package parameters can be set:
+
+- `/NOICON` - Do not install a Desktop Icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Maintainer's Note
 
