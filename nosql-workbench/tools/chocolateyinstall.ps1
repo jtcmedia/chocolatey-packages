@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://s3.amazonaws.com/nosql-workbench/NoSQL%20Workbench-win-3.3.0.exe'
-$checksum64 = '721b7b0c65c34941956089a1a16e8bb7681ec46f11f5fbf63bc102439e5f822d'
+$url64      = 'https://dy9cqqaswpltd.cloudfront.net/WorkbenchDDBLocal-win.exe'
+$checksum64 = 'e100c7007251f7204e4ab050215a677fc014440c4ed943f0ec583581b9df3952'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -11,7 +11,7 @@ $packageArgs = @{
   softwareName  = 'NoSQL Workbench for Amazon DynamoDB*'
   checksum64    = $checksum64
   checksumType64= 'sha256'
-  silentArgs   = '/S'
+  silentArgs   = '--mode unattended --install_dynamoDBLocal 0'
   validExitCodes= @(0)
 }
 
