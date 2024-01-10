@@ -1,5 +1,7 @@
 import-module au
 
+$versions = 'https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkbenchDocumentHistory.html'
+
 $releases = 'https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html'
 
 function global:au_SearchReplace {
@@ -12,17 +14,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  
+
+    $version_page = Invoke-WebRequest -Uri $versions -UseBasicParsing
+    
+    $version = ($version_page -split "`n" | sls -Pattern '^\s*<td' | select -First 1) -split '<|>' | select -First 1 -Skip 2
+
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
     $regex = '.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href
 	
-    $version = $url -split '-|.exe' | select -Last 1 -Skip 1
-	
+
     @{
-        URL64 = $url.Replace(' ','%20')
+        URL64 = $url
         Version = $version
     }
 }
