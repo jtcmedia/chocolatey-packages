@@ -2,8 +2,8 @@
 
 $packageArgs = @{
     packageName   = $env:ChocolateyPackageName
-    url           = 'https://github.com/smorks/keepassnatmsg/releases/download/v2.0.16/KeePassNatMsg-v2.0.16-binaries.zip'
-    checksum      = 'c33ec77d3420f093385450917882dbad8cf9fafd5c91bacc021b641df4a9f83c'
+    url           = 'https://github.com/smorks/keepassnatmsg/releases/download/v2.0.17/KeePassNatMsg-v2.0.17-binaries.zip'
+    checksum      = '4ae61924d286d0072412aba93521d7c98f6455e89d718f4377c2855c35e49d26'
     checksumType  = 'SHA256'
 }
 
