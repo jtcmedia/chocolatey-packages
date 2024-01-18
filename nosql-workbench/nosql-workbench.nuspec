@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nosql-workbench</id>
-    <version>3.10.0</version>
+    <version>3.11.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nosql-workbench</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>NoSQL Workbench for Amazon DynamoDB (Install)</title>
