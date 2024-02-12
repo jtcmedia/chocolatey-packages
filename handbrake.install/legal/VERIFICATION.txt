@@ -4,15 +4,15 @@ in verifying that this package's contents are trustworthy.
  
 1. Download installer:
 
-    x64: https://github.com/HandBrake/HandBrake/releases/download/1.7.2/HandBrake-1.7.2-x86_64-Win_GUI.exe
+    x64: https://github.com/HandBrake/HandBrake/releases/download/1.7.3/HandBrake-1.7.3-x86_64-Win_GUI.exe
 
 
 2. You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-    checksum64: 6DE8E290E4585039078421FB121BB2A0E36BF362ED85C0429C7354DE06FF9CB9
+    checksum64: F80829D30029BA255675929587F2B6665DE2790E52B24845B92D1427C8893264
 
    Using AU:
     
-    Get-RemoteChecksum https://github.com/HandBrake/HandBrake/releases/download/1.7.2/HandBrake-1.7.2-x86_64-Win_GUI.exe
+    Get-RemoteChecksum https://github.com/HandBrake/HandBrake/releases/download/1.7.3/HandBrake-1.7.3-x86_64-Win_GUI.exe
