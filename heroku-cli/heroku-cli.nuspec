@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>heroku-cli</id>
-    <version>7.53.0.20220328</version>
+    <version>8.10.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Heroku Command Line Interface (CLI) (Install)</title>
@@ -35,7 +35,7 @@ The source code for your application, together with the dependency file, should 
 Heroku has stopped updating the executable installer since April 2021 (see issue [here](https://github.com/heroku/cli/issues/1962)). Therefore, there will be no new releases of this package unless that changes. Heroku's cli [auto-updates](https://devcenter.heroku.com/articles/heroku-cli#staying-up-to-date) so you can install the last version of this package and the cli will get upgraded. 
 
     </description>
-    <releaseNotes>https://github.com/heroku/cli/releases/tag/v7.53.0</releaseNotes>
+    <releaseNotes>https://github.com/heroku/cli/releases/tag/v8.10.0</releaseNotes>
     <dependencies>
       <dependency id="git" version="2.8.1" />
     </dependencies>

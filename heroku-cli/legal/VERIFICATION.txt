@@ -4,17 +4,17 @@ in verifying that this package's contents are trustworthy.
  
 1. Download installer:
 
-    x32: https://cli-assets.heroku.com/heroku-x86.exe
-    x64: https://cli-assets.heroku.com/heroku-x64.exe
+    x32: https://cli-assets.heroku.com/channels/stable/heroku-x86.exe
+    x64: https://cli-assets.heroku.com/channels/stable/heroku-x64.exe
 
 
 2. You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-    checksum32: 36E2A10E61B05F3D63840025FE1D76C08F2F1D958F584DCC16F2928B6D424CC9
-    checksum64: 444E011D5CDC0D6BB8EBBEADBCD96E5D416DFCC9AAB866CA44CF1789BAA7DBB6
+    checksum32: 3721889AFAC93B2689BF16FAF84ED32D982E3BC43CB9B53450DEC846B833CBAE
+    checksum64: 70DF2CAA4E4A61FB58AA0A62F7B00FA325EB92D53A1906D37BA3C25FF0126A92
 
    Using AU:
     
-    Get-RemoteChecksum https://cli-assets.heroku.com/heroku-x64.exe
+    Get-RemoteChecksum https://cli-assets.heroku.com/channels/stable/heroku-x64.exe
