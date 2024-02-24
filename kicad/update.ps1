@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "KiCad" -Repository "kicad-source-mirror"
     
-    $regex = '.exe$'
+    $regex = '_64.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url -split '/' | select -Last 1 -Skip 1
