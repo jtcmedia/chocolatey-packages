@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "staxrip" -Repository "staxrip"
     
-    $regex = '.7z$'
+    $regex = 'x64.7z$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url -split '/' | select -Last 1 -Skip 1 | % { $_.Replace('v','') }
