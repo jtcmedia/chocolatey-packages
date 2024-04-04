@@ -13,7 +13,7 @@ jobs:
       remote_ver: ${{ steps.compare.outputs.remote_ver }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: init
         env:
           github_context: ${{ toJson(github) }}
@@ -93,7 +93,7 @@ jobs:
         run: |
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
       - name: upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: au_temp
           path: au_temp.zip
