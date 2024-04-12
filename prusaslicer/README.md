@@ -13,15 +13,6 @@ with Mach3, LinuxCNC and Machinekit controllers.
 
 PrusaSlicer is based on [Slic3r](https://github.com/Slic3r/Slic3r) by Alessandro Ranellucci and the RepRap community.
 
-### What language is it written in?
-
-All user facing code is written in C++, and some legacy code as well as unit
-tests are written in Perl. Perl is not required for either development or use
-of PrusaSlicer.
-
-The slicing core is the `libslic3r` library, which can be built and used in a standalone way.
-The command line interface is a thin wrapper over `libslic3r`.
-
 ### What are PrusaSlicer's main features?
 
 Key features are:
@@ -54,9 +45,14 @@ Other major features are:
 PrusaSlicer is licensed under the _GNU Affero General Public License, version 3_.
 The PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci.
 
-### How can I use PrusaSlicer from the command line?
+#### Package Parameters
 
-Please refer to the [Command Line Interface](https://github.com/prusa3d/PrusaSlicer/wiki/Command-Line-Interface) wiki page.
+The following package parameters can be set:
+
+ * `/NOICON` - Don't install a PrusaSlicer desktop icon
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Maintainer's Note
 

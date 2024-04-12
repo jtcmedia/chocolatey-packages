@@ -22,11 +22,21 @@ foreach ($file in $files) {
   }
 }
 
-$desktopPath = [Environment]::GetFolderPath("Desktop")
+$pp = Get-PackageParameters
+if (!($pp.NOICON)) {
+  $desktopPath = [Environment]::GetFolderPath("Desktop")
+
+  Install-ChocolateyShortcut `
+    -ShortcutFilePath "$desktopPath\PrusaSlicer.lnk" `
+    -TargetPath "$env:ChocolateyInstall\bin\prusa-slicer.exe"
+}
+
+$startMenuPath = [Environment]::GetFolderPath("Programs")
 
 Install-ChocolateyShortcut `
-  -ShortcutFilePath "$desktopPath\PrusaSlicer.lnk" `
+  -ShortcutFilePath "$startMenuPath\PrusaSlicer.lnk" `
   -TargetPath "$env:ChocolateyInstall\bin\prusa-slicer.exe"
+
 
 #Don't need installer zips anymore
 rm $toolsPath\*.zip -ea 0 -force
