@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>waifu2x-extension-gui</id>
-    <version>3.112.01</version>
+    <version>3.112.1.20240413</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/waifu2x-extension-gui</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Waifu2x-Extension-GUI</title>
