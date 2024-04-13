@@ -1,22 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-#$megaURL    = ''
 $url64 = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/download/v3.112.01/Waifu2x-Extension-GUI-v3.112.01-Win64.7z'
 $checksum64 = '61183a1b0b63386a569a6a276a60736ff87c0f45b6a684f3057056a3ecb80c26'
 
-# megatools.exe dl --path $toolsPath $megaURL
-
-$fileFullPath = gi $toolsPath\*.7z
-
-# Get-ChecksumValid -File $fileFullPath -Checksum $checksum64 -ChecksumType 'sha256'
-
-# $packageArgs = @{
-#   PackageName     = $env:ChocolateyPackageName
-#   FileFullPath64  = $fileFullPath
-#   Destination     = $toolsPath
-# }
-
-#Get-ChocolateyUnzip @packageArgs
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
