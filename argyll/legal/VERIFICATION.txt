@@ -4,16 +4,16 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer zip:
 
-    x32: https://www.argyllcms.com/Argyll_V3.1.0_win32_exe.zip
-    x64: https://www.argyllcms.com/Argyll_V3.1.0_win64_exe.zip
+    x32: https://www.argyllcms.com/Argyll_V3.2.0_win32_exe.zip
+    x64: https://www.argyllcms.com/Argyll_V3.2.0_win64_exe.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://www.argyllcms.com/Argyll_V3.1.0_win64_exe.zip
+        Get-RemoteChecksum https://www.argyllcms.com/Argyll_V3.2.0_win64_exe.zip
 
 3.  Compare to Checksum:
 
-    checksum32: CE2C77631F6F5C77B3E393D6E5EEE7977E02326F71801C2EBB05711244C8AB14
-    checksum64: 453BA697B01BDFC69CA76B5C64D4162DCA8C2E6DA90A2BB52916CC37019F8486
+    checksum32: 1D0E855F6E6D34EBDD08265771CF1CF3ABED183E45E73AF183F891B8FFD65D74
+    checksum64: 5A3E6BB48B6B159524308E1A8695324BE42847859CAC7031B915C2453E8F6BC2
