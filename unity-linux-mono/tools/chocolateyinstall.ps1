@@ -2,8 +2,8 @@
 
 $packageName    = $env:ChocolateyPackageName
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/530ae0ba3889/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2022.3.25f1.exe'
-$checksum64     = '20c6667770501f3e62d265c80989b84ef3e4e1839b10acb359cc206ed16e4585'
+$url64          = 'https://download.unity3d.com/download_unity/95c298372b1e/TargetSupportInstaller/UnitySetup-Linux-Mono-Support-for-Editor-2023.2.19f1.exe'
+$checksum64     = '2c8c403afa5f043dc5dec376594b9efd11a56cb0926f9325a8d17130c29b9fb2'
 
 $packageArgs = @{
   packageName    = $packageName
