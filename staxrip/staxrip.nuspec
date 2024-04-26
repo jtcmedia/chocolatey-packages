@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>staxrip</id>
-    <version>2.38.4</version>
+    <version>2.38.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/staxrip</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>StaxRip</title>
@@ -55,7 +55,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/v2.38.4</releaseNotes>
+    <releaseNotes>https://github.com/staxrip/staxrip/releases/tag/v2.38.5</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.8.0.20190930" />
     </dependencies>
