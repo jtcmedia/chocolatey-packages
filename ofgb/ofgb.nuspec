@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ofgb</id>
+    <version>0.3</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ofgb</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>OFGB</title>
+    <authors>Maddy</authors>
+    <projectUrl>https://github.com/xM4ddy/OFGB</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/f435f1eb0e778152fde33af1f5cc7dc3d487e841/icons/ofgb.png</iconUrl>
+    <copyright>Copyright (c) 2024 xM4ddy</copyright>
+    <licenseUrl>https://github.com/xM4ddy/OFGB/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/xM4ddy/OFGB</projectSourceUrl>
+    <docsUrl>https://github.com/xM4ddy/OFGB/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/xM4ddy/OFGB/issues</bugTrackerUrl>
+    <tags>ofgb disable ads windows win11 11</tags>
+    <summary>GUI Tool To Removes Ads From Various Places Around Windows 11</summary>
+    <description><![CDATA[# OFGB (Oh Frick Go Back)
+GUI Tool To Removes Ads From Various Places Around Windows 11
+
+## First Things First Credits:
+- [Registry Keys And Comments About Their Function](https://github.com/xM4ddy/OFGB/blob/92756276178137bb78d7c563733dde0d24f13aff/MainWindow.xaml.cs#L33) and Inspiration For This Tool All Were From [Shawn Brink](https://www.elevenforum.com/members/brink.2/) And [His Wonderful Script](https://www.elevenforum.com/t/disable-ads-in-windows-11.8004/)
+- [Pretty Much All Of The Apps Theme](https://github.com/xM4ddy/OFGB/blob/main/dark.xaml) Is From A Super Cool Project Called [DarkNet](https://github.com/Aldaviva/DarkNet) By [Aldaviva](https://github.com/Aldaviva)
+
+## What This Tool Does And How
+This tool uses changes to the [Windows Registry](https://en.wikipedia.org/wiki/Windows_Registry) to disable ads in various places around Windows 11. The tool is written in C# and uses [WPF](https://en.wikipedia.org/wiki/Windows_Presentation_Foundation).
+<br/>
+
+## Issues
+If you find any bugs it would be very cash money of you to make an issue!
+
+## Want To Add More?
+[Come Join The GitHub Discussion!](https://github.com/xM4ddy/OFGB/discussions/15) Here we discuss new keys to be added! 
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/xM4ddy/OFGB/releases/tag/v0.3</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
