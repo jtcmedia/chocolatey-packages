@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://unity.com/releases/editor/archive', 
   'https://unity3d.com/unity/qa/lts-releases?version=2022.3',

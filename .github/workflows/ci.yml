@@ -44,7 +44,7 @@ jobs:
         run: |
           install-Module powerhtml -Force -SkipPublisherCheck
           install-Module wormies-au-helpers -Force -SkipPublisherCheck
-          git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+          git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version -verbose
       - name: build_script
         shell: powershell # Instead of pwsh because au fails on pwsh core.
@@ -68,7 +68,7 @@ jobs:
           if ( $ENV:GITHUB_EVENT_NAME -eq 'push' ) {
               switch -regex ( (gc $ENV:GITHUB_EVENT_PATH | ConvertFrom-Json).commits.message )
               {
-                  '\[AU (.+?)\]'   { $forced = $Matches[1] }
+                  '\[Chocolatey-AU (.+?)\]'   { $forced = $Matches[1] }
                   '\[PUSH (.+?)\]' {
                       $packages = $Matches[1] -split ' '
                       Write-Host "PUSHING PACKAGES: $packages"

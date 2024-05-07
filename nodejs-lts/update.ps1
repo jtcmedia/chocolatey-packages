@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $lts_versions = '20', '18'
 

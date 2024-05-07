@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://sourceforge.net/projects/dxwnd/files/Latest%20build/'
 

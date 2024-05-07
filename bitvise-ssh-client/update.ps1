@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://www.bitvise.com/ssh-client-download'
 

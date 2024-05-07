@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://github.com/AaronFeng753/Waifu2x-Extension-GUI/releases/latest'
 

@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $versions = 'https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkbenchDocumentHistory.html'
 

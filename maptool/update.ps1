@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 . (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'Get-GitHubLatestReleaseLinks.ps1')
 
 function global:au_SearchReplace {

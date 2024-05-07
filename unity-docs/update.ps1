@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 . $PSScriptRoot\..\unity\update.ps1
 function global:au_SearchReplace {

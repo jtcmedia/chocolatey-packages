@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://www.paragon-software.com/free/pm-express/#resources'
 

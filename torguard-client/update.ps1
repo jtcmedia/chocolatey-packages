@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 . (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'ByPassCloudflare.ps1')
 
 $releases = 'https://torguard.net/downloads.php'

@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $releases = 'https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions.xml'
 
