@@ -1,4 +1,4 @@
-import-module AU
+import-module Chocolatey-AU
 
 $releases  = 'https://devcenter.heroku.com/articles/heroku-cli'
 
