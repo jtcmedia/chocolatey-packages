@@ -51,6 +51,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '11'
+      - name: validate java config
+        shell: powershell
+        run: |
+          java --version
+          echo $ENV:JAVA_HOME
       - name: build_script
         shell: powershell # Instead of pwsh because au fails on pwsh core.
         env:
@@ -62,7 +67,7 @@ jobs:
           gist_id_test:
           au_test_groups: 1
           au_push: true
-          JAVA_HOME: ${{ runner.tool_cache.jdk-11.path }}
+          #JAVA_HOME: ${{ runner.tool_cache.jdk-11.path }}
         run: |
           [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
           $context = $ENV:github_context | ConvertFrom-JSON
