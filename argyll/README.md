@@ -1,5 +1,7 @@
 
 
+# Argyll CMS
+
 ArgyllCMS is an ICC compatible color management system, available
 as Open Source. It supports accurate ICC profile creation for scanners,
 cameras and film recorders, and calibration and profiling of displays
@@ -22,9 +24,7 @@ support for more advanced usage.
 It is licensed under the Affero GNU Version 3 license.
 
 For more detailed information, please consult the HTML documentation in
-<doc/ArgyllDoc.html>, or <http://www.argyllcms.com/doc/ArgyllDoc.html>.
-
-For the most recent source code start at <http://www.argyllcms.com/index.html>.
+`doc/ArgyllDoc.html`, or [http://www.argyllcms.com/doc/ArgyllDoc.html](http://www.argyllcms.com/doc/ArgyllDoc.html).
 
 Contact me in regards to Argyll, icclib or cgatslib at:
 
