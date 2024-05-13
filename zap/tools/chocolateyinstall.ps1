@@ -23,6 +23,7 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
+# TODO check for $env:USER_CONTEXT, if set use that to resolve JAVA_HOME via the registry
 
 if (Test-Path 'env:JAVA_HOME') {
   Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'"
