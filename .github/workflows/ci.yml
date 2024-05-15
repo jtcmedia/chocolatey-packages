@@ -42,8 +42,8 @@ jobs:
         env:
           au_version: "master"
         run: |
-          install-Module powerhtml -Force -SkipPublisherCheck
-          install-Module wormies-au-helpers -Force -SkipPublisherCheck
+          Install-Module -Name PowerHTML -Force -SkipPublisherCheck
+          Install-Module -Name Wormies-AU-Helpers -Force -SkipPublisherCheck
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version -verbose
       - name: configure_java
