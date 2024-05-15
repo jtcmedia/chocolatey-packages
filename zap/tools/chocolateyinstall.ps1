@@ -38,7 +38,7 @@ if ($env:USER_CONTEXT) {
 }
 
 if (Test-Path $envJavaHome) {
-  Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'"
+  Write-Host "Java installed and JAVA_HOME set to '$envJavaHome'"
   $javaExe = Join-Path $envJavaHome "bin\java"
   $java_major_version = (Get-Command $javaExe | Select-Object -ExpandProperty Version).Major
   Write-Host "Java major version is: $java_major_version"
