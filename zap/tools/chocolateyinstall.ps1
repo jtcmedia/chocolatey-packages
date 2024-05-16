@@ -23,11 +23,24 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-# TODO check for $env:USER_CONTEXT, if set use that to resolve JAVA_HOME via the registry
+$envJavaHome = $env:JAVA_HOME
 
-if (Test-Path 'env:JAVA_HOME') {
-  Write-Host "Java installed and JAVA_HOME set to '$env:JAVA_HOME'"
-  $java_major_version = (Get-Command java | Select-Object -ExpandProperty Version).Major
+# Detect JAVA_HOME in the calling user's environment, not the environment of the C4B chocolatey agent service account (by default ChocolateyLocalAdmin)
+# Note: This must be in the registry. Setting $env:JAVA_HOME at the command line before calling choco install will *not* work.
+if ($env:USER_CONTEXT) {
+  $userObject = New-Object System.Security.Principal.NTAccount("", $env:USER_CONTEXT)
+  $Sid = $userObject.Translate([System.Security.Principal.SecurityIdentifier])
+  Write-Debug "User: '$($env:USER_CONTEXT)', SID: '$($Sid.Value)'"
+
+  $userEnv = Get-ItemProperty "Registry::HKEY_USERS\$($Sid.Value)\Environment"
+  $envJavaHome = $userEnv | Select-Object -ExpandProperty "JAVA_HOME" -ErrorAction "SilentlyContinue"
+  Write-Debug "JAVA_HOME=$envJavaHome"
+}
+
+if (Test-Path $envJavaHome) {
+  Write-Host "Java installed and JAVA_HOME set to '$envJavaHome'"
+  $javaExe = Join-Path $envJavaHome "bin\java"
+  $java_major_version = (Get-Command $javaExe | Select-Object -ExpandProperty Version).Major
   Write-Host "Java major version is: $java_major_version"
   if ( $java_major_version -ge 11 ) {
     Install-ChocolateyPackage @packageArgs
