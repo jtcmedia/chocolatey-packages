@@ -64,7 +64,7 @@ Launch using the operating system's DPI setting. Video pixels are doubled on dev
 - Plus `+`: Time-shift right video 1 frame forward
 - Minus `-`: Time-shift right video 1 frame backward
 ]]></description>
-    <releaseNotes>https://github.com/pixop/video-compare/releases/tag/2024.03.03</releaseNotes>
+    <releaseNotes>https://github.com/pixop/video-compare/releases/tag/20240303</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

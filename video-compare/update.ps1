@@ -24,11 +24,11 @@ function global:au_GetLatest {
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version  = $url -split '/' | select -Last 1 -Skip 1
-    $version = $version.Insert(4, '.').Insert(7, '.')
+    $version_semantic = $version.Insert(4, '.').Insert(7, '.')
 
 
     @{
-        Version = $version
+        Version = $version_semantic
         URL64 = $url
         ReleaseNotes = "https://github.com/pixop/video-compare/releases/tag/${version}"
     }
