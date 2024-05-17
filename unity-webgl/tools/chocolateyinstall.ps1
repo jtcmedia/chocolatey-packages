@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64          = 'https://download.unity3d.com/download_unity/d9cf669c6271/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-6000.0.1f1.exe'
-$checksum64     = '6108a55cac6a037ed8ac3ba874d8ed6c6c03e673e0d583ef839d95df8e3973eb'
+$url64          = 'https://download.unity3d.com/download_unity/c36be92430b9/TargetSupportInstaller/UnitySetup-WebGL-Support-for-Editor-6000.0.2f1.exe'
+$checksum64     = '437cee1d8a2778cb61af054523e3c9eb2cde31fdb96f139f0e5e4b84d539e91e'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

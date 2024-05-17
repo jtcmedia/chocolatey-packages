@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-linux-server</id>
-    <version>6000.0.1</version>
+    <version>6000.0.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux-server</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Linux Server Support</title>
@@ -19,9 +19,9 @@
     <description>
 This package adds Linux Server Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/6000.0.1</releaseNotes>
+    <releaseNotes>https://unity3d.com/unity/whats-new/6000.0.2</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[6000.0.1]" />
+      <dependency id="unity" version="[6000.0.2]" />
     </dependencies>
   </metadata>
   <files>
