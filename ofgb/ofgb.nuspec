@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ofgb</id>
-    <version>0.4</version>
+    <version>0.4.0.20240521</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/ofgb</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>OFGB</title>
