@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/arduino/arduino-cli/releases/download/v0.35.3/arduino-cli_0.35.3_Windows_32bit.zip
-    x64: https://github.com/arduino/arduino-cli/releases/download/v0.35.3/arduino-cli_0.35.3_Windows_64bit.zip
+    x32: https://github.com/arduino/arduino-cli/releases/download/v1.0.0/arduino-cli_1.0.0_Windows_32bit.zip
+    x64: https://github.com/arduino/arduino-cli/releases/download/v1.0.0/arduino-cli_1.0.0_Windows_64bit.zip
 
 2.  You can download the list of checksums from Arduino:
 
-    SHASUMS: https://github.com/arduino/arduino-cli/releases/download/v0.35.3/0.35.3-checksums.txt
+    SHASUMS: https://github.com/arduino/arduino-cli/releases/download/v1.0.0/1.0.0-checksums.txt
 
     OR
     
@@ -17,9 +17,9 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/arduino/arduino-cli/releases/download/v0.35.3/arduino-cli_0.35.3_Windows_64bit.zip
+        Get-RemoteChecksum https://github.com/arduino/arduino-cli/releases/download/v1.0.0/arduino-cli_1.0.0_Windows_64bit.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 2861A188C88D5AE604D853A8FC8F9147E9DE1E97D296B1BD0B907986E882FDE2
-    checksum64: B3B03C37DF87C99C9B201E4D4D5FB37F4F24E7441AC34510F5BB451DE1EDA35C
+    checksum32: 721A5A6A58F5536B99DDE50038D2EBEAC78F1195FEFA15AE3B94CD0F4D7F33E4
+    checksum64: C031F9B93AC2C1C87DEC3EDA0F8ED4850DCF0F1870D8D0A9FEE64618475D7AA6
