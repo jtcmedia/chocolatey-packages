@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-linux-mono</id>
-    <version>2022.3.30</version>
+    <version>6000.0.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-linux-mono</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity Linux Mono Target Support</title>
@@ -19,9 +19,9 @@
     <description>
 This package adds Linux Mono Target Support to Unity.
     </description>
-    <releaseNotes>https://unity3d.com/unity/whats-new/2022.3.30</releaseNotes>
+    <releaseNotes>https://unity.com/releases/editor/whats-new/6000.0.5#notes</releaseNotes>
     <dependencies>
-      <dependency id="unity" version="[2022.3.30]" />
+      <dependency id="unity" version="[6000.0.5]" />
     </dependencies>
   </metadata>
   <files>
