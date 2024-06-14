@@ -45,6 +45,7 @@ function global:au_GetLatest {
         URL64        = $editor_url
         Version      = $version
         ReleaseNotes = "https://unity.com/releases/editor/whats-new/${version}#notes"
+        URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
       }
     }
 
