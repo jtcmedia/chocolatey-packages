@@ -1,9 +1,7 @@
 import-module chocolatey-au
 
-$releases = 'https://unity.com/releases/editor/archive', 
-  'https://unity3d.com/unity/qa/lts-releases?version=2022.3',
-  'https://unity3d.com/unity/qa/lts-releases?version=2021.3'
-
+$major_releases = '6000', '2023', '2022'
+$api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
 
 function global:au_SearchReplace {
     @{
@@ -20,33 +18,33 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 
-    $regex = 'UnitySetup64'
-
     $streams = [ordered] @{}
-    
-    $releases | % {
-      $download_page = Invoke-WebRequest -Uri $_ -UseBasicParsing
-      $editor_url = $download_page.links | ? href -match $regex | select -First 1 -expand href
-      $version = $editor_url -split '-|f' | select -Last 1 -Skip 1
-      $streamName = $version -split '\.' | select -First 1
+
+    $major_releases | % { 
       
+      $apiRequestResult = Invoke-RestMethod "${api_url}?version=$_"
+
+      $release = $apiRequestResult.results | Select-Object -First 1
+
+      $editor_url = $release.downloads[0].url
+      $version = $release.version -split 'f' | select -First 1
+      $streamName = $_
+
       if ($streams.$streamName) { return }
       
-      $release = $editor_url -split 'f' | select -Last 1
+      $revision = $release.version -split 'f' | select -Last 1
       $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
 
-      $installers = "Android", "AppleTV", "iOS", "Linux-IL2CPP", "Linux-Mono", "Mac-Mono",
-        "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP", "Linux-Server",
-        "Mac-Server", "Windows-Server"
+      $installers = "Android", "iOS", "AppleTV", "Linux-IL2CPP", "Linux-Mono", "Linux-Server",
+        "Mac-Mono", "Mac-Server", "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP", "Windows-Server"
 
       $hash = @{}
-      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + "f" + $release) }
-
+      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + "f" + $revision + ".exe") }
+      
       $streams.$streamName = $hash + @{
         URL64        = $editor_url
         Version      = $version
-        ReleaseNotes = "https://unity3d.com/unity/whats-new/${version}"
-        URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        ReleaseNotes = "https://unity.com/releases/editor/whats-new/${version}#notes"
       }
     }
 
