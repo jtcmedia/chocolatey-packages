@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake.portable</id>
-    <version>1.8.0.20240522</version>
+    <version>1.8.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.portable</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake (Portable)</title>
@@ -43,7 +43,7 @@ Our [community rules](https://forum.handbrake.fr/app.php/rules) and [code of con
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.8.0</releaseNotes>
+    <releaseNotes>https://github.com/HandBrake/HandBrake/releases/tag/1.8.1</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
