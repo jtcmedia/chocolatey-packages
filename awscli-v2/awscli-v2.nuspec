@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>awscli</id>
-    <version>2.17.8</version>
+    <version>2.17.9</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/awscli</packageSourceUrl>
     <owners>chocolatey, LudicrousByte</owners>
     <title>AWS Command Line Interface v2 (Install)</title>
@@ -29,7 +29,7 @@ The AWS CLI v2 offers several new [features](https://aws.amazon.com/blogs/develo
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst#2178</releaseNotes>
+    <releaseNotes>https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst#2179</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
