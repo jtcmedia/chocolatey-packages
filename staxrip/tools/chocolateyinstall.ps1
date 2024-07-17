@@ -15,7 +15,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$subFolder = $url64 -split '/|\.7z' | select -Last 1 -Skip 1
+$subFolder = $url64 -split '/|\.7z' | select -Last 1 -Skip 1 | % { $_.Replace('-REPACK', '') }
 
 Install-BinFile `
   -Name $env:ChocolateyPackageName `
