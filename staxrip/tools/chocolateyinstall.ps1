@@ -17,9 +17,9 @@ Install-ChocolateyZipPackage @packageArgs
 
 $subFolder = $url64 -split '/|\.7z' | select -Last 1 -Skip 1 | % { $_.Replace('-REPACK', '') }
 
-Install-BinFile `
-  -Name $env:ChocolateyPackageName `
-  -Path "$unzipLocation\$subFolder\StaxRip.exe"
+# Install-BinFile `
+#   -Name $env:ChocolateyPackageName `
+#   -Path "$unzipLocation\$subFolder\StaxRip.exe"
 
 $pp = Get-PackageParameters
 if (!($pp.NOICON)) {
@@ -27,7 +27,8 @@ if (!($pp.NOICON)) {
 
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$desktopPath\StaxRip.lnk" `
-    -TargetPath "$($env:ChocolateyInstall)\bin\staxrip.exe"
+    #-TargetPath "$($env:ChocolateyInstall)\bin\staxrip.exe"
+    -TargetPath "$unzipLocation\$subFolder\StaxRip.exe"
 }
 
 rm $toolsPath\*.7z -ea 0
