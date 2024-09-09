@@ -27,7 +27,6 @@ if (!($pp.NOICON)) {
 
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$desktopPath\StaxRip.lnk" `
-    #-TargetPath "$($env:ChocolateyInstall)\bin\staxrip.exe"
     -TargetPath "$unzipLocation\$subFolder\StaxRip.exe"
 }
 
