@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>unity-ios</id>
-    <version>6000.0.20</version>
+    <version>2021.3.44</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-ios</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Unity iOS Target Support</title>
@@ -23,7 +23,7 @@ This package adds iOS Target Support to Unity.
 * [Release Notes](https://unity3d.com/unity/whats-new/)
     </releaseNotes>
     <dependencies>
-      <dependency id="unity" version="6000.0.20" />
+      <dependency id="unity" version="2021.3.44" />
     </dependencies>
   </metadata>
   <files>
