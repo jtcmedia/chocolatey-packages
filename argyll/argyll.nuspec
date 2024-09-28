@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>argyll</id>
-    <version>3.2.0</version>
+    <version>3.3.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/argyll</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Argyll CMS</title>
@@ -17,7 +17,9 @@
     <bugTrackerUrl>https://www.argyllcms.com/mailinglist.html</bugTrackerUrl>
     <tags>graphics monitor scanner camera calibration icc color management argyll cli cross-platform</tags>
     <summary>ICC compatible color management system</summary>
-    <description><![CDATA[ArgyllCMS is an ICC compatible color management system, available
+    <description><![CDATA[# Argyll CMS
+
+ArgyllCMS is an ICC compatible color management system, available
 as Open Source. It supports accurate ICC profile creation for scanners,
 cameras and film recorders, and calibration and profiling of displays
 and RGB, CMY & CMYK printers. Device Link can be created with a wide variety
@@ -39,9 +41,7 @@ support for more advanced usage.
 It is licensed under the Affero GNU Version 3 license.
 
 For more detailed information, please consult the HTML documentation in
-<doc/ArgyllDoc.html>, or <http://www.argyllcms.com/doc/ArgyllDoc.html>.
-
-For the most recent source code start at <http://www.argyllcms.com/index.html>.
+`doc/ArgyllDoc.html`, or [http://www.argyllcms.com/doc/ArgyllDoc.html](http://www.argyllcms.com/doc/ArgyllDoc.html).
 
 Contact me in regards to Argyll, icclib or cgatslib at:
 
