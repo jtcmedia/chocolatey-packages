@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-ios'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/001fa5a8e29a/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-6000.0.22f1.exe'
-$checksum64     = '9e38e22e81a33c7c881d9dff8cb77277932bdaab1732001dfb569454e8bee326'
+$url64          = 'https://download.unity3d.com/download_unity/c3db7f8bf9b1/TargetSupportInstaller/UnitySetup-iOS-Support-for-Editor-2022.3.50f1.exe'
+$checksum64     = '660970d77614960f1adabeeef0d493705fcf386a1aef3a707a582deb3bb893d3'
 
 $packageArgs = @{
   packageName    = $packageName
