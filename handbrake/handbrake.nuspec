@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake</id>
-    <version>1.8.2</version>
+    <version>1.9.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.install</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake</title>
@@ -58,7 +58,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
 * [Roadmap](https://github.com/HandBrake/HandBrake/milestones)
     </releaseNotes>
     <dependencies>
-      <dependency id="handbrake.install" version="[1.8.2]" />
+      <dependency id="handbrake.install" version="[1.9.0]" />
     </dependencies>
   </metadata>
   <files>
