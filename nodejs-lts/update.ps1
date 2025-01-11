@@ -46,7 +46,7 @@ function global:au_GetLatest {
           SHASUMS = $shasums
           Version = $version.Replace('v','')
           ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v','')
-          DocsUrl = "https://nodejs.org/dist/latest-v$_.x/docs/api/"
+          DocsUrl = "https://nodejs.org/docs/latest-v$_.x/api/index.html"
         }
     }
 
