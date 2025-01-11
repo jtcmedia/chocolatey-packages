@@ -31,7 +31,7 @@ function global:au_GetLatest {
     
     Invoke-WebRequest $url[0] -OutFile "$PSScriptRoot\$outFile"
     
-    $version = ((Get-Item $outFile).VersionInfo.ProductVersion).Substring(0, 5)
+    $version = ((Get-Item $outFile).VersionInfo.ProductVersion).Substring(0, 6)
     
     #don't need installer anymore
     Remove-Item $outFile -Force
