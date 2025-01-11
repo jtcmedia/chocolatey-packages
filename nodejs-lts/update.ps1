@@ -33,7 +33,7 @@ function global:au_GetLatest {
         $lts_release =  "https://nodejs.org/download/release/latest-v$_.x/"
         $download_page = Invoke-WebRequest -Uri $lts_release -UseBasicParsing
       
-        $regex = '.msi$'
+        $regex = 'x\d\d.msi$'
         $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://nodejs.org' + $_ }
         
         $version = $urls[0] -split '-' | select -Last 1 -Skip 1
