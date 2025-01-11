@@ -30,15 +30,15 @@ function global:au_GetLatest {
   
     $lts_versions | % {
 
-        $lts_release =  "https://nodejs.org/dist/latest-v$_.x/"
+        $lts_release =  "https://nodejs.org/download/release/latest-v$_.x/"
         $download_page = Invoke-WebRequest -Uri $lts_release -UseBasicParsing
       
         $regex = '.msi$'
-        $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { $lts_release + $_ }
+        $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://nodejs.org' + $_ }
         
         $version = $urls[0] -split '-' | select -Last 1 -Skip 1
         
-        $shasums = $download_page.links | ? href -match '.txt$' | select -First 1 -expand href | % { $lts_release + $_ }
+        $shasums = $download_page.links | ? href -match '.txt$' | select -First 1 -expand href | % { 'https://nodejs.org' + $_ }
 
         $streams.$_ = @{
           URL32 = $urls[1]
