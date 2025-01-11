@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zap</id>
-    <version>2.15.0.20240605</version>
+    <version>2.16.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>LudicrousByte</owners>
     <title>Zed Attack Proxy (ZAP) (Install)</title>
@@ -51,7 +51,7 @@ Some of ZAP's functionality:
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.15.0</releaseNotes>
+    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.16.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
