@@ -26,7 +26,7 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-**ZAP 2.15 requires Java 11 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin11jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
+**ZAP 2.16 or higher requires Java 17 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin17jre](https://community.chocolatey.org/packages/Temurin17jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
 
 ## Maintainer's Note
 

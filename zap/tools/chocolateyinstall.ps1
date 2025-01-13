@@ -42,7 +42,7 @@ if (Test-Path $envJavaHome) {
   $javaExe = Join-Path $envJavaHome "bin\java"
   $java_major_version = (Get-Command $javaExe | Select-Object -ExpandProperty Version).Major
   Write-Host "Java major version is: $java_major_version"
-  if ( $java_major_version -ge 11 ) {
+  if ( $java_major_version -ge 17 ) {
     Install-ChocolateyPackage @packageArgs
     if ( Get-OSArchitectureWidth 32 ) { $pf = ' (x86)' }
     Install-ChocolateyShortcut `
@@ -50,8 +50,8 @@ if (Test-Path $envJavaHome) {
       -TargetPath "C:\Program Files$pf\ZAP\Zed Attack Proxy\ZAP.bat" `
       -WorkingDirectory "C:\Program Files$pf\ZAP\Zed Attack Proxy"
   } else {
-    Write-Error "Java version is less than 11. ZAP 2.15 or greater requires Java 11."
+    Write-Error "Java version is less than 17. ZAP 2.16 or greater requires Java 17."
   }
 } else {
-  Write-Error "JAVA_HOME isn't set. Ensure you set this environment variable to a Java 11+ installation."
+  Write-Error "JAVA_HOME isn't set. Ensure you set this environment variable to a Java 17+ installation."
 }

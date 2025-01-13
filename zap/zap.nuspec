@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zap</id>
-    <version>2.16.0</version>
+    <version>2.16.0.20250113</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
-    <owners>LudicrousByte</owners>
+    <owners>jtcmedia</owners>
     <title>Zed Attack Proxy (ZAP) (Install)</title>
     <authors>Simon Bennetts</authors>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
-    <copyright>Copyright © 2024 the ZAP Dev Team</copyright>
+    <copyright>Copyright © 2025 the ZAP Dev Team</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
@@ -45,7 +45,7 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-**ZAP 2.15 requires Java 11 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin11jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
+**ZAP version 2.16 or higher requires Java 17 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin11jre](https://community.chocolatey.org/packages/Temurin17jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
 
 ## Maintainer's Note
 
