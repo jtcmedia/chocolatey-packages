@@ -7,10 +7,10 @@
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Zed Attack Proxy (ZAP) (Install)</title>
-    <authors>Simon Bennetts</authors>
+    <authors>Checkmarx</authors>
     <projectUrl>https://www.zaproxy.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/21dec8124d4ca81a4956465270b35386c95e4c25/icons/zap.png</iconUrl>
-    <copyright>Copyright © 2025 the ZAP Dev Team</copyright>
+    <copyright>Copyright ©2025 ZAP Dev Team</copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/zaproxy/zaproxy</projectSourceUrl>
