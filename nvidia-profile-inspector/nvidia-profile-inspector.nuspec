@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nvidia-profile-inspector</id>
-    <version>2.4.0.4</version>
+    <version>2.4.0.8</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nvidia-profile-inspector</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>NVIDIA Profile Inspector</title>
@@ -37,7 +37,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `choco install nvidia-profile-inspector -params '"/NoDesktopIcon"'`.
 ]]></description>
-    <releaseNotes>https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/2.4.0.4</releaseNotes>
+    <releaseNotes>https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/2.4.0.8</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
