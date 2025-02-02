@@ -14,7 +14,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$files = Get-ChildItem "$(Get-ToolsLocation)\$env:ChocolateyPackageName" -Include *.exe -Recurse
+$files = Get-ChildItem "$($packageArgs.UnzipLocation)\$env:ChocolateyPackageName" -Include *.exe -Recurse
 
 foreach ($file in $files) {
   if (!($file.Name.Equals("Waifu2x-Extension-GUI-Launcher.exe"))) {
