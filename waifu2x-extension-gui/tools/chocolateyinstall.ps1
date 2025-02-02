@@ -6,7 +6,7 @@ $checksum64 = '3a999cbc207d46f1d8c4246290734d51bc95f7678756f27a2dceddc57fbc0281'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
-  UnzipLocation   = $toolsPath
+  UnzipLocation   = "$(Get-ToolsLocation)\$env:ChocolateyPackageName"
   Url64bit        = $url64
   Checksum64      = $checksum64
   ChecksumType64  = 'sha256'
@@ -14,7 +14,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$files = Get-ChildItem $toolsPath -Include *.exe -Recurse
+$files = Get-ChildItem "$(Get-ToolsLocation)\$env:ChocolateyPackageName" -Include *.exe -Recurse
 
 foreach ($file in $files) {
   if (!($file.Name.Equals("Waifu2x-Extension-GUI-Launcher.exe"))) {
@@ -33,8 +33,7 @@ if (!($pp.NOICON)) {
 
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$desktopPath\Waifu2x-Extension-GUI.lnk" `
-    -TargetPath "$env:ChocolateyInstall\bin\Waifu2x-Extension-GUI-Launcher.exe" `
-    -WorkingDirectory "$toolsPath"
+    -TargetPath "$($packageArgs.UnzipLocation)\$env:ChocolateyPackageName\Waifu2x-Extension-GUI-Launcher.exe"
 }
 
 Remove-Item $toolsPath\*.7z -ea 0
