@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$major_releases = '6000', '2023', '2022', '2021'
+$major_releases = '6000', '2023', '2022'
 $api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
 
 function global:au_SearchReplace {
@@ -27,7 +27,7 @@ function global:au_GetLatest {
       $release = $apiRequestResult.results | Select-Object -First 1
 
       $editor_url = $release.downloads[0].url
-      $versionArray = $release.version -split '(f|a)'
+      $versionArray = $release.version -split '(f|a|b)'
       $version = $versionArray[0]
       $streamName = $_
 
@@ -41,10 +41,16 @@ function global:au_GetLatest {
 
       $hash = @{}
       $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + $revision + ".exe") }
+
+      $preRelease = ''
+      # Is this an alpha or beta?
+      if ($versionArray[1] -eq 'a') { $preRelease = "-alpha" + $versionArray[2]}
+      if ($versionArray[1] -eq 'b') { $preRelease = "-beta" + $versionArray[2]}
+
       
       $streams.$streamName = $hash + @{
         URL64        = $editor_url
-        Version      = $version
+        Version      = $version + $preRelease
         ReleaseNotes = "https://unity.com/releases/editor/whats-new/${version}#notes"
         URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
       }
