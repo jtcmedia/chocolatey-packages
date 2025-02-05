@@ -20,7 +20,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "beeradmoore" -Repository "dlss-swapper"
     
-    $regex = '.exe$'
+    $regex = 'r.exe$'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = ($url -split '-' | select -Last 1 -Skip 1).Substring(0,5)
