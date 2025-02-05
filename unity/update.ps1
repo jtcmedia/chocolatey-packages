@@ -27,19 +27,20 @@ function global:au_GetLatest {
       $release = $apiRequestResult.results | Select-Object -First 1
 
       $editor_url = $release.downloads[0].url
-      $version = $release.version -split 'f' | select -First 1
+      $versionArray = $release.version -split '(f|a)'
+      $version = $versionArray[0]
       $streamName = $_
 
       if ($streams.$streamName) { return }
       
-      $revision = $release.version -split 'f' | select -Last 1
+      $revision = $versionArray[1] + $versionArray[2]
       $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
 
       $installers = "Android", "iOS", "AppleTV", "Linux-IL2CPP", "Linux-Mono", "Linux-Server",
         "Mac-Mono", "Mac-Server", "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP", "Windows-Server"
 
       $hash = @{}
-      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + "f" + $revision + ".exe") }
+      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + $revision + ".exe") }
       
       $streams.$streamName = $hash + @{
         URL64        = $editor_url
