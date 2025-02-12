@@ -19,9 +19,7 @@
     <description>
 This package adds iOS Target Support to Unity.
     </description>
-    <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="unity" version="2022.3.58" />
     </dependencies>
