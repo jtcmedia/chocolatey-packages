@@ -47,11 +47,18 @@ function global:au_GetLatest {
       if ($versionArray[1] -eq 'a') { $preRelease = "-alpha" + $versionArray[2]}
       if ($versionArray[1] -eq 'b') { $preRelease = "-beta" + $versionArray[2]}
 
+      if ($versionArray[1] -eq 'f') {
+        $ReleaseNotes = "https://unity.com/releases/editor/whats-new/${version}#notes"
+      } else {
+        $ReleaseNotes = "https://unity.com/releases/editor/whats-new/${release.version}#notes"
+      }
+      
+
       
       $streams.$streamName = $hash + @{
         URL64        = $editor_url
         Version      = $version + $preRelease
-        ReleaseNotes = "https://unity.com/releases/editor/whats-new/${version}#notes"
+        ReleaseNotes = $ReleaseNotes
         URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
       }
     }
