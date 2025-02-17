@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>video-compare</id>
-    <version>2025.01.26</version>
+    <version>2025.02.15</version>
     <packageSourceUrl>https://github.com/pixop/video-compare</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>video-compare</title>
@@ -64,7 +64,7 @@ Launch using the operating system's DPI setting. Video pixels are doubled on dev
 - Plus `+`: Time-shift right video 1 frame forward
 - Minus `-`: Time-shift right video 1 frame backward
 ]]></description>
-    <releaseNotes>https://github.com/pixop/video-compare/releases/tag/20250126</releaseNotes>
+    <releaseNotes>https://github.com/pixop/video-compare/releases/tag/20250215</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
