@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kicad</id>
-    <version>8.0.9</version>
+    <version>9.0.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/kicad</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>KiCad (Install)</title>
@@ -34,7 +34,7 @@ KiCad includes a 3D viewer which you can use to inspect your design in an intera
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-  <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/8.0.9</releaseNotes>
+  <releaseNotes>https://github.com/KiCad/kicad-source-mirror/releases/tag/9.0.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

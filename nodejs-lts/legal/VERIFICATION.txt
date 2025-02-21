@@ -4,12 +4,12 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-x86.msi
-    x64: https://nodejs.org/download/release/v22.14.0/node-v22.14.0-x64.msi
+    x32: https://nodejs.org/download/release/latest-hydrogen/node-v18.20.7-x86.msi
+    x64: https://nodejs.org/download/release/latest-hydrogen/node-v18.20.7-x64.msi
 
 2.  Download Checksums:
     
-    SHASUMS: https://nodejs.org/download/release/v22.14.0/SHASUMS256.txt
+    SHASUMS: https://nodejs.org/download/release/latest-hydrogen/SHASUMS256.txt
 
     OR 
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/download/release/v22.14.0/node-v22.14.0-x64.msi
+        Get-RemoteChecksum https://nodejs.org/download/release/latest-hydrogen/node-v18.20.7-x64.msi
     
     
-    checksum32: 5E91EC1DA6C7DE32406F3F7FDD2B8DE163E871ECD2EBB466BF1B526E6379755C
-    checksum64: 2C0CC97EC64C1E4111362E1E32E0547FD870E4D9C79EC844C117DA583F21B386
+    checksum32: 3F82198C2FEEBDCFFBE3F5BB824510A09679485F028DA626B28A9165F3B3EB05
+    checksum64: 8A1AE839F896A75CFB742A5B82DF414E27616DB4C1B47DD83A60F329DBF36594
