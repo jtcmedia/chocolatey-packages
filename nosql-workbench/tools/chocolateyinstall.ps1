@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = Split-Path $MyInvocation.MyCommand.Definition
 $url64      = 'https://dy9cqqaswpltd.cloudfront.net/NoSQL_Workbench.exe'
-$checksum64 = '97f7155154deba7f8d877e73822cbc2a38bb954477e56d5e7a16f7c93aee3077'
+$checksum64 = '63fefbb1ac9b524098663d57f3fdadfd34c8a4b6b794d73d8798c207b2e72929'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

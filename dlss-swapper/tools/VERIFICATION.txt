@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/beeradmoore/dlss-swapper/releases/download/v1.1.4/DLSS.Swapper-1.1.4.0-installer.exe
+    x64: https://github.com/beeradmoore/dlss-swapper/releases/download/v1.1.6/DLSS.Swapper-1.1.6.0-installer.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/beeradmoore/dlss-swapper/releases/download/v1.1.4/DLSS.Swapper-1.1.4.0-installer.exe
+        Get-RemoteChecksum https://github.com/beeradmoore/dlss-swapper/releases/download/v1.1.6/DLSS.Swapper-1.1.6.0-installer.exe
 
 3.  Compare to Checksum:
 
-    checksum64: D20DB2B1890EB94D739DF39F43DB019FFCB4FF74BBD69BE092E9CFDAAFED2635
+    checksum64: 9B5EDAFE697569DB3D23065CB76DF595B0C252F1E9B1FB0D3F5C3EAA49A680F2
