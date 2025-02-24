@@ -19,9 +19,7 @@
     <description>
 This package adds Linux (IL2CPP) Target Support to Unity.
     </description>
-    <releaseNotes>
-* [Release Notes](https://unity3d.com/unity/whats-new/)
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="unity" version="[6000.1.0-beta7]" />
     </dependencies>
