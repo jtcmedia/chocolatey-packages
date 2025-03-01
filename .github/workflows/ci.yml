@@ -51,6 +51,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+          java-package: 'jre'
       - name: validate java config
         shell: powershell
         run: |
