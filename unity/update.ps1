@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$major_releases = '6000.2', '6000.1', '6000.0', '2023', '2022'
+$major_releases = '6000.2', '6000.1', '6000.0', '2022', '2021'
 $api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
 
 function global:au_SearchReplace {
