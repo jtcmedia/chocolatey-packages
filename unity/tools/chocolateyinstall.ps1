@@ -2,8 +2,8 @@
 
 $packageName        = 'unity'
 $toolsDir           = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64              = 'https://download.unity3d.com/download_unity/5f63fdee6d95/Windows64EditorInstaller/UnitySetup64-2022.3.60f1.exe'
-$checksum64         = '9b7c5ca8fb9077e33f30086de415e5a16e13d041239b15c4f7206b15bc1e44fe'
+$url64              = 'https://download.unity3d.com/download_unity/feb9a7235030/Windows64EditorInstaller/UnitySetup64-6000.0.42f1.exe'
+$checksum64         = '06f79a75a175f89d5f0e07a1e2b59fe54a967ba4382ef9c3825c3675797c14fc'
 
 $args = '/S'
 
