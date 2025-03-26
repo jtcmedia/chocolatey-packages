@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zap</id>
-    <version>2.16.0.20250113</version>
+    <version>2.16.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/zap</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Zed Attack Proxy (ZAP) (Install)</title>
@@ -45,13 +45,13 @@ Some of ZAP's functionality:
 
 ## Package Note
 
-**ZAP version 2.16 or higher requires Java 17 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin17jre](https://community.chocolatey.org/packages/Temurin17jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
+**ZAP 2.16 or higher requires Java 17 or higher and that the JAVA_HOME environment variable is set**. You can install a Chocolatey Java Package or Java from Oracle. One suggestion is the [Temurin17jre](https://community.chocolatey.org/packages/Temurin17jre) package. Ensure you install it with the `FeatureJavaHome` parameter set.
 
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.16.0</releaseNotes>
+    <releaseNotes>https://www.zaproxy.org/docs/desktop/releases/2.16.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
