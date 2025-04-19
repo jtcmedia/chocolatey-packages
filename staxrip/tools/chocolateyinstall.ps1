@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://github.com/staxrip/staxrip/releases/download/v2.46.3/StaxRip-v2.46.3-x64.7z'
-$checksum64 = '1e7bb3cdf42620759c47f1ab28426af3d51962670b444c7cd07181cf71c62351'
+$url64      = 'https://github.com/staxrip/staxrip/releases/download/v2.46.4/StaxRip-v2.46.4-x64.7z'
+$checksum64 = '83a3c220503a773f5f362396565a2b6fed406e5f46761c8d84ecf50a5db84443'
 
 $unzipLocation = New-Item -Path $(Get-ToolsLocation) -Name "StaxRip" -ItemType "directory" -ErrorAction SilentlyContinue -Force
 
