@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url32      = 'https://github.com/RPTools/maptool/releases/download/1.15.2/MapTool-1.15.2.msi'
-$checksum32 = '954a971c6b6b3dd46d4715cc2c3f5e006b2e4bccf667ebe8e482e517d3b33ed8'
+$url32      = 'https://github.com/RPTools/maptool/releases/download/1.16.2/MapTool-1.16.2.msi'
+$checksum32 = 'e3a8dcac711a6540dcebb933581f5708efc1f136cb6079330285fb6b23f9cdbd'
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
