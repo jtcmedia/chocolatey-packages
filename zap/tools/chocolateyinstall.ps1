@@ -37,7 +37,8 @@ if ($env:USER_CONTEXT) {
   Write-Debug "JAVA_HOME=$envJavaHome"
 }
 
-if (Test-Path $envJavaHome) {
+try {
+  Test-Path $envJavaHome -ErrorAction SilentlyContinue
   Write-Host "Java installed and JAVA_HOME set to '$envJavaHome'"
   $javaExe = Join-Path $envJavaHome "bin\java"
   $java_major_version = (Get-Command $javaExe | Select-Object -ExpandProperty Version).Major
@@ -52,6 +53,6 @@ if (Test-Path $envJavaHome) {
   } else {
     Write-Error "Java version is less than 17. ZAP 2.16 or greater requires Java 17."
   }
-} else {
+} catch {
   Write-Error "JAVA_HOME isn't set. Ensure you set this environment variable to a Java 17+ installation."
 }
