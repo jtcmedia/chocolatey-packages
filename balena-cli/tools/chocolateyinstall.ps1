@@ -6,7 +6,7 @@ $packageArgs = @{
   fileType      = 'EXE'
   file64        = Get-Item "$toolsDir\*_x64.exe"
   softwareName  = 'balena-cli'
-  silentArgs   = '/S'
+  silentArgs   = '/SD IDOK'
   validExitCodes= @(0)
 }
 
