@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>balena-cli</id>
-    <version>22.0.5</version>
+    <version>22.0.6</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/balena-cli</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>balena CLI (Install)</title>
@@ -35,7 +35,7 @@ GitHub](https://github.com/balena-io/balena-cli/), and your contribution is also
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/balena-io/balena-cli/releases/tag/v22.0.5</releaseNotes>
+    <releaseNotes>https://github.com/balena-io/balena-cli/releases/tag/v22.0.6</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
