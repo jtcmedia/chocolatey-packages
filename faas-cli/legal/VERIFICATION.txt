@@ -4,18 +4,18 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/openfaas/faas-cli/releases/download/0.17.5/faas-cli.exe
+    x32: https://github.com/openfaas/faas-cli/releases/download/0.17.6/faas-cli.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/openfaas/faas-cli/releases/download/0.17.5/faas-cli.exe
+        Get-RemoteChecksum https://github.com/openfaas/faas-cli/releases/download/0.17.6/faas-cli.exe
 
 3.  Compare to Checksum:
 
-    checksum_from_file: https://github.com/openfaas/faas-cli/releases/download/0.17.5/faas-cli.exe.sha256
+    checksum_from_file: https://github.com/openfaas/faas-cli/releases/download/0.17.6/faas-cli.exe.sha256
 
     OR
     
-    checksum32: 8B9A9034F9676F20C9E5D42D19BD6C09AB4CCA879FA0AB8F62E70CC472D56747
+    checksum32: 93ABBFA99060B46F37CE612323CF2CDE1A941BEF139C1A361BB60FEDEDFD6C60
