@@ -4,7 +4,7 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2023.12/MeshLab2023.12-windows.exe
+    x64: https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2025.07/MeshLab2025.07-windows_x86_64.exe
 
 2.  Calculate Checksum:
     
@@ -12,7 +12,7 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2023.12/MeshLab2023.12-windows.exe
+        Get-RemoteChecksum https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2025.07/MeshLab2025.07-windows_x86_64.exe
     
     
-    checksum64: F215A5AEF06933198016846CA848E7726BCE413397AB952BEA339E3F7890CE63
+    checksum64: 3465998CB2DBDED0DD9336367BDB9D2BA9E68230C9F188E55E03C274937E70EE
