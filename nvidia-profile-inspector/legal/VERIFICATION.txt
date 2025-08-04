@@ -4,15 +4,15 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the nvidia profile inspector zip:
 
-    x32: https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.20/nvidiaProfileInspector.zip
+    x32: https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.27/nvidiaProfileInspector.zip
 
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.20/nvidiaProfileInspector.zip
+        Get-RemoteChecksum https://github.com/Orbmu2k/nvidiaProfileInspector/releases/download/2.4.0.27/nvidiaProfileInspector.zip
 
 3.  Compare to Checksum:
 
-    checksum32: DC28931B5B1B48B61789B581BD740A958E3E8AFF872DB8013B9F07DB46184020
+    checksum32: 6815AA27E92A84CDD1A6C35DD37553B79E922D3F1F3AD6D74D49A737C0036AA4
