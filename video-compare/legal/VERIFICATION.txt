@@ -4,15 +4,15 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the nvidia profile inspector zip:
 
-    x64: https://github.com/pixop/video-compare/releases/download/20250420/video-compare-20250420-win10-x86_64.zip
+    x64: https://github.com/pixop/video-compare/releases/download/20250824/video-compare-20250824-win10-x86_64.zip
 
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/pixop/video-compare/releases/download/20250420/video-compare-20250420-win10-x86_64.zip
+        Get-RemoteChecksum https://github.com/pixop/video-compare/releases/download/20250824/video-compare-20250824-win10-x86_64.zip
 
 3.  Compare to Checksum:
 
-    checksum64: E00164FFA8FD3C12C70043D50C631466BC4A63C3704E553847A0923CDA76FFD5
+    checksum64: 9528CFFF1233F6DC8FEE828F2C116EE8CEB418F6DB51ABDDC43B45E019C2407F
