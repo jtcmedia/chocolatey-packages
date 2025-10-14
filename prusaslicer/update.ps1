@@ -20,7 +20,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "prusa3d" -Repository "PrusaSlicer"
     
-    $regex = 'win64'
+    $regex = 'PrusaSlicer-\d.\d.\d[^.]*.zip'
     $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
         
     $version = ($url -split '/' | select -Last 1 -Skip 1) -split 'version_' | select -Last 1
