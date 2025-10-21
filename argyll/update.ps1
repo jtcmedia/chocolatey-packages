@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$releases = 'https://www.argyllcms.com/downloadwin.html'
+$releases = 'https://argyllcms.com/downloadwin.html'
 
 function global:au_SearchReplace {
     @{

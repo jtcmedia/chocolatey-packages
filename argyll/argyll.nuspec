@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>argyll</id>
-    <version>3.4.0</version>
+    <version>3.4.1</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/argyll</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Argyll CMS</title>
     <authors>Graeme Gill</authors>
     <projectUrl>http://argyllcms.com/</projectUrl>
-    <copyright>Copyright 1995-2020 Graeme W. Gill</copyright>
+    <copyright>Graeme W. Gill</copyright>
     <licenseUrl>https://www.gnu.org/licenses/agpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://www.argyllcms.com/downloadsrc.html</projectSourceUrl>
