@@ -35,18 +35,33 @@ function global:au_GetLatest {
       
         $regex = 'x\d\d.msi$'
         $urls = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://nodejs.org' + $_ }
+
         
-        $version = $urls[0] -split '-' | select -Last 1 -Skip 1
+        if ( $_ -eq '24' ) {
+          $version = $urls -split '-' | select -Last 1 -Skip 1
+        } else {
+          $version = $urls[0] -split '-' | select -Last 1 -Skip 1
+        }
         
         $shasums = $download_page.links | ? href -match '.txt$' | select -First 1 -expand href | % { 'https://nodejs.org' + $_ }
 
-        $streams.$_ = @{
-          URL32 = $urls[1]
-          URL64 = $urls[0]
-          SHASUMS = $shasums
-          Version = $version.Replace('v','')
-          ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v','')
-          DocsUrl = "https://nodejs.org/docs/latest-v$_.x/api/index.html"
+        if ( $_ -eq '24') {
+          $streams.$_ = @{
+            URL64 = $urls
+            SHASUMS = $shasums
+            Version = $version.Replace('v','')
+            ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v','')
+            DocsUrl = "https://nodejs.org/docs/latest-v$_.x/api/index.html"
+          }
+        } else {
+          $streams.$_ = @{
+            URL32 = $urls[1]
+            URL64 = $urls[0]
+            SHASUMS = $shasums
+            Version = $version.Replace('v','')
+            ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v','')
+            DocsUrl = "https://nodejs.org/docs/latest-v$_.x/api/index.html"
+          }
         }
     }
 
