@@ -8,7 +8,7 @@ $installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'tr
 } else { Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*x86.msi" }
 
 $packageArgs = @{
-  packageName   = $packageName
+  packageName   = 'nodejs-lts'
   fileType      = 'MSI'
   file          = $installerFile
   softwareName  = 'Node.js'
