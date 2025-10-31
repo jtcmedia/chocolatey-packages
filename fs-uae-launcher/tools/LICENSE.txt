@@ -1,4 +1,4 @@
-﻿From: https://github.com/FrodeSolheim/fs-uae/blob/master/COPYING
+﻿From: https://github.com/FrodeSolheim/fs-uae-launcher/blob/main/COPYING
 
 LICENSE
 
