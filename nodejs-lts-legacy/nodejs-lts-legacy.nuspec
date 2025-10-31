@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nodejs-lts</id>
+    <version>24.11.0</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>Node.js LTS (Install)</title>
+    <authors>OpenJS Foundation</authors>
+    <projectUrl>https://nodejs.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/76f0c59ddbe130f082a19bd6908398e5dc22ba83/icons/nodejs-lts.png</iconUrl>
+    <copyright>© OpenJS Foundation</copyright>
+    <licenseUrl>https://github.com/nodejs/node/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nodejs/node</projectSourceUrl>
+    <docsUrl>https://nodejs.org/docs/latest-v24.x/api/index.html</docsUrl>
+    <bugTrackerUrl>https://github.com/nodejs/node/issues</bugTrackerUrl>
+    <tags>nodejs-lts nodejs lts node.js node admin npm javascript</tags>
+    <summary>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine</summary>
+    <description><![CDATA[Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+
+#### This package is the **LTS** (Long Term Support) release of Node.js. See the [LTS schedule](https://github.com/nodejs/LTS#lts-schedule) for more information.
+
+#### If you want the **Current** release, install the [nodejs](https://chocolatey.org/packages/nodejs) package instead.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V24.md#24.11.0</releaseNotes>
+   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
