@@ -46,6 +46,7 @@ function global:au_GetLatest {
       URL64        = $urls[0]
       SHASUMS      = $shasums
       Version      = $version.Replace('v', '')
+      PackageName  = 'nodejs-lts'
       ReleaseNotes = "https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V$_.md#" + $version.Replace('v', '')
       DocsUrl      = "https://nodejs.org/docs/latest-v$_.x/api/index.html"
     }

@@ -1,14 +1,15 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packageName= 'nodejs-lts'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $installerFile = if ((Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true') {
-         Write-Host "Installing 64 bit version"; Get-Item "$toolsDir\*x64.msi"
-} else { Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*x86.msi" }
+    Write-Host "Installing 64 bit version"; Get-Item "$toolsDir\*x64.msi"
+} else { 
+    Write-Host "Installing 32 bit version"; Get-Item "$toolsDir\*x86.msi"
+}
 
 $packageArgs = @{
-  packageName   = 'nodejs-lts'
+  packageName   = $env:ChocolateyPackageName
   fileType      = 'MSI'
   file          = $installerFile
   softwareName  = 'Node.js'
