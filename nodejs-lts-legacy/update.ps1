@@ -4,7 +4,7 @@ $lts_versions = '22', '20'
 
 function global:au_SearchReplace {
   @{
-    "$($Latest.PackageName).nuspec" = @{
+    "$($Latest.PackageName)-legacy.nuspec" = @{
       "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
       "(\<docsUrl\>).*?(\</docsUrl\>)"           = "`${1}$($Latest.DocsUrl)`$2"
     }
