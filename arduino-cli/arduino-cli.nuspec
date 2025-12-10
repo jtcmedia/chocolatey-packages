@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>arduino-cli</id>
-    <version>1.3.1</version>
+    <version>1.4.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/arduino-cli</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Arduino Command Line Interface (CLI)</title>
@@ -53,7 +53,7 @@ Thanks to all our [contributors](https://github.com/arduino/arduino-cli/graphs/c
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/arduino/arduino-cli/releases/tag/1.3.1</releaseNotes>
+    <releaseNotes>https://github.com/arduino/arduino-cli/releases/tag/1.4.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
