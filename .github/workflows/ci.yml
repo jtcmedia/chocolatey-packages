@@ -48,7 +48,7 @@ jobs:
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version -verbose
       - name: configure_java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -58,6 +58,15 @@ jobs:
         run: |
           java --version
           echo $ENV:JAVA_HOME
+          if ($env:USER_CONTEXT) {
+            $userObject = New-Object System.Security.Principal.NTAccount("", $env:USER_CONTEXT)
+            $Sid = $userObject.Translate([System.Security.Principal.SecurityIdentifier])
+            Write-Debug "User: '$($env:USER_CONTEXT)', SID: '$($Sid.Value)'"
+
+            $userEnv = Get-ItemProperty "Registry::HKEY_USERS\$($Sid.Value)\Environment"
+            $envJavaHome = $userEnv | Select-Object -ExpandProperty "JAVA_HOME" -ErrorAction "SilentlyContinue"
+            Write-Debug "JAVA_HOME=$envJavaHome"
+          }
       - name: build_script
         shell: powershell # Instead of pwsh because au fails on pwsh core.
         env:
