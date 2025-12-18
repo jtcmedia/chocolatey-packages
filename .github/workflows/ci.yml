@@ -58,15 +58,7 @@ jobs:
         run: |
           java --version
           echo $ENV:JAVA_HOME
-          if ($env:USER_CONTEXT) {
-            $userObject = New-Object System.Security.Principal.NTAccount("", $env:USER_CONTEXT)
-            $Sid = $userObject.Translate([System.Security.Principal.SecurityIdentifier])
-            Write-Debug "User: '$($env:USER_CONTEXT)', SID: '$($Sid.Value)'"
-
-            $userEnv = Get-ItemProperty "Registry::HKEY_USERS\$($Sid.Value)\Environment"
-            $envJavaHome = $userEnv | Select-Object -ExpandProperty "JAVA_HOME" -ErrorAction "SilentlyContinue"
-            Write-Debug "JAVA_HOME=$envJavaHome"
-          }
+          echo $ENV:USER_CONTEXT
       - name: build_script
         shell: powershell # Instead of pwsh because au fails on pwsh core.
         env:
