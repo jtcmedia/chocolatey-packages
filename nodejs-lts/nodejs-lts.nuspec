@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nodejs-lts</id>
-    <version>24.12.0</version>
+    <version>24.13.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/nodejs-lts</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Node.js LTS (Install)</title>
@@ -28,7 +28,7 @@
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V24.md#24.12.0</releaseNotes>
+    <releaseNotes>https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V24.md#24.13.0</releaseNotes>
    </metadata>
   <files>
     <file src="tools\**" target="tools" />
