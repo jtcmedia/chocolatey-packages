@@ -1,7 +1,8 @@
 import-module chocolatey-au
 
-$major_releases = '6000.5', '6000.4', '6000.3', '6000.2', '6000.1', '6000.0', '2022.3', '2021.3'
+$major_releases = '6000', '2023', '2022'
 $api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
+$dl_url_start = 'https://download.unity3d.com/download_unity/'
 
 function global:au_SearchReplace {
     @{
@@ -26,7 +27,10 @@ function global:au_GetLatest {
 
       $release = $apiRequestResult.results | Select-Object -First 1
 
-      $editor_url = $release.downloads[0].url
+      $dl_url_start_w_rev = $dl_url_start + $release.shortRevision
+
+      $editor_url = $dl_url_start_w_rev + '/Windows64EditorInstaller/UnitySetup64-' + $release.version + '.exe'
+
       $versionArray = $release.version -split '(f|a|b)'
       $version = $versionArray[0]
       $streamName = $_
@@ -34,13 +38,12 @@ function global:au_GetLatest {
       if ($streams.$streamName) { return }
       
       $revision = $versionArray[1] + $versionArray[2]
-      $url_start = $editor_url -split 'Windows64EditorInstaller' | select -First 1
 
       $installers = "Android", "iOS", "AppleTV", "Linux-IL2CPP", "Linux-Mono", "Linux-Server",
         "Mac-Mono", "Mac-Server", "Universal-Windows-Platform", "WebGL", "Windows-IL2CPP", "Windows-Server"
 
       $hash = @{}
-      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $url_start + "TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + $revision + ".exe") }
+      $installers | % { $hash.Add("URL_$($_.ToLower().Replace('-','_'))", $dl_url_start_w_rev + "/TargetSupportInstaller/UnitySetup-$_-Support-for-Editor-" + $version + $revision + ".exe") }
 
       $preRelease = ''
       # Is this an alpha or beta?
@@ -59,7 +62,7 @@ function global:au_GetLatest {
         URL64        = $editor_url
         Version      = $version + $preRelease
         ReleaseNotes = $ReleaseNotes
-        URL_docs     = $url_start + "WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        URL_docs     = $dl_url_start_w_rev + "/WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
       }
     }
 
