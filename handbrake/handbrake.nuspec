@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>handbrake</id>
-    <version>1.11.0.20260314</version>
+    <version>1.11.0.20260315</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/handbrake.install</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>HandBrake</title>
@@ -31,13 +31,9 @@ For information on downloading, building/installing, and using HandBrake, see th
 
 ## Community Support
 
-Visit the [HandBrake Community Forums](https://forum.handbrake.fr/).
-
-Chat on [#handbrake on Freenode IRC](https://webchat.freenode.net/?channels=handbrake) (irc://irc.freenode.net/#handbrake).
-
 For information on HandBrake's community support channels, please see [Community Support](https://handbrake.fr/docs/en/latest/help/community-support.html).
 
-Our [community rules](https://forum.handbrake.fr/app.php/rules) and [code of conduct](https://github.com/HandBrake/HandBrake/blob/master/CODE_OF_CONDUCT.md) apply to both our site and GitHub.
+Please familiarise yourself with our [code of conduct](https://github.com/HandBrake/HandBrake/blob/master/CODE_OF_CONDUCT.md).
 
 #### Package Parameters
 
@@ -58,7 +54,7 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
 * [Roadmap](https://github.com/HandBrake/HandBrake/milestones)
     </releaseNotes>
     <dependencies>
-      <dependency id="handbrake.install" version="[1.11.0.20260314]" />
+      <dependency id="handbrake.install" version="[1.11.0.20260315]" />
     </dependencies>
   </metadata>
   <files>
