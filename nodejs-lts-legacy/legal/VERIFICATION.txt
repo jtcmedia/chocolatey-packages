@@ -4,8 +4,8 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://nodejs.org/download/release/latest-v22.x/node-v22.22.1-x86.msi
-    x64: https://nodejs.org/download/release/latest-v22.x/node-v22.22.1-x64.msi
+    x32: https://nodejs.org/download/release/latest-v22.x/node-v22.22.2-x86.msi
+    x64: https://nodejs.org/download/release/latest-v22.x/node-v22.22.2-x64.msi
 
 2.  Download Checksums:
     
@@ -17,8 +17,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/download/release/latest-v22.x/node-v22.22.1-x64.msi
+        Get-RemoteChecksum https://nodejs.org/download/release/latest-v22.x/node-v22.22.2-x64.msi
     
     
-    checksum32: 0079710A64714BBB55E8E18F3292345CC146777D04D87C33AF272C1E6A64E78B
-    checksum64: 444C1C325DC26B7237FFC521B092AA778400665E9757E97405AB95A7584053C8
+    checksum32: E43CF42F461CBFEA23A079925CFDD132A18CF66D4E30F64EC5AB4EC31DBB41F3
+    checksum64: 57456AA33FCD6FB6A9418E09227DE0B0CA604F7B2123566ACC66B555CB2F42E5
