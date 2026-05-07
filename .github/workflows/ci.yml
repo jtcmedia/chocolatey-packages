@@ -47,18 +47,19 @@ jobs:
           Install-Module -Name Wormies-AU-Helpers -Force -SkipPublisherCheck
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version -verbose
-      - name: configure_java
-        uses: actions/setup-java@v5
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-          java-package: 'jre'
-      - name: validate java config
-        shell: powershell
-        run: |
-          java --version
-          echo $ENV:JAVA_HOME
-          echo $ENV:USER_CONTEXT
+      # Don't need anymore since not updating ZAP pkg
+      # - name: configure_java
+      #   uses: actions/setup-java@v5
+      #   with:
+      #     distribution: 'temurin'
+      #     java-version: '17'
+      #     java-package: 'jre'
+      # - name: validate java config
+      #   shell: powershell
+      #   run: |
+      #     java --version
+      #     echo $ENV:JAVA_HOME
+      #     echo $ENV:USER_CONTEXT
       - name: build_script
         shell: powershell # Instead of pwsh because au fails on pwsh core.
         env:
