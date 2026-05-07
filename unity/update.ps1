@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$major_releases = '6000', '2023', '2022'
+$major_releases = '6000.6', '6000.5', '6000.4', '6000.3', '6000.0', '2022.3'
 $api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
 $dl_url_start = 'https://download.unity3d.com/download_unity/'
 
@@ -62,7 +62,7 @@ function global:au_GetLatest {
         URL64        = $editor_url
         Version      = $version + $preRelease
         ReleaseNotes = $ReleaseNotes
-        URL_docs     = $dl_url_start_w_rev + "/WindowsDocumentationInstaller/UnityDocumentationSetup.exe"
+        URL_docs     = "https://cloudmedia-docs.unity3d.com/docscloudstorage/${streamName}/UnityDocumentation.zip"
       }
     }
 

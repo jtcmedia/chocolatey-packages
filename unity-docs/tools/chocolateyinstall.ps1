@@ -7,12 +7,10 @@ $checksum64     = 'c3f0442a39efb3de9a06fdba85bad1e6c16de219814e556dbf0f6dc01faa0
 
 $packageArgs = @{
   packageName    = $packageName
-  fileType       = 'EXE'
+  unzipLocation  = $toolsDir
   url64bit       = $url64
   checksum64     = $checksum64
   checksumType64 = 'sha256'
-  silentArgs     = '/S'
-  validExitCodes = @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyZipPackage @packageArgs
