@@ -12,6 +12,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $regex = '_build.rar/download'
