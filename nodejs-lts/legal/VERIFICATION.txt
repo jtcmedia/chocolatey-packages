@@ -4,7 +4,7 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://nodejs.org/download/release/latest-v24.x/node-v24.15.0-x64.msi
+    x64: https://nodejs.org/download/release/latest-v24.x/node-v24.16.0-x64.msi
 
 2.  Download Checksums:
     
@@ -16,6 +16,6 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://nodejs.org/download/release/latest-v24.x/node-v24.15.0-x64.msi
+        Get-RemoteChecksum https://nodejs.org/download/release/latest-v24.x/node-v24.16.0-x64.msi
     
-    checksum64: FEFFB8E5CB5AC47F793666636D496EF3E975BE82C84C4DA5D20E6AA8FA4EB806
+    checksum64: 43749D78A28FF11A36CB279407BC13E79BCFB8670E7926E469018D31C2EC6453

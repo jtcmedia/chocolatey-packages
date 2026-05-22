@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64          = 'https://download.unity3d.com/download_unity/a56f230f6470/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-6000.3.16f1.exe'
-$checksum64     = '1b084ca9f40069adb6ad79c7fdd9619abdd5278ac20fa0005252bd21f51517b8'
+$url64          = 'https://download.unity3d.com/download_unity/342347f1f18f/TargetSupportInstaller/UnitySetup-Mac-Mono-Support-for-Editor-6000.5.0b9.exe'
+$checksum64     = '38070da25b5a555b151f08f0fa49cb116cb149932763f4fdb66dd52e96e81e26'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
