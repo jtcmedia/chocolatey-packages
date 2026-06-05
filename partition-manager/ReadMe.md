@@ -33,3 +33,7 @@ Check for errors on selected partitions and fix it.
 * Convert a logical partition to primary and vice versa
 * Convert HFS volumes to NTFS without reformatting
 * Convert MBR disk to GPT and vice versa
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
