@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64          = 'https://download.unity3d.com/download_unity/feeafc12a938/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-6000.4.10f1.exe'
-$checksum64     = '27102902198ff6d9d1437b8dc8156284db099ec8899c77d9fe4a2fcc06d60634'
+$url64          = 'https://download.unity3d.com/download_unity/cf0352b38e81/TargetSupportInstaller/UnitySetup-Android-Support-for-Editor-6000.3.17f1.exe'
+$checksum64     = '4b45b3aa385e2927935f36e51ea4a4322d37a021d9a03fd9cb93bb8acda56a7b'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
