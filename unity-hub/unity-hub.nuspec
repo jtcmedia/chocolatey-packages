@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>unity-hub</id>
-    <version>3.14.4</version>
+    <version>3.18.0</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-hub</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Hub (install)</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://unity3d.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/ad3ed9726b9c6186132dce47acbf34ca1fe17ebf/icons/unity.png</iconUrl>
-    <copyright>Copyright © 2022 Unity Technologies</copyright>
+    <copyright>Unity Technologies</copyright>
     <licenseUrl>https://unity.com/legal</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://docs.unity3d.com/Manual/index.html</docsUrl>
@@ -30,6 +30,16 @@
 ## Package Notes
 
 Unity does not maintain releases of older versions of Unity Hub and have refused to allow me to re-distribute the installer. Thus, **this package is only useful for keeping Unity Hub updated to the latest release version**. If you wish to install an earlier version, you have two options: purchase a Chocolatey Pro license which has a download CDN cache or you can start [internalizing the package](https://docs.chocolatey.org/en-us/guides/create/recompile-packages) to preserve older versions.
+
+## Package Parameters
+
+The following package parameters can be set:
+
+ * `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity Hub`"
+
+To pass parameters, use `--params "''"` (e.g. `choco install unity [other options] --params="'/InstallationPath:D:\Unity Hub'"`).
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Maintainer's Note
 
