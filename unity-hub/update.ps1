@@ -1,5 +1,5 @@
-$url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe"
-$exeFile = Join-Path $env:TEMP "UnityHubSetup.exe"
+$url64 = "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-x64.exe"
+$exeFile = Join-Path $env:TEMP "UnityHubSetup-x64.exe"
 
 function global:au_SearchReplace {
     @{

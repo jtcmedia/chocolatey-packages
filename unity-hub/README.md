@@ -16,6 +16,16 @@
 
 Unity does not maintain releases of older versions of Unity Hub and have refused to allow me to re-distribute the installer. Thus, **this package is only useful for keeping Unity Hub updated to the latest release version**. If you wish to install an earlier version, you have two options: purchase a Chocolatey Pro license which has a download CDN cache or you can start [internalizing the package](https://docs.chocolatey.org/en-us/guides/create/recompile-packages) to preserve older versions.
 
+## Package Parameters
+
+The following package parameters can be set:
+
+- `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity Hub`"
+
+To pass parameters, use `--params "''"` (e.g. `choco install unity [other options] --params="'/InstallationPath:D:\Unity Hub'"`).
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
 ## Maintainer's Note
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
