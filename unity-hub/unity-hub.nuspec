@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>unity-hub</id>
-    <version>3.18.0</version>
+    <version>3.18.2</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/unity-hub</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Unity Hub (install)</title>
@@ -35,7 +35,7 @@ Unity does not maintain releases of older versions of Unity Hub and have refused
 
 The following package parameters can be set:
 
- * `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity Hub`"
+- `/InstallationPath:` - Where to install the editor. **Path must already exist.** - defaults to "`C:\Program Files\Unity Hub`"
 
 To pass parameters, use `--params "''"` (e.g. `choco install unity [other options] --params="'/InstallationPath:D:\Unity Hub'"`).
 
