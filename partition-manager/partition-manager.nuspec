@@ -11,7 +11,9 @@
     <projectUrl>https://www.paragon-software.com/free/pm-express/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/f8d7feee82ec834907f832b4da7b74914e40e417/icons/partition-manager.png</iconUrl>
     <copyright>Paragon Technologie GmbH.</copyright>
-    <docsUrl>https://www.paragon-software.com/free/pm-express/</docsUrl>
+    <licenseUrl>https://www.paragon-software.com/terms/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.paragon-software.com/support/</docsUrl>
     <tags>partition-manager admin partition paragon resize format undelete mbr gpt ntfs ext4 fat32 hfs</tags>
     <summary>Organize your hard drive and gain additional space in your existing partitions</summary>
     <description><![CDATA[# Paragon Partition Manager Community Edition
