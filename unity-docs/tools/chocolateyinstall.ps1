@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-docs'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.5/UnityDocumentation.zip'
-$checksum64     = '4f452ba21aa1623750e09825ed8bb3246be95157867fb369b7d23cd5f75c7c64'
+$url64          = 'https://cloudmedia-docs.unity3d.com/docscloudstorage/6000.3/UnityDocumentation.zip'
+$checksum64     = '5950780e951f0bced56b4794e922f4d5b42dad981a1bbc211f0e4582097ada27'
 
 $packageArgs = @{
   packageName    = $packageName
