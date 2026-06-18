@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$major_releases = '6000.5', '6000.4', '6000.3', '6000.0', '2022.3'
+$major_releases = '6000.6', '6000.5', '6000.4', '6000.3', '6000.0', '2022.3'
 $api_url = 'https://services.api.unity.com/unity/editor/release/v1/releases'
 $dl_url_start = 'https://download.unity3d.com/download_unity/'
 
