@@ -2,8 +2,8 @@
 
 $packageName    = 'unity-appletv'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://download.unity3d.com/download_unity/5ebeb53e4c07/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.3.18f1.exe'
-$checksum64     = '9d830399fb57c498f78744cce280236b4c3d7bced6c760519242b5cbfb2bc1c0'
+$url64          = 'https://download.unity3d.com/download_unity/3ca267ce8005/TargetSupportInstaller/UnitySetup-AppleTV-Support-for-Editor-6000.4.12f1.exe'
+$checksum64     = '212e6b1c520ae220956f6ad30bb42bf49cbcbe323c93a3623eabd648192e034e'
 
 $packageArgs = @{
   packageName    = $packageName
