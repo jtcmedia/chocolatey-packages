@@ -14,7 +14,7 @@
     <licenseUrl>https://www.selur.de/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://forum.selur.net/</docsUrl>
-    <bugTrackerUrl>http://www.selur.de/support</bugTrackerUrl>
+    <bugTrackerUrl>https://forum.selur.net/forum-3.html</bugTrackerUrl>
     <tags>video audio converter encoder decoder h265 h264 av1 mpg mp4</tags>
     <summary>Hybrid video converter</summary>
     <description><![CDATA[# Hybrid
