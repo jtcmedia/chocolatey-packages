@@ -2,7 +2,7 @@
 
 # Hybrid
 
-**Hybrid** is a multi platform (Linux/Windows) Qt based frontend for a bunch of [other tools](http://www.selur.de/licence) which can convert nearly every input to x264/x265/Xvid/VP9/AV1... + ac3/ogg/mp3/aac/flac inside an mp4/m2ts/mkv/webm/mov/avi container, a Blu-ray or an AVCHD structure.
+**Hybrid** is a multi platform (Linux/Windows) Qt based frontend for a bunch of [other tools](http://www.selur.de/license) which can convert nearly every input to x264/x265/Xvid/VP9/AV1... + ac3/ogg/mp3/aac/flac inside an mp4/m2ts/mkv/webm/mov/avi container, a Blu-ray or an AVCHD structure.
 (not supporting Mac OS any more since I don't own a Mac anymore)
 
 **Hybrid is intended for advanced users.**
