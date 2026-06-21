@@ -4,14 +4,14 @@
   <metadata>
     <id>hybrid</id>
     <version>2026.3.21.1</version>
-    <packageSourceUrl>https://github.com/jtcmedia/tree/master/hybrid</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/hybrid</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Hybrid (Install)</title>
     <authors>Selur</authors>
     <projectUrl>https://www.selur.de/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/d3b34101e4e2f3404e2aea72086bb1ab21884021/icons/hybrid.png</iconUrl>
     <copyright>Georg Pelz</copyright>
-    <licenseUrl>https://www.selur.de/licence</licenseUrl>
+    <licenseUrl>https://www.selur.de/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://forum.selur.net/</docsUrl>
     <bugTrackerUrl>http://www.selur.de/support</bugTrackerUrl>
