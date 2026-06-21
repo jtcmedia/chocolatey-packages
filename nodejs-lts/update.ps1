@@ -1,6 +1,6 @@
 import-module chocolatey-au
 
-$lts_versions = '24'
+$lts_versions = '24', '22'
 
 function global:au_SearchReplace {
   @{
