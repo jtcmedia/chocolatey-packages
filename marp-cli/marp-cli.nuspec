@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>marp-cli</id>
+    <version>4.4.0</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/marp-cli</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>marp-cli</title>
+    <authors>Marp Team</authors>
+    <projectUrl>https://github.com/marp-team/marp-cli</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/02b08f01c69f9c199908decaff01c73c3330093e/icons/marp-cli.png</iconUrl>
+    <copyright>Copyright (c) Marp Team</copyright>
+    <licenseUrl>https://github.com/marp-team/marp-cli/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/marp-team/marp-cli</projectSourceUrl>
+    <docsUrl>https://github.com/marp-team/marp-cli</docsUrl>
+    <bugTrackerUrl>https://github.com/marp-team/marp-cli/issues</bugTrackerUrl>
+    <tags>marp-cli marp markup markdown html pdf pptx powerpoint png images presentation</tags>
+    <summary>A CLI interface, for Marp (using @marp-team/marp-core) and any slide deck converter based on Marpit framework.</summary>
+    <description><![CDATA[# marp-cli
+
+A CLI interface, for [Marp](https://github.com/marp-team/marp) (using [@marp-team/marp-core](https://github.com/marp-team/marp-core)) and any slide deck converter based on Marpit framework.
+
+It can convert Marp / Marpit Markdown files into static HTML / CSS, PDF, PowerPoint document, and image(s) easily.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/marp-team/marp-cli/releases/tag/v4.4.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
