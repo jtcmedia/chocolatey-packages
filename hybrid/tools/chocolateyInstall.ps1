@@ -15,3 +15,11 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+$pp = Get-PackageParameters
+if (-Not $pp.NoDesktopIcon) {
+  $desktopPath = [Environment]::GetFolderPath("Desktop")
+  Install-ChocolateyShortcut `
+    -ShortcutFilePath "$desktopPath\hybrid.lnk" `
+    -TargetPath "$env:ProgramFiles\Hybrid\Hybrid.exe"
+}

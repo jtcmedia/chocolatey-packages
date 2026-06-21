@@ -1,6 +1,6 @@
 
 
-## Hybrid
+# Hybrid
 
 **Hybrid** is a multi platform (Linux/Windows) Qt based frontend for a bunch of [other tools](http://www.selur.de/licence) which can convert nearly every input to x264/x265/Xvid/VP9/AV1... + ac3/ogg/mp3/aac/flac inside an mp4/m2ts/mkv/webm/mov/avi container, a Blu-ray or an AVCHD structure.
 (not supporting Mac OS any more since I don't own a Mac anymore)
@@ -29,6 +29,15 @@ If you don't know the basics about contains, video formats, etc. Hybrid is not m
 * supported containers: mov/mp4/mkv/m2ts/webm/avi, Blu-ray or a AVCHD structure
 * audio/video pass-through -> can be used for muxing, tagging, chapter editing
 * a lot of option to automate stuff
+
+## Package Parameters
+
+The following package parameters can be set:
+
+ * `/NoDesktopIcon` - Don't add an icon to the desktop.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `choco install nvidia-profile-inspector -params '"/NoDesktopIcon"'`.
 
 ## Maintainer's Note
 
