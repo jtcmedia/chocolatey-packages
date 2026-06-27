@@ -4,16 +4,16 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/vassalengine/vassal/releases/download/3.7.23/VASSAL-3.7.23-windows-x86_32.exe
-    x64: https://github.com/vassalengine/vassal/releases/download/3.7.23/VASSAL-3.7.23-windows-x86_64.exe
+    x32: https://github.com/vassalengine/vassal/releases/download/3.7.24/VASSAL-3.7.24-windows-x86_32.exe
+    x64: https://github.com/vassalengine/vassal/releases/download/3.7.24/VASSAL-3.7.24-windows-x86_64.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/vassalengine/vassal/releases/download/3.7.23/VASSAL-3.7.23-windows-x86_64.exe
+        Get-RemoteChecksum https://github.com/vassalengine/vassal/releases/download/3.7.24/VASSAL-3.7.24-windows-x86_64.exe
 
 3.  Compare to Checksum:
 
-    checksum32: F42CD1420F1617431E8E1590B0A04A9B7D40B5063A9C256D52642B225F32B16C
-    checksum64: 3D65DD15AB9DCFD268DA2FF013E3707B843D23CBAB79FDD5281443BDB779AF0A
+    checksum32: 652C5B6E6B1B8F54391C54C32C0030E6387EF93CBCCEB8218382D2EE0763ADD8
+    checksum64: 7E751F6FD201782B01188A65E2A7FA1E0AF1258E48F763A0E64FA3B5494C7A5A
