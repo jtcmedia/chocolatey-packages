@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $download_page = Get-GitHubLatestReleaseLinks -User "sn4k3" -Repository "UVtools"
     
     $regex = '.msi$'
-    $url = $download_page.links | ? href -match $regex | select -First 1 -expand href | % { 'https://github.com' + $_ }
+    $url = $download_page.links | ? href -match $regex | select -Last 1 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url -split '_|\.msi' | select -Last 1 -Skip 1
     
