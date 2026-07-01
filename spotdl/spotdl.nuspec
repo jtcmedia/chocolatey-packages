@@ -45,9 +45,6 @@ There are different **operations** spotDL can perform. The _default_ is `downloa
 The **query** for spotDL is usually a list of Spotify URLs, but for some operations like **sync**, only a single link or file is required.
 For a list of all **options** use ```spotdl -h```
 
-<details>
-<summary style="font-size:1em"><strong>Supported operations</strong></summary>
-
 - `save`: Saves only the metadata from Spotify without downloading anything.
     - Usage:
         `spotdl save [query] --save-file {filename}.spotdl`
@@ -69,14 +66,13 @@ For a list of all **options** use ```spotdl -h```
 
 - `meta`: Updates metadata for the provided song files.
 
-</details>
-
 ## Music Sourcing and Audio Quality
 
 spotDL uses YouTube as a source for music downloads. This method is used to avoid any issues related to downloading music from Spotify.
 
-> **Note**
-> Users are responsible for their actions and potential legal consequences. We do not support unauthorized downloading of copyrighted material and take no responsibility for user actions.
+## Legal Notice
+
+Users are responsible for their actions and potential legal consequences. We do not support unauthorized downloading of copyrighted material and take no responsibility for user actions.
 
 ### Audio Quality
 
