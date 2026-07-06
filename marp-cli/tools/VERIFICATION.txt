@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x32: https://github.com/marp-team/marp-cli/releases/download/v4.4.0/marp-cli-v4.4.0-win.zip
+    x32: https://github.com/marp-team/marp-cli/releases/download/v4.4.1/marp-cli-v4.4.1-win.zip
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/marp-team/marp-cli/releases/download/v4.4.0/marp-cli-v4.4.0-win.zip
+        Get-RemoteChecksum https://github.com/marp-team/marp-cli/releases/download/v4.4.1/marp-cli-v4.4.1-win.zip
 
 3.  Compare to Checksum:
 
-    checksum32: B07B310F18AFA9199F7D453F44B71A93C95F56DBEC9D051CBFC4131DE7678522
+    checksum32: 9CEC05081551EDA13B797C7EC58546B762A3695D67B363D7F4E10918CD1007DA
