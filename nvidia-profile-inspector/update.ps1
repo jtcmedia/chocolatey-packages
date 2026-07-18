@@ -26,7 +26,7 @@ function global:au_GetLatest {
     $version  = $url -split '/' | select -Last 1 -Skip 1
     
     @{
-        Version = $version
+        Version = $version.Replace('v','')
         URL32 = $url
         ReleaseNotes = "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/tag/${version}"
     }
