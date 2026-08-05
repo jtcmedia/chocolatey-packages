@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/argoproj/argo-cd/releases/download/v3.4.6/argocd-windows-amd64.exe
+    x64: https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-windows-amd64.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/argoproj/argo-cd/releases/download/v3.4.6/argocd-windows-amd64.exe
+        Get-RemoteChecksum https://github.com/argoproj/argo-cd/releases/download/v3.5.0/argocd-windows-amd64.exe
 
 3.  Compare to Checksum:
 
-    checksum64: F4AC6C5C77F133F7D0634C2EB5BFD5D61F7776A46A6A5BA517A1D88DBC6D708A
+    checksum64: 81554F01B168B20A8FB5933384EBF8673573EAFA3C46700D8E5619EEF8E76CED
