@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tdarr-node</id>
-    <version>2.85.01</version>
+    <version>2.86.01</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/tdarr-node</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>Tdarr Node</title>
