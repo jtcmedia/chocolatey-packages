@@ -1,6 +1,5 @@
 import-module chocolatey-au
-
-$releases = 'https://argyllcms.com/downloadwin.html'
+. (Join-Path '..' 'helper-scripts' | Join-Path -ChildPath 'Get-GitHubLatestReleaseLinks.ps1')
 
 function global:au_SearchReplace {
     @{
@@ -18,10 +17,10 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $download_page = Get-GitHubLatestReleaseLinks -User "eoyilmaz" -Repository "argyllcms-binaries"
     
     $regex = '.zip$'
-    $url = $download_page.links | ? href -match $regex | select -First 2 -expand href
+    $url = $download_page.links | ? href -match $regex | select -First 2 -expand href | % { 'https://github.com' + $_ }
 
     $version = $url[1] -split '_' | select -First 1 -Skip 1
     
