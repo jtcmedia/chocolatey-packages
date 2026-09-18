@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url64 = 'https://storage.tdarr.io/versions/2.87.01/win32_x64/Tdarr_Node.zip'
-$checksum64 = '757b6ad52dcaeb1b35dede4ae74eca37da677ce874d508c6e6deed1d4312d05b'
+$url64 = 'https://storage.tdarr.io/versions/2.88.01/win32_x64/Tdarr_Node.zip'
+$checksum64 = 'e4289f39014f51e34baa30b522f3376471ec50ff8775cef21b569ad1fc9de01f'
 
 
 $packageArgs = @{
