@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url64      = 'https://cdn.cypress.io/desktop/16.1.0/win32-x64/cypress.zip'
+$url64      = 'https://cdn.cypress.io/desktop/16.1.1/win32-x64/cypress.zip'
 $checksum64 = ''
 
 $packageArgs = @{
