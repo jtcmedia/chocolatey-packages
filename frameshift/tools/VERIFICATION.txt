@@ -4,14 +4,14 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/Gaurox/FrameShift/releases/download/1.20.0/FrameShift_1.20.0_Setup.exe
+    x64: https://github.com/Gaurox/FrameShift/releases/download/1.20.1/FrameShift_1.20.1_Setup.exe
 
 2.  You can use one of the following methods to obtain the checksum: 
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/Gaurox/FrameShift/releases/download/1.20.0/FrameShift_1.20.0_Setup.exe
+        Get-RemoteChecksum https://github.com/Gaurox/FrameShift/releases/download/1.20.1/FrameShift_1.20.1_Setup.exe
 
 3.  Compare to Checksum:
 
-    checksum64: 5B055346F20E4359249B84F64C62D3153EF0765819C996B9A51A52D557C2D6A6
+    checksum64: E606E5A30B4F7AC5E9ECD9685C261FE3964641321F301933296BE64C764B8991
