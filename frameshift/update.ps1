@@ -28,7 +28,7 @@ function global:au_GetLatest {
     @{
         URL64 = $url
         Version = $version
-        ReleaseNotes = "https://github.com/Gaurox/FrameShift/releases/tag/v${version}"
+        ReleaseNotes = "https://github.com/Gaurox/FrameShift/releases/tag/${version}"
     }
 }
 
