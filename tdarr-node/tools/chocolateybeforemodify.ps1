@@ -1,2 +1,2 @@
 # Automatically close Tdarr Node if running
-Get-Process -Name "Tdarr_Node*" | Stop-Process -Force
+Stop-Process -Name "Tdarr_Node*" -Force
