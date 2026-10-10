@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url64      = 'https://www.selur.de/files/hybrid_downloads/Hybrid_2026.03.21.1_SETUP.exe'
-$checksum64 = 'bfcc20277b47037f7370e675cc6888190dbdb405dfc8de8eeb09b72c05b6a4ba'
+$url64      = 'https://www.selur.de/files/hybrid_downloads/Hybrid_2026.10.09.1_SETUP.exe'
+$checksum64 = '9ba3ca20987a61aee8bfe4169ac3302efad4f64cdcddecabd53f09b055a16ef0'
 
 $packageArgs = @{
   PackageName            = $env:ChocolateyPackageName
