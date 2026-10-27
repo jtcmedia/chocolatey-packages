@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsPath  = Split-Path $MyInvocation.MyCommand.Definition
-$url32      = 'https://sourceforge.net/projects/dxwnd/files/Latest%20build/v2_06_15_build.rar/download'
-$checksum32 = '93d97a1e6a08fc3565cb460e4c46bd22bc3e7d93a7c0d8bfc2e5c720eca446c6'
+$url32      = 'https://sourceforge.net/projects/dxwnd/files/Latest%20build/v2_06_16_build.rar/download'
+$checksum32 = 'bad187d929b5ea17d2461bac8579246a28410d2e712ad1c32676b99155ea3da7'
 
 $unzipLocation = New-Item -Path $(Get-ToolsLocation) -Name "DxWnd" -ItemType "directory" -ErrorAction SilentlyContinue -Force
 
