@@ -1,0 +1,23 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the installer:
+
+    x64: https://github.com/shanselman/gputaskman/releases/download/v0.3.0/gputaskman-0.3.0-windows-x64.zip
+
+2.  You can download the list of checksums from Arduino:
+
+    SHASUMS: https://github.com/shanselman/gputaskman/releases/download/v0.3.0/gputaskman-0.3.0-windows-x64.zip.sha256
+
+    OR
+    
+    You can use one of the following methods to obtain the checksum: 
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/shanselman/gputaskman/releases/download/v0.3.0/gputaskman-0.3.0-windows-x64.zip
+
+3.  Compare to Checksum:
+
+    checksum64: 6F7CA200A9411E23F9C1506AD2C8A5F464EF38E265C058DC2152327C5167B5A1

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gputaskman</id>
+    <version>0.3.0</version>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/gputaskman</packageSourceUrl>
+    <owners>jtcmedia</owners>
+    <title>gputaskman</title>
+    <authors>Scott Hanselman</authors>
+    <projectUrl>https://github.com/shanselman/gputaskman</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/jtcmedia/chocolatey-packages/3634f1e6f225ff439dd107dc85915125918ffcd1/icons/gputaskman.png</iconUrl>
+    <copyright>Copyright (c) 2026 Scott Hanselman</copyright>
+    <licenseUrl>https://github.com/shanselman/gputaskman/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/shanselman/gputaskman</projectSourceUrl>
+    <docsUrl>https://github.com/shanselman/gputaskman/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/shanselman/gputaskman/issues</bugTrackerUrl>
+    <tags>gpu windows nvidia models vision llm unsloth video foss cross-platform</tags>
+    <summary>A GPU task manager for Windows, Linux, and WSL: per-process VRAM, GPU activity, and LLM model/KV-cache insights (Windows AMD and NVIDIA).</summary>
+    <description><![CDATA[# gputaskman
+
+**An `htop` for what's inside your GPU, not just how full it is.**
+
+Windows + NVIDIA/AMD, with Linux and WSL support (NVIDIA everywhere, AMD on native Linux; see
+[Linux and WSL](#linux-and-wsl)) and macOS on Apple Silicon (see [macOS](#macos-apple-silicon)). A terminal UI
+that connects per-process GPU memory and engine activity with loaded runtimes, model files, and
+LLM buffer breakdowns.
+
+Task Manager says "15 GB used." This tries to answer: *by what? Model weights? KV cache?
+Your browser? The desktop compositor? And why is so much GPU memory in system RAM?*
+
+**Scope: local GPU workloads, not cloud services.** Decision models, vision, speech, LLM inference,
+training/fine-tuning (including Unsloth), graphics, and video all belong here. Visibility varies:
+process memory and engine activity are measured; identifying individual models and their work
+requires supporting evidence. A PyTorch/CUDA DLL alone cannot identify a model or prove training,
+and a mapped file does not prove that model is resident on the GPU or being exercised.
+CPU-only, NPU-only, and cloud workloads are out of scope.
+
+## Maintainer's Note
+
+I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
+]]></description>
+    <releaseNotes>https://github.com/shanselman/gputaskman/releases/tag/v0.3.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
