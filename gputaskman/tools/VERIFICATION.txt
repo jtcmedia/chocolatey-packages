@@ -6,7 +6,7 @@ in verifying that this package's contents are trustworthy.
 
     x64: https://github.com/shanselman/gputaskman/releases/download/v0.3.0/gputaskman-0.3.0-windows-x64.zip
 
-2.  You can download the list of checksums from Arduino:
+2.  You can download the checksum from:
 
     SHASUMS: https://github.com/shanselman/gputaskman/releases/download/v0.3.0/gputaskman-0.3.0-windows-x64.zip.sha256
 

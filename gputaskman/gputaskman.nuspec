@@ -45,6 +45,5 @@ I produce and maintain Chocolatey packages in my spare time, for free. If you us
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
