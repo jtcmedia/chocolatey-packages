@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gputaskman</id>
-    <version>0.3.0</version>
+    <version>0.3.5</version>
     <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/gputaskman</packageSourceUrl>
     <owners>jtcmedia</owners>
     <title>gputaskman</title>
@@ -41,7 +41,7 @@ CPU-only, NPU-only, and cloud workloads are out of scope.
 
 I produce and maintain Chocolatey packages in my spare time, for free. If you use my packages, and appreciate the time and effort I put into making and maintaining them, please consider [making a small donation](https://www.buymeacoffee.com/jtcmedia). Thank-you!
 ]]></description>
-    <releaseNotes>https://github.com/shanselman/gputaskman/releases/tag/v0.3.0</releaseNotes>
+    <releaseNotes>https://github.com/shanselman/gputaskman/releases/tag/v0.3.5</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
