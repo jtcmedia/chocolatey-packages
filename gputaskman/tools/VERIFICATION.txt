@@ -4,11 +4,11 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the installer:
 
-    x64: https://github.com/shanselman/gputaskman/releases/download/v0.4.0/gputaskman-0.4.0-windows-x64.zip
+    x64: https://github.com/shanselman/gputaskman/releases/download/v0.4.1/gputaskman-0.4.1-windows-x64.zip
 
 2.  You can download the checksum from:
 
-    SHASUMS: https://github.com/shanselman/gputaskman/releases/download/v0.4.0/gputaskman-0.4.0-windows-x64.zip.sha256
+    SHASUMS: https://github.com/shanselman/gputaskman/releases/download/v0.4.1/gputaskman-0.4.1-windows-x64.zip.sha256
 
     OR
     
@@ -16,8 +16,8 @@ in verifying that this package's contents are trustworthy.
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/shanselman/gputaskman/releases/download/v0.4.0/gputaskman-0.4.0-windows-x64.zip
+        Get-RemoteChecksum https://github.com/shanselman/gputaskman/releases/download/v0.4.1/gputaskman-0.4.1-windows-x64.zip
 
 3.  Compare to Checksum:
 
-    checksum64: 7952CF68E79E6CE9571CAABE4970C57B70676E8BECC040FCA7971E940E2CACA6
+    checksum64: BDD91C18C7249193BA49544423FF41CA685BFE4AFD6D31005EAB274D46339E26
