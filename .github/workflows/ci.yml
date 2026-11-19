@@ -42,6 +42,7 @@ jobs:
         shell: powershell
         env:
           au_version: "master"
+          GITVERSION_CONFIGURATION_VERSION: "v6"
         run: |
           Install-Module -Name PowerHTML -Force -SkipPublisherCheck
           Install-Module -Name Wormies-AU-Helpers -Force -SkipPublisherCheck
